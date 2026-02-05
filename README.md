@@ -8,27 +8,44 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 ---
 
-## 🚀 Featured Projects
+## 🚀 Projects
 
-### [Passion OS](https://jamesdare.com) — Interactive Portfolio
-A Windows-inspired desktop operating system as my portfolio website. Built with vanilla JS, features window management, app ecosystem, and pixel-style animations.
+### AI & Automation
 
-### [TypeMaster Template](https://github.com/DareDev256/typemaster-template) — Educational Typing Game
-A customizable Next.js typing game for learning any topic. Fork it, add your curriculum, deploy. Features 3D visuals with React Three Fiber, auth, and leaderboards.
+| Project | Description |
+|---------|-------------|
+| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) | The first AI-powered MCP server for Final Cut Pro XML — bridge between AI agents and professional video editing |
+| [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | AI prompt engineering tool for image/video generation |
+| [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | LLM evaluation harness for regression testing AI systems |
+| [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | RAG pipeline with proper source attribution and citation tracking |
+| [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Side-by-side comparison of semantic vector search vs BM25 keyword search |
 
-### NinWikiBot — AI-Powered Discord Wiki System
-Discord bot enabling collaborative wiki editing through AI classification, template extraction, and a RAG pipeline. Built for the Nin Online gaming community.
+### Interactive Web & 3D
 
-### [RAG System with Citations](https://github.com/DareDev256/rag-system-with-citations) — Retrieval-Augmented Generation
-Python implementation of RAG with proper source citations. Demonstrates vector search, context retrieval, and LLM integration.
+| Project | Description |
+|---------|-------------|
+| [pulsemap](https://github.com/DareDev256/pulsemap) | Real-time global disease surveillance dashboard with Mapbox visualization |
+| [buildright](https://github.com/DareDev256/buildright) | Duolingo-style mobile learning app for home building in Georgia |
+| [tdotssolutionsz-portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio) | Synthwave 3D music video portfolio |
+| [music-time-machine](https://github.com/DareDev256/music-time-machine) | Music intelligence dashboard — track any song across Spotify, YouTube, Billboard, and Genius |
+| [vibe-coder](https://github.com/DareDev256/vibe-coder) | Vampire Survivors-style idle game powered by coding |
+
+### Tools & Community
+
+| Project | Description |
+|---------|-------------|
+| [fandom-wiki-bot-template](https://github.com/DareDev256/fandom-wiki-bot-template) | Discord bot template for community-driven Fandom wiki editing |
+| [typemaster-template](https://github.com/DareDev256/typemaster-template) | Customizable typing game for learning any topic — fork it, add your curriculum, deploy |
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Frontend:** React, Next.js, Three.js, React Three Fiber, TypeScript  
-**Backend:** Python, Node.js, Discord.js, FastAPI  
-**AI/ML:** RAG pipelines, Vector DBs, LLM integration, Prompt Engineering  
+**Frontend:** React, Next.js, Three.js, React Three Fiber, TypeScript<br>
+**Mobile:** React Native<br>
+**Backend:** Python, Node.js, Discord.js, FastAPI, Supabase<br>
+**AI/ML:** MCP (Model Context Protocol), RAG Pipelines, Vector DBs, LLM Integration, Prompt Engineering<br>
+**Mapping:** Mapbox<br>
 **Tools:** Claude Code, Vercel, Git, Figma
 
 ---
@@ -40,13 +57,13 @@ Python implementation of RAG with proper source citations. Demonstrates vector s
 | 350+ music videos directed | Building AI-powered products |
 | Gold record | Shipping web applications |
 | Sold platform to 6ixBuzz | Creating 3D interactive experiences |
-| 10+ years in video production | Transitioning to AI/Tech |
+| 10+ years in video production | Building MCP servers and AI tooling |
 
 ---
 
 ## 🎯 What I'm Looking For
 
-**AI Solutions Engineer** or **AI Product Manager** roles where I can combine creative direction experience with technical AI implementation.
+**AI Solutions Engineer**, **AI Product Manager**, or **Founding Engineer** roles where I can combine creative direction experience with technical AI implementation. I thrive at the intersection of product vision and hands-on building.
 
 ---
 
