@@ -37,8 +37,6 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 | [contract-translator](https://github.com/DareDev256/contract-translator) | Upload any legal contract and get a plain-English breakdown powered by GPT-4 |
 | [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | AI-powered spaced repetition learning platform using FSRS algorithm |
 | [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Side-by-side comparison of semantic vector search vs BM25 keyword search |
-| [contract-translator](https://github.com/DareDev256/contract-translator) | Upload any legal contract and get a plain-English breakdown powered by GPT-4 |
-| [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | AI-powered spaced repetition learning platform using FSRS algorithm |
 
 ### Interactive Web & 3D
 
@@ -92,7 +90,7 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 ---
 
-## 📊 Background
+## 🎬 Background
 
 | Before | Now |
 |--------|-----|
