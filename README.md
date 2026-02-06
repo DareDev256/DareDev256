@@ -6,6 +6,11 @@ I directed **350+ music videos** for artists like **Chief Keef, Migos, and Masic
 
 Now I build AI-powered tools, interactive 3D web experiences, and automation systems.
 
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=DareDev256&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DareDev256&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" height="165" alt="Top Languages" />
+</p>
+
 ---
 
 ## 🚀 Projects
@@ -19,6 +24,8 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 | [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | LLM evaluation harness for regression testing AI systems |
 | [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | RAG pipeline with proper source attribution and citation tracking |
 | [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Side-by-side comparison of semantic vector search vs BM25 keyword search |
+| [contract-translator](https://github.com/DareDev256/contract-translator) | Upload any legal contract and get a plain-English breakdown powered by GPT-4 |
+| [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | AI-powered spaced repetition learning platform using FSRS algorithm |
 
 ### Interactive Web & 3D
 
@@ -43,8 +50,8 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 **Frontend:** React, Next.js, Three.js, React Three Fiber, TypeScript<br>
 **Mobile:** React Native<br>
-**Backend:** Python, Node.js, Discord.js, FastAPI, Supabase<br>
-**AI/ML:** MCP (Model Context Protocol), RAG Pipelines, Vector DBs, LLM Integration, Prompt Engineering<br>
+**Backend:** Python, Node.js, Discord.js, FastAPI, Prisma, Supabase<br>
+**AI/ML:** MCP (Model Context Protocol), RAG Pipelines, Vector DBs, LLM Integration, OpenAI, Prompt Engineering<br>
 **Mapping:** Mapbox<br>
 **Tools:** Claude Code, Vercel, Git, Figma
 
