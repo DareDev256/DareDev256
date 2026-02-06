@@ -18,42 +18,55 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 ---
 
-## ⭐ Featured
+## ⭐ Featured Projects
 
-**[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** — The first AI-powered MCP server for Final Cut Pro XML. Bridges AI agents with professional video editing workflows. Built with TypeScript and the Model Context Protocol SDK.
+### [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)
+> First AI-powered MCP server for Final Cut Pro XML — bridge between AI agents and professional video editing workflows.
+
+`TypeScript` `Model Context Protocol` `XML Parsing` `AI Tooling`
+
+### [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations)
+> Production-ready RAG pipeline with proper source attribution — solves the "hallucination with no receipts" problem.
+
+`Python` `Vector DB` `RAG` `LLM Integration`
+
+### [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness)
+> Regression testing harness for LLM outputs — catch quality regressions before they ship to users.
+
+`Python` `LLM Evaluation` `Testing` `CI/CD`
 
 ---
 
-## 🚀 Projects
+## 🚀 All Projects
 
 ### AI & Automation
 
-| Project | Description |
-|---------|-------------|
-| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) | First AI-powered MCP server for Final Cut Pro XML — bridge between AI agents and professional video editing |
-| [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | AI prompt engineering tool for image/video generation |
-| [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | LLM evaluation harness for regression testing AI systems |
-| [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | RAG pipeline with proper source attribution and citation tracking |
-| [contract-translator](https://github.com/DareDev256/contract-translator) | Upload any legal contract and get a plain-English breakdown powered by GPT-4 |
-| [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | AI-powered spaced repetition learning platform using FSRS algorithm |
-| [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Side-by-side comparison of semantic vector search vs BM25 keyword search |
+| Project | What It Does | Stack |
+|---------|-------------|-------|
+| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) | AI agents ↔ Final Cut Pro XML editing workflows | TS, MCP SDK |
+| [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt engineering for image/video generation | AI, Prompts |
+| [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Regression testing harness for AI system outputs | Python, LLM |
+| [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | RAG pipeline with source attribution and citation tracking | Python, RAG |
+| [contract-translator](https://github.com/DareDev256/contract-translator) | Legal contracts → plain-English breakdown via GPT-4 | Python, GPT-4 |
+| [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | Spaced repetition learning platform using FSRS algorithm | React, FSRS |
+| [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Semantic vector search vs BM25 keyword search comparison | Python, Vectors |
 
 ### Interactive Web & 3D
 
-| Project | Description |
-|---------|-------------|
-| [pulsemap](https://github.com/DareDev256/pulsemap) | Real-time global disease surveillance dashboard with Mapbox visualization |
-| [buildright](https://github.com/DareDev256/buildright) | Duolingo-style mobile learning app for home building in Georgia |
-| [tdotssolutionsz-portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio) | Synthwave 3D music video portfolio |
-| [music-time-machine](https://github.com/DareDev256/music-time-machine) | Music intelligence dashboard — track any song across Spotify, YouTube, Billboard, and Genius |
-| [vibe-coder](https://github.com/DareDev256/vibe-coder) | Vampire Survivors-style idle game powered by coding |
+| Project | What It Does | Stack |
+|---------|-------------|-------|
+| [pulsemap](https://github.com/DareDev256/pulsemap) | Real-time global disease surveillance dashboard | Mapbox, React |
+| [buildright](https://github.com/DareDev256/buildright) | Duolingo-style mobile learning app for home building | React Native |
+| [tdotssolutionsz-portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio) | Synthwave 3D music video portfolio | Three.js, React |
+| [music-time-machine](https://github.com/DareDev256/music-time-machine) | Track any song across Spotify, YouTube, Billboard, Genius | Next.js, APIs |
+| [vibe-coder](https://github.com/DareDev256/vibe-coder) | Vampire Survivors-style idle game powered by coding | Phaser 3, TS |
 
 ### Tools & Community
 
-| Project | Description |
-|---------|-------------|
-| [fandom-wiki-bot-template](https://github.com/DareDev256/fandom-wiki-bot-template) | Discord bot template for community-driven Fandom wiki editing |
-| [typemaster-template](https://github.com/DareDev256/typemaster-template) | Customizable typing game for learning any topic — fork it, add your curriculum, deploy |
+| Project | What It Does | Stack |
+|---------|-------------|-------|
+| [fandom-wiki-bot-template](https://github.com/DareDev256/fandom-wiki-bot-template) | Discord bot for community-driven Fandom wiki editing | Discord.js |
+| [typemaster-template](https://github.com/DareDev256/typemaster-template) | Forkable typing game for learning any topic | TS, Web |
 
 ---
 
