@@ -85,8 +85,9 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 ![Mapbox](https://img.shields.io/badge/Mapbox-000000?style=flat-square&logo=mapbox&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Anthropic-191919?style=flat-square&logo=anthropic&logoColor=white)
 
-**AI/ML:** MCP (Model Context Protocol) · RAG Pipelines · Vector DBs · LLM Integration · Prompt Engineering
+**AI/ML:** MCP (Model Context Protocol) · Claude Code · RAG Pipelines · Vector DBs · LLM Integration · Prompt Engineering
 
 ---
 
@@ -98,7 +99,7 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=DareDev256&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=DareDev256&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
 
 ---
