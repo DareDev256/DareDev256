@@ -12,6 +12,14 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 ---
 
+## 🔥 Currently Building
+
+- **[Passion Agent](https://github.com/DareDev256)** — Autonomous AI agent that improves codebases while I sleep (runs on Mac Mini via Claude Code)
+- **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** — Expanding the first AI-powered MCP server for Final Cut Pro XML editing workflows
+- **[Vibe Coder](https://github.com/DareDev256/vibe-coder)** — Vampire Survivors-style idle game where coding powers your weapons
+
+---
+
 ## 🎯 Open To
 
 **AI Solutions Engineer**, **AI Product Manager**, or **Founding Engineer** roles — combining creative direction experience with technical AI implementation. I thrive at the intersection of product vision and hands-on building.
@@ -20,18 +28,18 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 ## ⭐ Featured Projects
 
-### [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)
-> First AI-powered MCP server for Final Cut Pro XML — bridge between AI agents and professional video editing workflows.
+### [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ![Stars](https://img.shields.io/github/stars/DareDev256/fcpxml-mcp-server?style=flat-square&color=yellow)
+> **First MCP server for Final Cut Pro XML.** Lets AI agents read, modify, and generate professional video editing timelines — bridging the gap between LLMs and post-production workflows.
 
-`TypeScript` `Model Context Protocol` `XML Parsing` `AI Tooling`
+`Python` `Model Context Protocol` `XML Parsing` `AI Tooling`
 
 ### [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations)
-> Production-ready RAG pipeline with proper source attribution — solves the "hallucination with no receipts" problem.
+> **RAG pipeline with built-in source attribution.** Chunks documents, embeds with OpenAI, retrieves with per-chunk citations — solving the "hallucination with no receipts" problem.
 
 `Python` `Vector DB` `RAG` `LLM Integration`
 
 ### [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness)
-> Regression testing harness for LLM outputs — catch quality regressions before they ship to users.
+> **Regression testing harness for LLM outputs.** Define expected behaviors, run automated evals, catch quality regressions before they ship to production.
 
 `Python` `LLM Evaluation` `Testing` `CI/CD`
 
@@ -43,11 +51,11 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 | Project | What It Does | Stack |
 |---------|-------------|-------|
-| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) | AI agents ↔ Final Cut Pro XML editing workflows | TS, MCP SDK |
+| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) | AI agents ↔ Final Cut Pro XML editing workflows | Python, MCP SDK |
 | [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt engineering for image/video generation | AI, Prompts |
 | [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Regression testing harness for AI system outputs | Python, LLM |
 | [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | RAG pipeline with source attribution and citation tracking | Python, RAG |
-| [contract-translator](https://github.com/DareDev256/contract-translator) | Legal contracts → plain-English breakdown via GPT-4 | Python, GPT-4 |
+| [contract-translator](https://github.com/DareDev256/contract-translator) | Legal contracts → plain-English breakdown via GPT-4 | TS, GPT-4 |
 | [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | Spaced repetition learning platform using FSRS algorithm | React, FSRS |
 | [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Semantic vector search vs BM25 keyword search comparison | Python, Vectors |
 
