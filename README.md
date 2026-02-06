@@ -34,7 +34,11 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 | [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | AI prompt engineering tool for image/video generation |
 | [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | LLM evaluation harness for regression testing AI systems |
 | [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | RAG pipeline with proper source attribution and citation tracking |
+| [contract-translator](https://github.com/DareDev256/contract-translator) | Upload any legal contract and get a plain-English breakdown powered by GPT-4 |
+| [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | AI-powered spaced repetition learning platform using FSRS algorithm |
 | [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Side-by-side comparison of semantic vector search vs BM25 keyword search |
+| [contract-translator](https://github.com/DareDev256/contract-translator) | Upload any legal contract and get a plain-English breakdown powered by GPT-4 |
+| [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | AI-powered spaced repetition learning platform using FSRS algorithm |
 
 ### Interactive Web & 3D
 
@@ -66,6 +70,8 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 ![Mapbox](https://img.shields.io/badge/Mapbox-000000?style=flat-square&logo=mapbox&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
