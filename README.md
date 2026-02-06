@@ -6,6 +6,22 @@ I directed **350+ music videos** for artists like **Chief Keef, Migos, and Masic
 
 Now I build AI-powered tools, interactive 3D web experiences, and automation systems.
 
+[![Website](https://img.shields.io/badge/Portfolio-jamesdare.com-blue?style=flat-square)](https://jamesdare.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-james--olusoga-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/james-olusoga-00179940/)
+[![Twitter](https://img.shields.io/badge/Twitter-@tdotssolutionsz-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/tdotssolutionsz)
+
+---
+
+## 🎯 Open To
+
+**AI Solutions Engineer**, **AI Product Manager**, or **Founding Engineer** roles — combining creative direction experience with technical AI implementation. I thrive at the intersection of product vision and hands-on building.
+
+---
+
+## ⭐ Featured
+
+**[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** — The first AI-powered MCP server for Final Cut Pro XML. Bridges AI agents with professional video editing workflows. Built with TypeScript and the Model Context Protocol SDK.
+
 ---
 
 ## 🚀 Projects
@@ -14,7 +30,7 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 | Project | Description |
 |---------|-------------|
-| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) | The first AI-powered MCP server for Final Cut Pro XML — bridge between AI agents and professional video editing |
+| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) | First AI-powered MCP server for Final Cut Pro XML — bridge between AI agents and professional video editing |
 | [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | AI prompt engineering tool for image/video generation |
 | [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | LLM evaluation harness for regression testing AI systems |
 | [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | RAG pipeline with proper source attribution and citation tracking |
@@ -41,12 +57,32 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 ## 🛠️ Tech Stack
 
-**Frontend:** React, Next.js, Three.js, React Three Fiber, TypeScript<br>
-**Mobile:** React Native<br>
-**Backend:** Python, Node.js, Discord.js, FastAPI, Supabase<br>
-**AI/ML:** MCP (Model Context Protocol), RAG Pipelines, Vector DBs, LLM Integration, Prompt Engineering<br>
-**Mapping:** Mapbox<br>
-**Tools:** Claude Code, Vercel, Git, Figma
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=three.js&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+![Mapbox](https://img.shields.io/badge/Mapbox-000000?style=flat-square&logo=mapbox&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+
+**AI/ML:** MCP (Model Context Protocol) · RAG Pipelines · Vector DBs · LLM Integration · Prompt Engineering
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=DareDev256&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DareDev256&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="165" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=DareDev256&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</p>
 
 ---
 
@@ -58,20 +94,6 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 | Gold record | Shipping web applications |
 | Sold platform to 6ixBuzz | Creating 3D interactive experiences |
 | 10+ years in video production | Building MCP servers and AI tooling |
-
----
-
-## 🎯 What I'm Looking For
-
-**AI Solutions Engineer**, **AI Product Manager**, or **Founding Engineer** roles where I can combine creative direction experience with technical AI implementation. I thrive at the intersection of product vision and hands-on building.
-
----
-
-## 📫 Let's Connect
-
-[![Website](https://img.shields.io/badge/Portfolio-jamesdare.com-blue?style=flat-square)](https://jamesdare.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-james--olusoga-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/james-olusoga-00179940/)
-[![Twitter](https://img.shields.io/badge/Twitter-@tdotssolutionsz-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/tdotssolutionsz)
 
 ---
 
