@@ -113,7 +113,7 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=DareDev256&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DareDev256&theme=tokyonight" alt="GitHub Activity" />
 </p>
 
 ---
