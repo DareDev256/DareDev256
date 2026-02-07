@@ -1,5 +1,7 @@
 # Hey, I'm James Dare 👋
 
+![Profile Views](https://komarev.com/ghpvc/?username=DareDev256&color=blueviolet&style=flat-square&label=Profile+Views)
+
 **Creative Technologist | AI Product Builder | Former Music Video Director**
 
 I directed **350+ music videos** for artists like **Chief Keef, Migos, and Masicka**. Built **KushdUp Filmsz** and sold the platform to **6ixBuzz** (now 3M+ followers). Earned a **gold record**. Pioneered cross-connections between the Canadian and US hip-hop scenes.
@@ -14,7 +16,7 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 ## 🔥 Currently Building
 
-- **[Passion Agent](https://github.com/DareDev256)** — Autonomous AI agent that improves codebases while I sleep (runs on Mac Mini via Claude Code)
+- **Passion Agent** — Autonomous AI agent that improves codebases while I sleep (runs on Mac Mini via Claude Code SDK)
 - **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** — Expanding the first AI-powered MCP server for Final Cut Pro XML editing workflows
 - **[Vibe Coder](https://github.com/DareDev256/vibe-coder)** — Vampire Survivors-style idle game where coding powers your weapons
 
@@ -23,6 +25,10 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 ## 🎯 Open To
 
 **AI Solutions Engineer**, **AI Product Manager**, or **Founding Engineer** roles — combining creative direction experience with technical AI implementation. I thrive at the intersection of product vision and hands-on building.
+
+**Why me:** I've shipped products to millions of users in entertainment, built AI tooling from RAG pipelines to MCP servers, and I communicate complex technical concepts clearly — a rare intersection of creative leadership and engineering depth.
+
+[![Let's Connect](https://img.shields.io/badge/Let's_Connect-LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/james-olusoga-00179940/)
 
 ---
 
