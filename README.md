@@ -39,15 +39,15 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 `Python` `Model Context Protocol` `XML Parsing` `AI Tooling`
 
+### [Vibe Coder](https://github.com/DareDev256/vibe-coder) [![Live Demo](https://img.shields.io/badge/Live_Demo-Play_Now-brightgreen?style=flat-square)](https://daredev256.github.io/vibe-coder/)
+> **Vampire Survivors-style idle game where coding powers your weapons.** Built with Phaser 3 — playable in the browser right now.
+
+`Phaser 3` `TypeScript` `Game Dev` `GitHub Pages`
+
 ### [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations)
 > **RAG pipeline with built-in source attribution.** Chunks documents, embeds with OpenAI, retrieves with per-chunk citations — solving the "hallucination with no receipts" problem.
 
 `Python` `Vector DB` `RAG` `LLM Integration`
-
-### [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness)
-> **Regression testing harness for LLM outputs.** Define expected behaviors, run automated evals, catch quality regressions before they ship to production.
-
-`Python` `LLM Evaluation` `Testing` `CI/CD`
 
 ---
 
@@ -61,7 +61,7 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 | [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt engineering for image/video generation | AI, Prompts |
 | [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Regression testing harness for AI system outputs | Python, LLM |
 | [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | RAG pipeline with source attribution and citation tracking | Python, RAG |
-| [contract-translator](https://github.com/DareDev256/contract-translator) | Legal contracts → plain-English breakdown via GPT-4 | TS, GPT-4 |
+| [contract-translator](https://github.com/DareDev256/contract-translator) | Legal contracts → plain-English breakdown via GPT-4 — [**Live**](https://contract-translator.vercel.app) | TS, GPT-4 |
 | [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | Spaced repetition learning platform using FSRS algorithm | React, FSRS |
 | [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Semantic vector search vs BM25 keyword search comparison | Python, Vectors |
 
@@ -69,11 +69,11 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 | Project | What It Does | Stack |
 |---------|-------------|-------|
-| [pulsemap](https://github.com/DareDev256/pulsemap) | Real-time global disease surveillance dashboard | Mapbox, React |
+| [pulsemap](https://github.com/DareDev256/pulsemap) | Real-time global disease surveillance dashboard — [**Live**](https://pulsemap-three.vercel.app) | Mapbox, React |
 | [buildright](https://github.com/DareDev256/buildright) | Duolingo-style mobile learning app for home building | React Native |
-| [tdotssolutionsz-portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio) | Synthwave 3D music video portfolio | Three.js, React |
+| [tdotssolutionsz-portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio) | Synthwave 3D music video portfolio — [**Live**](https://tdotssolutionsz-portfolio.vercel.app) | Three.js, React |
 | [music-time-machine](https://github.com/DareDev256/music-time-machine) | Track any song across Spotify, YouTube, Billboard, Genius | Next.js, APIs |
-| [vibe-coder](https://github.com/DareDev256/vibe-coder) | Vampire Survivors-style idle game powered by coding | Phaser 3, TS |
+| [vibe-coder](https://github.com/DareDev256/vibe-coder) | Vampire Survivors-style idle game powered by coding — [**Live**](https://daredev256.github.io/vibe-coder/) | Phaser 3, TS |
 
 ### Tools & Community
 
