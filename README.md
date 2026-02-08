@@ -14,7 +14,7 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 
 ## 🔥 Currently Building
 
-- **Passion Agent** — Autonomous AI code agent running 24/7 on a Mac Mini — analyzes repos, opens PRs, learns from approval/rejection patterns, and shares memory across sessions via a custom MCP server
+- **Passion Agent** — Multi-module autonomous AI system running 24/7 on a Mac Mini. Orchestrator, Discord bot, learning engine, and shared memory MCP server — it reviews its own PRs and improves from feedback
 - **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** — First MCP server for Final Cut Pro XML — AI agents can now edit professional video timelines with natural language
 - **[Vibe Coder](https://github.com/DareDev256/vibe-coder)** — Vampire Survivors-style game where coding powers your weapons — [play it now](https://daredev256.github.io/vibe-coder/)
 
@@ -44,7 +44,7 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 `Python` `Model Context Protocol` `XML Parsing` `AI Tooling`
 
 ### Passion Agent *(private — in active development)*
-> **Autonomous AI code agent** that runs 24/7 on a Mac Mini. Analyzes repos, generates improvements, opens PRs, and learns from approval/rejection patterns. Includes a shared memory MCP server for cross-session context and a Discord bot for real-time control.
+> **Multi-module autonomous AI system** running 24/7 on a dedicated Mac Mini. Includes an orchestrator (`passion-brain`), a learning engine that tracks approval/rejection patterns, a Discord bot for real-time control, and a shared memory MCP server so every Claude session starts with full context.
 
 `Node.js` `Claude Code SDK` `MCP Server` `Git Automation` `Discord.js`
 
@@ -55,6 +55,22 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 
 ---
 
+## 🤖 How I Work
+
+```
+Me → writes code, reviews PRs, ships features
+  ↕
+Passion Agent (Mac Mini, 24/7)
+  ├── passion-brain     → orchestrates improvement cycles across repos
+  ├── passion-learn     → tracks which PRs I merge vs reject, adapts
+  ├── passion-bot       → Discord commands for real-time agent control
+  └── passion-memory    → MCP server shared across all Claude sessions
+```
+
+Every Claude Code session — on any machine — starts with full context from previous sessions. The agent proposes code improvements while I sleep. I wake up, review PRs, and it learns from my decisions.
+
+---
+
 ## 🚀 All Projects
 
 ### AI & Automation
@@ -62,7 +78,7 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 | Project | What It Does | Stack |
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) | First AI-powered MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
-| [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder for DALL-E, Sora, Kling, and other gen-AI platforms | TypeScript, AI |
+| [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder for Nano Banana, Veo3, DALL-E, Sora, and Kling | TypeScript, AI |
 | [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | Document retrieval with source attribution via FAISS and FastAPI | Python, FAISS |
 | [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Rule-based, semantic, and LLM-as-judge scoring for AI outputs | Python, LLM |
 | [contract-translator](https://github.com/DareDev256/contract-translator) | Legal contracts → plain-English with risk assessment — [**Live**](https://contract-translator.vercel.app) | TypeScript, GPT-4 |
@@ -83,7 +99,7 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 
 | Project | What It Does | Stack |
 |---------|-------------|-------|
-| [fandom-wiki-bot-template](https://github.com/DareDev256/fandom-wiki-bot-template) | Discord bot for community wiki editing with approval workflows | Python, Discord |
+| [fandom-wiki-bot-template](https://github.com/DareDev256/fandom-wiki-bot-template) | Discord bot template for community wiki editing with approval workflows | Python, Discord |
 | [typemaster-template](https://github.com/DareDev256/typemaster-template) | Forkable typing game for learning any topic | TypeScript, Web |
 
 ---
@@ -109,7 +125,6 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 ![Mapbox](https://img.shields.io/badge/Mapbox-000000?style=flat-square&logo=mapbox&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
-
 ![Google Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
 
 **Specializations:** MCP (Model Context Protocol) · Claude Code SDK · RAG Pipelines · Vector DBs · Autonomous Agents · Prompt Engineering
