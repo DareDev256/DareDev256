@@ -2,11 +2,11 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=DareDev256&color=blueviolet&style=flat-square&label=Profile+Views)
 
-**Creative Technologist | AI Product Builder | Former Music Video Director**
+**AI Solutions Engineer | Creative Technologist | Former Music Video Director**
 
-I directed **350+ music videos** for artists like **Chief Keef, Migos, and Masicka**. Built **KushdUp Filmsz** and sold the platform to **6ixBuzz** (now 3M+ followers). Earned a **gold record**. Pioneered cross-connections between the Canadian and US hip-hop scenes.
+I build AI-powered tools, autonomous agents, and interactive web experiences. Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**, earned a **gold record**, and sold **KushdUp Filmsz** to **6ixBuzz** (3M+ followers).
 
-Now I build AI-powered tools, interactive 3D web experiences, and automation systems.
+Now I ship products at the intersection of AI engineering and creative technology — from MCP servers to autonomous code agents.
 
 [![Website](https://img.shields.io/badge/Portfolio-jamesdare.com-blue?style=flat-square)](https://jamesdare.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-james--olusoga-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/james-olusoga-00179940/)
@@ -24,9 +24,14 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 ## 🎯 Open To
 
-**AI Solutions Engineer**, **AI Product Manager**, or **Founding Engineer** roles — combining creative direction experience with technical AI implementation. I thrive at the intersection of product vision and hands-on building.
+**AI Solutions Engineer** · **AI Product Manager** · **Founding Engineer**
 
-**Why me:** I've shipped products to millions of users in entertainment, built AI tooling from RAG pipelines to MCP servers, and I communicate complex technical concepts clearly — a rare intersection of creative leadership and engineering depth.
+| What I Bring | Proof |
+|-------------|-------|
+| AI product development | MCP servers, RAG pipelines, autonomous agents |
+| Creative → technical leadership | 350+ music videos → shipping AI tools |
+| Full-stack shipping | 16 public repos, multiple live deployments |
+| Clear technical communication | Complex concepts → plain language |
 
 [![Let's Connect](https://img.shields.io/badge/Let's_Connect-LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/james-olusoga-00179940/)
 
@@ -39,15 +44,15 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 `Python` `Model Context Protocol` `XML Parsing` `AI Tooling`
 
+### Passion Agent *(private — in active development)*
+> **Autonomous AI code agent** that runs 24/7 on a Mac Mini. Analyzes repos, generates improvements, opens PRs, and learns from approval/rejection patterns. Built on Claude Code SDK with Discord notifications.
+
+`Node.js` `Claude Code SDK` `Git Automation` `Discord.js`
+
 ### [Vibe Coder](https://github.com/DareDev256/vibe-coder) [![Live Demo](https://img.shields.io/badge/Live_Demo-Play_Now-brightgreen?style=flat-square)](https://daredev256.github.io/vibe-coder/)
 > **Vampire Survivors-style idle game where coding powers your weapons.** Built with Phaser 3 — playable in the browser right now.
 
 `Phaser 3` `TypeScript` `Game Dev` `GitHub Pages`
-
-### [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations)
-> **RAG pipeline with built-in source attribution.** Chunks documents, embeds with OpenAI, retrieves with per-chunk citations — solving the "hallucination with no receipts" problem.
-
-`Python` `Vector DB` `RAG` `LLM Integration`
 
 ---
 
@@ -58,29 +63,29 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 | Project | What It Does | Stack |
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) | AI agents ↔ Final Cut Pro XML editing workflows | Python, MCP SDK |
-| [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt engineering for image/video generation | AI, Prompts |
-| [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Regression testing harness for AI system outputs | Python, LLM |
+| [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt engineering for image/video generation | TypeScript, AI |
 | [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | RAG pipeline with source attribution and citation tracking | Python, RAG |
-| [contract-translator](https://github.com/DareDev256/contract-translator) | Legal contracts → plain-English breakdown via GPT-4 — [**Live**](https://contract-translator.vercel.app) | TS, GPT-4 |
-| [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | Spaced repetition learning platform using FSRS algorithm | React, FSRS |
+| [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Regression testing harness for AI system outputs | Python, LLM |
+| [contract-translator](https://github.com/DareDev256/contract-translator) | Legal contracts → plain-English breakdown via GPT-4 — [**Live**](https://contract-translator.vercel.app) | TypeScript, GPT-4 |
 | [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Semantic vector search vs BM25 keyword search comparison | Python, Vectors |
 
-### Interactive Web & 3D
+### Interactive Web & Games
 
 | Project | What It Does | Stack |
 |---------|-------------|-------|
-| [pulsemap](https://github.com/DareDev256/pulsemap) | Real-time global disease surveillance dashboard — [**Live**](https://pulsemap-three.vercel.app) | Mapbox, React |
-| [buildright](https://github.com/DareDev256/buildright) | Duolingo-style mobile learning app for home building | React Native |
-| [tdotssolutionsz-portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio) | Synthwave 3D music video portfolio — [**Live**](https://tdotssolutionsz-portfolio.vercel.app) | Three.js, React |
-| [music-time-machine](https://github.com/DareDev256/music-time-machine) | Track any song across Spotify, YouTube, Billboard, Genius | Next.js, APIs |
 | [vibe-coder](https://github.com/DareDev256/vibe-coder) | Vampire Survivors-style idle game powered by coding — [**Live**](https://daredev256.github.io/vibe-coder/) | Phaser 3, TS |
+| [tdotssolutionsz-portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio) | Synthwave 3D music video portfolio — [**Live**](https://tdotssolutionsz-portfolio.vercel.app) | Three.js, React |
+| [pulsemap](https://github.com/DareDev256/pulsemap) | Real-time global disease surveillance dashboard — [**Live**](https://pulsemap-three.vercel.app) | Mapbox, React |
+| [music-time-machine](https://github.com/DareDev256/music-time-machine) | Track any song across Spotify, YouTube, Billboard, Genius | Next.js, APIs |
+| [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | AI-powered spaced repetition learning platform | TypeScript, FSRS |
+| [buildright](https://github.com/DareDev256/buildright) | Duolingo-style mobile learning app for home building | React Native |
 
-### Tools & Community
+### Tools & Templates
 
 | Project | What It Does | Stack |
 |---------|-------------|-------|
-| [fandom-wiki-bot-template](https://github.com/DareDev256/fandom-wiki-bot-template) | Discord bot for community-driven Fandom wiki editing | Discord.js |
-| [typemaster-template](https://github.com/DareDev256/typemaster-template) | Forkable typing game for learning any topic | TS, Web |
+| [fandom-wiki-bot-template](https://github.com/DareDev256/fandom-wiki-bot-template) | Discord bot template for community-driven wiki editing | Python, Discord |
+| [typemaster-template](https://github.com/DareDev256/typemaster-template) | Forkable typing game for learning any topic | TypeScript, Web |
 
 ---
 
@@ -101,7 +106,7 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 ![Anthropic](https://img.shields.io/badge/Anthropic-191919?style=flat-square&logo=anthropic&logoColor=white)
 
-**AI/ML:** MCP (Model Context Protocol) · Claude Code · RAG Pipelines · Vector DBs · LLM Integration · Prompt Engineering
+**AI/ML:** MCP (Model Context Protocol) · Claude Code SDK · RAG Pipelines · Vector DBs · LLM Integration · Prompt Engineering · Autonomous Agents
 
 ---
 
@@ -120,12 +125,12 @@ Now I build AI-powered tools, interactive 3D web experiences, and automation sys
 
 ## 🎬 Background
 
-| Before | Now |
-|--------|-----|
-| 350+ music videos directed | Building AI-powered products |
-| Gold record | Shipping web applications |
-| Sold platform to 6ixBuzz | Creating 3D interactive experiences |
-| 10+ years in video production | Building MCP servers and AI tooling |
+| Entertainment Era | Engineering Era |
+|------------------|----------------|
+| 350+ music videos directed | 16 public repos, multiple live deployments |
+| Gold record with major artists | Building MCP servers and autonomous AI agents |
+| Sold KushdUp Filmsz → 6ixBuzz | Full-stack AI tooling (RAG, embeddings, Claude SDK) |
+| 10+ years creative production | Shipping 3D web experiences and game dev |
 
 ---
 
