@@ -8,14 +8,14 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 
 [![Website](https://img.shields.io/badge/Portfolio-jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jamesdare.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/james-olusoga-00179940/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/tdotssolutionsz)
+[![X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/tdotssolutionsz)
 
 ---
 
 ## 🔥 Currently Building
 
-- **Passion Agent** — Autonomous AI code agent that runs 24/7, analyzes repos, opens PRs, and learns from feedback (Claude Code SDK + Mac Mini)
-- **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** — First MCP server for Final Cut Pro XML — AI agents can now edit professional video timelines
+- **Passion Agent** — Autonomous AI code agent running 24/7 on a Mac Mini — analyzes repos, opens PRs, learns from approval/rejection patterns, and shares memory across sessions via a custom MCP server
+- **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** — First MCP server for Final Cut Pro XML — AI agents can now edit professional video timelines with natural language
 - **[Vibe Coder](https://github.com/DareDev256/vibe-coder)** — Vampire Survivors-style game where coding powers your weapons — [play it now](https://daredev256.github.io/vibe-coder/)
 
 ---
@@ -44,9 +44,9 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 `Python` `Model Context Protocol` `XML Parsing` `AI Tooling`
 
 ### Passion Agent *(private — in active development)*
-> **Autonomous AI code agent** that runs 24/7 on a Mac Mini. Analyzes repos, generates improvements, opens PRs, and learns from approval/rejection patterns. Built on Claude Code SDK with Discord notifications.
+> **Autonomous AI code agent** that runs 24/7 on a Mac Mini. Analyzes repos, generates improvements, opens PRs, and learns from approval/rejection patterns. Includes a shared memory MCP server for cross-session context and a Discord bot for real-time control.
 
-`Node.js` `Claude Code SDK` `Git Automation` `Discord.js`
+`Node.js` `Claude Code SDK` `MCP Server` `Git Automation` `Discord.js`
 
 ### [Vibe Coder](https://github.com/DareDev256/vibe-coder) [![Live Demo](https://img.shields.io/badge/Live_Demo-Play_Now-brightgreen?style=flat-square)](https://daredev256.github.io/vibe-coder/)
 > **Vampire Survivors-style idle game where coding powers your weapons.** Built with Phaser 3 — playable in the browser right now.
@@ -61,11 +61,11 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 
 | Project | What It Does | Stack |
 |---------|-------------|-------|
-| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) | AI agents ↔ Final Cut Pro XML editing workflows | Python, MCP SDK |
-| [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt engineering for image/video generation | TypeScript, AI |
-| [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | RAG pipeline with source attribution and citation tracking | Python, RAG |
-| [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Regression testing harness for AI system outputs | Python, LLM |
-| [contract-translator](https://github.com/DareDev256/contract-translator) | Legal contracts → plain-English breakdown via GPT-4 — [**Live**](https://contract-translator.vercel.app) | TypeScript, GPT-4 |
+| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) | First AI-powered MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
+| [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder for DALL-E, Sora, Kling, and other gen-AI platforms | TypeScript, AI |
+| [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | Document retrieval with source attribution via FAISS and FastAPI | Python, FAISS |
+| [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Rule-based, semantic, and LLM-as-judge scoring for AI outputs | Python, LLM |
+| [contract-translator](https://github.com/DareDev256/contract-translator) | Legal contracts → plain-English with risk assessment — [**Live**](https://contract-translator.vercel.app) | TypeScript, GPT-4 |
 | [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Semantic vector search vs BM25 keyword search comparison | Python, Vectors |
 
 ### Interactive Web & Games
@@ -74,16 +74,16 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 |---------|-------------|-------|
 | [vibe-coder](https://github.com/DareDev256/vibe-coder) | Vampire Survivors-style idle game powered by coding — [**Live**](https://daredev256.github.io/vibe-coder/) | Phaser 3, TS |
 | [tdotssolutionsz-portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio) | Synthwave 3D music video portfolio — [**Live**](https://tdotssolutionsz-portfolio.vercel.app) | Three.js, React |
-| [pulsemap](https://github.com/DareDev256/pulsemap) | Real-time global disease surveillance dashboard — [**Live**](https://pulsemap-three.vercel.app) | Mapbox, React |
-| [music-time-machine](https://github.com/DareDev256/music-time-machine) | Track any song across Spotify, YouTube, Billboard, Genius | Next.js, APIs |
-| [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | AI-powered spaced repetition learning platform | TypeScript, FSRS |
+| [pulsemap](https://github.com/DareDev256/pulsemap) | Real-time global disease surveillance — weather radar for outbreaks — [**Live**](https://pulsemap-three.vercel.app) | Mapbox, React |
+| [music-time-machine](https://github.com/DareDev256/music-time-machine) | Music intelligence dashboard — Spotify, YouTube, Billboard, Genius | Next.js, APIs |
+| [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | AI-powered spaced repetition — notes → personalized quizzes via GPT-4 | TypeScript, FSRS |
 | [buildright](https://github.com/DareDev256/buildright) | Duolingo-style mobile learning app for home building | React Native |
 
 ### Tools & Templates
 
 | Project | What It Does | Stack |
 |---------|-------------|-------|
-| [fandom-wiki-bot-template](https://github.com/DareDev256/fandom-wiki-bot-template) | Discord bot template for community-driven wiki editing | Python, Discord |
+| [fandom-wiki-bot-template](https://github.com/DareDev256/fandom-wiki-bot-template) | Discord bot for community wiki editing with approval workflows | Python, Discord |
 | [typemaster-template](https://github.com/DareDev256/typemaster-template) | Forkable typing game for learning any topic | TypeScript, Web |
 
 ---
@@ -109,6 +109,8 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 ![Mapbox](https://img.shields.io/badge/Mapbox-000000?style=flat-square&logo=mapbox&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
+
+![Google Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
 
 **Specializations:** MCP (Model Context Protocol) · Claude Code SDK · RAG Pipelines · Vector DBs · Autonomous Agents · Prompt Engineering
 
@@ -140,4 +142,9 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 
 <p align="center">
   <i>"I used to direct artists. Now I direct AI agents. Same creative energy, better scalability."</i>
+</p>
+
+<p align="center">
+  <a href="https://jamesdare.com"><img src="https://img.shields.io/badge/See_My_Work-jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/james-olusoga-00179940/"><img src="https://img.shields.io/badge/Let's_Talk-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
