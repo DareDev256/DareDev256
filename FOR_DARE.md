@@ -37,11 +37,12 @@ External badge APIs (rendered as images):
 ```
 DareDev256/
 ├── README.md          # The entire product — GitHub profile page content
+├── CHANGELOG.md       # Version history following Keep a Changelog format
 ├── FOR_DARE.md        # This file — project documentation
-└── .git/              # Version history
+└── .git/              # Git version control
 ```
 
-That's it. One file. The simplicity is the point.
+Three files. The simplicity is the point.
 
 ## Tech Stack & Why
 
@@ -71,11 +72,12 @@ The streak stats badge also broke. Replaced with the `profile-details` card from
 **Lesson:** Never depend on a single badge service for critical profile elements. Always have a fallback or use the more stable alternatives from the start.
 
 ### Content Strategy Evolution
-The README went through several iterations:
-1. **v1** — Basic project list, no personality
-2. **v2** — Added featured projects, star badges
-3. **v3** — Restructured for recruiter scanning: value proposition table, proof-based claims, "Open To" section at the top
-4. **v4** (current) — Typing animation header, `for-the-badge` style badges, reorganized tech stack, background story
+The README went through several iterations (see CHANGELOG.md for full version history):
+1. **v0.0.0** — Initial profile README, basic project list
+2. **v0.1.0** — Added featured projects, star badges, profile view counter, "Currently Building" section
+3. **v0.2.0** — Restructured for recruiter scanning: value proposition table, proof-based claims, "Open To" section, replaced unreliable badge services
+4. **v0.3.0** — Typing animation header, `for-the-badge` style badges, FOR_DARE.md docs
+5. **v0.4.0** (current) — "How I Work" architecture diagram, sharpened Passion Agent narrative, closing CTA
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -113,11 +115,13 @@ All badges use `style=for-the-badge` for visual weight and consistency. Tech sta
 
 When updating this README, verify:
 - [ ] All project URLs still resolve (5 live deployments + GitHub links)
-- [ ] Repo count is accurate (currently 16 public repos)
+- [ ] Repo count is accurate (currently 16 public repos — includes awesome-mcp-servers fork)
 - [ ] "Currently Building" section reflects actual current work
-- [ ] Badge services are rendering (check for broken images)
-- [ ] Stats cards are loading (github-profile-summary-cards)
+- [ ] Badge services are rendering (check for broken images on profile page)
+- [ ] Stats cards are loading (github-profile-summary-cards.vercel.app)
 - [ ] "Open To" section matches current job search status
+- [ ] "How I Work" diagram reflects current Passion Agent module architecture
+- [ ] CHANGELOG.md is updated with any changes (version bump for non-trivial changes)
 
 ## External Dependencies (Badge Services)
 
