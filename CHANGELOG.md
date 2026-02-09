@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.4.2] - 2026-02-09
+
+### Added
+- Contribution model section in FOR_DARE.md documenting Passion Agent workflow, branch conventions, valid task types, and PR review flow
+- Two new maintenance checklist items: CHANGELOG version sequencing and FOR_DARE.md/CHANGELOG sync
+
+### Changed
+- Updated FOR_DARE.md version history to include v0.4.1 as current version
+
 ## [0.4.1] - 2026-02-08
 
 ### Changed

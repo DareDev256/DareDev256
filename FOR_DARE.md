@@ -77,7 +77,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 2. **v0.1.0** — Added featured projects, star badges, profile view counter, "Currently Building" section
 3. **v0.2.0** — Restructured for recruiter scanning: value proposition table, proof-based claims, "Open To" section, replaced unreliable badge services
 4. **v0.3.0** — Typing animation header, `for-the-badge` style badges, FOR_DARE.md docs
-5. **v0.4.0** (current) — "How I Work" architecture diagram, sharpened Passion Agent narrative, closing CTA
+5. **v0.4.0** — "How I Work" architecture diagram, sharpened Passion Agent narrative, closing CTA
+6. **v0.4.1** (current) — CHANGELOG with proper semver and full version history, updated FOR_DARE.md
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -111,6 +112,40 @@ All badges use `style=for-the-badge` for visual weight and consistency. Tech sta
 - **Information hierarchy is everything.** The most important content (who you are, what you're building, how to reach you) must be above the fold.
 - **Keep it current.** A stale profile README is worse than none — it signals inactivity. The "Currently Building" section and live demo links prove ongoing work.
 
+## How Changes Get Made (Contribution Model)
+
+This repo is maintained by two contributors:
+
+1. **James (DareDev256)** — Direct commits to `main` for manual updates, content rewrites, and PR reviews.
+2. **Passion Agent** — Autonomous AI agent running 24/7 on a Mac Mini. Creates feature branches, makes improvements, and opens PRs for human review.
+
+### Passion Agent Branch Convention
+
+```
+passion/<task-type>-<descriptor>-<id>
+```
+
+Examples:
+- `passion/docs-diversity-picked-docs-mlfbszxo`
+- `passion/improve-auto-mlb4265p`
+- `passion/refactor-cooldown-forced-focus-on-mld34kxo`
+
+### Valid Task Types for This Repo
+
+Only `readme` and `docs` tasks are valid here — this is a documentation-only repo with no application code. The agent should never attempt code-type tasks (test, refactor, feature) on this repo.
+
+### PR Review Flow
+
+```
+Passion Agent creates branch → pushes changes → opens PR
+    ↓
+James reviews on GitHub (or via Discord notification)
+    ↓
+Merge or reject → Passion Agent learns from the decision
+```
+
+The agent's learning engine (`passion-learn.mjs`) tracks which PRs get merged vs rejected and adjusts future behavior accordingly.
+
 ## Maintenance Checklist
 
 When updating this README, verify:
@@ -122,6 +157,8 @@ When updating this README, verify:
 - [ ] "Open To" section matches current job search status
 - [ ] "How I Work" diagram reflects current Passion Agent module architecture
 - [ ] CHANGELOG.md is updated with any changes (version bump for non-trivial changes)
+- [ ] CHANGELOG versions are sequential with no gaps
+- [ ] FOR_DARE.md version history matches CHANGELOG.md (Content Strategy Evolution section)
 
 ## External Dependencies (Badge Services)
 
