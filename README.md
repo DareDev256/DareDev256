@@ -20,6 +20,14 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 
 ---
 
+## 🔧 Latest From the Workshop
+
+<!-- SHOWCASE_SECTION_START -->
+> *Passion Agent showcase section — auto-updated nightly*
+<!-- SHOWCASE_SECTION_END -->
+
+---
+
 ## 🎯 Open To
 
 **AI Solutions Engineer** · **AI Product Manager** · **Founding Engineer**
