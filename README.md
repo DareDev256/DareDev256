@@ -16,7 +16,7 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 
 - **Passion Agent** — Multi-module autonomous AI system running 24/7 on a Mac Mini. Orchestrator, Discord bot, learning engine, and shared memory MCP server — it reviews its own PRs and improves from feedback
 - **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** — First MCP server for Final Cut Pro XML — AI agents can now edit professional video timelines with natural language
-- **[Vibe Coder](https://github.com/DareDev256/vibe-coder)** — Vampire Survivors-style game where coding powers your weapons — [play it now](https://daredev256.github.io/vibe-coder/)
+- **Viral Clone** *(private)* — AI content pipeline: viral TikTok → original short-form video via Claude, Gemini, Perplexity & Whisper. Telegram bot UI, 43+ tests, multi-platform publishing
 
 ---
 
@@ -28,7 +28,7 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 |-------------|----------|
 | AI product development | MCP servers, RAG pipelines, autonomous agents — all shipped |
 | Creative-to-technical leadership | 350+ music videos directed → now shipping AI tools daily |
-| Full-stack shipping velocity | 16 public repos, multiple live deployments, continuous iteration |
+| Full-stack shipping velocity | 17 public repos, multiple live deployments, continuous iteration |
 | Technical communication | Complex systems → clear documentation and demos |
 
 [![Let's Connect](https://img.shields.io/badge/Let's_Connect-LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/james-olusoga-00179940/)
@@ -47,6 +47,12 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 > **Multi-module autonomous AI system** running 24/7 on a dedicated Mac Mini. Includes an orchestrator (`passion-brain`), a learning engine that tracks approval/rejection patterns, a Discord bot for real-time control, and a shared memory MCP server so every Claude session starts with full context.
 
 `Node.js` `Claude Code SDK` `MCP Server` `Git Automation` `Discord.js`
+
+### Viral Clone *(private — in active development)*
+> **AI-powered content pipeline** — transforms viral TikTok videos into original short-form content.
+> 7-stage pipeline using 4 AI services. Telegram bot with approve/reject, cost tracking, multi-platform publishing.
+
+`TypeScript` `grammY` `Claude API` `Gemini` `BullMQ` `Drizzle ORM`
 
 ### [Vibe Coder](https://github.com/DareDev256/vibe-coder) [![Live Demo](https://img.shields.io/badge/Live_Demo-Play_Now-brightgreen?style=flat-square)](https://daredev256.github.io/vibe-coder/)
 > **Vampire Survivors-style idle game where coding powers your weapons.** Built with Phaser 3 — playable in the browser right now.
@@ -78,6 +84,7 @@ Every Claude Code session — on any machine — starts with full context from p
 | Project | What It Does | Stack |
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) | First AI-powered MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
+| Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY, Claude |
 | [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder for Nano Banana, Veo3, DALL-E, Sora, and Kling | TypeScript, AI |
 | [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | Document retrieval with source attribution via FAISS and FastAPI | Python, FAISS |
 | [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Rule-based, semantic, and LLM-as-judge scoring for AI outputs | Python, LLM |
@@ -116,6 +123,7 @@ Every Claude Code session — on any machine — starts with full context from p
 ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=three.js&logoColor=white)
 ![Phaser](https://img.shields.io/badge/Phaser-4B8BBE?style=flat-square&logo=data:image/svg+xml;base64,PHN2Zy8+&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 
 **AI & Infrastructure**
 
@@ -127,7 +135,7 @@ Every Claude Code session — on any machine — starts with full context from p
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
 
-**Specializations:** MCP (Model Context Protocol) · Claude Code SDK · RAG Pipelines · Vector DBs · Autonomous Agents · Prompt Engineering
+**Specializations:** MCP (Model Context Protocol) · Claude Code SDK · RAG Pipelines · Vector DBs · Autonomous Agents · Playwright Automation · Prompt Engineering
 
 ---
 
@@ -148,7 +156,7 @@ Every Claude Code session — on any machine — starts with full context from p
 
 | Entertainment Era | Engineering Era |
 |------------------|----------------|
-| 350+ music videos directed | 16 public repos, multiple live deployments |
+| 350+ music videos directed | 17 public repos, multiple live deployments |
 | Gold record with major artists | Building MCP servers and autonomous AI agents |
 | Sold KushdUp Filmsz → 6ixBuzz | Full-stack AI tooling (RAG, embeddings, Claude SDK) |
 | 10+ years creative production | Shipping 3D web experiences and game dev |
