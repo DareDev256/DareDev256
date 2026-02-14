@@ -23,7 +23,19 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 ## 🔧 Latest From the Workshop
 
 <!-- SHOWCASE_SECTION_START -->
-> *Passion Agent showcase section — auto-updated nightly*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 13, 2026*
+
+**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/TdotsSolutionsz Music Video Portfolio)**
+
+Added a dynamic Artist Showcase Ticker to the HubPage — auto-scrolling CSS marquee of top 12 artists with real YouTube thumbnails, video counts, and total views. Animated count-up stats bar shows 101 videos, 54 artists, 25.3M+ total views, and 14 years active with smooth ease-out animation. Transforms the static landing page into a living portfolio.
+[**See it live →**](https://tdotssolutionsz.com)
+
+**Highlights:**
+- Auto-scrolling infinite marquee of top 12 artists with real YouTube thumbnails and view stats
+- Animated count-up stats (101 videos · 54 artists · 25.3M+ views · 14 years) with IntersectionObserver trigger
+- Hover-to-pause ticker, edge-fade masking, gradient text, fully responsive + reduced-motion safe
+
+`+424/-2 lines`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
