@@ -23,19 +23,19 @@ I build AI-powered tools, autonomous agents, and interactive web experiences. Pr
 ## 🔧 Latest From the Workshop
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 13, 2026*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 17, 2026*
 
 **Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/TdotsSolutionsz Music Video Portfolio)**
 
-Added a dynamic Artist Showcase Ticker to the HubPage — auto-scrolling CSS marquee of top 12 artists with real YouTube thumbnails, video counts, and total views. Animated count-up stats bar shows 101 videos, 54 artists, 25.3M+ total views, and 14 years active with smooth ease-out animation. Transforms the static landing page into a living portfolio.
+Every video now has its own shareable page at /video/:youtubeId — 6kB gzipped vs 315kB for the 3D experience. Includes embedded player, metadata stats, share buttons, related videos grid, and a 'Watch in 3D' CTA. Also upgraded HubPage footer with YouTube/Instagram/booking links and added a branded glitch-animated 404 page.
 [**See it live →**](https://tdotssolutionsz.com)
 
 **Highlights:**
-- Auto-scrolling infinite marquee of top 12 artists with real YouTube thumbnails and view stats
-- Animated count-up stats (101 videos · 54 artists · 25.3M+ views · 14 years) with IntersectionObserver trigger
-- Hover-to-pause ticker, edge-fade masking, gradient text, fully responsive + reduced-motion safe
+- 101 videos now independently shareable — each gets its own /video/:youtubeId page with embedded player, stats, and related videos
+- 150x lighter shared links (6kB vs 315kB) — no Three.js needed for video pages
+- Social footer with YouTube, Instagram, and Book a Session CTA on both HubPage and VideoPage
 
-`+424/-2 lines`
+`+980/-7 lines`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
