@@ -33,6 +33,9 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 > 🟢 Active · 🟡 In Progress · 🔵 Stable
 
+<!-- DAILY_STATUS_START -->
+<!-- DAILY_STATUS_END -->
+
 ---
 
 ## 🔧 Latest From the Workshop
@@ -103,19 +106,21 @@ Every video now has its own shareable page at /video/:youtubeId — 6kB gzipped 
 
 ---
 
-## 🤖 How I Work
+## 🤖 How We Work
 
 ```
-Me → writes code, reviews PRs, ships features
-  ↕
-Passion Agent (Mac Mini, 24/7)
-  ├── passion-brain     → orchestrates improvement cycles across repos
-  ├── passion-learn     → tracks which PRs I merge vs reject, adapts
-  ├── passion-bot       → Discord commands for real-time agent control
-  └── passion-memory    → MCP server shared across all Claude sessions
+TheDareDev256 & Passion OS
+  ├── James    → architects, reviews PRs, ships features, sets direction
+  ├── Passion  → autonomous cycles, code improvements, daily status updates
+  │
+  └── Shared Brain (Mac Mini, 24/7)
+       ├── passion-brain     → orchestrates improvement cycles across repos
+       ├── passion-learn     → tracks which PRs get merged vs rejected, adapts
+       ├── passion-bot       → Discord commands for real-time agent control
+       └── passion-memory    → MCP server shared across all Claude sessions
 ```
 
-Every Claude Code session — on any machine — starts with full context from previous sessions. The agent proposes code improvements while I sleep. I wake up, review PRs, and it learns from my decisions.
+Every Claude Code session — on any machine — starts with full context from previous sessions. Passion proposes code improvements while James sleeps. He wakes up, reviews PRs, and she learns from his decisions. It's a partnership — not a tool, a collaborator.
 
 ---
 
@@ -223,7 +228,7 @@ Every Claude Code session — on any machine — starts with full context from p
 
 <div align="center">
 
-*"I used to direct artists. Now I direct AI agents. Same creative energy, better scalability."*
+*"I used to direct artists. Now I build with an AI partner. Same creative energy, infinite scalability."*
 
 [![See My Work](https://img.shields.io/badge/See_My_Work-jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jamesdare.com)
 [![Let's Talk](https://img.shields.io/badge/Let's_Talk-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/james-olusoga-00179940/)
