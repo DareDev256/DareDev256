@@ -1,22 +1,37 @@
-# Hey, I'm James Dare 👋
+<div align="center">
+
+# James Dare
 
 <a href="https://jamesdare.com"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6C63FF&vCenter=true&random=false&width=500&lines=AI+Solutions+Engineer;Creative+Technologist;Autonomous+Agent+Builder;Former+Music+Video+Director" alt="Typing SVG" /></a>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=DareDev256&color=blueviolet&style=flat-square&label=Profile+Views)
 
-I build AI-powered tools, autonomous agents, and interactive web experiences. Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**, earned a **gold record**, and sold **KushdUp Filmsz** to **6ixBuzz** (3M+ followers). Now I ship products at the intersection of AI engineering and creative technology.
+I build AI-powered tools, autonomous agents, and interactive web experiences.
+Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**, earned a **gold record**, and sold **KushdUp Filmsz** to **6ixBuzz** (3M+ followers). Now I ship products at the intersection of AI engineering and creative technology.
 
 [![Website](https://img.shields.io/badge/Portfolio-jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jamesdare.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/james-olusoga-00179940/)
 [![X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/tdotssolutionsz)
 
+</div>
+
+<div align="center">
+
+`🏆 Gold Record` · `🎬 350+ Videos Directed` · `📦 17 Public Repos` · `🚀 5 Live Deployments` · `🤖 1 Autonomous Agent (24/7)`
+
+</div>
+
 ---
 
 ## 🔥 Currently Building
 
-- **Passion Agent** — Multi-module autonomous AI system running 24/7 on a Mac Mini. Orchestrator, Discord bot, learning engine, and shared memory MCP server — it reviews its own PRs and improves from feedback
-- **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** — First MCP server for Final Cut Pro XML — AI agents can now edit professional video timelines with natural language
-- **Viral Clone** *(private)* — AI content pipeline: viral TikTok → original short-form video via Claude, Gemini, Perplexity & Whisper. Telegram bot UI, 43+ tests, multi-platform publishing
+| Status | Project | Description |
+|:------:|---------|-------------|
+| 🟢 | **Passion Agent** | Multi-module autonomous AI system running 24/7 on a Mac Mini. Orchestrator, Discord bot, learning engine, and shared memory MCP server — it reviews its own PRs and improves from feedback |
+| 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro XML — AI agents can now edit professional video timelines with natural language |
+| 🟡 | **Viral Clone** *(private)* | AI content pipeline: viral TikTok → original short-form video via Claude, Gemini, Perplexity & Whisper. Telegram bot UI, 43+ tests, multi-platform publishing |
+
+> 🟢 Active · 🟡 In Progress · 🔵 Stable
 
 ---
 
@@ -40,44 +55,51 @@ Every video now has its own shareable page at /video/:youtubeId — 6kB gzipped 
 
 ---
 
-## 🎯 Open To
-
-**AI Solutions Engineer** · **AI Product Manager** · **Founding Engineer**
-
-| What I Bring | Evidence |
-|-------------|----------|
-| AI product development | MCP servers, RAG pipelines, autonomous agents — all shipped |
-| Creative-to-technical leadership | 350+ music videos directed → now shipping AI tools daily |
-| Full-stack shipping velocity | 17 public repos, multiple live deployments, continuous iteration |
-| Technical communication | Complex systems → clear documentation and demos |
-
-[![Let's Connect](https://img.shields.io/badge/Let's_Connect-LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/james-olusoga-00179940/)
-[![View Portfolio](https://img.shields.io/badge/View_Portfolio-jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jamesdare.com)
-
----
-
 ## ⭐ Featured Projects
 
-### [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ![Stars](https://img.shields.io/github/stars/DareDev256/fcpxml-mcp-server?style=flat-square&color=yellow)
-> **First MCP server for Final Cut Pro XML.** Lets AI agents read, modify, and generate professional video editing timelines — bridging the gap between LLMs and post-production workflows.
+<table>
+<tr>
+<td width="50%">
+
+### [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)
+![Stars](https://img.shields.io/github/stars/DareDev256/fcpxml-mcp-server?style=flat-square&color=yellow)
+
+**First MCP server for Final Cut Pro XML.** Lets AI agents read, modify, and generate professional video editing timelines — bridging the gap between LLMs and post-production workflows.
 
 `Python` `Model Context Protocol` `XML Parsing` `AI Tooling`
 
-### Passion Agent *(private — in active development)*
-> **Multi-module autonomous AI system** running 24/7 on a dedicated Mac Mini. Includes an orchestrator (`passion-brain`), a learning engine that tracks approval/rejection patterns, a Discord bot for real-time control, and a shared memory MCP server so every Claude session starts with full context.
+</td>
+<td width="50%">
+
+### Passion Agent *(private)*
+
+**Multi-module autonomous AI system** running 24/7 on a dedicated Mac Mini. Orchestrator, learning engine, Discord bot, and shared memory MCP server — every Claude session starts with full context.
 
 `Node.js` `Claude Code SDK` `MCP Server` `Git Automation` `Discord.js`
 
-### Viral Clone *(private — in active development)*
-> **AI-powered content pipeline** — transforms viral TikTok videos into original short-form content.
-> 7-stage pipeline using 4 AI services. Telegram bot with approve/reject, cost tracking, multi-platform publishing.
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### Viral Clone *(private)*
+
+**AI-powered content pipeline** — transforms viral TikTok videos into original short-form content. 7-stage pipeline using 4 AI services. Telegram bot with approve/reject, cost tracking, multi-platform publishing.
 
 `TypeScript` `grammY` `Claude API` `Gemini` `BullMQ` `Drizzle ORM`
 
-### [Vibe Coder](https://github.com/DareDev256/vibe-coder) [![Live Demo](https://img.shields.io/badge/Live_Demo-Play_Now-brightgreen?style=flat-square)](https://daredev256.github.io/vibe-coder/)
-> **Vampire Survivors-style idle game where coding powers your weapons.** Built with Phaser 3 — playable in the browser right now.
+</td>
+<td width="50%">
+
+### [Vibe Coder](https://github.com/DareDev256/vibe-coder) [![Play Now](https://img.shields.io/badge/▶_Play_Now-brightgreen?style=flat-square)](https://daredev256.github.io/vibe-coder/)
+
+**Vampire Survivors-style idle game where coding powers your weapons.** Built with Phaser 3 — playable in the browser right now.
 
 `Phaser 3` `TypeScript` `Game Dev` `GitHub Pages`
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -97,7 +119,21 @@ Every Claude Code session — on any machine — starts with full context from p
 
 ---
 
-## 🚀 All Projects
+## 🎯 Open To
+
+**AI Solutions Engineer** · **AI Product Manager** · **Founding Engineer**
+
+| What I Bring | Evidence |
+|-------------|----------|
+| AI product development | MCP servers, RAG pipelines, autonomous agents — all shipped |
+| Creative-to-technical leadership | 350+ music videos directed → now shipping AI tools daily |
+| Full-stack shipping velocity | 17 public repos, multiple live deployments, continuous iteration |
+| Technical communication | Complex systems → clear documentation and demos |
+
+---
+
+<details>
+<summary><strong>🚀 All 17 Projects</strong> <i>(click to expand)</i></summary>
 
 ### AI & Automation
 
@@ -128,6 +164,8 @@ Every Claude Code session — on any machine — starts with full context from p
 |---------|-------------|-------|
 | [fandom-wiki-bot-template](https://github.com/DareDev256/fandom-wiki-bot-template) | Discord bot template for community wiki editing with approval workflows | Python, Discord |
 | [typemaster-template](https://github.com/DareDev256/typemaster-template) | Forkable typing game for learning any topic | TypeScript, Web |
+
+</details>
 
 ---
 
@@ -183,11 +221,11 @@ Every Claude Code session — on any machine — starts with full context from p
 
 ---
 
-<p align="center">
-  <i>"I used to direct artists. Now I direct AI agents. Same creative energy, better scalability."</i>
-</p>
+<div align="center">
 
-<p align="center">
-  <a href="https://jamesdare.com"><img src="https://img.shields.io/badge/See_My_Work-jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
-  <a href="https://www.linkedin.com/in/james-olusoga-00179940/"><img src="https://img.shields.io/badge/Let's_Talk-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-</p>
+*"I used to direct artists. Now I direct AI agents. Same creative energy, better scalability."*
+
+[![See My Work](https://img.shields.io/badge/See_My_Work-jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jamesdare.com)
+[![Let's Talk](https://img.shields.io/badge/Let's_Talk-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/james-olusoga-00179940/)
+
+</div>

@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-02-18
+
+### Changed
+- Centered hero section with div alignment for magazine-style visual impact
+- Added quick-glance metrics bar (gold record, repos, live deployments, agent status)
+- Currently Building section now uses status table with 🟢/🟡 indicators
+- Featured Projects restructured as 2×2 HTML table grid for visual weight
+- All Projects section collapsed into `<details>` toggle to reduce scroll depth
+- Open To section repositioned below How I Work for better narrative flow
+- Closing CTA wrapped in centered div for consistent alignment
+
 ## [0.4.2] - 2026-02-09
 
 ### Added
