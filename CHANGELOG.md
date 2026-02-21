@@ -7,6 +7,14 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-02-21
+
+### Added
+- Project Goals section articulating what drives every repo (AI tools, building in public, creative-technical bridge, autonomous collaboration)
+- Contribution Guidelines section with fork workflow, conventional commits, and PR etiquette
+- License, Repos, and Deployments badges in hero section for at-a-glance credibility
+- Quick-navigation anchor links in Showcase section for jumping to Featured Projects, All Projects, Tech Stack, and How We Work
+
 ## [0.5.0] - 2026-02-18
 
 ### Changed

@@ -5,6 +5,9 @@
 <a href="https://jamesdare.com"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6C63FF&vCenter=true&random=false&width=500&lines=AI+Solutions+Engineer;Creative+Technologist;Autonomous+Agent+Builder;Former+Music+Video+Director" alt="Typing SVG" /></a>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=DareDev256&color=blueviolet&style=flat-square&label=Profile+Views)
+[![License](https://img.shields.io/badge/License-MIT-A855F7?style=flat-square)](LICENSE)
+[![Repos](https://img.shields.io/badge/Public_Repos-17-6C63FF?style=flat-square&logo=github&logoColor=white)](https://github.com/DareDev256?tab=repositories)
+[![Deployments](https://img.shields.io/badge/Live_Deployments-5-10B981?style=flat-square&logo=vercel&logoColor=white)](https://jamesdare.com)
 
 I build AI-powered tools, autonomous agents, and interactive web experiences.
 Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**, earned a **gold record**, and sold **KushdUp Filmsz** to **6ixBuzz** (3M+ followers). Now I ship products at the intersection of AI engineering and creative technology.
@@ -20,6 +23,17 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 `🏆 Gold Record` · `🎬 350+ Videos Directed` · `📦 17 Public Repos` · `🚀 5 Live Deployments` · `🤖 1 Autonomous Agent (24/7)`
 
 </div>
+
+---
+
+## 🎯 Project Goals
+
+> What drives every repo in this profile.
+
+- **Ship AI tools that solve real problems** — not demos, not tutorials. Every project either automates a workflow, saves time, or creates something new
+- **Build in public, learn in public** — open-source by default, document the process, share what works and what doesn't
+- **Bridge creative and technical** — 10 years directing music videos taught me storytelling, pacing, and taste. Now those instincts shape product decisions
+- **Prove autonomous AI collaboration works** — Passion Agent isn't a gimmick. It's a real engineering partner that ships code, learns from feedback, and gets better every cycle
 
 ---
 
@@ -42,6 +56,8 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 ---
 
 ## 🔧 Latest From the Workshop
+
+> **Quick links:** [Featured Projects](#-featured-projects) · [All 17 Projects](#-all-17-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
 
 <!-- SHOWCASE_SECTION_START -->
 > *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 17, 2026*
@@ -226,6 +242,20 @@ Every Claude Code session — on any machine — starts with full context from p
 | Gold record with major artists | Building MCP servers and autonomous AI agents |
 | Sold KushdUp Filmsz → 6ixBuzz | Full-stack AI tooling (RAG, embeddings, Claude SDK) |
 | 10+ years creative production | Shipping 3D web experiences and game dev |
+
+---
+
+## 🤝 Contribution Guidelines
+
+Interested in contributing to any of my public repos? Here's how:
+
+1. **Fork the repo** and create your branch from `main`
+2. **Follow existing conventions** — check each repo's `CLAUDE.md` or `FOR_DARE.md` for project-specific rules
+3. **Write meaningful commits** — use [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `docs:`, `test:`)
+4. **Test before you PR** — if the repo has tests, run them. If it doesn't, consider adding some
+5. **Keep PRs focused** — one feature or fix per PR. Small, reviewable diffs get merged faster
+
+> **Note:** Some repos (Passion Agent, Viral Clone) are private. If you're interested in collaborating on those, reach out on [LinkedIn](https://www.linkedin.com/in/james-olusoga-00179940/).
 
 ---
 
