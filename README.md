@@ -226,7 +226,7 @@ Every Claude Code session — on any machine — starts with full context from p
 | Project | What It Does | Stack |
 |---------|-------------|-------|
 | [red-team-arena](https://github.com/DareDev256/red-team-arena) | Adversarial LLM testing — jailbreaks, safety failures, prompt attacks — [**Live**](https://red-team-arena.vercel.app) | TypeScript |
-| [bias-buster](https://github.com/DareDev256/bias-buster) | Detect and measure bias in LLM outputs across demographics | TypeScript |
+| [bias-buster](https://github.com/DareDev256/bias-buster) | Detect and measure bias in LLM outputs across demographics — [**Live**](https://bias-buster-five.vercel.app) | TypeScript |
 | [token-prophet](https://github.com/DareDev256/token-prophet) | Token usage prediction and cost optimization for LLM workflows | TypeScript |
 | [hallucination-hunter](https://github.com/DareDev256/hallucination-hunter) | Detect factual hallucinations in LLM-generated content | TypeScript |
 | [prompt-craft](https://github.com/DareDev256/prompt-craft) | Prompt engineering toolkit — test, compare, and optimize prompts | TypeScript |
