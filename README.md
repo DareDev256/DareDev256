@@ -7,7 +7,7 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=DareDev256&color=blueviolet&style=flat-square&label=Profile+Views)
 [![License](https://img.shields.io/badge/License-MIT-A855F7?style=flat-square)](LICENSE)
 [![Repos](https://img.shields.io/badge/Public_Repos-27-6C63FF?style=flat-square&logo=github&logoColor=white)](https://github.com/DareDev256?tab=repositories)
-[![Deployments](https://img.shields.io/badge/Live_Deployments-9+-10B981?style=flat-square&logo=vercel&logoColor=white)](https://jamesdare.com)
+[![Deployments](https://img.shields.io/badge/Live_Deployments-10+-10B981?style=flat-square&logo=vercel&logoColor=white)](https://jamesdare.com)
 [![Ecosystem](https://img.shields.io/badge/AI_Ecosystem-24%2F7-FF6B6B?style=flat-square&logo=robot&logoColor=white)](https://passion.jamesdare.com)
 
 I build AI-powered tools, autonomous agents, and interactive web experiences.
@@ -21,7 +21,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 <div align="center">
 
-`🏆 Gold Record` · `🎬 350+ Videos Directed` · `📦 27 Public Repos` · `🚀 9+ Live Deployments` · `🤖 1 AI Ecosystem (24/7)`
+`🏆 Gold Record` · `🎬 350+ Videos Directed` · `📦 27 Public Repos` · `🚀 10+ Live Deployments` · `🤖 1 AI Ecosystem (24/7)`
 
 </div>
 
@@ -42,11 +42,11 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 | Status | Project | Description |
 |:------:|---------|-------------|
-| 🟢 | **Passion Agent** | Multi-module autonomous AI system running 24/7 — 67+ modules, 30k+ LOC, 394+ tests, 99+ Discord commands. Orchestrates 28 repos, 3 LLM backends, real subprocess agents, and a shared memory MCP server |
+| 🟢 | **Passion Agent** | Multi-module autonomous AI system running 24/7 — 67+ modules, 30k+ LOC, 394+ tests, 910+ Discord commands. Orchestrates 28 repos, 3 LLM backends, real subprocess agents, and a shared memory MCP server |
 | 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Passion Agent Command Terminal — cyberpunk HUD with 28 live panels, 9 tabs, 18 avatar states, Navi Chat, voice system, evolution/pet care mechanics. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro XML — AI agents can now edit professional video timelines with natural language. ⭐ 9 stars |
 | 🟢 | **LLM Eval Suite** | 6-tool evaluation toolkit: [bias-buster](https://github.com/DareDev256/bias-buster), [token-prophet](https://github.com/DareDev256/token-prophet), [hallucination-hunter](https://github.com/DareDev256/hallucination-hunter), [prompt-craft](https://github.com/DareDev256/prompt-craft), [tool-match](https://github.com/DareDev256/tool-match) |
-| 🟢 | **[Red Team Arena](https://github.com/DareDev256/red-team-arena)** | Adversarial LLM testing platform — find where models break before users do |
+| 🟢 | **[Red Team Arena](https://github.com/DareDev256/red-team-arena)** [![Play](https://img.shields.io/badge/▶_Play-red?style=flat-square)](https://red-team-arena.vercel.app) | Adversarial LLM testing platform — find where models break before users do |
 | 🟡 | **Viral Clone** *(private)* | AI content pipeline: viral TikTok → original short-form video via Claude, Gemini, Perplexity & Whisper. Telegram bot UI, 43+ tests |
 
 > 🟢 Active · 🟡 In Progress · 🔵 Stable
@@ -117,7 +117,7 @@ Every video now has its own shareable page at /video/:youtubeId — 6kB gzipped 
 <tr>
 <td width="33%">
 
-### [Red Team Arena](https://github.com/DareDev256/red-team-arena)
+### [Red Team Arena](https://github.com/DareDev256/red-team-arena) [![Play Now](https://img.shields.io/badge/▶_Play_Now-red?style=flat-square)](https://red-team-arena.vercel.app)
 
 **Adversarial LLM testing platform.** Probe models for jailbreaks, hallucinations, and safety failures — find where AI breaks before users do.
 
@@ -169,12 +169,12 @@ Every video now has its own shareable page at /video/:youtubeId — 6kB gzipped 
 │     │     ├── DeepSeek (budget-friendly analysis)               │
 │     │     └── Gemini (multimodal, creative tasks)               │
 │     │                                                           │
-│     ├── 28 Managed Repos ─── 9 tier-1 daily, 19+ tier-2 weekly │
+│     ├── 28 Managed Repos ─── 9 tier-1 daily, 110+ tier-2 weekly │
 │     │                                                           │
 │     ├── Intel Radar ─── Reddit, HN, Bluesky, RSS               │
 │     ├── Career Engine ─── 6+ job APIs, auto-apply pipeline      │
 │     ├── Soul Unison ─── horoscope, calendar, learning           │
-│     └── Discord Bot ─── 99+ commands, real-time control         │
+│     └── Discord Bot ─── 910+ commands, real-time control         │
 │                                                                 │
 │     ▼                                                           │
 │   PACT Dashboard ─── Cyberpunk HUD, 28 panels, voice, SSE      │
@@ -198,7 +198,7 @@ Every Claude Code session — on any machine — starts with full context from p
 |-------------|----------|
 | AI product development | MCP servers, RAG pipelines, autonomous agents, LLM eval suites — all shipped |
 | Creative-to-technical leadership | 350+ music videos directed → now shipping AI tools daily |
-| Full-stack shipping velocity | 27 public repos, 9+ live deployments, continuous iteration |
+| Full-stack shipping velocity | 27 public repos, 10+ live deployments, continuous iteration |
 | Technical communication | Complex systems → clear documentation and demos |
 
 ---
@@ -225,7 +225,7 @@ Every Claude Code session — on any machine — starts with full context from p
 
 | Project | What It Does | Stack |
 |---------|-------------|-------|
-| [red-team-arena](https://github.com/DareDev256/red-team-arena) | Adversarial LLM testing — jailbreaks, safety failures, prompt attacks | TypeScript |
+| [red-team-arena](https://github.com/DareDev256/red-team-arena) | Adversarial LLM testing — jailbreaks, safety failures, prompt attacks — [**Live**](https://red-team-arena.vercel.app) | TypeScript |
 | [bias-buster](https://github.com/DareDev256/bias-buster) | Detect and measure bias in LLM outputs across demographics | TypeScript |
 | [token-prophet](https://github.com/DareDev256/token-prophet) | Token usage prediction and cost optimization for LLM workflows | TypeScript |
 | [hallucination-hunter](https://github.com/DareDev256/hallucination-hunter) | Detect factual hallucinations in LLM-generated content | TypeScript |
@@ -320,7 +320,7 @@ Every Claude Code session — on any machine — starts with full context from p
 
 | Entertainment Era | Engineering Era |
 |------------------|----------------|
-| 350+ music videos directed | 27 public repos, 9+ live deployments |
+| 350+ music videos directed | 27 public repos, 10+ live deployments |
 | Gold record with major artists | Building MCP servers and autonomous AI agents |
 | Sold KushdUp Filmsz → 6ixBuzz | Full-stack AI tooling (RAG, embeddings, Claude SDK) |
 | 10+ years creative production | LLM eval suites, 3D web, game dev, client sites |
