@@ -7,7 +7,7 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=DareDev256&color=blueviolet&style=flat-square&label=Profile+Views)
 [![License](https://img.shields.io/badge/License-MIT-A855F7?style=flat-square)](LICENSE)
 [![Repos](https://img.shields.io/badge/Public_Repos-27-6C63FF?style=flat-square&logo=github&logoColor=white)](https://github.com/DareDev256?tab=repositories)
-[![Deployments](https://img.shields.io/badge/Live_Deployments-14+-10B981?style=flat-square&logo=vercel&logoColor=white)](https://jamesdare.com)
+[![Deployments](https://img.shields.io/badge/Live_Deployments-16+-10B981?style=flat-square&logo=vercel&logoColor=white)](https://jamesdare.com)
 [![Ecosystem](https://img.shields.io/badge/AI_Ecosystem-24%2F7-FF6B6B?style=flat-square&logo=robot&logoColor=white)](https://passion.jamesdare.com)
 
 I build AI-powered tools, autonomous agents, and interactive web experiences.
@@ -21,7 +21,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 <div align="center">
 
-`🏆 Gold Record` · `🎬 350+ Videos Directed` · `📦 27 Public Repos` · `🚀 14+ Live Deployments` · `🤖 1 AI Ecosystem (24/7)`
+`🏆 Gold Record` · `🎬 350+ Videos Directed` · `📦 27 Public Repos` · `🚀 16+ Live Deployments` · `🤖 1 AI Ecosystem (24/7)`
 
 </div>
 
@@ -42,7 +42,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 | Status | Project | Description |
 |:------:|---------|-------------|
-| 🟢 | **Passion Agent** | Multi-module autonomous AI system running 24/7 — 67+ modules, 30k+ LOC, 394+ tests, 914+ Discord commands. Orchestrates 28 repos, 3 LLM backends, real subprocess agents, and a shared memory MCP server |
+| 🟢 | **Passion Agent** | Multi-module autonomous AI system running 24/7 — 67+ modules, 30k+ LOC, 394+ tests, 916+ Discord commands. Orchestrates 28 repos, 3 LLM backends, real subprocess agents, and a shared memory MCP server |
 | 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Passion Agent Command Terminal — cyberpunk HUD with 28 live panels, 9 tabs, 18 avatar states, Navi Chat, voice system, evolution/pet care mechanics. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro XML — AI agents can now edit professional video timelines with natural language. ⭐ 9 stars |
 | 🟢 | **LLM Eval Suite** | 6-tool evaluation toolkit: [bias-buster](https://github.com/DareDev256/bias-buster), [token-prophet](https://github.com/DareDev256/token-prophet), [hallucination-hunter](https://github.com/DareDev256/hallucination-hunter), [prompt-craft](https://github.com/DareDev256/prompt-craft), [tool-match](https://github.com/DareDev256/tool-match) |
@@ -170,12 +170,12 @@ Every video now has its own shareable page at /video/:youtubeId — 6kB gzipped 
 │     │     ├── DeepSeek (budget-friendly analysis)               │
 │     │     └── Gemini (multimodal, creative tasks)               │
 │     │                                                           │
-│     ├── 28 Managed Repos ─── 9 tier-1 daily, 114+ tier-2 weekly │
+│     ├── 28 Managed Repos ─── 9 tier-1 daily, 116+ tier-2 weekly │
 │     │                                                           │
 │     ├── Intel Radar ─── Reddit, HN, Bluesky, RSS               │
 │     ├── Career Engine ─── 6+ job APIs, auto-apply pipeline      │
 │     ├── Soul Unison ─── horoscope, calendar, learning           │
-│     └── Discord Bot ─── 914+ commands, real-time control         │
+│     └── Discord Bot ─── 916+ commands, real-time control         │
 │                                                                 │
 │     ▼                                                           │
 │   PACT Dashboard ─── Cyberpunk HUD, 28 panels, voice, SSE      │
@@ -199,7 +199,7 @@ Every Claude Code session — on any machine — starts with full context from p
 |-------------|----------|
 | AI product development | MCP servers, RAG pipelines, autonomous agents, LLM eval suites — all shipped |
 | Creative-to-technical leadership | 350+ music videos directed → now shipping AI tools daily |
-| Full-stack shipping velocity | 27 public repos, 14+ live deployments, continuous iteration |
+| Full-stack shipping velocity | 27 public repos, 16+ live deployments, continuous iteration |
 | Technical communication | Complex systems → clear documentation and demos |
 
 ---
@@ -250,8 +250,8 @@ Every Claude Code session — on any machine — starts with full context from p
 |---------|-------------|-------|
 | [swagger-rite-website](https://github.com/DareDev256/swagger-rite-website) | Official site for Toronto rapper Swagger Rite (Sony Music Canada) — [**Live**](https://swagger-rite-website.vercel.app) | TypeScript, Next.js |
 | [seanpane-website](https://github.com/DareDev256/seanpane-website) | Official site for Toronto rapper Seanpane (Blackheart Baby) — [**Live**](https://seanpane-website.vercel.app) | TypeScript, Next.js |
-| [whyg35-website](https://github.com/DareDev256/whyg35-website) | Artist website for WhyG | TypeScript |
-| [shortiie-raw-website](https://github.com/DareDev256/shortiie-raw-website) | Artist website for Shortiie Raw | TypeScript |
+| [whyg35-website](https://github.com/DareDev256/whyg35-website) | Artist website for WhyG — [**Live**](https://whyg35-website.vercel.app) | TypeScript |
+| [shortiie-raw-website](https://github.com/DareDev256/shortiie-raw-website) | Artist website for Shortiie Raw — [**Live**](https://shortiie-raw-website.vercel.app) | TypeScript |
 | Casper TNG *(private)* | Official site for Toronto rapper Casper TNG | Next.js, Tailwind |
 | musthavefrenchies *(private)* | French Bulldog breeder website | TypeScript |
 
@@ -321,10 +321,10 @@ Every Claude Code session — on any machine — starts with full context from p
 
 | Entertainment Era | Engineering Era |
 |------------------|----------------|
-| 350+ music videos directed | 27 public repos, 14+ live deployments |
+| 350+ music videos directed | 27 public repos, 16+ live deployments |
 | Gold record with major artists | Building MCP servers and autonomous AI agents |
 | Sold KushdUp Filmsz → 6ixBuzz | Full-stack AI tooling (RAG, embeddings, Claude SDK) |
-| 14+ years creative production | LLM eval suites, 3D web, game dev, client sites |
+| 16+ years creative production | LLM eval suites, 3D web, game dev, client sites |
 
 ---
 
