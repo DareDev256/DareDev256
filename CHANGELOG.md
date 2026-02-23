@@ -7,6 +7,14 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.1] - 2026-02-23
+
+### Changed
+- Showcase section updated to highlight TdotsSolutionsz portfolio's new design token system (5 RGB channel variables for alpha compositing) and parallax depth engine (4-layer spatial depth with lerp-smoothed rAF)
+- Updated tdotssolutionsz-portfolio description in All Projects to reflect design tokens and parallax additions
+- Added CSS Design Systems to Tech Stack specializations
+- Showcase highlights now include accessibility notes (prefers-reduced-motion support) and codebase migration stats
+
 ## [0.6.0] - 2026-02-21
 
 ### Added

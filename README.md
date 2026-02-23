@@ -65,19 +65,20 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 > **Quick links:** [Featured Projects](#-featured-projects) · [All 27 Projects](#-all-27-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 17, 2026*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 23, 2026*
 
-**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/TdotsSolutionsz Music Video Portfolio)**
+**Latest build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/TdotsSolutionsz-portfolio)** — Design system + spatial depth overhaul
 
-Every video now has its own shareable page at /video/:youtubeId — 6kB gzipped vs 315kB for the 3D experience. Includes embedded player, metadata stats, share buttons, related videos grid, and a 'Watch in 3D' CTA. Also upgraded HubPage footer with YouTube/Instagram/booking links and added a branded glitch-animated 404 page.
+Built a proper design token system with 5 RGB channel tokens in `:root`, enabling alpha compositing via `rgba(var(--clr-bg-rgb), 0.8)` instead of hardcoded color values. Migrated 4 CSS files (40+ color references, ~20 font stacks) to token references. Then added a parallax depth engine — 4 independent depth layers on the lock screen respond to mouse position with lerp-smoothed rAF animation, while desktop windows get subtle scroll-based parallax. GPU-accelerated via `will-change` and `translate`, respects `prefers-reduced-motion`.
 [**See it live →**](https://tdotssolutionsz.com)
 
 **Highlights:**
-- 101 videos now independently shareable — each gets its own /video/:youtubeId page with embedded player, stats, and related videos
-- 150x lighter shared links (6kB vs 315kB) — no Three.js needed for video pages
-- Social footer with YouTube, Instagram, and Book a Session CTA on both HubPage and VideoPage
+- 🎨 **Design tokens** — RGB channel variables enable compositable alpha without hardcoded `rgba()` across the entire codebase
+- 🌊 **Parallax depth engine** — 158-line `js/parallax.js` creates spatial depth across lock screen (4 layers) and desktop (scroll-reactive)
+- ♿ **Accessible by default** — motion disabled when `prefers-reduced-motion` is set, CSS `translate` preserves existing 3D transforms
+- 🧹 **40+ hardcoded colors + 20 font stacks** replaced with design system tokens — 193 insertions, 175 deletions
 
-`+980/-7 lines`
+`+193/-175 lines` · `350 tests passing`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
@@ -238,7 +239,7 @@ Every Claude Code session — on any machine — starts with full context from p
 | Project | What It Does | Stack |
 |---------|-------------|-------|
 | [vibe-coder](https://github.com/DareDev256/vibe-coder) | Vampire Survivors-style idle game powered by coding — [**Live**](https://daredev256.github.io/vibe-coder/) | Phaser 3, TS |
-| [tdotssolutionsz-portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio) | Synthwave 3D music video portfolio — [**Live**](https://tdotssolutionsz-portfolio.vercel.app) | Three.js, React |
+| [tdotssolutionsz-portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio) | Synthwave 3D portfolio — design tokens, parallax depth, 101 videos — [**Live**](https://tdotssolutionsz.com) | Three.js, CSS Tokens |
 | [pulsemap](https://github.com/DareDev256/pulsemap) | Real-time global disease surveillance — weather radar for outbreaks — [**Live**](https://pulsemap-three.vercel.app) | Mapbox, React |
 | [music-time-machine](https://github.com/DareDev256/music-time-machine) | Music intelligence dashboard — Spotify, YouTube, Billboard, Genius | Next.js, APIs |
 | [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | AI-powered spaced repetition — notes → personalized quizzes via GPT-4 | TypeScript, FSRS |
@@ -300,7 +301,7 @@ Every Claude Code session — on any machine — starts with full context from p
 ![Mapbox](https://img.shields.io/badge/Mapbox-000000?style=flat-square&logo=mapbox&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
 
-**Specializations:** MCP (Model Context Protocol) · Claude Code SDK · RAG Pipelines · Vector DBs · Autonomous Agents · LLM Evaluation · Playwright Automation · Prompt Engineering
+**Specializations:** MCP (Model Context Protocol) · Claude Code SDK · RAG Pipelines · Vector DBs · Autonomous Agents · LLM Evaluation · Playwright Automation · Prompt Engineering · CSS Design Systems
 
 ---
 
