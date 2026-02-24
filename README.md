@@ -119,20 +119,22 @@ Built a proper design token system with 5 RGB channel tokens in `:root`, enablin
 <tr>
 <td width="33%">
 
-### [Red Team Arena](https://github.com/DareDev256/red-team-arena) [![Play Now](https://img.shields.io/badge/▶_Play_Now-red?style=flat-square)](https://red-team-arena.vercel.app)
+### [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) [![Live](https://img.shields.io/badge/Live-Try_It-10B981?style=flat-square)](https://web-ten-vert-46.vercel.app/)
+![Stars](https://img.shields.io/github/stars/DareDev256/Ultimate-Image-Video-Prompt-Generator?style=flat-square&color=yellow)
 
-**Adversarial LLM testing platform.** Probe models for jailbreaks, hallucinations, and safety failures — find where AI breaks before users do.
+**AI prompt engineering tool** for image/video generation — structured prompt builder for Nano Banana, Veo3, DALL-E, Kling 01, and Sora workflows.
 
-`TypeScript` `LLM Evaluation` `AI Safety` `Prompt Testing`
+`TypeScript` `AI Prompts` `Image Gen` `Video Gen`
 
 </td>
 <td width="33%">
 
-### Viral Clone *(private)*
+### [pulsemap](https://github.com/DareDev256/pulsemap) [![Live](https://img.shields.io/badge/Live-Try_It-10B981?style=flat-square)](https://pulsemap-three.vercel.app)
+![Stars](https://img.shields.io/github/stars/DareDev256/pulsemap?style=flat-square&color=yellow)
 
-**AI-powered content pipeline** — transforms viral TikTok videos into original short-form content. 7-stage pipeline, 4 AI services, Telegram bot with approve/reject.
+**Real-time global disease surveillance dashboard** — weather radar for outbreaks. Powered by WHO data, Mapbox GL, Supabase, and Next.js.
 
-`TypeScript` `grammY` `Claude API` `Gemini` `BullMQ`
+`React` `Mapbox GL` `Supabase` `Next.js` `WHO Data`
 
 </td>
 <td width="33%">
