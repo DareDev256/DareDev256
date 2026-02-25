@@ -7,6 +7,21 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.2] - 2026-02-25
+
+### Changed
+- Updated all Passion Agent metrics to current state: 145+ modules, 46K+ LOC, 36 managed repos, 1,257+ total commits (previously showed 67+ modules, 30k+ LOC, 28 repos)
+- Updated PACT Dashboard panel count from 28 to 30+ across all sections
+- Updated "How We Work" architecture diagram with current repo count and commit totals
+- Added Total Commits badge (1,257+) to hero badge bar and metrics ribbon
+- Updated Background table with current module count and commit totals
+- Updated "Open To" evidence table with commit count for shipping velocity proof
+- Made casper-tng-website public with live link in All Projects section (was listed as private)
+
+### Fixed
+- Stale "394+ tests" metric replaced with more meaningful "1,257+ commits" across ecosystem
+- Inconsistent repo count in architecture diagram (showed 28, ecosystem has 36)
+
 ## [0.6.1] - 2026-02-23
 
 ### Changed

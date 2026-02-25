@@ -8,6 +8,7 @@
 [![License](https://img.shields.io/badge/License-MIT-A855F7?style=flat-square)](LICENSE)
 [![Repos](https://img.shields.io/badge/Public_Repos-27-6C63FF?style=flat-square&logo=github&logoColor=white)](https://github.com/DareDev256?tab=repositories)
 [![Deployments](https://img.shields.io/badge/Live_Deployments-16+-10B981?style=flat-square&logo=vercel&logoColor=white)](https://jamesdare.com)
+[![Commits](https://img.shields.io/badge/Total_Commits-1%2C257+-E8B931?style=flat-square&logo=git&logoColor=white)](https://github.com/DareDev256)
 [![Ecosystem](https://img.shields.io/badge/AI_Ecosystem-24%2F7-FF6B6B?style=flat-square&logo=robot&logoColor=white)](https://passion.jamesdare.com)
 
 I build AI-powered tools, autonomous agents, and interactive web experiences.
@@ -21,7 +22,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 <div align="center">
 
-`🏆 Gold Record` · `🎬 350+ Videos Directed` · `📦 27 Public Repos` · `🚀 16+ Live Deployments` · `🤖 1 AI Ecosystem (24/7)`
+`🏆 Gold Record` · `🎬 350+ Videos Directed` · `📦 27 Public Repos` · `🚀 16+ Live Deployments` · `🔄 1,257+ Commits` · `🤖 1 AI Ecosystem (24/7)`
 
 </div>
 
@@ -42,8 +43,8 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 | Status | Project | Description |
 |:------:|---------|-------------|
-| 🟢 | **Passion Agent** | Multi-module autonomous AI system running 24/7 — 67+ modules, 30k+ LOC, 394+ tests, 916+ Discord commands. Orchestrates 28 repos, 3 LLM backends, real subprocess agents, and a shared memory MCP server |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Passion Agent Command Terminal — cyberpunk HUD with 28 live panels, 9 tabs, 18 avatar states, Navi Chat, voice system, evolution/pet care mechanics. Next.js 16 + React 19 |
+| 🟢 | **Passion Agent** | Multi-module autonomous AI system running 24/7 — 145+ modules, 46K+ LOC, 1,257+ commits. Orchestrates 36 repos, 3 LLM backends, real subprocess agents, and a shared memory MCP server |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Passion Agent Command Terminal — cyberpunk HUD with 30+ live panels, 9 tabs, 18 avatar states, Navi Chat, voice system, evolution/pet care mechanics. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro XML — AI agents can now edit professional video timelines with natural language. ⭐ 9 stars |
 | 🟢 | **LLM Eval Suite** | 6-tool evaluation toolkit: [bias-buster](https://github.com/DareDev256/bias-buster), [token-prophet](https://github.com/DareDev256/token-prophet), [hallucination-hunter](https://github.com/DareDev256/hallucination-hunter), [prompt-craft](https://github.com/DareDev256/prompt-craft), [tool-match](https://github.com/DareDev256/tool-match) |
 | 🟢 | **[Red Team Arena](https://github.com/DareDev256/red-team-arena)** [![Play](https://img.shields.io/badge/▶_Play-red?style=flat-square)](https://red-team-arena.vercel.app) | Adversarial LLM testing platform — find where models break before users do |
@@ -100,7 +101,7 @@ Added a floating 'Now Streaming' bar at the bottom of the page with an animated 
 
 ### Passion Agent *(private)*
 
-**Autonomous AI ecosystem** — 67+ modules, 30k+ LOC, 394+ tests. 24/7 brain cycles, 28 managed repos, 3 LLM backends, real subprocess agents, shared memory MCP server.
+**Autonomous AI ecosystem** — 145+ modules, 46K+ LOC, 1,257+ commits. 24/7 brain cycles, 36 managed repos, 3 LLM backends, real subprocess agents, shared memory MCP server.
 
 `Node.js` `Claude Code SDK` `Discord.js` `SQLite` `MCP`
 
@@ -109,7 +110,7 @@ Added a floating 'Now Streaming' bar at the bottom of the page with an animated 
 
 ### PACT Dashboard *(private)*
 
-**Passion Agent Command Terminal** — cyberpunk HUD with 28 live panels, 9 tabs, 18 avatar states, Navi Chat, voice system, evolution & pet care mechanics.
+**Passion Agent Command Terminal** — cyberpunk HUD with 30+ live panels, 9 tabs, 18 avatar states, Navi Chat, voice system, evolution & pet care mechanics.
 
 `Next.js 16` `React 19` `TanStack Query` `Framer Motion` `SSE`
 
@@ -161,7 +162,7 @@ Added a floating 'Now Streaming' bar at the bottom of the page with an animated 
 │     │  reviews PRs, sets direction, ships features              │
 │     │                                                           │
 │     ▼                                                           │
-│   Passion Agent (24/7 Mac Mini) ─── 67+ modules, 30k+ LOC      │
+│   Passion Agent (24/7 Mac Mini) ─── 145+ modules, 46K+ LOC      │
 │     ├── Brain Cycle ─── 30min intervals, 60 cycles/day max      │
 │     │     ├── Strategist → picks highest-value work             │
 │     │     ├── Scheduler → routes to right LLM backend           │
@@ -172,7 +173,7 @@ Added a floating 'Now Streaming' bar at the bottom of the page with an animated 
 │     │     ├── DeepSeek (budget-friendly analysis)               │
 │     │     └── Gemini (multimodal, creative tasks)               │
 │     │                                                           │
-│     ├── 28 Managed Repos ─── 9 tier-1 daily, 116+ tier-2 weekly │
+│     ├── 36 Managed Repos ─── 1,257+ commits across ecosystem    │
 │     │                                                           │
 │     ├── Intel Radar ─── Reddit, HN, Bluesky, RSS               │
 │     ├── Career Engine ─── 6+ job APIs, auto-apply pipeline      │
@@ -180,7 +181,7 @@ Added a floating 'Now Streaming' bar at the bottom of the page with an animated 
 │     └── Discord Bot ─── 916+ commands, real-time control         │
 │                                                                 │
 │     ▼                                                           │
-│   PACT Dashboard ─── Cyberpunk HUD, 28 panels, voice, SSE      │
+│   PACT Dashboard ─── Cyberpunk HUD, 30+ panels, voice, SSE      │
 │     ▼                                                           │
 │   Passion Memory MCP ─── Shared brain across all sessions       │
 │     ▼                                                           │
@@ -201,7 +202,7 @@ Every Claude Code session — on any machine — starts with full context from p
 |-------------|----------|
 | AI product development | MCP servers, RAG pipelines, autonomous agents, LLM eval suites — all shipped |
 | Creative-to-technical leadership | 350+ music videos directed → now shipping AI tools daily |
-| Full-stack shipping velocity | 27 public repos, 16+ live deployments, continuous iteration |
+| Full-stack shipping velocity | 27 public repos, 16+ live deployments, 1,257+ commits, continuous iteration |
 | Technical communication | Complex systems → clear documentation and demos |
 
 ---
@@ -214,8 +215,8 @@ Every Claude Code session — on any machine — starts with full context from p
 | Project | What It Does | Stack |
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐9 | First AI-powered MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
-| Passion Agent *(private)* | 67+ module autonomous AI system — 24/7 brain cycles, 28 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Cyberpunk command terminal — 28 panels, voice, avatar, Navi Chat | Next.js 16, React 19 |
+| Passion Agent *(private)* | 145+ module autonomous AI system — 24/7 brain cycles, 36 repos, 3 LLM backends, 1,257+ commits | Node.js, Claude SDK |
+| PACT Dashboard *(private)* | Cyberpunk command terminal — 30+ panels, voice, avatar, Navi Chat | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY, Claude |
 | [passion-site](https://github.com/DareDev256/passion-site) | Passion's public website — live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder for Nano Banana, Veo3, DALL-E, Sora, Kling — [**Live**](https://web-ten-vert-46.vercel.app/) | TypeScript, AI |
@@ -254,7 +255,7 @@ Every Claude Code session — on any machine — starts with full context from p
 | [seanpane-website](https://github.com/DareDev256/seanpane-website) | Official site for Toronto rapper Seanpane (Blackheart Baby) — [**Live**](https://seanpane-website.vercel.app) | TypeScript, Next.js |
 | [whyg35-website](https://github.com/DareDev256/whyg35-website) | Artist website for WhyG — [**Live**](https://whyg35-website.vercel.app) | TypeScript |
 | [shortiie-raw-website](https://github.com/DareDev256/shortiie-raw-website) | Artist website for Shortiie Raw — [**Live**](https://shortiie-raw-website.vercel.app) | TypeScript |
-| Casper TNG *(private)* | Official site for Toronto rapper Casper TNG | Next.js, Tailwind |
+| [casper-tng-website](https://github.com/DareDev256/casper-tng-website) | Official site for Toronto rapper Casper TNG — [**Live**](https://casper-tng-website.vercel.app) | Next.js, Tailwind |
 | musthavefrenchies *(private)* | French Bulldog breeder website | TypeScript |
 
 ### Tools & Templates
@@ -323,10 +324,10 @@ Every Claude Code session — on any machine — starts with full context from p
 
 | Entertainment Era | Engineering Era |
 |------------------|----------------|
-| 350+ music videos directed | 27 public repos, 16+ live deployments |
+| 350+ music videos directed | 27 public repos, 16+ live deployments, 1,257+ commits |
 | Gold record with major artists | Building MCP servers and autonomous AI agents |
 | Sold KushdUp Filmsz → 6ixBuzz | Full-stack AI tooling (RAG, embeddings, Claude SDK) |
-| 16+ years creative production | LLM eval suites, 3D web, game dev, client sites |
+| 16+ years creative production | 145+ modules across LLM eval, 3D web, game dev, client sites |
 
 ---
 
