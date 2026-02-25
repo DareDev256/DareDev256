@@ -65,20 +65,19 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 > **Quick links:** [Featured Projects](#-featured-projects) · [All 27 Projects](#-all-27-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 23, 2026*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 24, 2026*
 
-**Latest build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/TdotsSolutionsz-portfolio)** — Design system + spatial depth overhaul
+**Tonight's build: [casper-tng-website](https://github.com/DareDev256/casper-tng-website)**
 
-Built a proper design token system with 5 RGB channel tokens in `:root`, enabling alpha compositing via `rgba(var(--clr-bg-rgb), 0.8)` instead of hardcoded color values. Migrated 4 CSS files (40+ color references, ~20 font stacks) to token references. Then added a parallax depth engine — 4 independent depth layers on the lock screen respond to mouse position with lerp-smoothed rAF animation, while desktop windows get subtle scroll-based parallax. GPU-accelerated via `will-change` and `translate`, respects `prefers-reduced-motion`.
-[**See it live →**](https://tdotssolutionsz.com)
+Added a floating 'Now Streaming' bar at the bottom of the page with an animated spectral equalizer that cycles through Casper's top 5 tracks with view counts and direct YouTube links. Also added scroll-spy to the navigation with an animated glowing underline that physically slides between sections using Framer Motion layoutId spring transitions. Both features reinforce the ghost theme and add interactive engagement without leaving the site.
+[**See it live →**](https://casper-tng-website.vercel.app)
 
 **Highlights:**
-- 🎨 **Design tokens** — RGB channel variables enable compositable alpha without hardcoded `rgba()` across the entire codebase
-- 🌊 **Parallax depth engine** — 158-line `js/parallax.js` creates spatial depth across lock screen (4 layers) and desktop (scroll-reactive)
-- ♿ **Accessible by default** — motion disabled when `prefers-reduced-motion` is set, CSS `translate` preserves existing 3D transforms
-- 🧹 **40+ hardcoded colors + 20 font stacks** replaced with design system tokens — 193 insertions, 175 deletions
+- Animated spectral equalizer with staggered CSS bars creates a live music feel
+- Spring-physics animated nav underline slides between sections as you scroll
+- Track cycling with crossfade animation rotates through 5 top tracks every 8 seconds
 
-`+193/-175 lines` · `350 tests passing`
+`+148/-117 lines`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
