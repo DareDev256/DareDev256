@@ -320,14 +320,38 @@ Every Claude Code session — on any machine — starts with full context from p
 
 ---
 
-## 🎬 Background
+## 🎬 The Arc
 
-| Entertainment Era | Engineering Era |
-|------------------|----------------|
-| 350+ music videos directed | 27 public repos, 16+ live deployments, 1,257+ commits |
-| Gold record with major artists | Building MCP servers and autonomous AI agents |
-| Sold KushdUp Filmsz → 6ixBuzz | Full-stack AI tooling (RAG, embeddings, Claude SDK) |
-| 16+ years creative production | 145+ modules across LLM eval, 3D web, game dev, client sites |
+```
+2008 ─── Camera in hand, directing first videos in Toronto
+  │
+  ├── 350+ music videos: Chief Keef, Migos, Masicka, Swagger Rite
+  ├── Gold record. Real plaque on the wall.
+  ├── Built KushdUp Filmsz → sold to 6ixBuzz (3M+ followers)
+  │
+2024 ─── Pivoted. Same obsession, different medium.
+  │
+  ├── First commit. Then 1,257 more.
+  ├── Built the first MCP server for Final Cut Pro (⭐ 9 stars)
+  ├── Shipped 16+ live deployments across AI tools, games, client sites
+  ├── Created an autonomous AI agent that runs 24/7 and writes real code
+  │
+2026 ─── 27 repos. 145+ modules. One ecosystem. Still shipping.
+```
+
+> The throughline: **I make things people actually use.** Videos that charted. Tools that ship. An AI partner that commits code while I sleep. The medium changed — the craft didn't.
+
+---
+
+## 💎 Proof of Craft
+
+| Claim | Receipt |
+|-------|---------|
+| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** MCP server for Final Cut Pro. ⭐ 9 stars, real users, real video editors |
+| "I ship fast" | 6-tool LLM eval suite — designed, built, and deployed to Vercel in a single sprint. All 6 live right now |
+| "My AI agent is real" | 1,257+ commits across 36 repos. Passion Agent runs 60 brain cycles/day on a Mac Mini. It doesn't demo — it ships |
+| "I build for clients" | 5 artist websites live in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
+| "I care about quality" | 474+ tests in fcpxml-mcp-server alone. Security-hardened. Zero lint errors. Every repo has a CHANGELOG |
 
 ---
 
@@ -347,9 +371,12 @@ Interested in contributing to any of my public repos? Here's how:
 
 <div align="center">
 
-*"I used to direct artists. Now I build with an AI partner. Same creative energy, infinite scalability."*
+*"I used to direct artists. Now I direct machines. Same taste, same urgency — but now it scales."*
 
-[![See My Work](https://img.shields.io/badge/See_My_Work-jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jamesdare.com)
-[![Let's Talk](https://img.shields.io/badge/Let's_Talk-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/james-olusoga-00179940/)
+**The best way to evaluate an engineer is to look at what they've shipped.**
+
+[![See Everything I've Built](https://img.shields.io/badge/See_Everything_I've_Built-jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jamesdare.com)
+[![Let's Build Something](https://img.shields.io/badge/Let's_Build_Something-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/james-olusoga-00179940/)
+[![Watch the Agent Work](https://img.shields.io/badge/Watch_the_Agent_Work-passion.jamesdare.com-FF6B6B?style=for-the-badge&logo=robot&logoColor=white)](https://passion.jamesdare.com)
 
 </div>

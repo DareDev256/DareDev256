@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.3] - 2026-02-25
+
+### Changed
+- Replaced flat Background comparison table with "The Arc" — a visual career timeline using tree characters that reads like a commit log, tracing the 2008→2026 journey from directing to engineering
+- Rewrote closing CTA section: new quote, bold thesis statement ("evaluate an engineer by what they've shipped"), added third badge linking to passion.jamesdare.com
+- Strengthened badge labels from generic ("See My Work", "Let's Talk") to action-oriented ("See Everything I've Built", "Let's Build Something", "Watch the Agent Work")
+
+### Added
+- "Proof of Craft" section with 5 verifiable claim→receipt pairs: MCP server, LLM eval suite sprint, agent commit count, client sites, test/quality metrics
+- Each claim links to the actual evidence (repos, live deployments) so recruiters can verify without digging
+
 ## [0.6.2] - 2026-02-25
 
 ### Changed
