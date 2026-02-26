@@ -66,19 +66,19 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 > **Quick links:** [Featured Projects](#-featured-projects) · [All 27 Projects](#-all-27-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 24, 2026*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 25, 2026*
 
-**Tonight's build: [casper-tng-website](https://github.com/DareDev256/casper-tng-website)**
+**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/TdotsSolutionsz Music Video Portfolio)**
 
-Added a floating 'Now Streaming' bar at the bottom of the page with an animated spectral equalizer that cycles through Casper's top 5 tracks with view counts and direct YouTube links. Also added scroll-spy to the navigation with an animated glowing underline that physically slides between sections using Framer Motion layoutId spring transitions. Both features reinforce the ghost theme and add interactive engagement without leaving the site.
-[**See it live →**](https://casper-tng-website.vercel.app)
+Added a Netflix Top 10-style 'Top Hits' section to the Hub landing page — horizontally scrollable strip of the 10 most-viewed productions with oversized hollow neon rank numbers, cinematic thumbnail cards with hover zoom + glow, per-rank color theming (#1 gold → #10 gold), animated view count badges, and staggered scroll-reveal animations. Each card deep-links to /video/:youtubeId. 12 new tests, 365 total passing.
+[**See it live →**](https://tdotssolutionsz.com)
 
 **Highlights:**
-- Animated spectral equalizer with staggered CSS bars creates a live music feel
-- Spring-physics animated nav underline slides between sections as you scroll
-- Track cycling with crossfade animation rotates through 5 top tracks every 8 seconds
+- Oversized hollow neon rank numbers (#1-#10) with -webkit-text-stroke and per-rank color theming — gold for #1, neon pink for #2, cyan for #3
+- Cinematic thumbnail cards with hover zoom, tinted glow shadows via CSS color-mix(), and animated view count badges
+- Staggered IntersectionObserver reveal animations with CSS custom property delays — zero JS animation overhead
 
-`+148/-117 lines`
+`+527/-3 lines`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
