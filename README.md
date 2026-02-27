@@ -66,19 +66,19 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 > **Quick links:** [Featured Projects](#-featured-projects) · [All 27 Projects](#-all-27-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 25, 2026*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 26, 2026*
 
-**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/TdotsSolutionsz Music Video Portfolio)**
+**Tonight's build: [casper-tng-website](https://github.com/DareDev256/casper-tng-website)**
 
-Added a Netflix Top 10-style 'Top Hits' section to the Hub landing page — horizontally scrollable strip of the 10 most-viewed productions with oversized hollow neon rank numbers, cinematic thumbnail cards with hover zoom + glow, per-rank color theming (#1 gold → #10 gold), animated view count badges, and staggered scroll-reveal animations. Each card deep-links to /video/:youtubeId. 12 new tests, 365 total passing.
-[**See it live →**](https://tdotssolutionsz.com)
+Added three high-impact visual features to Casper TNG's site: a 32-bar spectral audio equalizer that pulses between Hero and Videos, spring-animated count-up stats (203K+, 22M+, 113K), and a ghostly blue scroll progress bar. Zero new dependencies, all respect prefers-reduced-motion. Version bumped to 1.3.0.
+[**See it live →**](https://casper-tng.vercel.app)
 
 **Highlights:**
-- Oversized hollow neon rank numbers (#1-#10) with -webkit-text-stroke and per-rank color theming — gold for #1, neon pink for #2, cyan for #3
-- Cinematic thumbnail cards with hover zoom, tinted glow shadows via CSS color-mix(), and animated view count badges
-- Staggered IntersectionObserver reveal animations with CSS custom property delays — zero JS animation overhead
+- 32-bar SpectralEqualizer with bell-curve heights, staggered timing, and spectral blue glow — activates on scroll
+- Hero stats count up from zero with spring physics deceleration for satisfying visual impact
+- Scroll progress bar with spectral gradient and spring-dampened smoothness tracks page position
 
-`+527/-3 lines`
+`+195/-7 lines`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
