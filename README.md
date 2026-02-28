@@ -66,16 +66,16 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 > **Quick links:** [Featured Projects](#-featured-projects) · [All 27 Projects](#-all-27-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 27, 2026*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 28, 2026*
 
 **Tonight's build: [pulsemap](https://github.com/DareDev256/pulsemap)**
 
-Introducing an engaging interactive pulse animation on map clicks! Watch as a dynamic ripple effect visually confirms your selection and adds a layer of polish to the pulsemap experience.
+Stop the scroll with a vibrant, interactive map visualization! Pulsemap now features animated data pulses that radiate across a dynamic map, offering an immediate, visual understanding of real-time activity.
 
 **Highlights:**
-- Visually striking interactive 'pulse' animation triggered on map click.
-- Enhances user feedback and adds dynamic flair to the map visualization.
-- Demo-ready feature that immediately captures attention.
+- Dynamic, animated map visualization of 'pulses'.
+- Demo-ready with simulated data and smooth animations.
+- Portfolio-ready README with feature showcase.
 
 `+151/-103 lines`
 <!-- SHOWCASE_SECTION_END -->
