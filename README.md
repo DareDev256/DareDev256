@@ -66,19 +66,18 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 > **Quick links:** [Featured Projects](#-featured-projects) · [All 27 Projects](#-all-27-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 26, 2026*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 27, 2026*
 
-**Tonight's build: [casper-tng-website](https://github.com/DareDev256/casper-tng-website)**
+**Tonight's build: [pulsemap](https://github.com/DareDev256/pulsemap)**
 
-Added three high-impact visual features to Casper TNG's site: a 32-bar spectral audio equalizer that pulses between Hero and Videos, spring-animated count-up stats (203K+, 22M+, 113K), and a ghostly blue scroll progress bar. Zero new dependencies, all respect prefers-reduced-motion. Version bumped to 1.3.0.
-[**See it live →**](https://casper-tng.vercel.app)
+Introducing an engaging interactive pulse animation on map clicks! Watch as a dynamic ripple effect visually confirms your selection and adds a layer of polish to the pulsemap experience.
 
 **Highlights:**
-- 32-bar SpectralEqualizer with bell-curve heights, staggered timing, and spectral blue glow — activates on scroll
-- Hero stats count up from zero with spring physics deceleration for satisfying visual impact
-- Scroll progress bar with spectral gradient and spring-dampened smoothness tracks page position
+- Visually striking interactive 'pulse' animation triggered on map click.
+- Enhances user feedback and adds dynamic flair to the map visualization.
+- Demo-ready feature that immediately captures attention.
 
-`+195/-7 lines`
+`+151/-103 lines`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
