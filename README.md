@@ -66,18 +66,18 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 > **Quick links:** [Featured Projects](#-featured-projects) · [All 27 Projects](#-all-27-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Feb 28, 2026*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 1, 2026*
 
-**Tonight's build: [pulsemap](https://github.com/DareDev256/pulsemap)**
+**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/TdotsSolutionsz Music Video Portfolio)**
 
-Stop the scroll with a vibrant, interactive map visualization! Pulsemap now features animated data pulses that radiate across a dynamic map, offering an immediate, visual understanding of real-time activity.
+Introduced a visually stunning and interactive music video carousel, allowing users to seamlessly browse and preview featured music videos. This enhancement aims to significantly boost engagement and encourage exploration of the portfolio's content.
 
 **Highlights:**
-- Dynamic, animated map visualization of 'pulses'.
-- Demo-ready with simulated data and smooth animations.
-- Portfolio-ready README with feature showcase.
+- Visually striking carousel with smooth slide transitions.
+- Interactive "Watch Now" buttons for direct engagement.
+- Responsive design ensuring optimal viewing on all devices.
 
-`+151/-103 lines`
+`+173/-23 lines`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
