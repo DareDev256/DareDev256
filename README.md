@@ -6,7 +6,8 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=DareDev256&color=blueviolet&style=flat-square&label=Profile+Views)
 [![License](https://img.shields.io/badge/License-MIT-A855F7?style=flat-square)](LICENSE)
-[![Repos](https://img.shields.io/badge/Public_Repos-27-6C63FF?style=flat-square&logo=github&logoColor=white)](https://github.com/DareDev256?tab=repositories)
+[![Repos](https://img.shields.io/badge/Public_Repos-28-6C63FF?style=flat-square&logo=github&logoColor=white)](https://github.com/DareDev256?tab=repositories)
+[![Stars](https://img.shields.io/badge/Total_Stars-35-FFD700?style=flat-square&logo=star&logoColor=white)](https://github.com/DareDev256)
 [![Deployments](https://img.shields.io/badge/Live_Deployments-16+-10B981?style=flat-square&logo=vercel&logoColor=white)](https://jamesdare.com)
 [![Commits](https://img.shields.io/badge/Total_Commits-1%2C257+-E8B931?style=flat-square&logo=git&logoColor=white)](https://github.com/DareDev256)
 [![Ecosystem](https://img.shields.io/badge/AI_Ecosystem-24%2F7-FF6B6B?style=flat-square&logo=robot&logoColor=white)](https://passion.jamesdare.com)
@@ -22,7 +23,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 <div align="center">
 
-`🏆 Gold Record` · `🎬 350+ Videos Directed` · `📦 27 Public Repos` · `🚀 16+ Live Deployments` · `🔄 1,257+ Commits` · `🤖 1 AI Ecosystem (24/7)`
+`🏆 Gold Record` · `🎬 350+ Videos Directed` · `📦 28 Public Repos` · `⭐ 35 Stars` · `🚀 16+ Live Deployments` · `🔄 1,257+ Commits` · `🤖 1 AI Ecosystem (24/7)`
 
 </div>
 
@@ -45,7 +46,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Multi-module autonomous AI system running 24/7 — 145+ modules, 46K+ LOC, 1,257+ commits. Orchestrates 36 repos, 3 LLM backends, real subprocess agents, and a shared memory MCP server |
 | 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Passion Agent Command Terminal — cyberpunk HUD with 30+ live panels, 9 tabs, 18 avatar states, Navi Chat, voice system, evolution/pet care mechanics. Next.js 16 + React 19 |
-| 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro XML — AI agents can now edit professional video timelines with natural language. ⭐ 9 stars |
+| 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro XML — AI agents can now edit professional video timelines with natural language. ⭐ 16 stars |
 | 🟢 | **LLM Eval Suite** | 6-tool evaluation toolkit: [bias-buster](https://github.com/DareDev256/bias-buster), [token-prophet](https://github.com/DareDev256/token-prophet), [hallucination-hunter](https://github.com/DareDev256/hallucination-hunter), [prompt-craft](https://github.com/DareDev256/prompt-craft), [tool-match](https://github.com/DareDev256/tool-match) |
 | 🟢 | **[Red Team Arena](https://github.com/DareDev256/red-team-arena)** [![Play](https://img.shields.io/badge/▶_Play-red?style=flat-square)](https://red-team-arena.vercel.app) | Adversarial LLM testing platform — find where models break before users do |
 | 🟡 | **Viral Clone** *(private)* | AI content pipeline: viral TikTok → original short-form video via Claude, Gemini, Perplexity & Whisper. Telegram bot UI, 43+ tests |
@@ -63,12 +64,12 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 ## 🔧 Latest From the Workshop
 
-> **Quick links:** [Featured Projects](#-featured-projects) · [All 27 Projects](#-all-27-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
+> **Quick links:** [Featured Projects](#-featured-projects) · [All 28 Projects](#-all-28-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
 
 <!-- SHOWCASE_SECTION_START -->
 > *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 3, 2026*
 
-**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/TdotsSolutionsz Music Video Portfolio)**
+**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio)**
 
 Introduced a stunning 'Featured Video Showcase' with smooth transitions and interactive elements. Dive into the portfolio's highlights with a single click!
 
@@ -195,25 +196,26 @@ Every Claude Code session — on any machine — starts with full context from p
 
 ## 🎯 Open To
 
-**AI Solutions Engineer** · **AI Product Manager** · **Founding Engineer**
+**AI Solutions Engineer** · **Developer Relations** · **Solutions Engineer** · **Founding Engineer**
 
 | What I Bring | Evidence |
 |-------------|----------|
 | AI product development | MCP servers, RAG pipelines, autonomous agents, LLM eval suites — all shipped |
 | Creative-to-technical leadership | 350+ music videos directed → now shipping AI tools daily |
-| Full-stack shipping velocity | 27 public repos, 16+ live deployments, 1,257+ commits, continuous iteration |
+| Full-stack shipping velocity | 28 public repos, 16+ live deployments, 1,257+ commits, continuous iteration |
 | Technical communication | Complex systems → clear documentation and demos |
+| Developer experience | Built tools developers actually use — 16 stars on first MCP server, 6-tool eval suite |
 
 ---
 
 <details>
-<summary><strong>🚀 All 27 Projects</strong> <i>(click to expand)</i></summary>
+<summary><strong>🚀 All 28 Projects</strong> <i>(click to expand)</i></summary>
 
 ### AI & Automation
 
 | Project | What It Does | Stack |
 |---------|-------------|-------|
-| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐9 | First AI-powered MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
+| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐16 | First AI-powered MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | 145+ module autonomous AI system — 24/7 brain cycles, 36 repos, 3 LLM backends, 1,257+ commits | Node.js, Claude SDK |
 | PACT Dashboard *(private)* | Cyberpunk command terminal — 30+ panels, voice, avatar, Navi Chat | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY, Claude |
@@ -254,7 +256,7 @@ Every Claude Code session — on any machine — starts with full context from p
 | [seanpane-website](https://github.com/DareDev256/seanpane-website) | Official site for Toronto rapper Seanpane (Blackheart Baby) — [**Live**](https://seanpane-website.vercel.app) | TypeScript, Next.js |
 | [whyg35-website](https://github.com/DareDev256/whyg35-website) | Artist website for WhyG — [**Live**](https://whyg35-website.vercel.app) | TypeScript |
 | [shortiie-raw-website](https://github.com/DareDev256/shortiie-raw-website) | Artist website for Shortiie Raw — [**Live**](https://shortiie-raw-website.vercel.app) | TypeScript |
-| [casper-tng-website](https://github.com/DareDev256/casper-tng-website) | Official site for Toronto rapper Casper TNG — [**Live**](https://casper-tng-website.vercel.app) | Next.js, Tailwind |
+| casper-tng-website *(private)* | Official site for Toronto rapper Casper TNG — [**Live**](https://casper-tng-website.vercel.app) | Next.js, Tailwind |
 | musthavefrenchies *(private)* | French Bulldog breeder website | TypeScript |
 
 ### Tools & Templates
@@ -264,7 +266,7 @@ Every Claude Code session — on any machine — starts with full context from p
 | [Vehicle-Hour-Tracker](https://github.com/DareDev256/Vehicle-Hour-Tracker) | Vehicle detailing hour tracker — Streamlit web app with SQLite/Supabase | TypeScript, Streamlit |
 | [fandom-wiki-bot-template](https://github.com/DareDev256/fandom-wiki-bot-template) *(private)* | Discord bot template for community wiki editing with approval workflows | Python, Discord |
 | [typemaster-template](https://github.com/DareDev256/typemaster-template) | Forkable typing game for learning any topic | TypeScript, Web |
-| [awesome-mcp-servers](https://github.com/DareDev256/awesome-mcp-servers) | Curated collection of MCP servers | Markdown |
+| [awesome-mcp-servers](https://github.com/DareDev256/awesome-mcp-servers) *(fork)* | Curated collection of MCP servers | Markdown |
 
 </details>
 
@@ -331,11 +333,11 @@ Every Claude Code session — on any machine — starts with full context from p
 2024 ─── Pivoted. Same obsession, different medium.
   │
   ├── First commit. Then 1,257 more.
-  ├── Built the first MCP server for Final Cut Pro (⭐ 9 stars)
+  ├── Built the first MCP server for Final Cut Pro (⭐ 16 stars)
   ├── Shipped 16+ live deployments across AI tools, games, client sites
   ├── Created an autonomous AI agent that runs 24/7 and writes real code
   │
-2026 ─── 27 repos. 145+ modules. One ecosystem. Still shipping.
+2026 ─── 28 repos. 145+ modules. One ecosystem. Still shipping.
 ```
 
 > The throughline: **I make things people actually use.** Videos that charted. Tools that ship. An AI partner that commits code while I sleep. The medium changed — the craft didn't.
@@ -346,7 +348,7 @@ Every Claude Code session — on any machine — starts with full context from p
 
 | Claim | Receipt |
 |-------|---------|
-| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** MCP server for Final Cut Pro. ⭐ 9 stars, real users, real video editors |
+| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** MCP server for Final Cut Pro. ⭐ 16 stars, 2 forks, real users, real video editors |
 | "I ship fast" | 6-tool LLM eval suite — designed, built, and deployed to Vercel in a single sprint. All 6 live right now |
 | "My AI agent is real" | 1,257+ commits across 36 repos. Passion Agent runs 60 brain cycles/day on a Mac Mini. It doesn't demo — it ships |
 | "I build for clients" | 5 artist websites live in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
