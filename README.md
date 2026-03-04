@@ -69,16 +69,16 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 <!-- SHOWCASE_SECTION_START -->
 > *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 3, 2026*
 
-**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio)**
+**Tonight's build: [casper-tng-website](https://github.com/DareDev256/casper-tng-website)**
 
-Introduced a stunning 'Featured Video Showcase' with smooth transitions and interactive elements. Dive into the portfolio's highlights with a single click!
+Introduced a dynamic 'Character Showcase' for interactive exploration of Casper TNG characters, featuring animations and detailed bios. Enhances visual appeal and user engagement.
 
 **Highlights:**
-- Visually striking 'Featured Video Showcase' that immediately grabs attention.
-- Smooth, interactive video transitions for an engaging user experience.
-- Professionally polished README with a demo GIF for instant understanding.
+- Interactive Character Showcase: Select and view detailed character profiles with animations.
+- Enhanced Visual Polish: Smooth transitions, responsive design, and subtle hover effects.
+- Portfolio-Ready README: Comprehensive documentation with a dedicated section for the new showcase (ready for GIF/screenshot insertion).
 
-`+173/-23 lines`
+`+195/-7 lines`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
