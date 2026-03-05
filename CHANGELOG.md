@@ -7,6 +7,18 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.5] - 2026-03-05
+
+### Added
+- Quick Reference table at top of FOR_DARE.md — cheat sheet for common maintenance tasks (update counts, add projects, test changes)
+- Dynamic Content Zones section documenting the two auto-updated README sections (daily status + showcase) with marker names, update frequency, and safe-editing rules
+- Troubleshooting section covering 5 common issues: broken badges, stale stats cards, stale daily status, wrong counts, and GitHub rendering quirks
+- Health check links in External Dependencies table for quick badge service verification
+
+### Changed
+- External Dependencies table now includes a Health Check column with clickable test URLs
+- Updated FOR_DARE.md version history to include v0.6.5
+
 ## [0.6.4] - 2026-03-05
 
 ### Changed

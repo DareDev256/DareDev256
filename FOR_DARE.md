@@ -1,5 +1,20 @@
 # FOR_DARE.md — DareDev256 GitHub Profile README
 
+## Quick Reference
+
+| Need to... | Do this |
+|------------|---------|
+| Update daily status | Passion Agent handles this automatically via `DAILY_STATUS_START/END` markers |
+| Update showcase | Passion Agent writes between `SHOWCASE_SECTION_START/END` markers |
+| Check badge health | Visit profile page, look for broken image icons. See [Troubleshooting](#troubleshooting) |
+| Bump repo count | Search `28` in README.md — appears in 4 places (badges, metrics ribbon, All Projects header, Open To table) |
+| Bump commit count | Search `1,257` in README.md — appears in 6 places (badges, metrics ribbon, Currently Building, How We Work, The Arc, Proof of Craft) |
+| Add a new project | Add to the correct category table inside `<details>`, update repo count, update Featured if it's a flagship |
+| Change job targets | Edit the "Open To" section header and evidence table |
+| Test changes locally | `grip README.md` or push to a branch and preview at `github.com/DareDev256/DareDev256/blob/<branch>/README.md` |
+
+---
+
 ## What This Thing Actually Does
 
 This repo powers the **GitHub profile README** — the first thing anyone sees when visiting [github.com/DareDev256](https://github.com/DareDev256). GitHub treats any repo named identically to your username as a special "profile" repo and renders its `README.md` directly on the profile page.
@@ -84,12 +99,50 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 9. **v0.6.1** — Showcase highlights for TdotsSolutionsz design token system
 10. **v0.6.2** — Metrics refresh: 145+ modules, 46K+ LOC, 36 repos, 1,257+ commits
 11. **v0.6.3** — "The Arc" career timeline, "Proof of Craft" claim→receipt table, action-oriented CTAs
-12. **v0.6.4** (current) — FOR_DARE.md sync: updated layout map, version history, metrics, maintenance checklist
+12. **v0.6.4** — FOR_DARE.md sync: updated layout map, version history, metrics, maintenance checklist
+13. **v0.6.5** (current) — Added Quick Reference card, Dynamic Content Zones docs, Troubleshooting guide, enhanced External Dependencies with health checks
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
 ### Repo Count Accuracy
 The README claims "28 public repos" — this includes the `awesome-mcp-servers` fork. If counting only original repos, it's 27. Keep this number updated as new repos are created.
+
+## Dynamic Content Zones
+
+Two sections of README.md are auto-updated by Passion Agent. They use HTML comment markers as boundaries — **never delete or rename these markers**.
+
+### Daily Status Block
+
+```
+<!-- DAILY_STATUS_START -->
+> *Updated by [Passion.EXE](...) — <date>*
+> Today: **X tasks** across **Y repos** · ...
+<!-- DAILY_STATUS_END -->
+```
+
+**Updated:** Every Passion Agent brain cycle that touches this repo (typically daily).
+**What it shows:** Task count, repos touched, lines changed, success rate, latest task types.
+**If it breaks:** The markers are intact but content is stale. Check Passion Agent logs for `daily-status` task failures.
+
+### Showcase Block
+
+```
+<!-- SHOWCASE_SECTION_START -->
+> *Last updated by [Passion Agent](...) — <date>*
+**Tonight's build: [repo-name](...)**
+...
+<!-- SHOWCASE_SECTION_END -->
+```
+
+**Updated:** After notable builds, typically when Passion Agent completes a feature-level task on any repo.
+**What it shows:** Latest shipped work with highlights and line count.
+**If it breaks:** Check `passion-profile.mjs` in the Passion Agent codebase — that's the module responsible for showcase updates.
+
+### Safe Editing Rule
+
+You can freely edit anything **outside** these marker pairs. Content **inside** the markers will be overwritten by the next agent update. If you need to make a permanent change to the format of these sections, update the Passion Agent module that generates them.
+
+---
 
 ## Patterns Worth Stealing
 
@@ -176,9 +229,38 @@ When updating this README, verify:
 
 All rendering depends on external services. If any break, the profile degrades visually:
 
-| Service | URL | Fallback |
-|---------|-----|----------|
-| Typing SVG | readme-typing-svg.demolab.com | Static text header |
-| Shields.io | img.shields.io | Plain text badges |
-| Profile Summary Cards | github-profile-summary-cards.vercel.app | Remove stats section |
-| Komarev Views | komarev.com | Remove view counter |
+| Service | URL | Health Check | Fallback |
+|---------|-----|-------------|----------|
+| Typing SVG | readme-typing-svg.demolab.com | [Test](https://readme-typing-svg.demolab.com?lines=test) | Static `# James Dare` header |
+| Shields.io | img.shields.io | [Test](https://img.shields.io/badge/test-passing-green) | Plain text in parentheses |
+| Profile Summary Cards | github-profile-summary-cards.vercel.app | [Test](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DareDev256&theme=tokyonight) | Remove stats section entirely |
+| Komarev Views | komarev.com | [Test](https://komarev.com/ghpvc/?username=DareDev256) | Remove view counter badge |
+
+---
+
+## Troubleshooting
+
+### Broken badge images on profile
+**Symptom:** One or more badges render as broken image icons or alt text.
+**Cause:** External badge service is down or rate-limited.
+**Fix:** Click the health check links above. If the service is down, either wait (usually recovers in hours) or temporarily replace with static text. Shields.io is the most critical — if it goes down, 20+ badges break simultaneously.
+
+### Stats cards not loading
+**Symptom:** GitHub Stats section shows broken images.
+**Cause:** `github-profile-summary-cards.vercel.app` hit Vercel's free-tier rate limit.
+**Fix:** These are the *replacement* for the even-more-unreliable `github-readme-stats`. If they break persistently, consider self-hosting the summary cards app (it's [open source](https://github.com/vn7n24fzkq/github-profile-summary-cards)).
+
+### Daily status shows stale date
+**Symptom:** The "Updated by Passion.EXE" timestamp is days old.
+**Cause:** Passion Agent's brain cycle hasn't run the daily-status task, or it failed.
+**Fix:** Check Passion Agent logs. The daily status update is a low-priority task — it only runs when the agent has spare cycles. You can trigger it manually by running the profile update module.
+
+### Repo/commit counts are wrong
+**Symptom:** Badge says "28 repos" but you have 30.
+**Cause:** These are hardcoded in the README (not dynamic badges). They need manual updates.
+**Fix:** Search the README for the stale number. Repo count appears in ~4 places, commit count in ~6. Update all instances, bump patch version, add CHANGELOG entry.
+
+### Profile page looks different from raw README
+**Symptom:** Layout or formatting differs between raw Markdown preview and the rendered profile.
+**Cause:** GitHub's Markdown renderer strips certain HTML attributes (`style`, `class`, etc.) and has its own CSS. Inline `width` on `<td>` works, but `<div style="display:flex">` won't.
+**Fix:** Only use GitHub-safe HTML: `align`, `width`, `height` attributes. Test on an actual branch push, not just a local Markdown previewer.
