@@ -245,7 +245,7 @@ Every Claude Code session — on any machine — starts with full context from p
 | [tdotssolutionsz-portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio) | Synthwave 3D portfolio — design tokens, parallax depth, 101 videos — [**Live**](https://tdotssolutionsz.com) | Three.js, CSS Tokens |
 | [pulsemap](https://github.com/DareDev256/pulsemap) | Real-time global disease surveillance — weather radar for outbreaks — [**Live**](https://pulsemap-three.vercel.app) | Mapbox, React |
 | [music-time-machine](https://github.com/DareDev256/music-time-machine) | Music intelligence dashboard — Spotify, YouTube, Billboard, Genius | Next.js, APIs |
-| [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | AI-powered spaced repetition — notes → personalized quizzes via GPT-4 | TypeScript, FSRS |
+| [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | AI-powered spaced repetition with premium micro-interactions, 45 Vitest tests, and security-hardened API layer | TypeScript, FSRS, Vitest |
 | [buildright](https://github.com/DareDev256/buildright) | Duolingo-style mobile learning app for home building | React Native |
 
 ### Client Websites
@@ -287,6 +287,7 @@ Every Claude Code session — on any machine — starts with full context from p
 ![Phaser](https://img.shields.io/badge/Phaser-4B8BBE?style=flat-square&logo=data:image/svg+xml;base64,PHN2Zy8+&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
 
 **AI & Infrastructure**
 
@@ -304,7 +305,7 @@ Every Claude Code session — on any machine — starts with full context from p
 ![Mapbox](https://img.shields.io/badge/Mapbox-000000?style=flat-square&logo=mapbox&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
 
-**Specializations:** MCP (Model Context Protocol) · Claude Code SDK · RAG Pipelines · Vector DBs · Autonomous Agents · LLM Evaluation · Playwright Automation · Prompt Engineering · CSS Design Systems
+**Specializations:** MCP (Model Context Protocol) · Claude Code SDK · RAG Pipelines · Vector DBs · Autonomous Agents · LLM Evaluation · Playwright Automation · Vitest · API Security Hardening · Prompt Engineering · CSS Design Systems
 
 ---
 
@@ -352,7 +353,7 @@ Every Claude Code session — on any machine — starts with full context from p
 | "I ship fast" | 6-tool LLM eval suite — designed, built, and deployed to Vercel in a single sprint. All 6 live right now |
 | "My AI agent is real" | 1,257+ commits across 36 repos. Passion Agent runs 60 brain cycles/day on a Mac Mini. It doesn't demo — it ships |
 | "I build for clients" | 5 artist websites live in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
-| "I care about quality" | 474+ tests in fcpxml-mcp-server alone. Security-hardened. Zero lint errors. Every repo has a CHANGELOG |
+| "I care about quality" | 474+ tests in fcpxml-mcp-server, 45 Vitest tests in memory-master-mvp. Security-hardened API layers with AbortController timeouts. Every repo has a CHANGELOG |
 
 ---
 

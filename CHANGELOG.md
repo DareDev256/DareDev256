@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.6] - 2026-03-05
+
+### Added
+- Vitest badge in tech stack reflecting adoption across ecosystem projects
+- Vitest and API Security Hardening added to specializations list
+- Testing evidence in Proof of Craft section: 45 Vitest tests (memory-master-mvp) and AbortController-hardened API layers
+
+### Changed
+- Updated memory-master-mvp description in All Projects to reflect premium micro-interactions, 45-test Vitest suite, and security-hardened fetch layer
+- Proof of Craft quality row now cites specific security patterns (AbortController timeouts) alongside test counts
+
 ## [0.6.5] - 2026-03-05
 
 ### Added
