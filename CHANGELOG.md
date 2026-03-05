@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.8] - 2026-03-05
+
+### Changed
+- Updated PACT Dashboard descriptions across 4 sections (Currently Building, Featured Projects, All Projects, architecture diagram) to reflect signal-based tab auto-selection, 7-binding global keyboard shortcut system with animated cheat sheet overlay, and iframe sandbox security hardening
+- Strengthened Proof of Craft quality row with iframe sandboxing (OWASP A05:2021) and HTTPS-only origin validation evidence
+
 ## [0.6.7] - 2026-03-05
 
 ### Fixed

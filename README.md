@@ -45,7 +45,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Multi-module autonomous AI system running 24/7 — 145+ modules, 46K+ LOC, 1,257+ commits. Orchestrates 36 repos, 3 LLM backends, real subprocess agents, and a shared memory MCP server |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Passion Agent Command Terminal — cyberpunk HUD with 30+ live panels, 9 tabs, 18 avatar states, Navi Chat, voice system, evolution/pet care mechanics. Next.js 16 + React 19 |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Passion Agent Command Terminal — cyberpunk HUD with 30+ live panels, 9 tabs, signal-based auto-navigation, global keyboard shortcuts with cheat sheet overlay, iframe-sandboxed embeds with HTTPS-only origins. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro XML — AI agents can now edit professional video timelines with natural language. ⭐ 16 stars |
 | 🟢 | **LLM Eval Suite** | 6-tool evaluation toolkit: [bias-buster](https://github.com/DareDev256/bias-buster), [token-prophet](https://github.com/DareDev256/token-prophet), [hallucination-hunter](https://github.com/DareDev256/hallucination-hunter), [prompt-craft](https://github.com/DareDev256/prompt-craft), [tool-match](https://github.com/DareDev256/tool-match) |
 | 🟢 | **[Red Team Arena](https://github.com/DareDev256/red-team-arena)** [![Play](https://img.shields.io/badge/▶_Play-red?style=flat-square)](https://red-team-arena.vercel.app) | Adversarial LLM testing platform — find where models break before users do |
@@ -110,7 +110,7 @@ Introduced a dynamic 'Character Showcase' for interactive exploration of Casper 
 
 ### PACT Dashboard *(private)*
 
-**Passion Agent Command Terminal** — cyberpunk HUD with 30+ live panels, 9 tabs, 18 avatar states, Navi Chat, voice system, evolution & pet care mechanics.
+**Passion Agent Command Terminal** — cyberpunk HUD with 30+ live panels, 9 tabs, signal-based auto-navigation, 7-binding keyboard shortcut system with animated cheat sheet, iframe-sandboxed embeds. Voice, avatar, Navi Chat.
 
 `Next.js 16` `React 19` `TanStack Query` `Framer Motion` `SSE`
 
@@ -181,7 +181,7 @@ Introduced a dynamic 'Character Showcase' for interactive exploration of Casper 
 │     └── Discord Bot ─── 916+ commands, real-time control        │
 │                                                                 │
 │     ▼                                                           │
-│   PACT Dashboard ─── Cyberpunk HUD, 30+ panels, voice, SSE      │
+│   PACT Dashboard ─── Cyberpunk HUD, 30+ panels, shortcuts, SSE  │
 │     ▼                                                           │
 │   Passion Memory MCP ─── Shared brain across all sessions       │
 │     ▼                                                           │
@@ -217,7 +217,7 @@ Every Claude Code session — on any machine — starts with full context from p
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐16 | First AI-powered MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | 145+ module autonomous AI system — 24/7 brain cycles, 36 repos, 3 LLM backends, 1,257+ commits | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Cyberpunk command terminal — 30+ panels, voice, avatar, Navi Chat | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Cyberpunk command terminal — 30+ panels, keyboard shortcuts, signal-based auto-nav, security-hardened embeds | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY, Claude |
 | [passion-site](https://github.com/DareDev256/passion-site) | Passion's public website — live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [Ultimate-Image-Video-Prompt-Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder for Nano Banana, Veo3, DALL-E, Sora, Kling — [**Live**](https://web-ten-vert-46.vercel.app/) | TypeScript, AI |
@@ -353,7 +353,7 @@ Every Claude Code session — on any machine — starts with full context from p
 | "I ship fast" | 6-tool LLM eval suite — designed, built, and deployed to Vercel in a single sprint. All 6 live right now |
 | "My AI agent is real" | 1,257+ commits across 36 repos. Passion Agent runs 60 brain cycles/day on a Mac Mini. It doesn't demo — it ships |
 | "I build for clients" | 5 artist websites live in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
-| "I care about quality" | 474+ tests in fcpxml-mcp-server, 45 Vitest tests in memory-master-mvp. Security-hardened API layers with AbortController timeouts. Every repo has a CHANGELOG |
+| "I care about quality" | 474+ tests in fcpxml-mcp-server, 45 Vitest tests in memory-master-mvp. Security-hardened: AbortController timeouts, iframe sandboxing (OWASP A05:2021), HTTPS-only origin validation. Every repo has a CHANGELOG |
 
 ---
 
