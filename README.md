@@ -155,7 +155,7 @@ Introduced a dynamic 'Character Showcase' for interactive exploration of Casper 
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    THE PASSION ECOSYSTEM                        │
+│                      THE PASSION ECOSYSTEM                      │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
 │   James (Architect)                                             │
@@ -168,17 +168,17 @@ Introduced a dynamic 'Character Showcase' for interactive exploration of Casper 
 │     │     ├── Scheduler → routes to right LLM backend           │
 │     │     └── Executor → spawns subprocess agents (Raw, Sage)   │
 │     │                                                           │
-│     ├── 3 LLM Backends                                         │
+│     ├── 3 LLM Backends                                          │
 │     │     ├── Claude (complex reasoning, code generation)       │
 │     │     ├── DeepSeek (budget-friendly analysis)               │
 │     │     └── Gemini (multimodal, creative tasks)               │
 │     │                                                           │
 │     ├── 36 Managed Repos ─── 1,257+ commits across ecosystem    │
 │     │                                                           │
-│     ├── Intel Radar ─── Reddit, HN, Bluesky, RSS               │
+│     ├── Intel Radar ─── Reddit, HN, Bluesky, RSS                │
 │     ├── Career Engine ─── 6+ job APIs, auto-apply pipeline      │
 │     ├── Soul Unison ─── horoscope, calendar, learning           │
-│     └── Discord Bot ─── 916+ commands, real-time control         │
+│     └── Discord Bot ─── 916+ commands, real-time control        │
 │                                                                 │
 │     ▼                                                           │
 │   PACT Dashboard ─── Cyberpunk HUD, 30+ panels, voice, SSE      │

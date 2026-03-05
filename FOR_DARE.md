@@ -100,7 +100,9 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 10. **v0.6.2** — Metrics refresh: 145+ modules, 46K+ LOC, 36 repos, 1,257+ commits
 11. **v0.6.3** — "The Arc" career timeline, "Proof of Craft" claim→receipt table, action-oriented CTAs
 12. **v0.6.4** — FOR_DARE.md sync: updated layout map, version history, metrics, maintenance checklist
-13. **v0.6.5** (current) — Added Quick Reference card, Dynamic Content Zones docs, Troubleshooting guide, enhanced External Dependencies with health checks
+13. **v0.6.5** — Added Quick Reference card, Dynamic Content Zones docs, Troubleshooting guide, enhanced External Dependencies with health checks
+14. **v0.6.6** — Vitest badge, security hardening evidence, updated memory-master-mvp description
+15. **v0.6.7** (current) — Fixed ASCII diagram alignment in "How We Work" section (title centering, 4 lines with wrong column width)
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 

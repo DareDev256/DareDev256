@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.7] - 2026-03-05
+
+### Fixed
+- ASCII diagram alignment in "How We Work" section: centered title text, fixed 3 lines with incorrect column width (2 short, 1 wide), ensuring all 34 box lines render at exactly 67 display columns
+- Updated FOR_DARE.md version history to include v0.6.6 and v0.6.7
+
 ## [0.6.6] - 2026-03-05
 
 ### Added
