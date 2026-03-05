@@ -78,12 +78,18 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 3. **v0.2.0** — Restructured for recruiter scanning: value proposition table, proof-based claims, "Open To" section, replaced unreliable badge services
 4. **v0.3.0** — Typing animation header, `for-the-badge` style badges, FOR_DARE.md docs
 5. **v0.4.0** — "How I Work" architecture diagram, sharpened Passion Agent narrative, closing CTA
-6. **v0.4.1** (current) — CHANGELOG with proper semver and full version history, updated FOR_DARE.md
+6. **v0.4.1–v0.4.2** — CHANGELOG with proper semver, FOR_DARE.md docs, contribution model
+7. **v0.5.0** — Visual redesign: centered hero, metrics ribbon, status table, HTML grid for featured projects, collapsible All Projects
+8. **v0.6.0** — Project Goals, Contribution Guidelines, License/Repos/Deployments badges, quick-nav anchors
+9. **v0.6.1** — Showcase highlights for TdotsSolutionsz design token system
+10. **v0.6.2** — Metrics refresh: 145+ modules, 46K+ LOC, 36 repos, 1,257+ commits
+11. **v0.6.3** — "The Arc" career timeline, "Proof of Craft" claim→receipt table, action-oriented CTAs
+12. **v0.6.4** (current) — FOR_DARE.md sync: updated layout map, version history, metrics, maintenance checklist
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
 ### Repo Count Accuracy
-The README claims "16 public repos" — this includes the `awesome-mcp-servers` fork. If counting only original repos, it's 15. Keep this number updated as new repos are created.
+The README claims "28 public repos" — this includes the `awesome-mcp-servers` fork. If counting only original repos, it's 27. Keep this number updated as new repos are created.
 
 ## Patterns Worth Stealing
 
@@ -91,14 +97,20 @@ The README claims "16 public repos" — this includes the `awesome-mcp-servers` 
 The README follows a deliberate information hierarchy:
 1. **Hook** — Typing animation with role titles
 2. **One-liner** — Who you are, what you've done, compressed into one paragraph
-3. **Social proof badges** — Portfolio, LinkedIn, Twitter links immediately visible
-4. **Currently Building** — Shows you're active, not just a dead profile
-5. **Open To** — Makes it explicit what roles you want, with evidence table
-6. **Featured Projects** — Top 3 with descriptions and live demo links
-7. **All Projects** — Categorized table for deep-dive readers
-8. **Tech Stack** — Visual badges for quick scanning
-9. **Stats** — GitHub activity visualization
-10. **Background** — Entertainment-to-engineering career narrative
+3. **Metrics ribbon** — Gold record, repos, stars, deployments, commits, AI ecosystem at a glance
+4. **Project Goals** — What drives every repo (shipped AI, build in public, creative-technical bridge, autonomous collaboration)
+5. **Currently Building** — Status table (🟢/🟡) with live daily status from Passion Agent
+6. **Workshop Showcase** — Latest build highlight, auto-updated by Passion Agent
+7. **Featured Projects** — 2×3 HTML grid with stars, live links, and tech tags
+8. **How We Work** — ASCII architecture diagram showing the Passion ecosystem
+9. **Open To** — Explicit role targeting with claim→evidence table
+10. **All Projects** — Categorized tables inside `<details>` toggle (28 projects across 5 categories)
+11. **Tech Stack** — Two-tier badges: `for-the-badge` for links, `flat-square` for tech grid
+12. **GitHub Stats** — Profile summary cards (tokyonight theme)
+13. **The Arc** — Visual career timeline (2008→2026) using tree characters
+14. **Proof of Craft** — 5 verifiable claim→receipt pairs with direct links to evidence
+15. **Contribution Guidelines** — Fork workflow, conventional commits, PR etiquette
+16. **Closing CTA** — Quote, thesis statement, three action badges
 
 This is not accidental — it's designed to capture attention in the first 5 seconds and give recruiters a reason to click through.
 
@@ -150,7 +162,7 @@ The agent's learning engine (`passion-learn.mjs`) tracks which PRs get merged vs
 
 When updating this README, verify:
 - [ ] All project URLs still resolve (5 live deployments + GitHub links)
-- [ ] Repo count is accurate (currently 16 public repos — includes awesome-mcp-servers fork)
+- [ ] Repo count is accurate (currently 28 public repos — includes awesome-mcp-servers fork)
 - [ ] "Currently Building" section reflects actual current work
 - [ ] Badge services are rendering (check for broken images on profile page)
 - [ ] Stats cards are loading (github-profile-summary-cards.vercel.app)

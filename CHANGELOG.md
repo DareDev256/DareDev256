@@ -7,6 +7,13 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.4] - 2026-03-05
+
+### Changed
+- Synced FOR_DARE.md version history to cover v0.4.1 through v0.6.4 (was stuck at v0.4.1)
+- Updated recruiter-optimized layout map from 10 sections to 16, matching current README structure (added Project Goals, Workshop Showcase, The Arc, Proof of Craft, Contribution Guidelines, metrics ribbon)
+- Fixed stale repo count in maintenance checklist and Repo Count Accuracy section (16 → 28)
+
 ## [0.6.3] - 2026-02-25
 
 ### Changed
