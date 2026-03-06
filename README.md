@@ -305,7 +305,19 @@ Every Claude Code session — on any machine — starts with full context from p
 ![Mapbox](https://img.shields.io/badge/Mapbox-000000?style=flat-square&logo=mapbox&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
 
-**Specializations:** MCP (Model Context Protocol) · Claude Code SDK · RAG Pipelines · Vector DBs · Autonomous Agents · LLM Evaluation · Playwright Automation · Vitest · API Security Hardening · Prompt Engineering · CSS Design Systems
+### Domain Depth
+
+```
+AI Engineering        ████████████████████░  MCP servers, RAG, eval suites, prompt engineering
+Autonomous Systems    ████████████████████░  24/7 agent ops, 145+ modules, self-improving loops
+Frontend              ██████████████████░░░  React 19, Next.js 16, Three.js, Framer Motion
+Creative Technology   ████████████████░░░░░  FCPXML, content pipelines, 350+ videos directed
+Developer Tooling     ███████████████░░░░░░  Claude Code SDK, Vitest, Playwright, CLI tools
+Security Hardening    ████████████░░░░░░░░░  OWASP patterns, iframe sandboxing, input validation
+Infrastructure        ███████████░░░░░░░░░░  Vercel, Tailscale, SQLite, Supabase, CI/CD
+```
+
+> The bars aren't decoration — they map to shipped projects, not tutorials watched. Every "Deep" domain has production code behind it.
 
 ---
 
@@ -354,6 +366,20 @@ Every Claude Code session — on any machine — starts with full context from p
 | "My AI agent is real" | 1,257+ commits across 36 repos. Passion Agent runs 60 brain cycles/day on a Mac Mini. It doesn't demo — it ships |
 | "I build for clients" | 5 artist websites live in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
 | "I care about quality" | 474+ tests in fcpxml-mcp-server, 45 Vitest tests in memory-master-mvp. Security-hardened: AbortController timeouts, iframe sandboxing (OWASP A05:2021), HTTPS-only origin validation. Every repo has a CHANGELOG |
+
+---
+
+## 🔮 What's Next
+
+```
+Now ──── Scaling Passion Agent to multi-machine orchestration
+        Shipping client projects + job search (AI Solutions Engineer)
+
+Next ─── Open-sourcing the agent framework (the how, not just the what)
+        Building MCP servers for creative tools beyond FCPXML
+
+Goal ─── An AI engineering role where creative instincts actually matter
+```
 
 ---
 

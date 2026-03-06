@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.9] - 2026-03-06
+
+### Added
+- Domain Depth section replacing flat specializations text line — visual Unicode bar chart showing expertise levels across 7 domains (AI Engineering, Autonomous Systems, Frontend, Creative Technology, Developer Tooling, Security Hardening, Infrastructure) with corresponding evidence
+- What's Next section before Contribution Guidelines — forward-looking roadmap showing current focus, near-term plans, and career goal in tree-character format matching The Arc's visual style
+
+### Changed
+- Tech Stack section: specializations line removed in favor of the more informative Domain Depth chart
+- README structure now has 18 distinct sections (was 16) for richer narrative
+
 ## [0.6.8] - 2026-03-05
 
 ### Changed

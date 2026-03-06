@@ -103,7 +103,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 13. **v0.6.5** — Added Quick Reference card, Dynamic Content Zones docs, Troubleshooting guide, enhanced External Dependencies with health checks
 14. **v0.6.6** — Vitest badge, security hardening evidence, updated memory-master-mvp description
 15. **v0.6.7** — Fixed ASCII diagram alignment in "How We Work" section (title centering, 4 lines with wrong column width)
-16. **v0.6.8** (current) — Updated PACT Dashboard descriptions with signal-based auto-nav, keyboard shortcuts, iframe sandbox security; strengthened Proof of Craft with OWASP evidence
+16. **v0.6.8** — Updated PACT Dashboard descriptions with signal-based auto-nav, keyboard shortcuts, iframe sandbox security; strengthened Proof of Craft with OWASP evidence
+17. **v0.6.9** (current) — Added Domain Depth visual expertise chart (replaced flat specializations line) and What's Next forward-looking roadmap section
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -162,11 +163,13 @@ The README follows a deliberate information hierarchy:
 9. **Open To** — Explicit role targeting with claim→evidence table
 10. **All Projects** — Categorized tables inside `<details>` toggle (28 projects across 5 categories)
 11. **Tech Stack** — Two-tier badges: `for-the-badge` for links, `flat-square` for tech grid
-12. **GitHub Stats** — Profile summary cards (tokyonight theme)
-13. **The Arc** — Visual career timeline (2008→2026) using tree characters
-14. **Proof of Craft** — 5 verifiable claim→receipt pairs with direct links to evidence
-15. **Contribution Guidelines** — Fork workflow, conventional commits, PR etiquette
-16. **Closing CTA** — Quote, thesis statement, three action badges
+12. **Domain Depth** — Unicode bar chart showing expertise levels across 7 domains with evidence callout
+13. **GitHub Stats** — Profile summary cards (tokyonight theme)
+14. **The Arc** — Visual career timeline (2008→2026) using tree characters
+15. **Proof of Craft** — 5 verifiable claim→receipt pairs with direct links to evidence
+16. **What's Next** — Forward-looking roadmap (current, next, goal) in tree-character format
+17. **Contribution Guidelines** — Fork workflow, conventional commits, PR etiquette
+18. **Closing CTA** — Quote, thesis statement, three action badges
 
 This is not accidental — it's designed to capture attention in the first 5 seconds and give recruiters a reason to click through.
 
