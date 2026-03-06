@@ -7,6 +7,14 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.11] - 2026-03-06
+
+### Added
+- Metrics Sync Map section in FOR_DARE.md — comprehensive cross-reference index mapping 7 hardcoded README metrics (commit count, public repos, module count, LOC, live deployments, managed repos, fcpxml stars) to their exact line numbers (37 total locations across 9 README sections), with source-of-truth references and a step-by-step update procedure
+
+### Changed
+- FOR_DARE.md Content Strategy Evolution updated with v0.6.11 entry
+
 ## [0.6.10] - 2026-03-06
 
 ### Added

@@ -105,7 +105,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 15. **v0.6.7** — Fixed ASCII diagram alignment in "How We Work" section (title centering, 4 lines with wrong column width)
 16. **v0.6.8** — Updated PACT Dashboard descriptions with signal-based auto-nav, keyboard shortcuts, iframe sandbox security; strengthened Proof of Craft with OWASP evidence
 17. **v0.6.9** — Added Domain Depth visual expertise chart (replaced flat specializations line) and What's Next forward-looking roadmap section
-18. **v0.6.10** (current) — Added Design Language reference (color palette, badge hierarchy, layout rules, typography), Update Playbooks for common maintenance operations (new repo, metrics refresh, featured promotion, seasonal refresh)
+18. **v0.6.10** — Added Design Language reference (color palette, badge hierarchy, layout rules, typography), Update Playbooks for common maintenance operations (new repo, metrics refresh, featured promotion, seasonal refresh)
+19. **v0.6.11** (current) — Added Metrics Sync Map to FOR_DARE.md — cross-reference index mapping 7 hardcoded metrics (commits, repos, modules, LOC, deployments, managed repos, fcpxml stars) to their exact README line numbers (37 total locations) with sources of truth and update procedure
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -294,6 +295,106 @@ Step-by-step procedures for the most common maintenance operations. Follow these
 3. Check "The Arc" timeline — add milestones if new achievements landed
 4. Review Proof of Craft — swap weakest claim→receipt for stronger evidence
 5. Bump minor version (this is a content redesign)
+
+## Metrics Sync Map
+
+Every hardcoded number in the README must stay consistent across all its occurrences. This map shows exactly where each metric lives so updates never leave stale values behind.
+
+### Commit Count (`1,257+`)
+
+| Line | Section | Context |
+|------|---------|---------|
+| 12 | Hero badges | `Total_Commits-1%2C257+` (URL-encoded) |
+| 26 | Metrics ribbon | `1,257+ Commits` |
+| 47 | Currently Building | Passion Agent description |
+| 104 | Featured Projects | Passion Agent card |
+| 176 | How We Work diagram | `1,257+ commits across ecosystem` |
+| 205 | Open To table | shipping velocity evidence |
+| 219 | All Projects | Passion Agent row |
+| 348 | The Arc | `Then 1,257 more` |
+| 366 | Proof of Craft | agent commit evidence |
+
+**9 locations.** Source of truth: `git log --oneline | wc -l` across all 36 managed repos.
+
+### Public Repo Count (`28`)
+
+| Line | Section | Context |
+|------|---------|---------|
+| 9 | Hero badges | `Public_Repos-28` |
+| 26 | Metrics ribbon | `28 Public Repos` |
+| 67 | Quick links | `All 28 Projects` anchor text |
+| 205 | Open To table | shipping velocity evidence |
+| 212 | All Projects header | `All 28 Projects` |
+| 353 | The Arc | `28 repos` |
+
+**6 locations.** Source of truth: `https://github.com/DareDev256?tab=repositories` (includes awesome-mcp-servers fork).
+
+### Module Count (`145+`)
+
+| Line | Section | Context |
+|------|---------|---------|
+| 47 | Currently Building | Passion Agent description |
+| 104 | Featured Projects | Passion Agent card |
+| 165 | How We Work diagram | `145+ modules, 46K+ LOC` |
+| 219 | All Projects | Passion Agent row |
+| 312 | Domain Depth | Autonomous Systems evidence |
+| 353 | The Arc | `145+ modules` |
+
+**6 locations.** Source of truth: Passion Agent codebase module count.
+
+### LOC (`46K+`)
+
+| Line | Section | Context |
+|------|---------|---------|
+| 47 | Currently Building | Passion Agent description |
+| 104 | Featured Projects | Passion Agent card |
+| 165 | How We Work diagram | `145+ modules, 46K+ LOC` |
+
+**3 locations.** Source of truth: `cloc` or `tokei` on the Passion Agent repo.
+
+### Live Deployments (`16+`)
+
+| Line | Section | Context |
+|------|---------|---------|
+| 11 | Hero badges | `Live_Deployments-16+` |
+| 26 | Metrics ribbon | `16+ Live Deployments` |
+| 205 | Open To table | shipping velocity evidence |
+| 350 | The Arc | `16+ live deployments` |
+
+**4 locations.** Source of truth: count of Vercel deployments + GitHub Pages sites.
+
+### Managed Repos (`36`)
+
+| Line | Section | Context |
+|------|---------|---------|
+| 47 | Currently Building | `Orchestrates 36 repos` |
+| 104 | Featured Projects | `36 managed repos` |
+| 176 | How We Work diagram | `36 Managed Repos` |
+| 219 | All Projects | `36 repos` |
+| 366 | Proof of Craft | `36 repos` |
+
+**5 locations.** Source of truth: Passion Agent config repo list.
+
+### fcpxml Stars (`16`)
+
+| Line | Section | Context |
+|------|---------|---------|
+| 49 | Currently Building | `16 stars` |
+| 207 | Open To table | `16 stars on first MCP server` |
+| 349 | The Arc | `16 stars` |
+| 364 | Proof of Craft | `16 stars, 2 forks` |
+
+**4 locations.** Source of truth: `https://github.com/DareDev256/fcpxml-mcp-server` star count.
+
+### Update Procedure
+
+1. Search for the **exact current value** (e.g., `1,257`) — don't search just the number
+2. Update every line listed above — **no partial updates**
+3. For the commit badge (line 12), URL-encode commas as `%2C`
+4. For The Arc section, maintain the narrative phrasing (e.g., "Then 1,257 more" not "1,257+ commits")
+5. Bump patch version, add CHANGELOG entry
+
+---
 
 ## Maintenance Checklist
 
