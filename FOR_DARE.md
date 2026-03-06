@@ -104,7 +104,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 14. **v0.6.6** — Vitest badge, security hardening evidence, updated memory-master-mvp description
 15. **v0.6.7** — Fixed ASCII diagram alignment in "How We Work" section (title centering, 4 lines with wrong column width)
 16. **v0.6.8** — Updated PACT Dashboard descriptions with signal-based auto-nav, keyboard shortcuts, iframe sandbox security; strengthened Proof of Craft with OWASP evidence
-17. **v0.6.9** (current) — Added Domain Depth visual expertise chart (replaced flat specializations line) and What's Next forward-looking roadmap section
+17. **v0.6.9** — Added Domain Depth visual expertise chart (replaced flat specializations line) and What's Next forward-looking roadmap section
+18. **v0.6.10** (current) — Added Design Language reference (color palette, badge hierarchy, layout rules, typography), Update Playbooks for common maintenance operations (new repo, metrics refresh, featured promotion, seasonal refresh)
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -176,6 +177,49 @@ This is not accidental — it's designed to capture attention in the first 5 sec
 ### Badge Style Consistency
 All badges use `style=for-the-badge` for visual weight and consistency. Tech stack badges use `style=flat-square` for a more compact, scannable grid. This two-tier system creates visual hierarchy.
 
+## Design Language
+
+The README's visual identity is intentional — every color, badge style, and layout choice maps to a reason. This section exists so edits (human or agent) don't drift the visual system.
+
+### Color Palette
+
+| Color | Hex | Usage | Why |
+|-------|-----|-------|-----|
+| Indigo | `#6C63FF` | Primary brand — hero badges, CTA buttons, typing SVG | Distinctive without being loud; reads well on both light and dark GitHub themes |
+| Orchid | `#A855F7` | License badge, accent | Complements indigo without competing; signals "creative" |
+| Emerald | `#10B981` | Live deployment badges, success states | Universal "live/active" signal; high contrast on dark backgrounds |
+| Gold | `#FFD700` | Star badges, commit count | Maps to GitHub's own star color for instant recognition |
+| Coral | `#FF6B6B` | AI ecosystem badge, passion.jamesdare.com CTA | Warm accent — stands out in the badge bar as the "human" element |
+| Navy | `#0077B5` | LinkedIn badge | LinkedIn's exact brand color — don't change this |
+| Black | `#000000` | X badge, Next.js/Vercel badges | Matches the services' own brand colors |
+
+**Rule:** Never use generic Tailwind/Bootstrap palette colors. Every badge color either matches a brand (`#0077B5` for LinkedIn) or the profile's own palette (`#6C63FF` indigo).
+
+### Badge Style Hierarchy
+
+```
+Hero section links:    style=for-the-badge  (large, action-oriented)
+Metrics ribbon:        plain text with emoji  (scannable, no image load)
+Tech stack grid:       style=flat-square     (compact, information-dense)
+Project star counts:   style=flat-square     (subtle, secondary info)
+```
+
+This two-tier system creates visual weight where it matters (CTAs) and density where scanning matters (tech stack). Mixing styles within a tier breaks the hierarchy.
+
+### Layout Rules
+
+1. **Hero and closing CTA** use `<div align="center">` — everything else is left-aligned
+2. **Featured Projects** use a `<table>` with `width="33%"` cells — not Markdown tables (which can't control column width)
+3. **All Projects** live inside `<details>` to control scroll depth — never promote all 28 projects to top-level
+4. **ASCII diagrams** use exactly 67 display columns — this is the widest that renders without horizontal scroll on mobile GitHub
+5. **Sections flow** hook → proof → detail → CTA — never put detail before proof
+
+### Typography
+
+- **Typing SVG:** Fira Code weight 600, size 22, color `#6C63FF`, 1000ms pause
+- **Code blocks:** Used for ASCII art and domain depth chart — never for inline code snippets (use backtick spans instead)
+- **Emphasis pattern:** Bold for project names and metrics, italic for dates and attributions, never underline
+
 ## Level-Up Takeaways
 
 - **GitHub profile READMEs are marketing, not documentation.** Optimize for the reader's goals (hiring, collaborating), not your own completeness.
@@ -216,6 +260,40 @@ Merge or reject → Passion Agent learns from the decision
 ```
 
 The agent's learning engine (`passion-learn.mjs`) tracks which PRs get merged vs rejected and adjusts future behavior accordingly.
+
+## Update Playbooks
+
+Step-by-step procedures for the most common maintenance operations. Follow these exactly to avoid inconsistencies.
+
+### New Repo Added
+
+1. Add entry to the correct category table inside `<details>` in All Projects
+2. Search `28` (or current count) → update in 4 places: badge, metrics ribbon, All Projects header, Open To table
+3. If it's a flagship: add to Featured Projects `<table>` grid (max 6 cells — 2 rows of 3)
+4. If it has live deployment: add `[![Live](badge)](url)` inline
+5. Bump patch version, add CHANGELOG entry
+
+### Metrics Refresh (Commits, Stars, Modules)
+
+1. Search the old number (e.g., `1,257`) — commit count appears in ~6 places
+2. Update every instance — **do not leave stale numbers**, they undermine credibility
+3. Update the corresponding badge in the hero section
+4. Bump patch version, add CHANGELOG entry
+
+### New Featured Project (Promote to Grid)
+
+1. Replace the least-relevant cell in the Featured Projects `<table>`
+2. Include: repo link, star badge (if public), bold one-liner, tech tags in backticks
+3. Add matching entry to Currently Building table if actively developed
+4. Ensure the project also exists in All Projects `<details>` section
+
+### Seasonal Content Refresh
+
+1. Update "What's Next" roadmap with current priorities
+2. Verify "Open To" role targets match active job search
+3. Check "The Arc" timeline — add milestones if new achievements landed
+4. Review Proof of Craft — swap weakest claim→receipt for stronger evidence
+5. Bump minor version (this is a content redesign)
 
 ## Maintenance Checklist
 

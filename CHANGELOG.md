@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.10] - 2026-03-06
+
+### Added
+- Design Language section in FOR_DARE.md — documents the README's visual system: 7-color palette with hex codes and usage rationale, badge style hierarchy (for-the-badge vs flat-square), 5 layout rules, and typography specifications
+- Update Playbooks section in FOR_DARE.md — step-by-step procedures for 4 common maintenance operations: adding new repos, refreshing metrics, promoting featured projects, and seasonal content refreshes
+
+### Changed
+- FOR_DARE.md version history updated to include v0.6.10
+
 ## [0.6.9] - 2026-03-06
 
 ### Added
