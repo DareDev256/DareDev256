@@ -82,18 +82,19 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 > **Quick links:** [Featured Projects](#-featured-projects) · [All 29 Projects](#-all-29-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 3, 2026*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 6, 2026*
 
-**Tonight's build: [casper-tng-website](https://github.com/DareDev256/casper-tng-website)**
+**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/TdotsSolutionsz Music Video Portfolio)**
 
-Introduced a dynamic 'Character Showcase' for interactive exploration of Casper TNG characters, featuring animations and detailed bios. Enhances visual appeal and user engagement.
+Added animated Impact Numbers section to the HubPage — four portfolio stats count up from zero with cinematic easeOutExpo easing when scrolled into view. Neon-accented cards with staggered reveals, sliding accent bars, and hover glow. 8 new tests, 406 total passing.
+[**See it live →**](https://tdotssolutionsz.com)
 
 **Highlights:**
-- Interactive Character Showcase: Select and view detailed character profiles with animations.
-- Enhanced Visual Polish: Smooth transitions, responsive design, and subtle hover effects.
-- Portfolio-Ready README: Comprehensive documentation with a dedicated section for the new showcase (ready for GIF/screenshot insertion).
+- Scroll-triggered counting animation using requestAnimationFrame + easeOutExpo — numbers race up fast then gently land on the exact target
+- Four neon-accented stat cards (pink/cyan/gold/green) with staggered entrances, tabular-nums to prevent jank, and sliding neon accent bars
+- Reusable useCountUp hook with fires-once guard, responsive 2x2 mobile grid, prefers-reduced-motion support, 8 new tests
 
-`+195/-7 lines`
+`+423/-5 lines`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
