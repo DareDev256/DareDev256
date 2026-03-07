@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.14] - 2026-03-06
+
+### Added
+- Hero tagline: "Gold-record music video director turned AI engineer" — gives cold visitors immediate context before the typing animation
+- Velocity metrics ribbon below totals ribbon — surfaces the most impressive operational stats (190 releases/21 days, 60 brain cycles/day, 89.9% approval rate, 1,237+ tests) that were previously buried deep in the README
+- Second closing thesis line: "The second best way is to watch their AI ship while they sleep" — reinforces the autonomous agent narrative
+
+### Changed
+- What's Next roadmap updated with specific technical details (Tailscale multi-machine, MCP beyond video editing) and current job search targets
+- FOR_DARE.md Content Strategy Evolution updated with v0.6.14 entry
+
 ## [0.6.13] - 2026-03-06
 
 ### Added
