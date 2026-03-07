@@ -40,6 +40,17 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 ---
 
+## 📍 Reading This? Start Here
+
+| You are... | Go to | What you'll find |
+|:-----------|:------|:-----------------|
+| **Hiring manager** | [Proof of Craft](#-proof-of-craft) → [Open To](#-open-to) | Verifiable claims with receipts. Every line links to shipped work |
+| **Developer** | [Featured Projects](#-featured-projects) → [How We Work](#-how-we-work) | Architecture decisions, open-source tools, autonomous agent design |
+| **AI enthusiast** | [Currently Building](#-currently-building) → [The Arc](#-the-arc) | 24/7 autonomous agent ecosystem, MCP servers, LLM eval suite |
+| **Potential client** | [All 29 Projects](#-all-29-projects) → [Portfolio](https://jamesdare.com) | 5 live client sites, 16+ deployments, full project catalog |
+
+---
+
 ## 🔥 Currently Building
 
 | Status | Project | Description |
@@ -64,7 +75,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 ## 🔧 Latest From the Workshop
 
-> **Quick links:** [Featured Projects](#-featured-projects) · [All 29 Projects](#-all-28-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
+> **Quick links:** [Featured Projects](#-featured-projects) · [All 29 Projects](#-all-29-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
 
 <!-- SHOWCASE_SECTION_START -->
 > *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 3, 2026*

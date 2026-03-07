@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.12] - 2026-03-06
+
+### Added
+- "Reading This? Start Here" audience-routing section after Project Goals — table directing hiring managers, developers, AI enthusiasts, and potential clients to the most relevant sections with deep links
+
+### Fixed
+- Broken anchor link in quick-nav bar: `#-all-28-projects` corrected to `#-all-29-projects` to match actual heading
+- FOR_DARE.md Metrics Sync Map: updated all 4 stale metric references (module count 145+ → 92, LOC 46K+ → 109K, managed repos 36 → 47, public repos 28 → 29) with corrected approximate line numbers
+- FOR_DARE.md Quick Reference, maintenance checklist, and Repo Count Accuracy section updated from 28 to 29 repos
+- FOR_DARE.md Recruiter-Optimized Layout map updated to 19 sections (was 18), with corrected numbering and project count
+
 ## [0.6.11] - 2026-03-06
 
 ### Added
