@@ -7,6 +7,13 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.13] - 2026-03-06
+
+### Added
+- "Engineering Principles" section between How We Work and Open To — 6 values (ship-then-polish, accessibility, testing, security, open source, documentation) each paired with concrete "In Practice" evidence linking to shipped work
+- FOR_DARE.md layout map updated to 20 sections (was 19), with Engineering Principles at position 10
+- FOR_DARE.md Content Strategy Evolution updated with v0.6.13 entry
+
 ## [0.6.12] - 2026-03-06
 
 ### Added

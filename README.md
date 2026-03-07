@@ -205,6 +205,21 @@ Every Claude Code session — on any machine — starts with full context from p
 
 ---
 
+## ⚡ Engineering Principles
+
+> The rules behind every commit — human or autonomous.
+
+| Principle | In Practice |
+|-----------|-------------|
+| **Ship, then polish** | Every project hits production before it's "ready." 16+ live deployments prove bias toward action over perfection |
+| **Accessibility isn't optional** | `prefers-reduced-motion`, semantic HTML, keyboard navigation, ARIA labels — built in from day one, not retrofitted |
+| **Test what matters** | 571 tests in fcpxml-mcp-server alone, 1,237+ across the ecosystem. Coverage serves confidence, not vanity metrics |
+| **Security by default** | Input sanitization, OWASP patterns, iframe sandboxing, shell injection prevention — in every project, not just "security" ones |
+| **Open source first** | 29 public repos. Code goes private only when client contracts or API keys require it |
+| **Document the why** | Every repo has a CHANGELOG. Every commit follows [Conventional Commits](https://www.conventionalcommits.org/). Future-you is a real stakeholder |
+
+---
+
 ## 🎯 Open To
 
 **AI Solutions Engineer** · **Developer Relations** · **Solutions Engineer** · **Founding Engineer**

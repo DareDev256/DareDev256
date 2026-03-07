@@ -107,7 +107,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 17. **v0.6.9** — Added Domain Depth visual expertise chart (replaced flat specializations line) and What's Next forward-looking roadmap section
 18. **v0.6.10** — Added Design Language reference (color palette, badge hierarchy, layout rules, typography), Update Playbooks for common maintenance operations (new repo, metrics refresh, featured promotion, seasonal refresh)
 19. **v0.6.11** — Added Metrics Sync Map to FOR_DARE.md — cross-reference index mapping 7 hardcoded metrics (commits, repos, modules, LOC, deployments, managed repos, fcpxml stars) to their exact README line numbers (37 total locations) with sources of truth and update procedure
-20. **v0.6.12** (current) — Added "Reading This? Start Here" audience-routing section (hiring managers, developers, AI enthusiasts, clients → targeted deep links). Fixed broken anchor link in quick-nav. Synced FOR_DARE.md Metrics Sync Map to match current README values (92 modules, 109K LOC, 47 managed repos, 29 public repos). Updated layout map to 19 sections
+20. **v0.6.12** — Added "Reading This? Start Here" audience-routing section (hiring managers, developers, AI enthusiasts, clients → targeted deep links). Fixed broken anchor link in quick-nav. Synced FOR_DARE.md Metrics Sync Map to match current README values (92 modules, 109K LOC, 47 managed repos, 29 public repos). Updated layout map to 19 sections
+21. **v0.6.13** (current) — Added "Engineering Principles" section between How We Work and Open To — 6 values (ship-first, accessibility, testing, security, open source, documentation) each with concrete "In Practice" evidence. Updated layout map to 20 sections
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -164,18 +165,19 @@ The README follows a deliberate information hierarchy:
 7. **Workshop Showcase** — Latest build highlight, auto-updated by Passion Agent
 8. **Featured Projects** — 2×3 HTML grid with stars, live links, and tech tags
 9. **How We Work** — ASCII architecture diagram showing the Passion ecosystem
-10. **Open To** — Explicit role targeting with claim→evidence table
-11. **All Projects** — Categorized tables inside `<details>` toggle (29 projects across 5 categories)
-12. **Tech Stack** — Two-tier badges: `for-the-badge` for links, `flat-square` for tech grid
-13. **Domain Depth** — Unicode bar chart showing expertise levels across 7 domains with evidence callout
-14. **GitHub Stats** — Profile summary cards (tokyonight theme)
-15. **The Arc** — Visual career timeline (2008→2026) using tree characters
-16. **Proof of Craft** — 5 verifiable claim→receipt pairs with direct links to evidence
-17. **What's Next** — Forward-looking roadmap (current, next, goal) in tree-character format
-18. **Contribution Guidelines** — Fork workflow, conventional commits, PR etiquette
-19. **Closing CTA** — Quote, thesis statement, three action badges
+10. **Engineering Principles** — 6 values (ship-first, accessibility, testing, security, open source, documentation) with "In Practice" evidence
+11. **Open To** — Explicit role targeting with claim→evidence table
+12. **All Projects** — Categorized tables inside `<details>` toggle (29 projects across 5 categories)
+13. **Tech Stack** — Two-tier badges: `for-the-badge` for links, `flat-square` for tech grid
+14. **Domain Depth** — Unicode bar chart showing expertise levels across 7 domains with evidence callout
+15. **GitHub Stats** — Profile summary cards (tokyonight theme)
+16. **The Arc** — Visual career timeline (2008→2026) using tree characters
+17. **Proof of Craft** — 5 verifiable claim→receipt pairs with direct links to evidence
+18. **What's Next** — Forward-looking roadmap (current, next, goal) in tree-character format
+19. **Contribution Guidelines** — Fork workflow, conventional commits, PR etiquette
+20. **Closing CTA** — Quote, thesis statement, three action badges
 
-This 19-section structure is not accidental — it's designed to capture attention in the first 5 seconds and give recruiters a reason to click through.
+This 20-section structure is not accidental — it's designed to capture attention in the first 5 seconds and give recruiters a reason to click through.
 
 ### Badge Style Consistency
 All badges use `style=for-the-badge` for visual weight and consistency. Tech stack badges use `style=flat-square` for a more compact, scannable grid. This two-tier system creates visual hierarchy.
