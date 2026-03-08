@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.16] - 2026-03-08
+
+### Added
+- "Why These Tools" decision table under Tech Stack — 6 architecture decisions (Claude as primary LLM, Next.js 16 + React 19, SQLite over Postgres, MCP over custom APIs, Vitest over Jest, Vercel for everything) each with rationale and explicitly rejected alternatives
+- Shows engineering judgment and tradeoff awareness, not just tool listing — the section hiring managers and senior engineers actually care about
+
 ## [0.6.15] - 2026-03-08
 
 ### Changed

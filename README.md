@@ -358,6 +358,19 @@ Infrastructure        ███████████░░░░░░░░�
 
 > The bars aren't decoration — they map to shipped projects, not tutorials watched. Every "Deep" domain has production code behind it.
 
+### Why These Tools
+
+> Not a bingo card — every choice has a reason.
+
+| Decision | Why | What I Rejected |
+|----------|-----|-----------------|
+| **Claude as primary LLM** | Best code generation + tool-use reliability for autonomous agent loops. Gemini and DeepSeek fill cost/multimodal gaps | GPT-4 — worse at long agentic chains, higher tool-call failure rate |
+| **Next.js 16 + React 19** | Server components cut client bundle in half. React 19 signals replace 80% of useEffect chains in PACT Dashboard | SvelteKit — smaller ecosystem for the component density I need |
+| **SQLite over Postgres** | Passion Agent runs on a single Mac Mini. SQLite = zero ops, sub-ms reads, `cp` backups. No connection pooling to debug at 3am | Supabase — great for web apps, overkill for local-first agent memory |
+| **MCP over custom APIs** | Standardized tool protocol means any Claude session can use any tool. Built once, works everywhere — no per-integration auth flows | REST wrappers — each needs custom client code and versioning |
+| **Vitest over Jest** | 10x faster on TypeScript projects. Native ESM, no Babel config. Same assertion API so switching cost was zero | Jest — still works, but the config tax on modern TS projects isn't worth it |
+| **Vercel for everything** | Zero-config deploys, preview URLs on every PR, edge functions when needed. 16+ deployments, zero downtime incidents | Self-hosted — I'm one person. Server babysitting is not a competitive advantage |
+
 ---
 
 ## 📊 GitHub Stats
