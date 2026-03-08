@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.17] - 2026-03-08
+
+### Security
+- Added Security Policy section under Contribution Guidelines — severity-based reporting matrix (Critical/High → direct contact with 24h SLA, Medium/Low → GitHub security advisories), responsible disclosure commitments, and cross-repo security standards summary
+- Strengthened Engineering Principles security row with specific OWASP Top 10 references (A03:2021 Injection, A05:2021 Security Misconfiguration) and linked to the new security policy
+
+### Fixed
+- Broken showcase URL: `TdotsSolutionsz Music Video Portfolio` had an unencoded space in the GitHub URL — replaced with correct repo slug `tdotssolutionsz-portfolio`
+
 ## [0.6.16] - 2026-03-08
 
 ### Added

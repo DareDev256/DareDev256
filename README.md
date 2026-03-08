@@ -92,7 +92,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 <!-- SHOWCASE_SECTION_START -->
 > *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 6, 2026*
 
-**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/TdotsSolutionsz Music Video Portfolio)**
+**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio)**
 
 Added animated Impact Numbers section to the HubPage — four portfolio stats count up from zero with cinematic easeOutExpo easing when scrolled into view. Neon-accented cards with staggered reveals, sliding accent bars, and hover glow. 8 new tests, 406 total passing.
 [**See it live →**](https://tdotssolutionsz.com)
@@ -227,7 +227,7 @@ Every Claude Code session — on any machine — starts with full context from p
 | **Ship, then polish** | Every project hits production before it's "ready." 16+ live deployments prove bias toward action over perfection |
 | **Accessibility isn't optional** | `prefers-reduced-motion`, semantic HTML, keyboard navigation, ARIA labels — built in from day one, not retrofitted |
 | **Test what matters** | 571 tests in fcpxml-mcp-server alone, 1,237+ across the ecosystem. Coverage serves confidence, not vanity metrics |
-| **Security by default** | Input sanitization, OWASP patterns, iframe sandboxing, shell injection prevention — in every project, not just "security" ones |
+| **Security by default** | OWASP Top 10 coverage: input sanitization (A03:2021), iframe sandboxing with CSP (A05:2021), shell injection prevention (A03:2021), path traversal guards, HTTPS-only external origins. [Security policy](#-security-policy) with 24h response SLA |
 | **Open source first** | 29 public repos. Code goes private only when client contracts or API keys require it |
 | **Document the why** | Every repo has a CHANGELOG. Every commit follows [Conventional Commits](https://www.conventionalcommits.org/). Future-you is a real stakeholder |
 
@@ -455,6 +455,24 @@ Interested in contributing to any of my public repos? Here's how:
 5. **Keep PRs focused** — one feature or fix per PR. Small, reviewable diffs get merged faster
 
 > **Note:** Some repos (Passion Agent, PACT Dashboard, Viral Clone) are private. If you're interested in collaborating on those, reach out on [LinkedIn](https://www.linkedin.com/in/james-olusoga-00179940/).
+
+### 🔒 Security Policy
+
+Found a vulnerability in any of my projects? **Don't open a public issue.**
+
+| Severity | How to Report |
+|----------|--------------|
+| **Critical** (RCE, auth bypass, data exposure) | Email **security@jamesdare.com** or DM on [LinkedIn](https://www.linkedin.com/in/james-olusoga-00179940/) — response within 24h |
+| **High** (XSS, injection, privilege escalation) | Same as above — include repo name, steps to reproduce, and impact assessment |
+| **Medium/Low** (misconfig, info disclosure, hardening) | Open a private [security advisory](https://docs.github.com/en/code-security/security-advisories) on the affected repo |
+
+**What I commit to:**
+- Acknowledge within 24 hours
+- Fix critical issues within 72 hours
+- Credit reporters in the CHANGELOG (unless you prefer anonymity)
+- Never pursue legal action against good-faith security researchers
+
+**Security standards across all repos:** Input sanitization, parameterized queries, shell injection prevention, HTTPS-only external loads, iframe sandboxing with `allow-scripts` only, path traversal guards, and `Content-Security-Policy` headers where applicable. See [Engineering Principles](#-engineering-principles) for the full philosophy.
 
 ---
 
