@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.15] - 2026-03-08
+
+### Changed
+- Metrics ribbon redesigned from inline-code wall to a 6-column stat card grid — each number (Gold Record, 350+ Videos, 29 Repos, 16+ Deployments, 1,257+ Commits, 24/7 Ecosystem) gets its own visual cell with label and subtitle for faster scanning
+- Velocity metrics (190 releases, 60 brain cycles, 89.9% approval, 1,237+ tests) moved to compact `<sub>` line beneath the grid
+
+### Added
+- GitHub Profile Trophies widget (tokyonight theme, 6-column layout) at the top of the GitHub Stats section — adds social proof badges for commits, repos, stars, PRs, issues, and followers
+- Two additional stat cards in GitHub Stats: "Commit Activity by Hour" (EST timezone) and "Most Used Languages by Commit" — shows when and what James ships, not just totals
+- Footer signature line with Toronto location flag and Passion Agent attribution link
+
 ## [0.6.14] - 2026-03-06
 
 ### Added
