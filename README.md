@@ -216,6 +216,24 @@ Added animated Impact Numbers section to the HubPage — four portfolio stats co
 
 Every Claude Code session — on any machine — starts with full context from previous sessions. Passion proposes code improvements while James sleeps. He wakes up, reviews PRs, and she learns from his decisions. It's a partnership — not a tool, a collaborator.
 
+<details>
+<summary><strong>📖 Glossary</strong> <i>(ecosystem terminology)</i></summary>
+
+| Term | Definition |
+|------|-----------|
+| **Brain Cycle** | A 30-minute autonomous work interval where Passion Agent evaluates all 47 repos, picks the highest-value task, executes it, and submits a PR. Runs up to 60 cycles/day on the Mac Mini |
+| **MCP** | [Model Context Protocol](https://modelcontextprotocol.io/) — an open standard for connecting AI models to external tools and data sources. Think USB-C for AI: one protocol, any tool |
+| **MCP Server** | A service that exposes tools via MCP. [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) lets AI agents edit Final Cut Pro timelines; Passion Memory MCP gives every session persistent memory |
+| **PACT** | Passion Agent Command Terminal — the cyberpunk dashboard (Next.js 16 + React 19) used to monitor and control the entire autonomous ecosystem |
+| **Passion Agent** | The autonomous AI system (Node.js, 92 modules, 109K LOC) that runs 24/7 on a Mac Mini. It strategizes, writes code, submits PRs, and learns from approval/rejection feedback |
+| **Subprocess Agent** | A sandboxed Claude Code process spawned by Passion Agent to execute a specific task (code change, test fix, docs update). Each gets isolated context and a focused scope |
+| **Somatic Markers** | Emotional-weight tags stored alongside memories in the Passion Memory system. Borrowed from neuroscience — they help the agent prioritize based on past approval patterns, not just recency |
+| **LLM Eval Suite** | A 6-tool toolkit for testing AI model outputs: [bias-buster](https://github.com/DareDev256/bias-buster), [token-prophet](https://github.com/DareDev256/token-prophet), [hallucination-hunter](https://github.com/DareDev256/hallucination-hunter), [prompt-craft](https://github.com/DareDev256/prompt-craft), [tool-match](https://github.com/DareDev256/tool-match), and [red-team-arena](https://github.com/DareDev256/red-team-arena) |
+| **Intel Radar** | Passion Agent's information gathering module — monitors Reddit, Hacker News, Bluesky, and RSS feeds for trends, opportunities, and relevant discussions |
+| **Approval Rate** | The percentage of Passion Agent PRs that James merges without requesting changes. Currently 89.9% — the agent's quality signal |
+
+</details>
+
 ---
 
 ## ⚡ Engineering Principles

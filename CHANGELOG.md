@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.18] - 2026-03-08
+
+### Added
+- Glossary section after "How We Work" — collapsible table defining 10 ecosystem-specific terms (Brain Cycle, MCP, PACT, Passion Agent, Subprocess Agent, Somatic Markers, LLM Eval Suite, Intel Radar, Approval Rate, MCP Server) with linked references to repos and external docs
+- Helps first-time visitors (especially hiring managers and developers) parse domain-specific terminology without breaking the main narrative flow
+
 ## [0.6.17] - 2026-03-08
 
 ### Security
