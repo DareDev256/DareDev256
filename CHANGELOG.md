@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.20] - 2026-03-08
+
+### Added
+- "Hard Problems I've Solved" section between Proof of Craft and What's Next — 4 collapsible deep-dives into real engineering challenges: zero-denominator FCPXML parsing crashes, per-frame memory allocation in animation loops, context window management for autonomous agents, and iframe sandbox security for embedded dashboards. Each includes problem, approach, and measurable result
+- Demonstrates technical depth and systems thinking — the section hiring managers use to differentiate tutorial-builders from production engineers
+
 ## [0.6.19] - 2026-03-08
 
 ### Added

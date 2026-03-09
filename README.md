@@ -57,7 +57,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 | You are... | Go to | What you'll find |
 |:-----------|:------|:-----------------|
-| **Hiring manager** | [Proof of Craft](#-proof-of-craft) → [Open To](#-open-to) | Verifiable claims with receipts. Every line links to shipped work |
+| **Hiring manager** | [Proof of Craft](#-proof-of-craft) → [Hard Problems](#-hard-problems-ive-solved) → [Open To](#-open-to) | Verifiable claims, technical depth, and what I'm looking for |
 | **Developer** | [Featured Projects](#-featured-projects) → [How We Work](#-how-we-work) | Architecture decisions, open-source tools, autonomous agent design |
 | **AI enthusiast** | [Currently Building](#-currently-building) → [The Arc](#-the-arc) | 24/7 autonomous agent ecosystem, MCP servers, LLM eval suite |
 | **Potential client** | [All 29 Projects](#-all-29-projects) → [Portfolio](https://jamesdare.com) | 5 live client sites, 16+ deployments, full project catalog |
@@ -445,6 +445,56 @@ Infrastructure        ███████████░░░░░░░░�
 | "My AI agent is real" | 1,257+ commits across 47 repos. Passion Agent runs 60 brain cycles/day on a Mac Mini. It doesn't demo — it ships |
 | "I build for clients" | 5 artist websites live in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
 | "I care about quality" | 571 tests in fcpxml-mcp-server, 1,237+ tests across ecosystem. Security-hardened: shell injection prevention, path traversal guards, atomic writes, iframe sandboxing (OWASP A05:2021). Every repo has a CHANGELOG |
+
+---
+
+## 🧩 Hard Problems I've Solved
+
+> Breadth gets interviews. Depth gets offers. Here's how I think through real engineering problems.
+
+<details>
+<summary><strong>Zero-denominator crashes in FCPXML time parsing</strong> — <i>defensive validation across 4 functions</i></summary>
+
+**Problem:** Final Cut Pro XML uses rational time notation (`1001/30000s`). Malformed files from third-party tools sent `0/0` framedurations, zero-denominator timecodes, and `fps=0` values — all causing unhandled `ZeroDivisionError` crashes in the MCP server.
+
+**Approach:** Traced every division operation in the time parsing stack. Added guards at the parsing boundary (not deep in the math) so invalid data gets caught once, early. Also found that `split_clip` was using `enumerate()` index instead of actual insertion count — causing wrong clip ordering when segments were skipped.
+
+**Result:** 5 defensive fixes, 7 new tests, 611 total passing. Zero crashes on the malformed FCPXML corpus that previously caused 4 different stack traces.
+
+</details>
+
+<details>
+<summary><strong>Per-frame memory allocation in animation loop</strong> — <i>design system extraction + perf fix</i></summary>
+
+**Problem:** The interaction engine used inline `cubic-bezier()` values and magic duration numbers scattered across 3 modules. Worse: a `Function.prototype.bind()` call inside a `requestAnimationFrame` loop was allocating a new function object every frame — ~60 allocations/second during any animation.
+
+**Approach:** Extracted all timing values into CSS custom properties (`--transition-fast`, `--ease-spring`, `--ease-press`, `--ease-snap`). Cached the bound function reference outside the loop. Replaced magic numbers (`16.67`, `100`, `8`) with named constants (`FRAME_BUDGET_MS`, `THROTTLE_INTERVAL`, `FRAME_DURATION`).
+
+**Result:** All 358 tests passing. Single source of truth for animation timing. The bind fix alone eliminated ~3,600 unnecessary allocations per minute of interaction.
+
+</details>
+
+<details>
+<summary><strong>Context window management for autonomous agents</strong> — <i>observation masking + sub-agent isolation</i></summary>
+
+**Problem:** Passion Agent's subprocess agents were hitting context limits mid-task. Tool outputs (git diffs, npm audit logs, test results) consumed 83% of available context, leaving almost nothing for actual reasoning.
+
+**Approach:** Implemented observation masking — verbose tool outputs get compressed into structured summaries before being passed to sub-agents. Each agent gets isolated context scoped to its task (security agent sees only security-relevant files, not the full repo). Added a 70% utilization trigger for context compression instead of waiting until the wall.
+
+**Result:** Sub-agents complete tasks with higher quality because they reason over summaries, not raw logs. The 70% trigger eliminated mid-task context truncation entirely.
+
+</details>
+
+<details>
+<summary><strong>Iframe sandbox security for embedded dashboards</strong> — <i>CSP + origin allowlisting</i></summary>
+
+**Problem:** PACT Dashboard embeds external services (monitoring, docs, analytics) in iframes. Default iframe behavior allows embedded content to navigate the parent, access cookies, and run arbitrary scripts — a textbook OWASP A05:2021 (Security Misconfiguration) vector.
+
+**Approach:** Every iframe gets `sandbox="allow-scripts"` only — no `allow-same-origin`, no `allow-top-navigation`, no `allow-forms`. External origins are HTTPS-only and explicitly allowlisted. Added `Content-Security-Policy` frame-ancestors to prevent reverse embedding. The result is defense-in-depth: even if an embedded service is compromised, it can't touch the parent frame.
+
+**Result:** 101 components, zero security advisories. The iframe sandboxing pattern is now reused across every project that loads external content.
+
+</details>
 
 ---
 
