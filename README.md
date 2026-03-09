@@ -8,9 +8,9 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=DareDev256&color=blueviolet&style=flat-square&label=Profile+Views)
 [![License](https://img.shields.io/badge/License-MIT-A855F7?style=flat-square)](LICENSE)
-[![Repos](https://img.shields.io/badge/Public_Repos-29-6C63FF?style=flat-square&logo=github&logoColor=white)](https://github.com/DareDev256?tab=repositories)
+[![Repos](https://img.shields.io/badge/Public_Repos-33-6C63FF?style=flat-square&logo=github&logoColor=white)](https://github.com/DareDev256?tab=repositories)
 [![Stars](https://img.shields.io/badge/Total_Stars-36-FFD700?style=flat-square&logo=star&logoColor=white)](https://github.com/DareDev256)
-[![Deployments](https://img.shields.io/badge/Live_Deployments-16+-10B981?style=flat-square&logo=vercel&logoColor=white)](https://jamesdare.com)
+[![Deployments](https://img.shields.io/badge/Live_Deployments-20+-10B981?style=flat-square&logo=vercel&logoColor=white)](https://jamesdare.com)
 [![Commits](https://img.shields.io/badge/Total_Commits-1%2C257+-E8B931?style=flat-square&logo=git&logoColor=white)](https://github.com/DareDev256)
 [![Ecosystem](https://img.shields.io/badge/AI_Ecosystem-24%2F7-FF6B6B?style=flat-square&logo=robot&logoColor=white)](https://passion.jamesdare.com)
 
@@ -29,8 +29,8 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 <tr>
 <td align="center"><strong>🏆</strong><br><strong>Gold Record</strong><br><sub>RIAA Certified</sub></td>
 <td align="center"><strong>🎬</strong><br><strong>350+</strong><br><sub>Videos Directed</sub></td>
-<td align="center"><strong>📦</strong><br><strong>29</strong><br><sub>Public Repos</sub></td>
-<td align="center"><strong>🚀</strong><br><strong>16+</strong><br><sub>Live Deployments</sub></td>
+<td align="center"><strong>📦</strong><br><strong>33</strong><br><sub>Public Repos</sub></td>
+<td align="center"><strong>🚀</strong><br><strong>20+</strong><br><sub>Live Deployments</sub></td>
 <td align="center"><strong>🔄</strong><br><strong>1,257+</strong><br><sub>Total Commits</sub></td>
 <td align="center"><strong>🤖</strong><br><strong>24/7</strong><br><sub>AI Ecosystem</sub></td>
 </tr>
@@ -59,8 +59,8 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 |:-----------|:------|:-----------------|
 | **Hiring manager** | [Proof of Craft](#-proof-of-craft) → [Hard Problems](#-hard-problems-ive-solved) → [Open To](#-open-to) | Verifiable claims, technical depth, and what I'm looking for |
 | **Developer** | [Featured Projects](#-featured-projects) → [How We Work](#-how-we-work) | Architecture decisions, open-source tools, autonomous agent design |
-| **AI enthusiast** | [Currently Building](#-currently-building) → [The Arc](#-the-arc) | 24/7 autonomous agent ecosystem, MCP servers, LLM eval suite |
-| **Potential client** | [All 29 Projects](#-all-29-projects) → [Portfolio](https://jamesdare.com) | 5 live client sites, 16+ deployments, full project catalog |
+| **AI enthusiast** | [Currently Building](#-currently-building) → [The Arc](#-the-arc) | 24/7 autonomous agent ecosystem, MCP servers, 10-game learning suite |
+| **Potential client** | [All 33 Projects](#-all-33-projects) → [Portfolio](https://jamesdare.com) | 5 live client sites, 20+ deployments, full project catalog |
 
 ---
 
@@ -70,9 +70,8 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Multi-module autonomous AI system running 24/7 — 92 modules, 109K LOC, 1,257+ commits. Orchestrates 47 repos, 3 LLM backends, real subprocess agents, and a shared memory MCP server |
 | 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Passion Agent Command Terminal — cyberpunk HUD with 101 components, 10 tabs, signal-based auto-navigation, global keyboard shortcuts with cheat sheet overlay, iframe-sandboxed embeds with HTTPS-only origins. Next.js 16 + React 19 |
-| 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro XML — AI agents can now edit professional video timelines with natural language. ⭐ 17 stars |
-| 🟢 | **LLM Eval Suite** | 6-tool evaluation toolkit: [bias-buster](https://github.com/DareDev256/bias-buster), [token-prophet](https://github.com/DareDev256/token-prophet), [hallucination-hunter](https://github.com/DareDev256/hallucination-hunter), [prompt-craft](https://github.com/DareDev256/prompt-craft), [tool-match](https://github.com/DareDev256/tool-match) |
-| 🟢 | **[Red Team Arena](https://github.com/DareDev256/red-team-arena)** [![Play](https://img.shields.io/badge/▶_Play-red?style=flat-square)](https://red-team-arena.vercel.app) | Adversarial LLM testing platform — find where models break before users do |
+| 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro XML — AI agents can now edit professional video timelines with natural language. ⭐ 19 stars |
+| 🟢 | **Passionate Learning Suite** | 10-game educational suite teaching AI literacy + tech fundamentals. 6 LLM eval games + 4 tech fundamentals: [api-architect](https://github.com/DareDev256/api-architect), [netrunner](https://github.com/DareDev256/netrunner), [cybershield](https://github.com/DareDev256/cybershield), [circuit-prophet](https://github.com/DareDev256/circuit-prophet) |
 | 🟡 | **Viral Clone** *(private)* | AI content pipeline: viral TikTok → original short-form video via Claude, Gemini, Perplexity & Whisper. Telegram bot UI, 43+ tests |
 
 > 🟢 Active · 🟡 In Progress · 🔵 Stable
@@ -88,7 +87,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 ## 🔧 Latest From the Workshop
 
-> **Quick links:** [Featured Projects](#-featured-projects) · [All 29 Projects](#-all-29-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
+> **Quick links:** [Featured Projects](#-featured-projects) · [All 33 Projects](#-all-33-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
 
 <!-- SHOWCASE_SECTION_START -->
 > *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 8, 2026*
@@ -229,7 +228,7 @@ Every Claude Code session — on any machine — starts with full context from p
 | **Passion Agent** | The autonomous AI system (Node.js, 92 modules, 109K LOC) that runs 24/7 on a Mac Mini. It strategizes, writes code, submits PRs, and learns from approval/rejection feedback |
 | **Subprocess Agent** | A sandboxed Claude Code process spawned by Passion Agent to execute a specific task (code change, test fix, docs update). Each gets isolated context and a focused scope |
 | **Somatic Markers** | Emotional-weight tags stored alongside memories in the Passion Memory system. Borrowed from neuroscience — they help the agent prioritize based on past approval patterns, not just recency |
-| **LLM Eval Suite** | A 6-tool toolkit for testing AI model outputs: [bias-buster](https://github.com/DareDev256/bias-buster), [token-prophet](https://github.com/DareDev256/token-prophet), [hallucination-hunter](https://github.com/DareDev256/hallucination-hunter), [prompt-craft](https://github.com/DareDev256/prompt-craft), [tool-match](https://github.com/DareDev256/tool-match), and [red-team-arena](https://github.com/DareDev256/red-team-arena) |
+| **Passionate Learning Suite** | A 10-game educational suite: 6 AI literacy games ([bias-buster](https://github.com/DareDev256/bias-buster), [token-prophet](https://github.com/DareDev256/token-prophet), [hallucination-hunter](https://github.com/DareDev256/hallucination-hunter), [prompt-craft](https://github.com/DareDev256/prompt-craft), [tool-match](https://github.com/DareDev256/tool-match), [red-team-arena](https://github.com/DareDev256/red-team-arena)) + 4 tech fundamentals ([api-architect](https://github.com/DareDev256/api-architect), [netrunner](https://github.com/DareDev256/netrunner), [cybershield](https://github.com/DareDev256/cybershield), [circuit-prophet](https://github.com/DareDev256/circuit-prophet)) |
 | **Intel Radar** | Passion Agent's information gathering module — monitors Reddit, Hacker News, Bluesky, and RSS feeds for trends, opportunities, and relevant discussions |
 | **Approval Rate** | The percentage of Passion Agent PRs that James merges without requesting changes. Currently 89.9% — the agent's quality signal |
 
@@ -243,11 +242,11 @@ Every Claude Code session — on any machine — starts with full context from p
 
 | Principle | In Practice |
 |-----------|-------------|
-| **Ship, then polish** | Every project hits production before it's "ready." 16+ live deployments prove bias toward action over perfection |
+| **Ship, then polish** | Every project hits production before it's "ready." 20+ live deployments prove bias toward action over perfection |
 | **Accessibility isn't optional** | `prefers-reduced-motion`, semantic HTML, keyboard navigation, ARIA labels — built in from day one, not retrofitted |
 | **Test what matters** | 571 tests in fcpxml-mcp-server alone, 1,237+ across the ecosystem. Coverage serves confidence, not vanity metrics |
 | **Security by default** | OWASP Top 10 coverage: input sanitization (A03:2021), iframe sandboxing with CSP (A05:2021), shell injection prevention (A03:2021), path traversal guards, HTTPS-only external origins. [Security policy](#-security-policy) with 24h response SLA |
-| **Open source first** | 29 public repos. Code goes private only when client contracts or API keys require it |
+| **Open source first** | 33 public repos. Code goes private only when client contracts or API keys require it |
 | **Document the why** | Every repo has a CHANGELOG. Every commit follows [Conventional Commits](https://www.conventionalcommits.org/). Future-you is a real stakeholder |
 
 ---
@@ -260,20 +259,20 @@ Every Claude Code session — on any machine — starts with full context from p
 |-------------|----------|
 | AI product development | MCP servers, RAG pipelines, autonomous agents, LLM eval suites — all shipped |
 | Creative-to-technical leadership | 350+ music videos directed → now shipping AI tools daily |
-| Full-stack shipping velocity | 29 public repos, 16+ live deployments, 190 releases in 21 days, continuous iteration |
+| Full-stack shipping velocity | 33 public repos, 20+ live deployments, 190 releases in 21 days, continuous iteration |
 | Technical communication | Complex systems → clear documentation and demos |
-| Developer experience | Built tools developers actually use — 17 stars on first MCP server, 571 tests, 6-tool eval suite |
+| Developer experience | Built tools developers actually use — 19 stars on first MCP server, 571 tests, 10-game learning suite |
 
 ---
 
 <details>
-<summary><strong>🚀 All 29 Projects</strong> <i>(click to expand)</i></summary>
+<summary><strong>🚀 All 33 Projects</strong> <i>(click to expand)</i></summary>
 
 ### AI & Automation
 
 | Project | What It Does | Stack |
 |---------|-------------|-------|
-| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐17 | First AI-powered MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
+| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐19 | First AI-powered MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | 145+ module autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends, 1,257+ commits | Node.js, Claude SDK |
 | PACT Dashboard *(private)* | Cyberpunk command terminal — 101 components, keyboard shortcuts, signal-based auto-nav, security-hardened embeds | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY, Claude |
@@ -284,7 +283,7 @@ Every Claude Code session — on any machine — starts with full context from p
 | [contract-translator](https://github.com/DareDev256/contract-translator) | Legal contracts → plain-English with risk assessment — [**Live**](https://contract-translator.vercel.app) | TypeScript, GPT-4 |
 | [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Semantic vector search vs BM25 keyword search comparison | Python, Vectors |
 
-### LLM Evaluation & Safety
+### Passionate Learning Suite — AI Literacy
 
 | Project | What It Does | Stack |
 |---------|-------------|-------|
@@ -294,6 +293,15 @@ Every Claude Code session — on any machine — starts with full context from p
 | [hallucination-hunter](https://github.com/DareDev256/hallucination-hunter) | Detect factual hallucinations in LLM-generated content — [**Live**](https://hallucination-hunter.vercel.app) | TypeScript |
 | [prompt-craft](https://github.com/DareDev256/prompt-craft) | Prompt engineering toolkit — test, compare, and optimize prompts — [**Live**](https://prompt-craft-jet.vercel.app) | TypeScript |
 | [tool-match](https://github.com/DareDev256/tool-match) | Match user intents to the right AI tool/model for the job — [**Live**](https://tool-match-sable.vercel.app) | TypeScript |
+
+### Passionate Learning Suite — Tech Fundamentals
+
+| Project | What It Does | Stack |
+|---------|-------------|-------|
+| [api-architect](https://github.com/DareDev256/api-architect) | REST API design challenges — method/endpoint/status matching, debug mode — [**Live**](https://api-architect-gamma.vercel.app) | Next.js 16, TypeScript |
+| [netrunner](https://github.com/DareDev256/netrunner) | Networking fundamentals — OSI layers, subnetting, ports, troubleshooting — [**Live**](https://netrunner-gilt.vercel.app) | Next.js 16, TypeScript |
+| [cybershield](https://github.com/DareDev256/cybershield) | Cybersecurity essentials — threat classification, defense, crypto, incident response — [**Live**](https://cybershield.vercel.app) | Next.js 16, TypeScript |
+| [circuit-prophet](https://github.com/DareDev256/circuit-prophet) | Electrical & hardware basics — Ohm's Law, logic gates, CPU architecture — [**Live**](https://circuit-prophet.vercel.app) | Next.js 16, TypeScript |
 
 ### Interactive Web & Games
 
@@ -426,11 +434,11 @@ Infrastructure        ███████████░░░░░░░░�
 2024 ─── Pivoted. Same obsession, different medium.
   │
   ├── First commit. Then 1,257 more.
-  ├── Built the first MCP server for Final Cut Pro (⭐ 17 stars)
-  ├── Shipped 16+ live deployments across AI tools, games, client sites
+  ├── Built the first MCP server for Final Cut Pro (⭐ 19 stars)
+  ├── Shipped 20+ live deployments across AI tools, games, client sites
   ├── Created an autonomous AI agent that runs 24/7 and writes real code
   │
-2026 ─── 29 repos. 92 modules. 109K lines. One ecosystem. Still shipping.
+2026 ─── 33 repos. 92 modules. 109K lines. One ecosystem. Still shipping.
 ```
 
 > The throughline: **I make things people actually use.** Videos that charted. Tools that ship. An AI partner that commits code while I sleep. The medium changed — the craft didn't.
@@ -441,8 +449,8 @@ Infrastructure        ███████████░░░░░░░░�
 
 | Claim | Receipt |
 |-------|---------|
-| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** MCP server for Final Cut Pro. ⭐ 17 stars, 3 forks, real users, real video editors |
-| "I ship fast" | 6-tool LLM eval suite — designed, built, and deployed to Vercel in a single sprint. All 6 live right now |
+| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** MCP server for Final Cut Pro. ⭐ 19 stars, 3 forks, real users, real video editors |
+| "I ship fast" | 10-game learning suite (6 AI literacy + 4 tech fundamentals) — designed, built, and deployed to Vercel. All 10 live right now |
 | "My AI agent is real" | 1,257+ commits across 47 repos. Passion Agent runs 60 brain cycles/day on a Mac Mini. It doesn't demo — it ships |
 | "I build for clients" | 5 artist websites live in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
 | "I care about quality" | 571 tests in fcpxml-mcp-server, 1,237+ tests across ecosystem. Security-hardened: shell injection prevention, path traversal guards, atomic writes, iframe sandboxing (OWASP A05:2021). Every repo has a CHANGELOG |
