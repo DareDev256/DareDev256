@@ -90,19 +90,19 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 > **Quick links:** [Featured Projects](#-featured-projects) · [All 29 Projects](#-all-29-projects) · [Tech Stack](#️-tech-stack) · [How We Work](#-how-we-work)
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 6, 2026*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 8, 2026*
 
-**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio)**
+**Tonight's build: [pulsemap](https://github.com/DareDev256/pulsemap)**
 
-Added animated Impact Numbers section to the HubPage — four portfolio stats count up from zero with cinematic easeOutExpo easing when scrolled into view. Neon-accented cards with staggered reveals, sliding accent bars, and hover glow. 8 new tests, 406 total passing.
-[**See it live →**](https://tdotssolutionsz.com)
+Built a disease spread network layer that draws animated great-circle arcs between outbreak locations sharing the same disease, transforming PulseMap from dots-on-a-map into a global threat intelligence network. Uses spherical interpolation for naturally curved arcs, dual-layer Mapbox glow effect, flowing dash animation, and star topology with the highest-case-count location as hub. 8 new tests (43 total), version bumped to 0.3.0.
+[**See it live →**](https://pulsemap-three.vercel.app)
 
 **Highlights:**
-- Scroll-triggered counting animation using requestAnimationFrame + easeOutExpo — numbers race up fast then gently land on the exact target
-- Four neon-accented stat cards (pink/cyan/gold/green) with staggered entrances, tabular-nums to prevent jank, and sliding neon accent bars
-- Reusable useCountUp hook with fires-once guard, responsive 2x2 mobile grid, prefers-reduced-motion support, 8 new tests
+- Animated great-circle arcs with dual-layer glow effect (blur + bright core) connecting same-disease outbreak locations
+- Star topology hub selection — highest case count location radiates outward, showing epicenter directionality
+- Spread layer toggle now live (was disabled v2 placeholder) with conditional legend entry and proper animation lifecycle management
 
-`+423/-5 lines`
+`+447/-8 lines`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
