@@ -462,6 +462,60 @@ Goal ─── A role where AI engineering meets creative instinct — and ships
 
 ---
 
+<details>
+<summary><strong>⚙️ Behind This README</strong> <i>(how this page stays current)</i></summary>
+
+> This README isn't manually maintained — it's a living document updated by the same autonomous system it describes.
+
+### Auto-Updated Zones
+
+Two sections are written directly by Passion Agent via marker comments in the Markdown source:
+
+| Zone | Markers | Update Trigger | What Changes |
+|------|---------|----------------|--------------|
+| **Daily Status** | `<!-- DAILY_STATUS_START/END -->` | Every brain cycle that ships code | Task count, repos touched, lines changed, success rate |
+| **Workshop Showcase** | `<!-- SHOWCASE_SECTION_START/END -->` | When a notable feature ships | Featured build, description, highlight bullets, line diff |
+
+Everything outside these markers is human-edited. The agent never touches section structure, project descriptions, or metrics — those are updated in dedicated `docs` or `readme` task branches.
+
+### Branch Convention
+
+All agent contributions to this repo follow the `passion/<type>-<descriptor>-<id>` pattern:
+
+```
+passion/docs-diversity-picked-docs-mmij91c8   ← you're reading the result of this one
+passion/readme-update-metrics-abc12def        ← metric refresh
+```
+
+Each branch gets a single focused commit, a CHANGELOG entry, and a version bump before merge.
+
+### The Pipeline
+
+```
+Passion Agent (Mac Mini, 24/7)
+  └── Brain Cycle evaluates 47 repos
+        └── Picks DareDev256 for a docs/readme task
+              └── Spawns subprocess agent (Claude Code SDK)
+                    ├── Reads current README + CHANGELOG
+                    ├── Identifies improvement opportunity
+                    ├── Writes changes (< 200 lines)
+                    ├── Updates CHANGELOG + version
+                    └── Commits on passion/* branch
+                          └── James reviews → merge or feedback
+                                └── Approval/rejection feeds back
+                                      into future task selection
+```
+
+### Why This Matters
+
+Most profile READMEs rot after the first week. This one has **18 versions across 31 days** — each adding real content, not just bumping numbers. The agent treats this repo the same as any production codebase: conventional commits, semantic versioning, changelog discipline.
+
+The daily status and showcase sections prove the system is alive. If Passion Agent stops shipping, this page shows it immediately — no vanity metrics to hide behind.
+
+</details>
+
+---
+
 ## 🤝 Contribution Guidelines
 
 Interested in contributing to any of my public repos? Here's how:

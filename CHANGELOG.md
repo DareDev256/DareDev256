@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.19] - 2026-03-08
+
+### Added
+- "Behind This README" collapsible section before Contribution Guidelines — documents the autonomous maintenance pipeline: auto-updated zones (daily status + workshop showcase) with marker conventions, branch naming patterns, the full subprocess agent pipeline from brain cycle to merge, and why automated README maintenance matters as proof of craft
+- Turns the README into a self-referential portfolio piece — the page describes the system that maintains it
+
 ## [0.6.18] - 2026-03-08
 
 ### Added
