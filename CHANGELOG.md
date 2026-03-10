@@ -7,6 +7,13 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.21] - 2026-03-09
+
+### Added
+- "Recent Milestones" section between Currently Building and Latest From the Workshop — 4-entry chronological timeline (Dec 2025 → Mar 2026) showing verifiable shipped work with dates: Passionate Learning Suite completion, 190-release sprint, fcpxml-mcp-server traction, and Passion Agent's 1,000+ autonomous commits milestone
+- Proves active momentum to recruiters who need to know "are they still shipping?" — each entry is date-stamped and verifiable against public repos
+- Updated audience routing table to direct hiring managers through Recent Milestones first
+
 ## [0.6.20] - 2026-03-08
 
 ### Added

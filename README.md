@@ -57,7 +57,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 | You are... | Go to | What you'll find |
 |:-----------|:------|:-----------------|
-| **Hiring manager** | [Proof of Craft](#-proof-of-craft) → [Hard Problems](#-hard-problems-ive-solved) → [Open To](#-open-to) | Verifiable claims, technical depth, and what I'm looking for |
+| **Hiring manager** | [Recent Milestones](#-recent-milestones) → [Proof of Craft](#-proof-of-craft) → [Hard Problems](#-hard-problems-ive-solved) → [Open To](#-open-to) | Active momentum, verifiable claims, technical depth, and what I'm looking for |
 | **Developer** | [Featured Projects](#-featured-projects) → [How We Work](#-how-we-work) | Architecture decisions, open-source tools, autonomous agent design |
 | **AI enthusiast** | [Currently Building](#-currently-building) → [The Arc](#-the-arc) | 24/7 autonomous agent ecosystem, MCP servers, 10-game learning suite |
 | **Potential client** | [All 33 Projects](#-all-33-projects) → [Portfolio](https://jamesdare.com) | 5 live client sites, 20+ deployments, full project catalog |
@@ -81,6 +81,27 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 >
 > Today: **0 tasks** across **0 repos** · **+0/-0 lines** · 100% success rate
 <!-- DAILY_STATUS_END -->
+
+---
+
+## 📅 Recent Milestones
+
+> Momentum is the proof. Here's what shipped recently — with dates.
+
+```
+Mar 2026 ─── Passionate Learning Suite complete: 10 games live
+             6 AI literacy + 4 tech fundamentals, all on Vercel
+             api-architect · netrunner · cybershield · circuit-prophet
+
+Feb 2026 ─── 190 releases in 21 days · PACT Dashboard hit 101 components
+             Signal-based auto-nav, keyboard shortcut system, iframe sandboxing
+
+Jan 2026 ─── fcpxml-mcp-server crossed 19 ⭐ — real editors using it daily
+             First MCP server for Final Cut Pro XML, 571 tests
+
+Dec 2025 ─── Passion Agent passed 1,000 autonomous commits
+             89.9% approval rate across 47 managed repos, 3 LLM backends
+```
 
 ---
 
