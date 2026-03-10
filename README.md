@@ -58,7 +58,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 | You are... | Go to | What you'll find |
 |:-----------|:------|:-----------------|
 | **Hiring manager** | [Recent Milestones](#-recent-milestones) → [Proof of Craft](#-proof-of-craft) → [Hard Problems](#-hard-problems-ive-solved) → [Open To](#-open-to) | Active momentum, verifiable claims, technical depth, and what I'm looking for |
-| **Developer** | [Featured Projects](#-featured-projects) → [How We Work](#-how-we-work) | Architecture decisions, open-source tools, autonomous agent design |
+| **Developer** | [Featured Projects](#-featured-projects) → [How We Work](#-how-we-work) → [What I'd Build Differently](#-what-id-build-differently) | Architecture decisions, open-source tools, honest retrospectives |
 | **AI enthusiast** | [Currently Building](#-currently-building) → [The Arc](#-the-arc) | 24/7 autonomous agent ecosystem, MCP servers, 10-game learning suite |
 | **Potential client** | [All 33 Projects](#-all-33-projects) → [Portfolio](https://jamesdare.com) | 5 live client sites, 20+ deployments, full project catalog |
 
@@ -527,6 +527,58 @@ Infrastructure        ███████████░░░░░░░░�
 
 ---
 
+## 🪞 What I'd Build Differently
+
+> Shipping fast means learning fast. Here's what I'd change if I started these projects today — and why.
+
+<details>
+<summary><strong>Passion Agent's monolithic config system</strong> — <i>should have been modular from module 20</i></summary>
+
+**What happened:** Started with a single `config.json` for the entire agent. At 92 modules, that file is a merge conflict magnet and every module loads config it doesn't need. Refactoring now would touch 40+ files.
+
+**What I'd do instead:** Per-module config with a shared schema validator. Each module owns its config slice, validated at startup. The monolith worked at 10 modules — the mistake was not splitting at 20 when the pain was still cheap.
+
+**Takeaway:** Config architecture decisions compound faster than code decisions. By the time you feel the pain, the migration cost has 10x'd.
+
+</details>
+
+<details>
+<summary><strong>SQLite for everything</strong> — <i>right call, wrong abstraction layer</i></summary>
+
+**What happened:** Chose SQLite over Postgres for Passion Agent's memory system — correct decision for a single-machine agent. But I wrote raw SQL queries in 30+ modules instead of building a data access layer. Now every schema change requires a grep-and-fix sweep.
+
+**What I'd do instead:** Same database, but with a thin repository pattern from day one. Not an ORM — just a typed query builder that centralizes schema knowledge. The storage engine choice was right; the access pattern was the mistake.
+
+**Takeaway:** The database you pick matters less than how you talk to it. A good abstraction layer makes the "SQLite vs Postgres" decision reversible.
+
+</details>
+
+<details>
+<summary><strong>Test coverage strategy</strong> — <i>tested the wrong layer first</i></summary>
+
+**What happened:** fcpxml-mcp-server has 571 tests — mostly unit tests on parsing functions. But the bugs that actually shipped to users were integration-level: malformed XML that parsed fine individually but broke when combined in a real timeline. Unit tests gave false confidence.
+
+**What I'd do instead:** Start with 10 integration tests using real FCPXML files from every major NLE (Final Cut, DaVinci, Premiere export). Then add unit tests for edge cases those integration tests reveal. Test from the outside in, not the inside out.
+
+**Takeaway:** High test counts don't prevent the bugs that matter. Test at the boundary where your code meets real-world input first.
+
+</details>
+
+<details>
+<summary><strong>PACT Dashboard's component explosion</strong> — <i>101 components, not enough composition</i></summary>
+
+**What happened:** Built 101 components for the PACT Dashboard. Many are single-use wrappers that exist because I reached for "new component" instead of "compose existing ones." The component count became a vanity metric instead of an architecture signal.
+
+**What I'd do instead:** Fewer components, more composition. A `<DataCard>` with render props beats `<AgentStatusCard>`, `<MemoryStatusCard>`, `<RepoStatusCard>` that share 80% of their markup. Component count should go down as a codebase matures, not up.
+
+**Takeaway:** Component count is not complexity management — it's often complexity displacement. Composition patterns scale; wrapper components accumulate.
+
+</details>
+
+> These aren't regrets — they're the kind of lessons you only get from shipping real systems under real constraints. Every one of these "mistakes" produced working software that's live today. The goal isn't to avoid all wrong turns — it's to recognize them early enough that the next project starts further ahead.
+
+---
+
 ## 🔮 What's Next
 
 ```
@@ -562,7 +614,7 @@ Everything outside these markers is human-edited. The agent never touches sectio
 All agent contributions to this repo follow the `passion/<type>-<descriptor>-<id>` pattern:
 
 ```
-passion/docs-diversity-picked-docs-mmij91c8   ← you're reading the result of this one
+passion/docs-diversity-picked-docs-mmjwquv4   ← you're reading the result of this one
 passion/readme-update-metrics-abc12def        ← metric refresh
 ```
 

@@ -7,6 +7,13 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.22] - 2026-03-09
+
+### Added
+- "What I'd Build Differently" section between Hard Problems I've Solved and What's Next — 4 honest retrospectives on real architectural decisions: monolithic config at scale, raw SQL without a data access layer, unit-test-first coverage strategy, and component explosion vs composition patterns. Each includes what happened, what I'd change, and the transferable takeaway
+- Signals senior-level self-awareness and growth mindset — the trait hiring managers screen for when they ask "tell me about a mistake you made"
+- Updated developer routing in "Reading This? Start Here" to include the new section
+
 ## [0.6.21] - 2026-03-09
 
 ### Added
