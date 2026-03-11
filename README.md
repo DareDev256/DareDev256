@@ -57,7 +57,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 | You are... | Go to | What you'll find |
 |:-----------|:------|:-----------------|
-| **Hiring manager** | [Recent Milestones](#-recent-milestones) → [Proof of Craft](#-proof-of-craft) → [Hard Problems](#-hard-problems-ive-solved) → [Open To](#-open-to) | Active momentum, verifiable claims, technical depth, and what I'm looking for |
+| **Hiring manager** | [Recent Milestones](#-recent-milestones) → [The Director's Eye](#-the-directors-eye) → [Proof of Craft](#-proof-of-craft) → [Open To](#-open-to) | Active momentum, creative-technical instincts, verifiable claims, and what I'm looking for |
 | **Developer** | [Featured Projects](#-featured-projects) → [How We Work](#-how-we-work) → [Technical DNA](#technical-dna) → [What I'd Build Differently](#-what-id-build-differently) | Architecture decisions, cross-cutting patterns, honest retrospectives |
 | **AI enthusiast** | [Currently Building](#-currently-building) → [How Passion Ships](#-how-passion-ships) → [The Arc](#-the-arc) | 24/7 autonomous agent pipeline, MCP servers, 10-game learning suite |
 | **Potential client** | [All 33 Projects](#-all-33-projects) → [Portfolio](https://jamesdare.com) | 5 live client sites, 20+ deployments, full project catalog |
@@ -508,6 +508,22 @@ Infrastructure        ███████████░░░░░░░░�
 ```
 
 > The throughline: **I make things people actually use.** Videos that charted. Tools that ship. An AI partner that commits code while I sleep. The medium changed — the craft didn't.
+
+---
+
+## 🎬 The Director's Eye
+
+> 350+ music videos taught instincts that CS degrees don't cover. Here's how they transfer.
+
+| On Set | In Code |
+|--------|---------|
+| **Kill your darlings** — if the scene doesn't serve the story, cut it regardless of how much you love it | Deleted features I was proud of because users didn't need them. 101 PACT components should've been 60 with better composition — I wrote about this in [What I'd Build Differently](#-what-id-build-differently) |
+| **The 5-second rule** — if the audience checks their phone, you've already lost them | Every app ships with skeleton loading states, not spinners. Perceived speed beats benchmarks. The first thing a user sees should never be a blank screen |
+| **Shoot coverage, fix in edit** — get the master, the close-up, and the cutaway before you lose the light | Ship the MVP, then iterate. 20+ deployments launched before they were "ready." Every single one improved post-launch because real users surface real problems |
+| **Direct the eye** — lighting and framing tell viewers exactly where to look without saying a word | Information hierarchy tells users where to act. The [audience routing table](#-reading-this-start-here) at the top of this page exists because of this instinct |
+| **If you panic, the set panics** — 30 people watching a director lose composure will produce nothing usable | If the code panics, the system crashes. Fail at the boundary, log the error, serve the fallback. [Graceful degradation](#technical-dna) over silent chaos |
+
+> This isn't metaphor — it's pattern matching. Directing is technical project management under creative pressure with zero undo. The instinct to ship calm, cut ruthlessly, and guide attention transferred intact. The medium changed; the craft didn't.
 
 ---
 

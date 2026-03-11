@@ -7,6 +7,13 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.25] - 2026-03-10
+
+### Added
+- "The Director's Eye" section between The Arc and Proof of Craft — 5-row table mapping film directing instincts (kill your darlings, 5-second rule, shoot coverage, direct the eye, calm ships) to concrete engineering decisions with cross-links to existing sections
+- Bridges James's unique background (350+ music videos) to engineering craft in a way no generic dev profile can replicate — the section hiring managers remember when evaluating creative-technical leadership
+- Updated audience routing table to direct hiring managers through The Director's Eye before Proof of Craft
+
 ## [0.6.24] - 2026-03-10
 
 ### Added
