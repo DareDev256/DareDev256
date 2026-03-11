@@ -1,5 +1,20 @@
 # FOR_DARE.md — DareDev256 GitHub Profile README
 
+## README Size Constraint (CRITICAL)
+
+**The README.md MUST stay under 120 visible lines.** Total file can be ~300 lines with `<details>` blocks.
+
+- **DO NOT add new visible sections.** If you need to add content, put it inside an existing `<details>` block.
+- **DO NOT expand collapsed sections into visible content.**
+- **DO NOT add ASCII art, timeline blocks, or multi-line code blocks** outside of `<details>`.
+- **Auto-update zones** (`DAILY_STATUS_START/END`, `SHOWCASE_SECTION_START/END`) are fine — keep showcase to 1-2 lines max.
+- **If adding a new project**: add it to the collapsed "All 33 Projects" details block, update the count. Do NOT add it to the visible Featured Projects table unless replacing an existing entry.
+- **If updating metrics**: update in-place (badge numbers, table cells). Do NOT add new metric displays.
+
+This constraint exists because a bloated profile README hurts more than it helps. Recruiters scan, they don't read. Every visible line must earn its place.
+
+---
+
 ## Quick Reference
 
 | Need to... | Do this |
