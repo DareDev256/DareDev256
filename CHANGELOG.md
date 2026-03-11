@@ -7,6 +7,13 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.23] - 2026-03-10
+
+### Added
+- "How Passion Ships" section between How We Work and Engineering Principles — 5-phase ASCII pipeline diagram (Research → Strategize → Code → Analyze → Stage) showing what happens inside each 30-minute brain cycle, with collapsible deep-dive explaining memory persistence, LLM routing, subprocess isolation, feedback loops, and zero-intervention autonomy
+- Turns the static architecture diagram into a dynamic workflow story — visitors now understand *how* the agent ships, not just *what* components exist
+- Updated audience routing table to direct AI enthusiasts through the new section
+
 ## [0.6.22] - 2026-03-09
 
 ### Added

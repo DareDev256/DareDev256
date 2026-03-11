@@ -59,7 +59,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 |:-----------|:------|:-----------------|
 | **Hiring manager** | [Recent Milestones](#-recent-milestones) → [Proof of Craft](#-proof-of-craft) → [Hard Problems](#-hard-problems-ive-solved) → [Open To](#-open-to) | Active momentum, verifiable claims, technical depth, and what I'm looking for |
 | **Developer** | [Featured Projects](#-featured-projects) → [How We Work](#-how-we-work) → [What I'd Build Differently](#-what-id-build-differently) | Architecture decisions, open-source tools, honest retrospectives |
-| **AI enthusiast** | [Currently Building](#-currently-building) → [The Arc](#-the-arc) | 24/7 autonomous agent ecosystem, MCP servers, 10-game learning suite |
+| **AI enthusiast** | [Currently Building](#-currently-building) → [How Passion Ships](#-how-passion-ships) → [The Arc](#-the-arc) | 24/7 autonomous agent pipeline, MCP servers, 10-game learning suite |
 | **Potential client** | [All 33 Projects](#-all-33-projects) → [Portfolio](https://jamesdare.com) | 5 live client sites, 20+ deployments, full project catalog |
 
 ---
@@ -251,6 +251,37 @@ Every Claude Code session — on any machine — starts with full context from p
 | **Passionate Learning Suite** | A 10-game educational suite: 6 AI literacy games ([bias-buster](https://github.com/DareDev256/bias-buster), [token-prophet](https://github.com/DareDev256/token-prophet), [hallucination-hunter](https://github.com/DareDev256/hallucination-hunter), [prompt-craft](https://github.com/DareDev256/prompt-craft), [tool-match](https://github.com/DareDev256/tool-match), [red-team-arena](https://github.com/DareDev256/red-team-arena)) + 4 tech fundamentals ([api-architect](https://github.com/DareDev256/api-architect), [netrunner](https://github.com/DareDev256/netrunner), [cybershield](https://github.com/DareDev256/cybershield), [circuit-prophet](https://github.com/DareDev256/circuit-prophet)) |
 | **Intel Radar** | Passion Agent's information gathering module — monitors Reddit, Hacker News, Bluesky, and RSS feeds for trends, opportunities, and relevant discussions |
 | **Approval Rate** | The percentage of Passion Agent PRs that James merges without requesting changes. Currently 89.9% — the agent's quality signal |
+
+</details>
+
+---
+
+## 🔄 How Passion Ships
+
+> What happens inside every 30-minute brain cycle — from zero context to merged PR.
+
+```
+ ① RESEARCH          ② STRATEGIZE         ③ CODE               ④ ANALYZE            ⑤ STAGE
+ ┌──────────┐        ┌──────────┐        ┌──────────┐        ┌──────────┐        ┌──────────┐
+ │ Load     │        │ Score    │        │ Spawn    │        │ Run      │        │ Create   │
+ │ session  │───────▶│ 47 repos │───────▶│ subproc  │───────▶│ linters  │───────▶│ PR +     │
+ │ memory   │        │ by value │        │ agent    │        │ & tests  │        │ notify   │
+ └──────────┘        └──────────┘        └──────────┘        └──────────┘        └──────────┘
+   Recall past         Pick task            Claude Code          Validate             Discord
+   decisions,          type: feat,          gets focused         before               approval
+   load repo           fix, docs,           context +            commit —             buttons →
+   context             test, sec            scope boundary       zero broken          James
+                                                                 builds               reviews
+```
+
+<details>
+<summary><strong>What makes this different from "just using AI"</strong></summary>
+
+- **Memory persistence** — Each cycle starts by recalling past approvals, rejections, and blockers via the Passion Memory MCP. The agent doesn't repeat mistakes
+- **LLM routing** — Tasks are routed to the right model: Claude for complex reasoning, DeepSeek for budget analysis, Gemini for multimodal work. Cost-aware, not one-model-fits-all
+- **Subprocess isolation** — The coding agent runs in a sandboxed Claude Code process with only the context it needs. No cross-contamination between tasks
+- **Feedback loop** — Every PR approval or rejection updates the agent's somatic markers — emotional-weight tags that shift future prioritization. It learns *taste*, not just patterns
+- **Zero human intervention** — From cycle start to PR creation, no human touches the keyboard. James reviews async, usually the next morning
 
 </details>
 
