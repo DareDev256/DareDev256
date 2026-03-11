@@ -4,7 +4,7 @@
 
 **Gold-record music video director turned AI engineer. I build autonomous systems that ship code 24/7.**
 
-<a href="https://jamesdare.com"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6C63FF&vCenter=true&random=false&width=500&lines=AI+Solutions+Engineer;Creative+Technologist;Autonomous+Agent+Builder;Former+Music+Video+Director" alt="Typing SVG" /></a>
+<a href="https://jamesdare.com"><img src="./signature.svg" alt="James Dare — AI Solutions Engineer" width="600" /></a>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=DareDev256&color=blueviolet&style=flat-square&label=Profile+Views)
 [![Repos](https://img.shields.io/badge/Public_Repos-33-6C63FF?style=flat-square&logo=github&logoColor=white)](https://github.com/DareDev256?tab=repositories)

@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250">
+  <style>
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes spin-cw { to { transform: rotate(360deg); } }
+    @keyframes spin-ccw { to { transform: rotate(-360deg); } }
+    @keyframes pulse { 0%,100% { opacity: 0.3; } 50% { opacity: 0.8; } }
+    @keyframes pulse-r { 0%,100% { r: 5; opacity: 0.5; } 50% { r: 8; opacity: 1; } }
+    @keyframes nuc-pulse { 0%,100% { r: 9; opacity: 0.6; } 50% { r: 12; opacity: 1; } }
+    @keyframes fade { to { opacity: 1; } }
+    @keyframes sweep {
+      0% { stop-color: #6C63FF; }
+      33% { stop-color: #A78BFA; }
+      66% { stop-color: #818CF8; }
+      100% { stop-color: #6C63FF; }
+    }
+    @keyframes t1 { 0%,22%{opacity:1} 25%,100%{opacity:0} }
+    @keyframes t2 { 0%,24%{opacity:0} 25%,47%{opacity:1} 50%,100%{opacity:0} }
+    @keyframes t3 { 0%,49%{opacity:0} 50%,72%{opacity:1} 75%,100%{opacity:0} }
+    @keyframes t4 { 0%,74%{opacity:0} 75%,97%{opacity:1} 100%{opacity:0} }
+    @keyframes ring-rotate { to { transform: rotate(360deg); } }
+
+    /* ── GLOW LAYERS ── */
+    .g1 { fill:none; stroke:#6C63FF; stroke-width:10; opacity:0; filter:url(#b1); animation:pulse 5s ease 2s infinite; }
+    .g2 { fill:none; stroke:#A78BFA; stroke-width:6; opacity:0; filter:url(#b2); animation:pulse 4s ease 2.5s infinite; }
+
+    /* ── INFINITY ── */
+    .inf { fill:none; stroke:#6C63FF; stroke-width:3; stroke-linecap:round;
+           stroke-dasharray:380; stroke-dashoffset:380; animation:draw 3s ease-out 0.2s forwards; }
+
+    /* ── ORBITS ── */
+    .ob { fill:none; stroke-width:1.5; stroke-linecap:round; opacity:0; }
+    .ob1 { stroke:#6C63FF; animation:fade .4s 1.5s forwards; }
+    .ob2 { stroke:#A78BFA; animation:fade .4s 1.8s forwards; }
+    .ob3 { stroke:#818CF8; animation:fade .4s 2.1s forwards; }
+    .ro1 { transform-origin:130px 115px; animation:spin-cw 10s linear 1.5s infinite; }
+    .ro2 { transform-origin:130px 115px; animation:spin-ccw 13s linear 1.8s infinite; }
+    .ro3 { transform-origin:130px 115px; animation:spin-cw 16s linear 2.1s infinite; }
+
+    /* ── ELECTRONS ── */
+    .el { opacity:0; }
+    .e1 { fill:#6C63FF; animation:pulse-r 2s ease infinite, fade .3s 2s forwards; }
+    .e2 { fill:#A78BFA; animation:pulse-r 2.5s ease infinite, fade .3s 2.3s forwards; }
+    .e3 { fill:#818CF8; animation:pulse-r 3s ease infinite, fade .3s 2.6s forwards; }
+
+    /* ── WHEEL ── */
+    .wr-out { fill:none; stroke:#6C63FF; stroke-width:2.5; opacity:0; animation:fade .5s 2.8s forwards; }
+    .wr-mid { fill:none; stroke:#A78BFA; stroke-width:1.5; stroke-dasharray:6 8; opacity:0; animation:fade .5s 3s forwards;
+              transform-origin:130px 115px; animation:fade .5s 3s forwards, ring-rotate 20s linear 3s infinite; }
+    .wr-in  { fill:none; stroke:#818CF8; stroke-width:1; opacity:0; animation:fade .5s 3.2s forwards; }
+
+    /* ── SPOKES ── */
+    .sk { stroke:#6C63FF; stroke-width:2; stroke-linecap:round;
+          stroke-dasharray:50; stroke-dashoffset:50; animation:draw .5s ease-out forwards; }
+    .k1{animation-delay:3s} .k2{animation-delay:3.08s} .k3{animation-delay:3.16s} .k4{animation-delay:3.24s}
+    .k5{animation-delay:3.32s} .k6{animation-delay:3.4s} .k7{animation-delay:3.48s} .k8{animation-delay:3.56s}
+
+    /* ── ARROW TIPS (Mahoraga adaptation markers) ── */
+    .arr { fill:#A78BFA; opacity:0; animation:fade .3s forwards; }
+    .a1{animation-delay:3.5s} .a2{animation-delay:3.58s} .a3{animation-delay:3.66s} .a4{animation-delay:3.74s}
+    .a5{animation-delay:3.82s} .a6{animation-delay:3.9s} .a7{animation-delay:3.98s} .a8{animation-delay:4.06s}
+
+    /* ── SEGMENT ARCS ── */
+    .sg { fill:none; stroke:#818CF8; stroke-width:1.5; stroke-dasharray:3 5; opacity:0; animation:fade .3s forwards; }
+    .s1{animation-delay:4.1s} .s2{animation-delay:4.2s} .s3{animation-delay:4.3s} .s4{animation-delay:4.4s}
+
+    /* ── NUCLEUS ── */
+    .nc { fill:#6C63FF; opacity:0; animation:fade .5s 2.5s forwards, nuc-pulse 3s ease 3s infinite; }
+    .nc-ring { fill:none; stroke:#A78BFA; stroke-width:1; opacity:0; animation:fade .5s 2.7s forwards, pulse 3s ease 3s infinite; }
+
+    /* ── DIVIDER ── */
+    .dv { stroke:url(#lg); stroke-width:2; stroke-linecap:round;
+          stroke-dasharray:180; stroke-dashoffset:180; animation:draw 1s ease 3.8s forwards; }
+
+    /* ── NAME ── */
+    .nm { fill:#f0f0f0; font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+          font-weight:800; font-size:52px; letter-spacing:6px; opacity:0; animation:fade .8s ease 4s forwards; filter:url(#text-glow); }
+
+    /* ── SUBTITLE ── */
+    .sub { font-family:'Segoe UI',system-ui,-apple-system,sans-serif; font-weight:500; font-size:16px; letter-spacing:4px; opacity:0; }
+    .sub1 { fill:#A78BFA; animation:t1 12s ease 4.5s infinite; }
+    .sub2 { fill:#818CF8; animation:t2 12s ease 4.5s infinite; }
+    .sub3 { fill:#6C63FF; animation:t3 12s ease 4.5s infinite; }
+    .sub4 { fill:#A78BFA; animation:t4 12s ease 4.5s infinite; }
+
+    /* ── TAGLINE ── */
+    .tag { fill:#555; font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+           font-weight:300; font-size:11px; letter-spacing:2px; opacity:0; animation:fade 1s ease 5s forwards; }
+
+    @media (prefers-color-scheme: light) {
+      .nm { fill: #1a1a2e; }
+      .tag { fill: #888; }
+    }
+  </style>
+
+  <defs>
+    <filter id="b1"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="b2"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="text-glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="lg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6C63FF">
+        <animate attributeName="stop-color" values="#6C63FF;#A78BFA;#818CF8;#6C63FF" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#A78BFA">
+        <animate attributeName="stop-color" values="#A78BFA;#818CF8;#6C63FF;#A78BFA" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <!-- ═══ EMBLEM centered at (130, 115) ═══ -->
+  <g>
+    <!-- Glow layers -->
+    <path class="g1" d="M 65 115 C 65 65,130 45,130 115 C 130 185,195 165,195 115 C 195 65,130 45,130 115 C 130 185,65 165,65 115 Z"/>
+    <path class="g2" d="M 65 115 C 65 65,130 45,130 115 C 130 185,195 165,195 115 C 195 65,130 45,130 115 C 130 185,65 165,65 115 Z"/>
+
+    <!-- Infinity main -->
+    <path class="inf" d="M 65 115 C 65 65,130 45,130 115 C 130 185,195 165,195 115 C 195 65,130 45,130 115 C 130 185,65 165,65 115 Z"/>
+
+    <!-- Orbits -->
+    <g class="ro1"><ellipse class="ob ob1" cx="130" cy="115" rx="65" ry="22" transform="rotate(-35,130,115)"/>
+      <circle class="el e1" cx="195" cy="93" r="5"/></g>
+    <g class="ro2"><ellipse class="ob ob2" cx="130" cy="115" rx="65" ry="22" transform="rotate(35,130,115)"/>
+      <circle class="el e2" cx="65" cy="93" r="5"/></g>
+    <g class="ro3"><ellipse class="ob ob3" cx="130" cy="115" rx="65" ry="22" transform="rotate(90,130,115)"/>
+      <circle class="el e3" cx="130" cy="50" r="5"/></g>
+
+    <!-- Wheel outer ring -->
+    <circle class="wr-out" cx="130" cy="115" r="40"/>
+    <!-- Dashed mid ring (rotating) -->
+    <circle class="wr-mid" cx="130" cy="115" r="30"/>
+    <!-- Inner ring -->
+    <circle class="wr-in" cx="130" cy="115" r="18"/>
+
+    <!-- 8 Spokes -->
+    <line class="sk k1" x1="130" y1="115" x2="130" y2="72"/>
+    <line class="sk k2" x1="130" y1="115" x2="161" y2="84"/>
+    <line class="sk k3" x1="130" y1="115" x2="173" y2="115"/>
+    <line class="sk k4" x1="130" y1="115" x2="161" y2="146"/>
+    <line class="sk k5" x1="130" y1="115" x2="130" y2="158"/>
+    <line class="sk k6" x1="130" y1="115" x2="99" y2="146"/>
+    <line class="sk k7" x1="130" y1="115" x2="87" y2="115"/>
+    <line class="sk k8" x1="130" y1="115" x2="99" y2="84"/>
+
+    <!-- Arrow tips at spoke ends (Mahoraga adaptation triangles) -->
+    <polygon class="arr a1" points="130,70 126,78 134,78"/>
+    <polygon class="arr a2" points="163,82 156,80 158,88"/>
+    <polygon class="arr a3" points="175,115 167,111 167,119"/>
+    <polygon class="arr a4" points="163,148 158,142 156,150"/>
+    <polygon class="arr a5" points="130,160 134,152 126,152"/>
+    <polygon class="arr a6" points="97,148 104,150 102,142"/>
+    <polygon class="arr a7" points="85,115 93,119 93,111"/>
+    <polygon class="arr a8" points="97,82 102,88 104,80"/>
+
+    <!-- Segment arcs (quarter arcs on outer ring) -->
+    <path class="sg s1" d="M 130,75 A 40 40 0 0 1 170,115"/>
+    <path class="sg s2" d="M 170,115 A 40 40 0 0 1 130,155"/>
+    <path class="sg s3" d="M 130,155 A 40 40 0 0 1 90,115"/>
+    <path class="sg s4" d="M 90,115 A 40 40 0 0 1 130,75"/>
+
+    <!-- Nucleus -->
+    <circle class="nc-ring" cx="130" cy="115" r="14"/>
+    <circle class="nc" cx="130" cy="115" r="10"/>
+  </g>
+
+  <!-- ═══ TEXT ═══ -->
+
+  <!-- Animated gradient divider -->
+  <line class="dv" x1="240" y1="45" x2="240" y2="190"/>
+
+  <!-- Name -->
+  <text class="nm" x="268" y="105">JAMES DARE</text>
+
+  <!-- Cycling titles -->
+  <text class="sub sub1" x="268" y="140">AI SOLUTIONS ENGINEER</text>
+  <text class="sub sub2" x="268" y="140">CREATIVE TECHNOLOGIST</text>
+  <text class="sub sub3" x="268" y="140">AUTONOMOUS AGENT BUILDER</text>
+  <text class="sub sub4" x="268" y="140">MUSIC VIDEO DIRECTOR  ·  350+</text>
+
+  <!-- Tagline -->
+  <text class="tag" x="268" y="170">GOLD RECORD  ·  47 REPOS  ·  24/7 AI ECOSYSTEM</text>
+</svg>
