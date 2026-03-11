@@ -58,7 +58,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 | You are... | Go to | What you'll find |
 |:-----------|:------|:-----------------|
 | **Hiring manager** | [Recent Milestones](#-recent-milestones) → [Proof of Craft](#-proof-of-craft) → [Hard Problems](#-hard-problems-ive-solved) → [Open To](#-open-to) | Active momentum, verifiable claims, technical depth, and what I'm looking for |
-| **Developer** | [Featured Projects](#-featured-projects) → [How We Work](#-how-we-work) → [What I'd Build Differently](#-what-id-build-differently) | Architecture decisions, open-source tools, honest retrospectives |
+| **Developer** | [Featured Projects](#-featured-projects) → [How We Work](#-how-we-work) → [Technical DNA](#technical-dna) → [What I'd Build Differently](#-what-id-build-differently) | Architecture decisions, cross-cutting patterns, honest retrospectives |
 | **AI enthusiast** | [Currently Building](#-currently-building) → [How Passion Ships](#-how-passion-ships) → [The Arc](#-the-arc) | 24/7 autonomous agent pipeline, MCP servers, 10-game learning suite |
 | **Potential client** | [All 33 Projects](#-all-33-projects) → [Portfolio](https://jamesdare.com) | 5 live client sites, 20+ deployments, full project catalog |
 
@@ -448,6 +448,21 @@ Infrastructure        ███████████░░░░░░░░�
 | **MCP over custom APIs** | Standardized tool protocol means any Claude session can use any tool. Built once, works everywhere — no per-integration auth flows | REST wrappers — each needs custom client code and versioning |
 | **Vitest over Jest** | 10x faster on TypeScript projects. Native ESM, no Babel config. Same assertion API so switching cost was zero | Jest — still works, but the config tax on modern TS projects isn't worth it |
 | **Vercel for everything** | Zero-config deploys, preview URLs on every PR, edge functions when needed. 16+ deployments, zero downtime incidents | Self-hosted — I'm one person. Server babysitting is not a competitive advantage |
+
+### Technical DNA
+
+> Patterns that repeat across projects — the architectural instincts behind the tool choices.
+
+| Pattern | What It Means | Where It Shows Up |
+|---------|--------------|-------------------|
+| **Local-first, cloud-optional** | Data lives on the machine that needs it. Cloud syncs when convenient, not as a dependency | Passion Agent → SQLite on Mac Mini. Memory MCP → local-first with session portability. Syncthing between machines instead of a central server |
+| **Protocol over integration** | Build to a standard, not to a vendor. Protocols survive API deprecations | MCP for all AI tool interfaces. Conventional Commits for all repos. SSE over WebSockets where bidirectional isn't needed |
+| **Fail at the boundary** | Validate inputs where they enter the system, not deep in business logic. One guard, not scattered checks | FCPXML zero-division guards at parse entry. Iframe sandbox at embed boundary. Request validation middleware, not per-handler checks |
+| **Observation masking** | Compress verbose outputs before they consume reasoning context. Summaries > raw logs | Agent subprocess isolation — each gets scoped context. Pre-compact hooks extract structure before context fills. Tool outputs → structured summaries |
+| **Ship the feedback loop** | Every system should tell you if it's working. Silent success is a debugging nightmare | 89.9% approval rate as a real metric. Daily status auto-updates. CHANGELOG on every commit. Discord notifications on every PR |
+| **Composition over creation** | Reuse patterns before creating new abstractions. New components are a cost, not a feature | Shared `<DataCard>` pattern (lesson learned from 101 PACT components). Skill reuse across Claude Code sessions. Template repos for repeated patterns |
+
+> These aren't aspirational — they're extracted from 1,257+ commits of doing it this way. Each pattern earned its place by surviving real production constraints.
 
 ---
 

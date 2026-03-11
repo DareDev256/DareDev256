@@ -7,6 +7,13 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.6.24] - 2026-03-10
+
+### Added
+- "Technical DNA" subsection under Tech Stack between "Why These Tools" and GitHub Stats — 6-row pattern table (local-first, protocol over integration, fail at the boundary, observation masking, ship the feedback loop, composition over creation) each with definition and concrete evidence from shipped projects
+- Surfaces the architectural instincts that connect individual tool choices into a coherent engineering philosophy — the systems-thinking layer hiring managers and senior engineers screen for
+- Updated developer routing in "Reading This? Start Here" to include the new section
+
 ## [0.6.23] - 2026-03-10
 
 ### Added
