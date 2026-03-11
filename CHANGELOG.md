@@ -7,6 +7,18 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.7.0] - 2026-03-11
+
+### Changed
+- **Major trim: 760 → 301 lines** (117 visible, 118 in collapsed details)
+- Cut 10 sections: Project Goals, Start Here nav, stats table, Recent Milestones, The Arc, Director's Eye, Engineering Principles, Behind This README, Contribution Guidelines, Security Policy
+- Merged "How We Work" + "How Passion Ships" + Glossary into single collapsed "How the Passion Ecosystem Works"
+- Merged "Technical DNA" + "Domain Depth" into collapsed Tech Stack details block
+- Condensed showcase section to single line instead of multi-line block
+- Updated UIVPG link to clean Vercel URL (ultimate-image-prompt-generator.vercel.app)
+- Updated component counts (101 → 121), star counts (19 → 20+), tool count (34 → 53)
+- Preserved all deep content in 4 collapsed `<details>` blocks for engineers who want to dig in
+
 ## [0.6.25] - 2026-03-10
 
 ### Added
