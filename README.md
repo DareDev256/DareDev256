@@ -2,7 +2,7 @@
 
 # James Dare
 
-**Gold-record music video director turned AI engineer. I build autonomous systems that ship code 24/7.**
+**Gold-record music video director turned AI engineer. I build systems that ship code while I sleep.**
 
 <a href="https://jamesdare.com"><img src="./signature.svg" alt="James Dare — AI Solutions Engineer" width="600" /></a>
 
@@ -13,7 +13,7 @@
 [![Commits](https://img.shields.io/badge/Total_Commits-1%2C257+-E8B931?style=flat-square&logo=git&logoColor=white)](https://github.com/DareDev256)
 [![Ecosystem](https://img.shields.io/badge/AI_Ecosystem-24%2F7-FF6B6B?style=flat-square&logo=robot&logoColor=white)](https://passion.jamesdare.com)
 
-Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**, earned a **gold record**, and sold **KushdUp Filmsz** to **6ixBuzz** (3M+ followers). Now I ship at the intersection of AI engineering and creative technology.
+Directed **350+ music videos** for **Chief Keef, Migos, and Masicka**. Earned a **gold record**. Sold **KushdUp Filmsz** to **6ixBuzz** (3M+ followers). Now I ship where AI engineering meets creative technology.
 
 [![Website](https://img.shields.io/badge/Portfolio-jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jamesdare.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/james-olusoga-00179940/)
@@ -27,10 +27,10 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 | Status | Project | Description |
 |:------:|---------|-------------|
-| 🟢 | **Passion Agent** | Autonomous AI system — 92 modules, 109K LOC, 1,257+ commits. 24/7 brain cycles across 47 repos, 3 LLM backends, real subprocess agents |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Cyberpunk HUD — 121 components, 10 tabs, signal-based auto-nav, keyboard shortcuts, voice + avatar. Next.js 16 + React 19 |
-| 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro XML — 53 tools, natural language video editing. 20+ stars |
-| 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 educational games — 6 AI literacy + 4 tech fundamentals, all deployed |
+| 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC, ships across 47 repos with 3 LLM backends. Zero human intervention from cycle start to PR |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Command terminal for the agent — 121 components, keyboard shortcuts, voice control. Next.js 16 + React 19 |
+| 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First-ever MCP server for Final Cut Pro — 53 tools, natural language video editing. 20+ stars |
+| 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed games teaching AI literacy and tech fundamentals |
 
 <!-- DAILY_STATUS_START -->
 > *Updated by [Passion.EXE](https://github.com/DareDev256/passion-agent) — Mar 11, 2026 at 8:11 PM ET*
@@ -55,16 +55,16 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 ### [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)
 ![Stars](https://img.shields.io/github/stars/DareDev256/fcpxml-mcp-server?style=flat-square&color=yellow)
 
-**First MCP server for Final Cut Pro XML.** 53 tools for timeline analysis, health checks, and non-destructive editing.
+**First MCP server for Final Cut Pro.** 53 tools — timeline analysis, health checks, non-destructive editing via natural language.
 
-`Python` `MCP SDK` `XML Parsing`
+`Python` `MCP SDK` `FCPXML`
 
 </td>
 <td width="33%">
 
 ### Passion Agent *(private)*
 
-**Autonomous AI ecosystem** — 92 modules, 109K LOC, 1,257+ commits. 24/7 brain cycles, 47 repos, 3 LLM backends.
+**My autonomous brain** — 92 modules, 109K LOC. Picks its own work, writes code, opens PRs. 89.9% approval rate across 1,257+ commits.
 
 `Node.js` `Claude Code SDK` `MCP`
 
@@ -73,7 +73,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 ### PACT Dashboard *(private)*
 
-**Passion Agent Command Terminal** — cyberpunk HUD, 121 components, 10 tabs, signal-based auto-nav, voice + avatar.
+**Cyberpunk command terminal** — real-time agent monitoring, 121 components, keyboard-driven navigation, voice + avatar.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -85,7 +85,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 ### [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) [![Live](https://img.shields.io/badge/Live-Try_It-10B981?style=flat-square)](https://ultimate-image-prompt-generator.vercel.app)
 ![Stars](https://img.shields.io/github/stars/DareDev256/Ultimate-Image-Video-Prompt-Generator?style=flat-square&color=yellow)
 
-**AI prompt engineering tool** — structured builder for Nano Banana, Veo3, DALL-E, Kling 01, and Sora.
+**Prompt engineering workbench** — structured builder for 5 AI models: Nano Banana, Veo3, DALL-E, Kling, Sora.
 
 `TypeScript` `AI Prompts`
 
@@ -95,7 +95,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 ### [pulsemap](https://github.com/DareDev256/pulsemap) [![Live](https://img.shields.io/badge/Live-Try_It-10B981?style=flat-square)](https://pulsemap-three.vercel.app)
 ![Stars](https://img.shields.io/github/stars/DareDev256/pulsemap?style=flat-square&color=yellow)
 
-**Real-time global disease surveillance** — weather radar for outbreaks. WHO data, Mapbox GL, Supabase.
+**Disease surveillance dashboard** — weather radar for outbreaks. Real-time WHO data, animated spread arcs, Mapbox GL.
 
 `React` `Mapbox GL` `Next.js`
 
@@ -104,7 +104,7 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 ### [passion-site](https://github.com/DareDev256/passion-site) [![Live](https://img.shields.io/badge/Live-passion.jamesdare.com-10B981?style=flat-square)](https://passion.jamesdare.com)
 
-**Passion's public website** — live agent presence, real-time status, personality showcase.
+**The agent's public face** — live presence indicator, real-time status feed, personality showcase.
 
 `HTML` `CSS` `JavaScript`
 
@@ -120,10 +120,10 @@ Previously directed **350+ music videos** for **Chief Keef, Migos, and Masicka**
 
 | What I Bring | Evidence |
 |-------------|----------|
-| AI product development | MCP servers, RAG pipelines, autonomous agents, LLM eval suites — all shipped |
-| Creative-to-technical leadership | 350+ music videos → shipping AI tools daily |
-| Full-stack velocity | 33 repos, 20+ deployments, 190 releases in 21 days |
-| Developer experience | 20+ stars on first MCP server, 571 tests, 10-game learning suite |
+| AI product development | MCP servers, RAG pipelines, autonomous agents, LLM eval suites — shipped, not demoed |
+| Creative→technical leadership | Directed 350+ videos for major labels → now directing AI systems |
+| Full-stack velocity | 33 repos, 20+ live deployments, 190 releases in 21 days |
+| Developer experience instinct | 20+ stars on first MCP server, 571 tests, 10 deployed learning games |
 
 ---
 
@@ -157,11 +157,11 @@ Developer Tooling     ███████████████░░░░�
 
 | Claim | Receipt |
 |-------|---------|
-| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** for Final Cut Pro. 20+ stars, real video editors using it |
-| "I ship fast" | 10-game learning suite designed, built, deployed. 190 releases in 21 days |
-| "My AI agent is real" | 1,257+ commits across 47 repos. 60 brain cycles/day. It doesn't demo — it ships |
-| "I build for clients" | 5 artist websites live — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
-| "I care about quality" | 571 tests in fcpxml-mcp-server, 1,237+ across ecosystem. OWASP-hardened security patterns |
+| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** for Final Cut Pro. 20+ stars from real video editors |
+| "I ship fast" | 10 games designed, built, and deployed. 190 releases in 21 days |
+| "My AI agent is real" | 1,257+ commits across 47 repos. 60 cycles/day. It doesn't demo — it ships |
+| "I build for clients" | 5 artist sites live — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
+| "I care about quality" | 571 tests in one repo, 1,237+ across the ecosystem. OWASP-hardened patterns throughout |
 
 ---
 
@@ -289,7 +289,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 <div align="center">
 
-*"I used to direct artists. Now I direct machines. Same taste, same urgency — but now it scales."*
+*"I used to direct artists. Now I direct machines. Same taste, same urgency — infinite scale."*
 
 [![See Everything I've Built](https://img.shields.io/badge/See_Everything_I've_Built-jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jamesdare.com)
 [![Let's Build Something](https://img.shields.io/badge/Let's_Build_Something-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/james-olusoga-00179940/)

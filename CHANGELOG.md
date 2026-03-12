@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.7.1] - 2026-03-11
+
+### Changed
+- Hero tagline tightened — "ship code while I sleep" over generic "24/7" phrasing
+- Bio restructured from single run-on sentence to punchy short statements
+- Currently Building descriptions sharpened — each row now highlights what's unique, not repeated stats
+- Featured Projects copy rewritten — Passion Agent shows approval rate, PACT shows real-time monitoring, pulsemap shows animated arcs
+- Open To evidence column strengthened with impact-first framing ("shipped, not demoed")
+- Proof of Craft receipts polished for scannability — tighter phrasing, stronger verbs
+- Closing quote refined — "infinite scale" replaces "but now it scales"
+
 ## [0.7.0] - 2026-03-11
 
 ### Changed
