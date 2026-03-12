@@ -22,8 +22,8 @@ This constraint exists because a bloated profile README hurts more than it helps
 | Update daily status | Passion Agent handles this automatically via `DAILY_STATUS_START/END` markers |
 | Update showcase | Passion Agent writes between `SHOWCASE_SECTION_START/END` markers |
 | Check badge health | Visit profile page, look for broken image icons. See [Troubleshooting](#troubleshooting) |
-| Bump repo count | Search `29` in README.md — appears in 4+ places (badges, metrics ribbon, All Projects header, Open To table, The Arc) |
-| Bump commit count | Search `1,257` in README.md — appears in 6 places (badges, metrics ribbon, Currently Building, How We Work, The Arc, Proof of Craft) |
+| Bump repo count | Search `33` in README.md — appears in 3 places (hero badge, Open To table, All Projects header) |
+| Bump commit count | Search `1,257` in README.md — appears in 4 places (hero badge, Featured Projects, How We Work, Proof of Craft) |
 | Add a new project | Add to the correct category table inside `<details>`, update repo count, update Featured if it's a flagship |
 | Change job targets | Edit the "Open To" section header and evidence table |
 | Test changes locally | `grip README.md` or push to a branch and preview at `github.com/DareDev256/DareDev256/blob/<branch>/README.md` |
@@ -56,10 +56,10 @@ GitHub Markdown Renderer
 Profile page at github.com/DareDev256
     ↕
 External badge APIs (rendered as images):
-  - readme-typing-svg.demolab.com (animated typing header)
   - komarev.com (profile view counter)
   - img.shields.io (all tech/project badges)
   - github-profile-summary-cards.vercel.app (stats cards)
+  - github-profile-trophy.vercel.app (trophy shelf)
 ```
 
 ## Codebase Map
@@ -68,11 +68,13 @@ External badge APIs (rendered as images):
 DareDev256/
 ├── README.md          # The entire product — GitHub profile page content
 ├── CHANGELOG.md       # Version history following Keep a Changelog format
-├── FOR_DARE.md        # This file — project documentation
+├── CLAUDE.md          # Agent/contributor directives — size caps, auto-update zones
+├── FOR_DARE.md        # This file — project documentation & troubleshooting
+├── signature.svg      # Custom animated emblem — replaces generic typing SVG header
 └── .git/              # Git version control
 ```
 
-Three files. The simplicity is the point.
+Five files. The simplicity is the point.
 
 ## Tech Stack & Why
 
@@ -80,7 +82,7 @@ Three files. The simplicity is the point.
 |-----------|---------|-----------------|
 | GitHub-Flavored Markdown | Content format | Only option for GitHub profile READMEs |
 | Inline HTML (`<p>`, `<img>`, `<a>`) | Layout control | Markdown alone can't center content or control image sizing |
-| [readme-typing-svg](https://readme-typing-svg.demolab.com) | Animated header | Eye-catching, configurable, no JS required |
+| Custom `signature.svg` | Animated hero emblem | Replaced third-party typing SVG — eliminates external dependency, branded identity |
 | [Shields.io](https://shields.io) | Tech/project badges | Industry standard, huge icon library, `for-the-badge` style |
 | [github-profile-summary-cards](https://github-profile-summary-cards.vercel.app) | Stats visualization | More reliable than github-readme-stats (which has frequent rate limiting) |
 | [komarev.com](https://komarev.com/ghpvc/) | Profile view counter | Simple, free, no auth required |
@@ -89,6 +91,7 @@ Three files. The simplicity is the point.
 
 | Service | Why Replaced |
 |---------|-------------|
+| `readme-typing-svg` (demolab) | Replaced with custom `signature.svg` in v0.7.0 — eliminates external dependency, gives branded identity |
 | `github-readme-stats` (anuraghazra) | Frequent downtime due to Vercel rate limits — cards often show as broken images |
 | `github-readme-streak-stats` | Unreliable uptime, broken badges recurring issue |
 
@@ -124,12 +127,14 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 19. **v0.6.11** — Added Metrics Sync Map to FOR_DARE.md — cross-reference index mapping 7 hardcoded metrics (commits, repos, modules, LOC, deployments, managed repos, fcpxml stars) to their exact README line numbers (37 total locations) with sources of truth and update procedure
 20. **v0.6.12** — Added "Reading This? Start Here" audience-routing section (hiring managers, developers, AI enthusiasts, clients → targeted deep links). Fixed broken anchor link in quick-nav. Synced FOR_DARE.md Metrics Sync Map to match current README values (92 modules, 109K LOC, 47 managed repos, 29 public repos). Updated layout map to 19 sections
 21. **v0.6.13** — Added "Engineering Principles" section between How We Work and Open To — 6 values (ship-first, accessibility, testing, security, open source, documentation) each with concrete "In Practice" evidence. Updated layout map to 20 sections
-22. **v0.6.14** (current) — Added hero tagline for cold-visitor context, velocity metrics ribbon (190 releases/21 days, 60 cycles/day, 89.9% approval, 1,237+ tests), strengthened closing thesis, updated What's Next with specific technical details and job targets
+22. **v0.6.14** — Added hero tagline for cold-visitor context, velocity metrics ribbon (190 releases/21 days, 60 cycles/day, 89.9% approval, 1,237+ tests), strengthened closing thesis, updated What's Next with specific technical details and job targets
+23. **v0.7.0** — Major trim: 760 → 301 lines. Cut 10 sections (Project Goals, Start Here, stats table, Recent Milestones, The Arc, Director's Eye, Engineering Principles, Behind This README, Contribution Guidelines, Security Policy). Collapsed deep content into 4 `<details>` blocks. Custom `signature.svg` replaces external typing SVG. Updated counts (121 components, 20+ stars, 53 tools)
+24. **v0.7.1** (current) — Portfolio-grade copy polish: tighter hero tagline, punchy bio, sharpened Featured Projects with unique value per card, stronger Proof of Craft receipts
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
 ### Repo Count Accuracy
-The README claims "29 public repos" — this includes the `awesome-mcp-servers` fork. If counting only original repos, it's 28. Keep this number updated as new repos are created.
+The README claims "33 public repos" — this includes the `awesome-mcp-servers` fork. If counting only original repos, it's 32. Keep this number updated as new repos are created.
 
 ## Dynamic Content Zones
 
@@ -171,29 +176,26 @@ You can freely edit anything **outside** these marker pairs. Content **inside** 
 ## Patterns Worth Stealing
 
 ### Recruiter-Optimized Layout
-The README follows a deliberate information hierarchy:
-1. **Hook** — Typing animation with role titles
-2. **One-liner** — Who you are, what you've done, compressed into one paragraph
-3. **Metrics ribbon** — Gold record, repos, stars, deployments, commits, AI ecosystem at a glance
-4. **Project Goals** — What drives every repo (shipped AI, build in public, creative-technical bridge, autonomous collaboration)
-5. **Reading This? Start Here** — Audience-targeted navigation: hiring managers → proof, developers → architecture, AI enthusiasts → ecosystem, clients → portfolio
-6. **Currently Building** — Status table (🟢/🟡) with live daily status from Passion Agent
-7. **Workshop Showcase** — Latest build highlight, auto-updated by Passion Agent
-8. **Featured Projects** — 2×3 HTML grid with stars, live links, and tech tags
-9. **How We Work** — ASCII architecture diagram showing the Passion ecosystem
-10. **Engineering Principles** — 6 values (ship-first, accessibility, testing, security, open source, documentation) with "In Practice" evidence
-11. **Open To** — Explicit role targeting with claim→evidence table
-12. **All Projects** — Categorized tables inside `<details>` toggle (29 projects across 5 categories)
-13. **Tech Stack** — Two-tier badges: `for-the-badge` for links, `flat-square` for tech grid
-14. **Domain Depth** — Unicode bar chart showing expertise levels across 7 domains with evidence callout
-15. **GitHub Stats** — Profile summary cards (tokyonight theme)
-16. **The Arc** — Visual career timeline (2008→2026) using tree characters
-17. **Proof of Craft** — 5 verifiable claim→receipt pairs with direct links to evidence
-18. **What's Next** — Forward-looking roadmap (current, next, goal) in tree-character format
-19. **Contribution Guidelines** — Fork workflow, conventional commits, PR etiquette
-20. **Closing CTA** — Quote, thesis statement, three action badges
+The v0.7.0 restructure trimmed 20 sections to 12 visible + 4 collapsed. Every cut was intentional — deep content moved behind `<details>` toggles so the main scroll earns its space.
 
-This 20-section structure is not accidental — it's designed to capture attention in the first 5 seconds and give recruiters a reason to click through.
+**Visible sections (in order):**
+1. **Hero** — Custom animated emblem (`signature.svg`), bio, badge bar, CTA buttons
+2. **Currently Building** — Status table (🟢/🟡) with live daily status from Passion Agent
+3. **Workshop Showcase** — Latest build highlight, auto-updated by Passion Agent
+4. **Featured Projects** — 2×3 HTML grid with stars, live links, and tech tags
+5. **Open To** — Role targets with claim→evidence table
+6. **Tech Stack** — `flat-square` badge grid
+7. **Proof of Craft** — 5 verifiable claim→receipt pairs
+8. **GitHub Stats** — Trophy shelf + profile summary cards (tokyonight theme)
+9. **Closing CTA** — Quote, thesis, three action badges
+
+**Collapsed sections (`<details>`):**
+- **How the Passion Ecosystem Works** — merged from 3 prior sections (How We Work, How Passion Ships, Glossary)
+- **All 33 Projects** — 5 category tables
+- **Hard Problems I've Solved** — 4 deep-dive war stories
+- **What I'd Build Differently** — 4 honest retrospectives
+
+This 9+4 structure is not accidental — visible content converts in 5 seconds; collapsed content proves depth when engineers click through.
 
 ### Badge Style Consistency
 All badges use `style=for-the-badge` for visual weight and consistency. Tech stack badges use `style=flat-square` for a more compact, scannable grid. This two-tier system creates visual hierarchy.
@@ -231,7 +233,7 @@ This two-tier system creates visual weight where it matters (CTAs) and density w
 
 1. **Hero and closing CTA** use `<div align="center">` — everything else is left-aligned
 2. **Featured Projects** use a `<table>` with `width="33%"` cells — not Markdown tables (which can't control column width)
-3. **All Projects** live inside `<details>` to control scroll depth — never promote all 28 projects to top-level
+3. **All Projects** live inside `<details>` to control scroll depth — never promote all 33 projects to top-level
 4. **ASCII diagrams** use exactly 67 display columns — this is the widest that renders without horizontal scroll on mobile GitHub
 5. **Sections flow** hook → proof → detail → CTA — never put detail before proof
 
@@ -289,7 +291,7 @@ Step-by-step procedures for the most common maintenance operations. Follow these
 ### New Repo Added
 
 1. Add entry to the correct category table inside `<details>` in All Projects
-2. Search `28` (or current count) → update in 4 places: badge, metrics ribbon, All Projects header, Open To table
+2. Search `33` (or current count) → update in 3 places: hero badge, Open To table, All Projects header
 3. If it's a flagship: add to Featured Projects `<table>` grid (max 6 cells — 2 rows of 3)
 4. If it has live deployment: add `[![Live](badge)](url)` inline
 5. Bump patch version, add CHANGELOG entry
@@ -322,89 +324,75 @@ Every hardcoded number in the README must stay consistent across all its occurre
 
 ### Commit Count (`1,257+`)
 
-| Line | Section | Context |
-|------|---------|---------|
-| 12 | Hero badges | `Total_Commits-1%2C257+` (URL-encoded) |
-| 26 | Metrics ribbon | `1,257+ Commits` |
-| 47 | Currently Building | Passion Agent description |
-| 104 | Featured Projects | Passion Agent card |
-| 176 | How We Work diagram | `1,257+ commits across ecosystem` |
-| 205 | Open To table | shipping velocity evidence |
-| 219 | All Projects | Passion Agent row |
-| 348 | The Arc | `Then 1,257 more` |
-| 366 | Proof of Craft | agent commit evidence |
+| Section | Context |
+|---------|---------|
+| Hero badges (line ~13) | `Total_Commits-1%2C257+` (URL-encoded) |
+| Featured Projects | Passion Agent card: `1,257+ commits` |
+| How the Passion Ecosystem (collapsed) | `1,257+ commits across ecosystem` |
+| Proof of Craft | agent commit evidence |
 
-**9 locations.** Source of truth: `git log --oneline | wc -l` across all 36 managed repos.
+**4 visible locations.** Source of truth: `git log --oneline | wc -l` across all managed repos.
 
-### Public Repo Count (`29`)
+### Public Repo Count (`33`)
 
-| Line | Section | Context |
-|------|---------|---------|
-| 9 | Hero badges | `Public_Repos-29` |
-| 26 | Metrics ribbon | `29 Public Repos` |
-| ~77 | Quick links | `All 29 Projects` anchor text |
-| ~215 | Open To table | shipping velocity evidence |
-| ~222 | All Projects header | `All 29 Projects` |
-| ~363 | The Arc | `29 repos` |
+| Section | Context |
+|---------|---------|
+| Hero badges (line ~10) | `Public_Repos-33` |
+| Open To table | shipping velocity evidence |
+| All Projects header (collapsed) | `All 33 Projects` |
 
-**6 locations.** Source of truth: `https://github.com/DareDev256?tab=repositories` (includes awesome-mcp-servers fork).
+**3 locations.** Source of truth: `https://github.com/DareDev256?tab=repositories`.
 
 ### Module Count (`92`)
 
-| Line | Section | Context |
-|------|---------|---------|
-| ~57 | Currently Building | Passion Agent description (`92 modules`) |
-| ~114 | Featured Projects | Passion Agent card (`92 modules`) |
-| ~175 | How We Work diagram | `92 modules, 109K LOC` |
-| ~229 | All Projects | Passion Agent row |
-| ~322 | Domain Depth | Autonomous Systems evidence (`92 modules`) |
-| ~363 | The Arc | `92 modules` |
+| Section | Context |
+|---------|---------|
+| Currently Building | Passion Agent description |
+| Featured Projects | Passion Agent card |
+| How the Passion Ecosystem (collapsed) | architecture diagram |
+| Domain Depth (collapsed) | Autonomous Systems evidence |
 
-**6 locations.** Source of truth: Passion Agent codebase module count.
+**4 locations.** Source of truth: Passion Agent codebase module count.
 
 ### LOC (`109K`)
 
-| Line | Section | Context |
-|------|---------|---------|
-| ~57 | Currently Building | Passion Agent description (`109K LOC`) |
-| ~114 | Featured Projects | Passion Agent card (`109K LOC`) |
-| ~175 | How We Work diagram | `92 modules, 109K LOC` |
+| Section | Context |
+|---------|---------|
+| Currently Building | Passion Agent description |
+| Featured Projects | Passion Agent card |
+| How the Passion Ecosystem (collapsed) | architecture diagram |
 
 **3 locations.** Source of truth: `cloc` or `tokei` on the Passion Agent repo.
 
-### Live Deployments (`16+`)
+### Live Deployments (`20+`)
 
-| Line | Section | Context |
-|------|---------|---------|
-| 11 | Hero badges | `Live_Deployments-16+` |
-| 26 | Metrics ribbon | `16+ Live Deployments` |
-| 205 | Open To table | shipping velocity evidence |
-| 350 | The Arc | `16+ live deployments` |
+| Section | Context |
+|---------|---------|
+| Hero badges (line ~12) | `Live_Deployments-20+` |
+| Open To table | shipping velocity evidence |
 
-**4 locations.** Source of truth: count of Vercel deployments + GitHub Pages sites.
+**2 locations.** Source of truth: count of Vercel deployments + GitHub Pages sites.
 
 ### Managed Repos (`47`)
 
-| Line | Section | Context |
-|------|---------|---------|
-| ~57 | Currently Building | `Orchestrates 47 repos` |
-| ~114 | Featured Projects | `47 managed repos` |
-| ~186 | How We Work diagram | `47 Managed Repos` |
-| ~229 | All Projects | `47 repos` |
-| ~376 | Proof of Craft | `47 repos` |
+| Section | Context |
+|---------|---------|
+| Currently Building | `ships across 47 repos` |
+| Featured Projects | Passion Agent card |
+| How the Passion Ecosystem (collapsed) | `47 Managed Repos` |
+| Proof of Craft | `47 repos` |
 
-**5 locations.** Source of truth: Passion Agent config repo list.
+**4 locations.** Source of truth: Passion Agent config repo list.
 
-### fcpxml Stars (`16`)
+### fcpxml Stars (`20+`)
 
-| Line | Section | Context |
-|------|---------|---------|
-| 49 | Currently Building | `16 stars` |
-| 207 | Open To table | `16 stars on first MCP server` |
-| 349 | The Arc | `16 stars` |
-| 364 | Proof of Craft | `16 stars, 2 forks` |
+| Section | Context |
+|---------|---------|
+| Currently Building | `20+ stars` |
+| Open To table | `20+ stars on first MCP server` |
+| Proof of Craft | star evidence |
 
-**4 locations.** Source of truth: `https://github.com/DareDev256/fcpxml-mcp-server` star count.
+**3 locations.** Source of truth: `https://github.com/DareDev256/fcpxml-mcp-server` star count.
 
 ### Update Procedure
 
@@ -420,12 +408,12 @@ Every hardcoded number in the README must stay consistent across all its occurre
 
 When updating this README, verify:
 - [ ] All project URLs still resolve (5 live deployments + GitHub links)
-- [ ] Repo count is accurate (currently 29 public repos — includes awesome-mcp-servers fork)
+- [ ] Repo count is accurate (currently 33 public repos — includes awesome-mcp-servers fork)
 - [ ] "Currently Building" section reflects actual current work
 - [ ] Badge services are rendering (check for broken images on profile page)
 - [ ] Stats cards are loading (github-profile-summary-cards.vercel.app)
 - [ ] "Open To" section matches current job search status
-- [ ] "How I Work" diagram reflects current Passion Agent module architecture
+- [ ] Collapsed "How the Passion Ecosystem Works" reflects current agent architecture
 - [ ] CHANGELOG.md is updated with any changes (version bump for non-trivial changes)
 - [ ] CHANGELOG versions are sequential with no gaps
 - [ ] FOR_DARE.md version history matches CHANGELOG.md (Content Strategy Evolution section)
@@ -436,9 +424,9 @@ All rendering depends on external services. If any break, the profile degrades v
 
 | Service | URL | Health Check | Fallback |
 |---------|-----|-------------|----------|
-| Typing SVG | readme-typing-svg.demolab.com | [Test](https://readme-typing-svg.demolab.com?lines=test) | Static `# James Dare` header |
 | Shields.io | img.shields.io | [Test](https://img.shields.io/badge/test-passing-green) | Plain text in parentheses |
 | Profile Summary Cards | github-profile-summary-cards.vercel.app | [Test](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DareDev256&theme=tokyonight) | Remove stats section entirely |
+| Profile Trophy | github-profile-trophy.vercel.app | [Test](https://github-profile-trophy.vercel.app/?username=DareDev256&theme=tokyonight&no-frame=true&column=1) | Remove trophy shelf |
 | Komarev Views | komarev.com | [Test](https://komarev.com/ghpvc/?username=DareDev256) | Remove view counter badge |
 
 ---

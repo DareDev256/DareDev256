@@ -7,6 +7,18 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.7.2] - 2026-03-11
+
+### Changed
+- **FOR_DARE.md major sync** — documentation drifted during v0.7.x restructure, now reflects actual state
+- Updated layout map from stale 20-section structure to current 9 visible + 4 collapsed architecture
+- Added `signature.svg` and `CLAUDE.md` to codebase map (were missing since v0.7.0)
+- Synced all Metrics Sync Map values: repos 29→33, stars 16→20+, deployments 16+→20+, removed stale line-number refs
+- Updated version history through v0.7.1 (was stuck at v0.6.14)
+- Replaced typing SVG references with custom `signature.svg` in tech stack, data flow, and external deps tables
+- Added trophy shelf to external dependencies with health check link
+- Updated maintenance checklist and playbook counts to match current repo state
+
 ## [0.7.1] - 2026-03-11
 
 ### Changed
