@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.7.3] - 2026-03-13
+
+### Changed
+- **Daily status zone** — refreshed to Mar 13 with current task stats (4 tasks, 3 repos, 100% success)
+- **Showcase zone** — updated to PACT Dashboard four-layer security hardening + 43 new tests (695 total, 14 suites)
+- **Test counts updated** — PACT Dashboard 571→695 across Proof of Craft, Open To, Featured Projects, Currently Building, and All Projects sections
+- **PACT descriptions tightened** — replaced "keyboard shortcuts, voice control" with "695 tests, OWASP-hardened" to lead with quality signals
+- **Ecosystem test total** — bumped from 1,237+ to 1,350+ reflecting PACT and fcpxml-mcp-server growth
+
 ## [0.7.2] - 2026-03-11
 
 ### Changed
