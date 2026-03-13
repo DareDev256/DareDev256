@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.7.6] - 2026-03-13
+
+### Added
+- **Glossary section** in FOR_DARE.md — 9 terms (Brain Cycle, PACT, MCP, Somatic Markers, Observation Masking, Passion Memory, Intel Radar, Showcase Zone, Daily Status Zone) for new contributors and agents
+- **PACT Test Count (`695`)** to Metrics Sync Map — 4 README locations now tracked with source of truth
+- **Ecosystem Test Total (`1,350+`)** to Metrics Sync Map — 1 README location tracked with sum-of-repos source
+- **Content Strategy Evolution** entries for v0.7.5 and v0.7.6
+
+### Fixed
+- **Update Procedure step 4** — removed stale reference to "The Arc" section (cut in v0.7.0)
+
 ## [0.7.5] - 2026-03-13
 
 ### Added

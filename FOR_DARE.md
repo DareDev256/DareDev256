@@ -149,7 +149,9 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 24. **v0.7.1** — Portfolio-grade copy polish: tighter hero tagline, punchy bio, sharpened Featured Projects with unique value per card, stronger Proof of Craft receipts
 25. **v0.7.2** — FOR_DARE.md major sync: updated layout map to 9+4 structure, added signature.svg and CLAUDE.md to codebase map, synced Metrics Sync Map values, replaced stale typing SVG references
 26. **v0.7.3** — Refreshed auto-update zones, updated PACT test counts (571→695), tightened PACT descriptions to lead with quality signals, bumped ecosystem test total to 1,350+
-27. **v0.7.4** (current) — FOR_DARE.md stale reference cleanup: fixed Typography section citing replaced typing SVG, corrected Seasonal Refresh playbook referencing cut sections (The Arc, What's Next), fixed visible section count (was "12", actual is 9+4 since v0.7.0)
+27. **v0.7.4** — FOR_DARE.md stale reference cleanup: fixed Typography section citing replaced typing SVG, corrected Seasonal Refresh playbook referencing cut sections (The Arc, What's Next), fixed visible section count (was "12", actual is 9+4 since v0.7.0)
+28. **v0.7.5** — FOR_DARE.md asset documentation: added signature.svg property table, CLAUDE.md file docs, signature emblem troubleshooting, v0.7.4 content strategy entry
+29. **v0.7.6** (current) — FOR_DARE.md documentation gaps: added Glossary (9 terms for new contributors), added PACT test count and ecosystem test total to Metrics Sync Map, fixed stale "The Arc" reference in Update Procedure
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -262,6 +264,22 @@ This two-tier system creates visual weight where it matters (CTAs) and density w
 - **Signature emblem:** Custom `signature.svg` — animated SVG replacing the old third-party typing animation. No external dependency, branded identity
 - **Code blocks:** Used for ASCII art and domain depth chart — never for inline code snippets (use backtick spans instead)
 - **Emphasis pattern:** Bold for project names and metrics, italic for dates and attributions, never underline
+
+## Glossary
+
+Quick reference for terms used across the README and this doc. Useful for new contributors or agents encountering the codebase for the first time.
+
+| Term | Meaning |
+|------|---------|
+| **Brain Cycle** | One 30-minute Passion Agent execution loop: strategize → schedule → execute → report. ~60 per day |
+| **PACT** | Passion Agent Command Terminal — the Next.js dashboard for monitoring and controlling the agent |
+| **MCP** | Model Context Protocol — Anthropic's standard for connecting AI models to external tools and data |
+| **Somatic Markers** | Emotional weight tags the agent attaches to memories, influencing future prioritization (inspired by Damasio's neuroscience theory) |
+| **Observation Masking** | Compressing verbose tool outputs into structured summaries before passing to sub-agents, to preserve context budget |
+| **Passion Memory** | SQLite-backed persistent brain shared across all agent sessions via MCP server |
+| **Intel Radar** | Agent subsystem that monitors Reddit, HN, Bluesky, and RSS for relevant signals |
+| **Showcase Zone** | Auto-updated README section between `SHOWCASE_SECTION_START/END` markers — highlights latest notable build |
+| **Daily Status Zone** | Auto-updated README section between `DAILY_STATUS_START/END` markers — task counts and repo activity |
 
 ## Level-Up Takeaways
 
@@ -414,13 +432,31 @@ Every hardcoded number in the README must stay consistent across all its occurre
 
 **3 locations.** Source of truth: `https://github.com/DareDev256/fcpxml-mcp-server` star count.
 
+### PACT Test Count (`695`)
+
+| Section | Context |
+|---------|---------|
+| Currently Building | PACT Dashboard description |
+| Featured Projects | PACT card |
+| Open To table | developer experience evidence |
+| Proof of Craft | quality evidence |
+
+**4 locations.** Source of truth: `npx vitest run` in the passion-dashboard repo.
+
+### Ecosystem Test Total (`1,350+`)
+
+| Section | Context |
+|---------|---------|
+| Proof of Craft | `1,350+ across the ecosystem` |
+
+**1 location.** Source of truth: sum of test counts across all repos (PACT 695 + fcpxml-mcp-server 618 + others).
+
 ### Update Procedure
 
 1. Search for the **exact current value** (e.g., `1,257`) — don't search just the number
 2. Update every line listed above — **no partial updates**
 3. For the commit badge (line 12), URL-encode commas as `%2C`
-4. For The Arc section, maintain the narrative phrasing (e.g., "Then 1,257 more" not "1,257+ commits")
-5. Bump patch version, add CHANGELOG entry
+4. Bump patch version, add CHANGELOG entry
 
 ---
 
