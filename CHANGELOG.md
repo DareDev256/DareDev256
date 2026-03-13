@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.7.4] - 2026-03-13
+
+### Changed
+- **Hero bio** — tighter transition narrative: "Built and sold" KushdUp, "architect AI systems that run 24/7" over passive phrasing
+- **Currently Building** — Passion Agent row leads with approval rate, fcpxml sharpened to "timeline editing", Learning Suite emphasizes "each deployed, each playable"
+- **Open To** — "Solutions Engineer" → "Solutions Architect", evidence column rewritten with stronger proof framing ("in production, not slides", "solo")
+- **Proof of Craft** — receipts tightened: ecosystem test total leads ("1,350+ tests across the ecosystem"), "No demo — just merged PRs"
+- **Featured Projects** — PACT and Passion Agent descriptions tightened for scannability
+- **Footer quote** — "Same eye that framed a music video now frames a system architecture" replaces generic directing metaphor
+- **Ecosystem details** — "merged PR" replaces "PR creation" to signal completion, not just initiation
+
 ## [0.7.3] - 2026-03-13
 
 ### Changed

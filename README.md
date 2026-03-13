@@ -2,7 +2,7 @@
 
 # James Dare
 
-**Gold-record music video director turned AI engineer. I build systems that ship code while I sleep.**
+**Gold-record director → AI engineer. I build autonomous systems that ship code while I sleep.**
 
 <a href="https://jamesdare.com"><img src="./signature.svg" alt="James Dare — AI Solutions Engineer" width="600" /></a>
 
@@ -13,7 +13,7 @@
 [![Commits](https://img.shields.io/badge/Total_Commits-1%2C257+-E8B931?style=flat-square&logo=git&logoColor=white)](https://github.com/DareDev256)
 [![Ecosystem](https://img.shields.io/badge/AI_Ecosystem-24%2F7-FF6B6B?style=flat-square&logo=robot&logoColor=white)](https://passion.jamesdare.com)
 
-Directed **350+ music videos** for **Chief Keef, Migos, and Masicka**. Earned a **gold record**. Sold **KushdUp Filmsz** to **6ixBuzz** (3M+ followers). Now I ship where AI engineering meets creative technology.
+Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold record**. Built and sold **KushdUp Filmsz** to **6ixBuzz** (3M+ followers). Now I architect AI systems that run 24/7 and ship without me.
 
 [![Website](https://img.shields.io/badge/Portfolio-jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jamesdare.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/james-olusoga-00179940/)
@@ -27,10 +27,10 @@ Directed **350+ music videos** for **Chief Keef, Migos, and Masicka**. Earned a 
 
 | Status | Project | Description |
 |:------:|---------|-------------|
-| 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC, ships across 47 repos with 3 LLM backends. Zero human intervention from cycle start to PR |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Command terminal for the agent — 121 components, 695 tests, OWASP-hardened. Next.js 16 + React 19 |
-| 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First-ever MCP server for Final Cut Pro — 53 tools, natural language video editing. 20+ stars |
-| 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed games teaching AI literacy and tech fundamentals |
+| 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — 121 components, 695 tests, OWASP-hardened. Next.js 16 + React 19 |
+| 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
+| 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 live games teaching AI literacy — each deployed, each playable |
 
 <!-- DAILY_STATUS_START -->
 > *Updated by [Passion.EXE](https://github.com/DareDev256/passion-agent) — Mar 13, 2026 at 6:09 AM ET*
@@ -65,7 +65,7 @@ Directed **350+ music videos** for **Chief Keef, Migos, and Masicka**. Earned a 
 
 ### Passion Agent *(private)*
 
-**My autonomous brain** — 92 modules, 109K LOC. Picks its own work, writes code, opens PRs. 89.9% approval rate across 1,257+ commits.
+**My autonomous brain** — 92 modules, 109K LOC. Selects tasks, writes code, opens PRs. 89.9% approval across 1,257+ commits.
 
 `Node.js` `Claude Code SDK` `MCP`
 
@@ -74,7 +74,7 @@ Directed **350+ music videos** for **Chief Keef, Migos, and Masicka**. Earned a 
 
 ### PACT Dashboard *(private)*
 
-**Cyberpunk command terminal** — real-time agent monitoring, 121 components, OWASP-hardened, keyboard-driven. 695 tests.
+**Cyberpunk command terminal** — real-time agent monitoring, 121 components, keyboard-driven. 695 tests, OWASP-hardened.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -117,14 +117,14 @@ Directed **350+ music videos** for **Chief Keef, Migos, and Masicka**. Earned a 
 
 ## Open To
 
-**AI Solutions Engineer** · **Developer Relations** · **Solutions Engineer** · **Founding Engineer**
+**AI Solutions Engineer** · **Developer Relations** · **Solutions Architect** · **Founding Engineer**
 
-| What I Bring | Evidence |
-|-------------|----------|
-| AI product development | MCP servers, RAG pipelines, autonomous agents, LLM eval suites — shipped, not demoed |
-| Creative→technical leadership | Directed 350+ videos for major labels → now directing AI systems |
-| Full-stack velocity | 33 repos, 20+ live deployments, 190 releases in 21 days |
-| Developer experience instinct | 20+ stars on first MCP server, 695 tests, 10 deployed learning games |
+| What I Bring | Proof |
+|-------------|-------|
+| Ship AI products end-to-end | MCP servers, RAG pipelines, autonomous agents, LLM eval — in production, not slides |
+| Creative→technical leadership | 350+ music videos directed → now directing AI systems at the same pace |
+| Full-stack velocity | 33 repos, 20+ live deployments, 190 releases in 21 days — solo |
+| Developer empathy | 20+ stars on first MCP server, 10 deployed learning games, 1,350+ tests across ecosystem |
 
 ---
 
@@ -148,7 +148,7 @@ Developer Tooling     ███████████████░░░░�
 | **Local-first, cloud-optional** | SQLite on Mac Mini, Syncthing between machines, cloud syncs when convenient |
 | **Protocol over integration** | MCP for AI tools, Conventional Commits, SSE over WebSockets where bidirectional isn't needed |
 | **Fail at the boundary** | Validate inputs at entry, not deep in business logic. One guard, not scattered checks |
-| **Ship the feedback loop** | 89.9% approval rate as a real metric. CHANGELOG on every commit. Discord on every PR |
+| **Ship the feedback loop** | 89.9% approval rate as a live metric. CHANGELOG on every commit. Discord on every PR |
 
 </details>
 
@@ -158,11 +158,11 @@ Developer Tooling     ███████████████░░░░�
 
 | Claim | Receipt |
 |-------|---------|
-| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** for Final Cut Pro. 20+ stars from real video editors |
-| "I ship fast" | 10 games designed, built, and deployed. 190 releases in 21 days |
-| "My AI agent is real" | 1,257+ commits across 47 repos. 60 cycles/day. It doesn't demo — it ships |
-| "I build for clients" | 5 artist sites live — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
-| "I care about quality" | 695 tests in one repo, 1,350+ across the ecosystem. OWASP-hardened patterns throughout |
+| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** for Final Cut Pro. 20+ stars from working video editors |
+| "I ship fast" | 190 releases in 21 days. 10 games designed, built, deployed. Each one live right now |
+| "My AI agent is real" | 1,257+ commits across 47 repos. 60 cycles/day. No demo — just merged PRs |
+| "I build for clients" | 5 artist sites in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
+| "I care about quality" | 1,350+ tests across the ecosystem. 695 in one repo alone. OWASP-hardened throughout |
 
 ---
 
@@ -200,7 +200,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   Passion Memory MCP ─── Shared brain across all sessions
 ```
 
-**What makes this different:** Memory persistence across cycles. LLM routing by task type. Subprocess isolation per task. Feedback loops from PR approvals that shift future prioritization. Zero human intervention from cycle start to PR creation.
+**What makes this different:** Memory persists across cycles. LLM routing by task type. Subprocess isolation per task. PR approval feedback shifts future prioritization. Zero human intervention from cycle start to merged PR.
 
 </details>
 
@@ -290,7 +290,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 <div align="center">
 
-*"I used to direct artists. Now I direct machines. Same taste, same urgency — infinite scale."*
+*"Same eye that framed a music video now frames a system architecture. Same urgency — infinite scale."*
 
 [![See Everything I've Built](https://img.shields.io/badge/See_Everything_I've_Built-jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jamesdare.com)
 [![Let's Build Something](https://img.shields.io/badge/Let's_Build_Something-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/james-olusoga-00179940/)
