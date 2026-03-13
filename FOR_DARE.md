@@ -76,6 +76,23 @@ DareDev256/
 
 Five files. The simplicity is the point.
 
+### File Details
+
+**`signature.svg`** — Custom animated hero emblem replacing the old third-party typing SVG (demolished in v0.7.0). Self-contained — no external dependencies, no JavaScript, pure CSS animations.
+
+| Property | Value |
+|----------|-------|
+| Dimensions | 800 x 250 (viewBox), renders at 600px wide in README |
+| Color palette | Indigo `#6C63FF`, Lavender `#A78BFA`, Periwinkle `#818CF8` |
+| Animation sequence | Infinity draw (0.2s) → orbits fade in (1.5–2.1s) → wheel/spokes (2.8–3.6s) → name fade (4s) → subtitle cycling (4.5s, 12s loop) |
+| Subtitle rotation | 4 titles cycle every 3s: AI Solutions Engineer → Creative Technologist → Autonomous Agent Builder → Music Video Director |
+| Theme support | `prefers-color-scheme: light` media query swaps name fill to `#1a1a2e` and tagline to `#888` |
+| Design reference | Infinity symbol + Mahoraga dharma wheel (8 spokes with arrow tips) + 3 orbital electrons |
+
+To modify subtitle text: edit `<text class="sub sub1–4">` elements (line ~176–179). To change animation timing: adjust `animation-delay` values on the relevant CSS class. Keep the staggered sequence — simultaneous reveals look cheap.
+
+**`CLAUDE.md`** — Agent and contributor directives. Controls how Passion Agent (and any AI assistant) interacts with this repo. Key rules: README must stay under 120 visible lines / ~300 total, only write inside auto-update marker zones, new content goes inside `<details>` blocks. This file is the guardrail preventing profile bloat.
+
 ## Tech Stack & Why
 
 | Technology | Purpose | Why This Choice |
@@ -131,7 +148,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 23. **v0.7.0** — Major trim: 760 → 301 lines. Cut 10 sections (Project Goals, Start Here, stats table, Recent Milestones, The Arc, Director's Eye, Engineering Principles, Behind This README, Contribution Guidelines, Security Policy). Collapsed deep content into 4 `<details>` blocks. Custom `signature.svg` replaces external typing SVG. Updated counts (121 components, 20+ stars, 53 tools)
 24. **v0.7.1** — Portfolio-grade copy polish: tighter hero tagline, punchy bio, sharpened Featured Projects with unique value per card, stronger Proof of Craft receipts
 25. **v0.7.2** — FOR_DARE.md major sync: updated layout map to 9+4 structure, added signature.svg and CLAUDE.md to codebase map, synced Metrics Sync Map values, replaced stale typing SVG references
-26. **v0.7.3** (current) — Refreshed auto-update zones, updated PACT test counts (571→695), tightened PACT descriptions to lead with quality signals, bumped ecosystem test total to 1,350+
+26. **v0.7.3** — Refreshed auto-update zones, updated PACT test counts (571→695), tightened PACT descriptions to lead with quality signals, bumped ecosystem test total to 1,350+
+27. **v0.7.4** (current) — FOR_DARE.md stale reference cleanup: fixed Typography section citing replaced typing SVG, corrected Seasonal Refresh playbook referencing cut sections (The Arc, What's Next), fixed visible section count (was "12", actual is 9+4 since v0.7.0)
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -454,6 +472,11 @@ All rendering depends on external services. If any break, the profile degrades v
 **Symptom:** Badge says "28 repos" but you have 30.
 **Cause:** These are hardcoded in the README (not dynamic badges). They need manual updates.
 **Fix:** Search the README for the stale number. Repo count appears in ~4 places, commit count in ~6. Update all instances, bump patch version, add CHANGELOG entry.
+
+### Signature emblem not animating
+**Symptom:** The `signature.svg` renders as a static image — no infinity draw, no spinning orbits, no cycling subtitles.
+**Cause:** GitHub sanitizes SVGs served from repos. When viewed via `raw.githubusercontent.com`, CSS animations are stripped. The SVG only animates when rendered inline by GitHub's Markdown renderer on the profile page.
+**Fix:** This is expected behavior. The SVG animates correctly on the profile page (`github.com/DareDev256`). To preview animations locally, open `signature.svg` directly in a browser — don't rely on Markdown previewers like `grip` which may not support CSS animations.
 
 ### Profile page looks different from raw README
 **Symptom:** Layout or formatting differs between raw Markdown preview and the rendered profile.

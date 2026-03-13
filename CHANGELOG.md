@@ -7,6 +7,14 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.7.5] - 2026-03-13
+
+### Added
+- **signature.svg asset documentation** — property table covering dimensions (800x250), color palette (3 brand colors), full animation sequence timeline, subtitle rotation cycle, light/dark theme support, and design reference (infinity + dharma wheel + orbital electrons)
+- **CLAUDE.md file documentation** — explains its role as agent/contributor guardrail with key rules summary
+- **Troubleshooting: signature emblem not animating** — documents GitHub SVG sanitization behavior and how to preview animations locally
+- **Content Strategy Evolution v0.7.4 entry** — was missing from version history
+
 ## [0.7.4] - 2026-03-13
 
 ### Fixed
