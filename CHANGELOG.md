@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.7.4] - 2026-03-13
+
+### Fixed
+- **FOR_DARE.md stale references** — Typography section still referenced typing SVG (replaced in v0.7.0 with `signature.svg`), color palette Indigo row cited "typing SVG" as usage
+- **Seasonal Content Refresh playbook** — removed references to "The Arc" timeline and "What's Next" roadmap (both cut in v0.7.0), replaced with current collapsed sections
+- **Visible section count** — Recruiter-Optimized Layout said "12 visible" but actual structure is 9 visible + 4 collapsed since v0.7.0
+
+### Changed
+- **Content Strategy Evolution** — added v0.7.2 and v0.7.3 entries (was stuck at v0.7.1)
+
 ## [0.7.3] - 2026-03-13
 
 ### Changed

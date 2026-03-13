@@ -129,7 +129,9 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 21. **v0.6.13** — Added "Engineering Principles" section between How We Work and Open To — 6 values (ship-first, accessibility, testing, security, open source, documentation) each with concrete "In Practice" evidence. Updated layout map to 20 sections
 22. **v0.6.14** — Added hero tagline for cold-visitor context, velocity metrics ribbon (190 releases/21 days, 60 cycles/day, 89.9% approval, 1,237+ tests), strengthened closing thesis, updated What's Next with specific technical details and job targets
 23. **v0.7.0** — Major trim: 760 → 301 lines. Cut 10 sections (Project Goals, Start Here, stats table, Recent Milestones, The Arc, Director's Eye, Engineering Principles, Behind This README, Contribution Guidelines, Security Policy). Collapsed deep content into 4 `<details>` blocks. Custom `signature.svg` replaces external typing SVG. Updated counts (121 components, 20+ stars, 53 tools)
-24. **v0.7.1** (current) — Portfolio-grade copy polish: tighter hero tagline, punchy bio, sharpened Featured Projects with unique value per card, stronger Proof of Craft receipts
+24. **v0.7.1** — Portfolio-grade copy polish: tighter hero tagline, punchy bio, sharpened Featured Projects with unique value per card, stronger Proof of Craft receipts
+25. **v0.7.2** — FOR_DARE.md major sync: updated layout map to 9+4 structure, added signature.svg and CLAUDE.md to codebase map, synced Metrics Sync Map values, replaced stale typing SVG references
+26. **v0.7.3** (current) — Refreshed auto-update zones, updated PACT test counts (571→695), tightened PACT descriptions to lead with quality signals, bumped ecosystem test total to 1,350+
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -176,7 +178,7 @@ You can freely edit anything **outside** these marker pairs. Content **inside** 
 ## Patterns Worth Stealing
 
 ### Recruiter-Optimized Layout
-The v0.7.0 restructure trimmed 20 sections to 12 visible + 4 collapsed. Every cut was intentional — deep content moved behind `<details>` toggles so the main scroll earns its space.
+The v0.7.0 restructure trimmed 20 sections to 9 visible + 4 collapsed. Every cut was intentional — deep content moved behind `<details>` toggles so the main scroll earns its space.
 
 **Visible sections (in order):**
 1. **Hero** — Custom animated emblem (`signature.svg`), bio, badge bar, CTA buttons
@@ -208,7 +210,7 @@ The README's visual identity is intentional — every color, badge style, and la
 
 | Color | Hex | Usage | Why |
 |-------|-----|-------|-----|
-| Indigo | `#6C63FF` | Primary brand — hero badges, CTA buttons, typing SVG | Distinctive without being loud; reads well on both light and dark GitHub themes |
+| Indigo | `#6C63FF` | Primary brand — hero badges, CTA buttons, signature emblem | Distinctive without being loud; reads well on both light and dark GitHub themes |
 | Orchid | `#A855F7` | License badge, accent | Complements indigo without competing; signals "creative" |
 | Emerald | `#10B981` | Live deployment badges, success states | Universal "live/active" signal; high contrast on dark backgrounds |
 | Gold | `#FFD700` | Star badges, commit count | Maps to GitHub's own star color for instant recognition |
@@ -239,7 +241,7 @@ This two-tier system creates visual weight where it matters (CTAs) and density w
 
 ### Typography
 
-- **Typing SVG:** Fira Code weight 600, size 22, color `#6C63FF`, 1000ms pause
+- **Signature emblem:** Custom `signature.svg` — animated SVG replacing the old third-party typing animation. No external dependency, branded identity
 - **Code blocks:** Used for ASCII art and domain depth chart — never for inline code snippets (use backtick spans instead)
 - **Emphasis pattern:** Bold for project names and metrics, italic for dates and attributions, never underline
 
@@ -312,10 +314,10 @@ Step-by-step procedures for the most common maintenance operations. Follow these
 
 ### Seasonal Content Refresh
 
-1. Update "What's Next" roadmap with current priorities
-2. Verify "Open To" role targets match active job search
-3. Check "The Arc" timeline — add milestones if new achievements landed
-4. Review Proof of Craft — swap weakest claim→receipt for stronger evidence
+1. Verify "Open To" role targets match active job search
+2. Review Proof of Craft — swap weakest claim→receipt for stronger evidence
+3. Check collapsed "Hard Problems" and "What I'd Build Differently" — add entries if new war stories landed
+4. Verify Currently Building table reflects actual active projects
 5. Bump minor version (this is a content redesign)
 
 ## Metrics Sync Map
