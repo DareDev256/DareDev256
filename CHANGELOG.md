@@ -7,6 +7,14 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.7.6] - 2026-03-13
+
+### Changed
+- **Showcase zone** — updated to auto-select unit test milestone: 24 targeted tests covering null-seed folding, deep-freeze contracts, NaN/clamp boundaries (323 auto-select + 381 rotation tests green)
+- **Ecosystem test total** — bumped 1,350+ → 1,374+ across Open To and Proof of Craft sections
+- **Hard Problems** — helper extraction entry updated with unit test coverage milestone (24 edge-case tests)
+- **What I'd Build Differently** — fixed fcpxml-mcp-server test count drift: 571 → 618 (matching actual state)
+
 ## [0.7.5] - 2026-03-13
 
 ### Changed

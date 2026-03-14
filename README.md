@@ -41,7 +41,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 <!-- SHOWCASE_SECTION_START -->
 > *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 13, 2026*
 
-**Latest: Passion Agent** — Three helper extractions in the auto-select rules engine (`computeEntryTiming`, `freezeActivityMap`, `maxSeverity`). 381 rotation tests passing, `+39/-22 lines`
+**Latest: Passion Agent** — 24 targeted unit tests for auto-select helpers (`computeEntryTiming`, `freezeActivityMap`, `maxSeverity`). Covers null-seed folding, deep-freeze contracts, NaN/clamp boundaries. 323 auto-select tests, 381 rotation tests green
 <!-- SHOWCASE_SECTION_END -->
 
 ---
@@ -123,7 +123,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Ship AI products end-to-end | MCP servers, RAG pipelines, autonomous agents, LLM eval — in production, not slides |
 | Creative→technical leadership | 350+ music videos directed → now directing AI systems at the same pace |
 | Full-stack velocity | 33 repos, 20+ live deployments, 190 releases in 21 days — solo |
-| Developer empathy | 20+ stars on first MCP server, 10 deployed learning games, 1,350+ tests across ecosystem |
+| Developer empathy | 20+ stars on first MCP server, 10 deployed learning games, 1,374+ tests across ecosystem |
 
 ---
 
@@ -161,7 +161,7 @@ Developer Tooling     ███████████████░░░░�
 | "I ship fast" | 190 releases in 21 days. 10 games designed, built, deployed. Each one live right now |
 | "My AI agent is real" | 1,257+ commits across 47 repos. 60 cycles/day. No demo — just merged PRs |
 | "I build for clients" | 5 artist sites in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
-| "I care about quality" | 1,350+ tests across the ecosystem. 695 in one repo alone. OWASP-hardened throughout |
+| "I care about quality" | 1,374+ tests across the ecosystem. 695 in one repo alone. OWASP-hardened throughout |
 
 ---
 
@@ -270,7 +270,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 **Iframe sandbox security** — PACT Dashboard embeds external services. Every iframe gets `sandbox="allow-scripts"` only — no `allow-same-origin`, no `allow-top-navigation`. HTTPS-only allowlisted origins. Defense-in-depth per OWASP A05:2021.
 
-**Helper extraction in hot paths** — Passion Agent's auto-select rules engine had duplicated timing guards, manual deep-freeze loops, and ternary accumulation across three functions. Extracted `computeEntryTiming` (centralized dwellMs clamp+ceil), `freezeActivityMap` (single-call immutability), and `maxSeverity` (null-safe seed). Net -17 lines, 381 rotation tests green.
+**Helper extraction in hot paths** — Passion Agent's auto-select rules engine had duplicated timing guards, manual deep-freeze loops, and ternary accumulation across three functions. Extracted `computeEntryTiming` (centralized dwellMs clamp+ceil), `freezeActivityMap` (single-call immutability), and `maxSeverity` (null-safe seed). Net -17 lines, 24 targeted edge-case tests, 323 auto-select + 381 rotation tests green.
 
 </details>
 
@@ -281,7 +281,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 **SQLite access patterns** — Right database choice, wrong abstraction. Raw SQL in 30+ modules instead of a thin repository pattern. The storage engine choice was right; the access pattern was the mistake.
 
-**Test strategy** — 571 tests in fcpxml-mcp-server, mostly unit. But the bugs that shipped were integration-level — malformed XML that parsed fine individually but broke combined. Should have started with 10 integration tests using real FCPXML files.
+**Test strategy** — 618 tests in fcpxml-mcp-server, mostly unit. But the bugs that shipped were integration-level — malformed XML that parsed fine individually but broke combined. Should have started with 10 integration tests using real FCPXML files.
 
 **PACT component explosion** — 121 components, not enough composition. A `<DataCard>` with render props beats three single-use wrappers sharing 80% markup. Component count should go down as a codebase matures.
 
