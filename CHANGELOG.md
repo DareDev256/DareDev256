@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.7.7] - 2026-03-13
+
+### Fixed
+- **CLAUDE.md** — added missing type definition for `signature.svg` asset: dimensions, color palette, animation contract, theme support, and sync constraints with README badges/titles
+- **CLAUDE.md** — updated stale version reference from v0.7.0 to v0.7.7
+
 ## [0.7.6] - 2026-03-13
 
 ### Changed

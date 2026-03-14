@@ -29,7 +29,26 @@ Everything outside these markers requires human review.
 
 - CHANGELOG.md follows Keep a Changelog format
 - Semantic versioning: major = full redesign, minor = new sections, patch = updates
-- Current: v0.7.0
+- Current: v0.7.7
+
+## Assets
+
+### `signature.svg` — Animated Hero Emblem
+
+| Property | Value |
+|----------|-------|
+| **Type** | Inline SVG with CSS-only animations (no JavaScript) |
+| **Dimensions** | 800 × 250 (`viewBox="0 0 800 250"`) — displayed at `width="600"` in README |
+| **Color palette** | `#6C63FF` (primary), `#A78BFA` (secondary), `#818CF8` (tertiary) |
+| **Theme support** | `prefers-color-scheme: light` swaps text fills — emblem colors stay constant |
+| **Animations** | Draw-in (infinity path), orbital rotation, spoke reveal, cycling subtitles (4 titles, 12s loop) |
+| **Referenced in** | `README.md` line 7 (`<img src="./signature.svg">`) — hero image, above the fold |
+
+**Constraints:**
+- Color values must stay in sync with Shields.io badge `color=6C63FF` used throughout README
+- Subtitle text ("AI SOLUTIONS ENGINEER", etc.) must match role titles in Open To section
+- Tagline stats ("47 REPOS", "24/7 AI ECOSYSTEM") must match badge and bio numbers
+- No external dependencies — the SVG is fully self-contained by design (replaced `readme-typing-svg`)
 
 ## See Also
 
