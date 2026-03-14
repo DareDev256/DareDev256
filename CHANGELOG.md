@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.7.5] - 2026-03-13
+
+### Changed
+- **Showcase zone** — updated to Passion Agent auto-select rules engine refactor (computeEntryTiming, freezeActivityMap, maxSeverity)
+- **Hard Problems I've Solved** — added helper extraction pattern: centralized duplicated timing guards, freeze loops, and ternary accumulation into three focused functions (-17 net lines, 381 tests passing)
+
 ## [0.7.4] - 2026-03-13
 
 ### Changed

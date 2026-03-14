@@ -41,7 +41,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 <!-- SHOWCASE_SECTION_START -->
 > *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 13, 2026*
 
-**Latest: [PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** — Four-layer security hardening (cache poisoning defense, prototype pollution guard, DoS-resistant imports, stored XSS sanitization) + 43 new tests targeting zero-coverage business logic. `+695 tests, 14 suites`
+**Latest: Passion Agent** — Three helper extractions in the auto-select rules engine (`computeEntryTiming`, `freezeActivityMap`, `maxSeverity`). 381 rotation tests passing, `+39/-22 lines`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
@@ -269,6 +269,8 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 **Context window management for autonomous agents** — Tool outputs consumed 83% of context. Implemented observation masking (compress to structured summaries), sub-agent isolation (scoped context per task), and 70% utilization trigger for compression. Eliminated mid-task truncation entirely.
 
 **Iframe sandbox security** — PACT Dashboard embeds external services. Every iframe gets `sandbox="allow-scripts"` only — no `allow-same-origin`, no `allow-top-navigation`. HTTPS-only allowlisted origins. Defense-in-depth per OWASP A05:2021.
+
+**Helper extraction in hot paths** — Passion Agent's auto-select rules engine had duplicated timing guards, manual deep-freeze loops, and ternary accumulation across three functions. Extracted `computeEntryTiming` (centralized dwellMs clamp+ceil), `freezeActivityMap` (single-call immutability), and `maxSeverity` (null-safe seed). Net -17 lines, 381 rotation tests green.
 
 </details>
 
