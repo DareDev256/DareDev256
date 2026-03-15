@@ -287,6 +287,18 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 </details>
 
+<details>
+<summary><strong>Repo Setup & Dependencies</strong></summary>
+
+**[Profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)** — a repo matching your GitHub username renders `README.md` on your profile page. Fork this pattern: create a `your-username` repo, find-replace `DareDev256` in badge URLs, edit `signature.svg` colors and text directly (pure CSS animation, no JS, no external deps).
+
+**External services** (render-time only, no build step):
+[Shields.io](https://shields.io) — all badges ([status](https://status.shields.io)) · [github-profile-summary-cards](https://github-profile-summary-cards.vercel.app) — stats & activity · [github-profile-trophy](https://github-profile-trophy.vercel.app) — trophy shelf · [komarev.com](https://komarev.com/ghpvc/) — view counter
+
+**Auto-update API:** Two HTML comment-delimited zones (`DAILY_STATUS_START/END`, `SHOWCASE_SECTION_START/END`) are machine-writable by [Passion Agent](https://passion.jamesdare.com). Content between markers is overwritten each cycle. Everything outside markers requires human review. Format specs in [`FOR_DARE.md`](./FOR_DARE.md).
+
+</details>
+
 ---
 
 <div align="center">

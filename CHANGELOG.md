@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.7.8] - 2026-03-15
+
+### Added
+- **README.md** — new collapsed "Repo Setup & Dependencies" section: fork instructions, external service inventory with health check links, auto-update zone API documentation
+- README now self-documents its own architecture for developers who want to replicate the profile pattern
+
+### Changed
+- **CLAUDE.md** — version bump v0.7.7 → v0.7.8
+
 ## [0.7.7] - 2026-03-13
 
 ### Fixed

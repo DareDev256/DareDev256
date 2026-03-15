@@ -15,7 +15,7 @@
 
 Visible sections in order: Hero → Currently Building → Featured Projects → Open To → Tech Stack → Proof of Craft → GitHub Stats → Footer
 
-Collapsed sections: How the Passion Ecosystem Works, All 33 Projects, Hard Problems I've Solved, What I'd Build Differently
+Collapsed sections: How the Passion Ecosystem Works, All 33 Projects, Hard Problems I've Solved, What I'd Build Differently, Repo Setup & Dependencies
 
 ## Auto-Update Zones
 
@@ -29,7 +29,7 @@ Everything outside these markers requires human review.
 
 - CHANGELOG.md follows Keep a Changelog format
 - Semantic versioning: major = full redesign, minor = new sections, patch = updates
-- Current: v0.7.7
+- Current: v0.7.8
 
 ## Assets
 
