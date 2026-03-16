@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.7.9] - 2026-03-15
+
+### Changed
+- **Showcase zone** — updated to Passionate Learning Suite play page polish: visual loading spinner for engine initialization, refactored startup sequence guarding against race conditions for stable game state
+- **CLAUDE.md** — version bump v0.7.8 → v0.7.9
+
 ## [0.7.8] - 2026-03-15
 
 ### Added
