@@ -129,7 +129,15 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 21. **v0.6.13** — Added "Engineering Principles" section between How We Work and Open To — 6 values (ship-first, accessibility, testing, security, open source, documentation) each with concrete "In Practice" evidence. Updated layout map to 20 sections
 22. **v0.6.14** — Added hero tagline for cold-visitor context, velocity metrics ribbon (190 releases/21 days, 60 cycles/day, 89.9% approval, 1,237+ tests), strengthened closing thesis, updated What's Next with specific technical details and job targets
 23. **v0.7.0** — Major trim: 760 → 301 lines. Cut 10 sections (Project Goals, Start Here, stats table, Recent Milestones, The Arc, Director's Eye, Engineering Principles, Behind This README, Contribution Guidelines, Security Policy). Collapsed deep content into 4 `<details>` blocks. Custom `signature.svg` replaces external typing SVG. Updated counts (121 components, 20+ stars, 53 tools)
-24. **v0.7.1** (current) — Portfolio-grade copy polish: tighter hero tagline, punchy bio, sharpened Featured Projects with unique value per card, stronger Proof of Craft receipts
+24. **v0.7.1** — Portfolio-grade copy polish: tighter hero tagline, punchy bio, sharpened Featured Projects with unique value per card, stronger Proof of Craft receipts
+25. **v0.7.2** — FOR_DARE.md major sync: layout map updated from stale 20-section structure to 9+4, added signature.svg and CLAUDE.md to codebase map, synced all Metrics Sync Map values
+26. **v0.7.3** — Daily status and showcase zone refresh with PACT Dashboard security hardening + 43 new tests (695 total), ecosystem test total bumped to 1,350+
+27. **v0.7.4** — Hero bio tightened ("Built and sold" KushdUp), Currently Building descriptions sharpened, Open To evidence rewritten with impact-first framing, footer quote refined
+28. **v0.7.5** — Showcase updated to Passion Agent auto-select rules engine refactor, added helper extraction pattern to Hard Problems
+29. **v0.7.6** — Synced test counts, refreshed showcase with unit test milestone (24 edge-case tests, 323 auto-select + 381 rotation tests)
+30. **v0.7.7** — Added signature.svg type definition to CLAUDE.md (dimensions, color palette, animation contract, theme support, sync constraints)
+31. **v0.7.8** — Added collapsed "Repo Setup & Dependencies" section: fork instructions, external service inventory, auto-update zone API documentation
+32. **v0.7.9** (current) — Showcase updated to Passionate Learning Suite play page polish: visual loading spinner, engine startup refactor
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -190,12 +198,14 @@ The v0.7.0 restructure trimmed 20 sections to 12 visible + 4 collapsed. Every cu
 9. **Closing CTA** — Quote, thesis, three action badges
 
 **Collapsed sections (`<details>`):**
+- **Domain Depth + Technical DNA** — expertise bar chart + architectural pattern table
 - **How the Passion Ecosystem Works** — merged from 3 prior sections (How We Work, How Passion Ships, Glossary)
 - **All 33 Projects** — 5 category tables
-- **Hard Problems I've Solved** — 4 deep-dive war stories
+- **Hard Problems I've Solved** — 5 deep-dive war stories
 - **What I'd Build Differently** — 4 honest retrospectives
+- **Repo Setup & Dependencies** — fork instructions, external services, auto-update API docs
 
-This 9+4 structure is not accidental — visible content converts in 5 seconds; collapsed content proves depth when engineers click through.
+This 9+6 structure is not accidental — visible content converts in 5 seconds; collapsed content proves depth when engineers click through.
 
 ### Badge Style Consistency
 All badges use `style=for-the-badge` for visual weight and consistency. Tech stack badges use `style=flat-square` for a more compact, scannable grid. This two-tier system creates visual hierarchy.
@@ -208,7 +218,7 @@ The README's visual identity is intentional — every color, badge style, and la
 
 | Color | Hex | Usage | Why |
 |-------|-----|-------|-----|
-| Indigo | `#6C63FF` | Primary brand — hero badges, CTA buttons, typing SVG | Distinctive without being loud; reads well on both light and dark GitHub themes |
+| Indigo | `#6C63FF` | Primary brand — hero badges, CTA buttons, signature.svg emblem | Distinctive without being loud; reads well on both light and dark GitHub themes |
 | Orchid | `#A855F7` | License badge, accent | Complements indigo without competing; signals "creative" |
 | Emerald | `#10B981` | Live deployment badges, success states | Universal "live/active" signal; high contrast on dark backgrounds |
 | Gold | `#FFD700` | Star badges, commit count | Maps to GitHub's own star color for instant recognition |
@@ -239,7 +249,7 @@ This two-tier system creates visual weight where it matters (CTAs) and density w
 
 ### Typography
 
-- **Typing SVG:** Fira Code weight 600, size 22, color `#6C63FF`, 1000ms pause
+- **Signature SVG:** system-ui font stack (Segoe UI → system-ui → sans-serif), weight 800 for name, weight 500 for cycling subtitles, weight 300 for tagline. Colors: `#f0f0f0` name (swaps to `#1a1a2e` on light), `#A78BFA`/`#818CF8`/`#6C63FF` cycling subtitles, `#555` tagline (swaps to `#888` on light)
 - **Code blocks:** Used for ASCII art and domain depth chart — never for inline code snippets (use backtick spans instead)
 - **Emphasis pattern:** Bold for project names and metrics, italic for dates and attributions, never underline
 

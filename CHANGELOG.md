@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-03-15
+
+### Fixed
+- **FOR_DARE.md** — synced Content Strategy Evolution through v0.7.9 (was stuck at v0.7.1 as "current"), adding 8 missing version entries
+- **FOR_DARE.md** — fixed stale "typing SVG" references in Color Palette and Typography sections to match actual `signature.svg` implementation (replaced in v0.7.0)
+- **FOR_DARE.md** — updated collapsed sections list: added Domain Depth + Technical DNA and Repo Setup & Dependencies (both missing), corrected Hard Problems count from 4 → 5, updated structure count 9+4 → 9+6
+- **CLAUDE.md** — added missing "Domain Depth + Technical DNA" to collapsed sections list
+- **CLAUDE.md** — version bump v0.7.9 → v0.8.0
+
 ## [0.7.9] - 2026-03-15
 
 ### Changed
