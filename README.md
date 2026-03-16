@@ -30,7 +30,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
 | 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — 121 components, 695 tests, OWASP-hardened. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
-| 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 live games teaching AI literacy — each deployed, each playable |
+| 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — polished loading states, guarded engine startup, each playable |
 
 <!-- DAILY_STATUS_START -->
 > *Updated by [Passion.EXE](https://github.com/DareDev256/passion-agent) — Mar 15, 2026 at 8:12 PM ET*
@@ -199,7 +199,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   Passion Memory MCP ─── Shared brain across all sessions
 ```
 
-**What makes this different:** Memory persists across cycles. LLM routing by task type. Subprocess isolation per task. PR approval feedback shifts future prioritization. Zero human intervention from cycle start to merged PR.
+**What makes this different:** Memory persists across sessions via [Passion Memory MCP](https://github.com/DareDev256/passion-memory-server). LLM routing by task type. Subprocess isolation per task. PR approval feedback shifts future prioritization. Zero human intervention from cycle start to merged PR.
 
 </details>
 
@@ -290,12 +290,18 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 <details>
 <summary><strong>Repo Setup & Dependencies</strong></summary>
 
-**[Profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)** — a repo matching your GitHub username renders `README.md` on your profile page. Fork this pattern: create a `your-username` repo, find-replace `DareDev256` in badge URLs, edit `signature.svg` colors and text directly (pure CSS animation, no JS, no external deps).
+**Fork this pattern:** Create a repo matching your GitHub username → find-replace `DareDev256` in badge URLs → edit `signature.svg` (pure CSS, no JS) → push to `main`. No build step, no dependencies, five files total. [Docs](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
 
 **External services** (render-time only, no build step):
-[Shields.io](https://shields.io) — all badges ([status](https://status.shields.io)) · [github-profile-summary-cards](https://github-profile-summary-cards.vercel.app) — stats & activity · [github-profile-trophy](https://github-profile-trophy.vercel.app) — trophy shelf · [komarev.com](https://komarev.com/ghpvc/) — view counter
 
-**Auto-update API:** Two HTML comment-delimited zones (`DAILY_STATUS_START/END`, `SHOWCASE_SECTION_START/END`) are machine-writable by [Passion Agent](https://passion.jamesdare.com). Content between markers is overwritten each cycle. Everything outside markers requires human review. Format specs in [`FOR_DARE.md`](./FOR_DARE.md).
+| Service | Purpose | Health |
+|---------|---------|--------|
+| [Shields.io](https://shields.io) | All badges | [status](https://status.shields.io) |
+| [Profile Summary Cards](https://github-profile-summary-cards.vercel.app) | Stats & activity | [test](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DareDev256&theme=tokyonight) |
+| [Profile Trophy](https://github-profile-trophy.vercel.app) | Achievement shelf | [test](https://github-profile-trophy.vercel.app/?username=DareDev256&theme=tokyonight&no-frame=true&column=1) |
+| [komarev.com](https://komarev.com/ghpvc/) | View counter | [test](https://komarev.com/ghpvc/?username=DareDev256) |
+
+**Auto-update API:** Two comment-delimited zones (`DAILY_STATUS_START/END`, `SHOWCASE_SECTION_START/END`) are machine-writable by [Passion Agent](https://passion.jamesdare.com). Content between markers is overwritten each cycle (~daily for status, after notable builds for showcase). Everything outside requires human review. Format specs in [`FOR_DARE.md`](./FOR_DARE.md).
 
 </details>
 

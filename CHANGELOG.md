@@ -7,6 +7,14 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.1] - 2026-03-15
+
+### Changed
+- **Currently Building** — Passionate Learning Suite description updated to reflect UX polish: loading states, guarded engine startup
+- **Repo Setup & Dependencies** — restructured from wall-of-text paragraphs to developer-friendly numbered setup steps, external services health check table, and auto-update API zone reference with marker names and frequencies
+- **Passion Ecosystem** — added Passion Memory MCP link to "What makes this different" summary
+- **CLAUDE.md** — version bump v0.8.0 → v0.8.1
+
 ## [0.8.0] - 2026-03-15
 
 ### Fixed
