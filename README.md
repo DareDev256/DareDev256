@@ -40,9 +40,9 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 <!-- DAILY_STATUS_END -->
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 15, 2026*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 17, 2026*
 
-**Latest: Passionate Learning Suite** — Added visual loading spinner to the play page for smooth engine initialization UX. Refactored startup sequence to guard against race conditions and ensure stable game state before player interaction. Polish pass — fewer cold-start errors, more intentional transitions
+**Latest: PACT Dashboard** — Defense-in-depth envelope sanitizer for YouTube API responses. Validates structure before per-field sanitization — catches CWE-20, CWE-400, CWE-754. +23 tests, 578 passing across 43 suites
 <!-- SHOWCASE_SECTION_END -->
 
 ---
@@ -124,7 +124,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Ship AI products end-to-end | MCP servers, RAG pipelines, autonomous agents, LLM eval — in production, not slides |
 | Creative→technical leadership | 350+ music videos directed → now directing AI systems at the same pace |
 | Full-stack velocity | 33 repos, 20+ live deployments, 190 releases in 21 days — solo |
-| Developer empathy | 20+ stars on first MCP server, 10 deployed learning games, 1,374+ tests across ecosystem |
+| Developer empathy | 20+ stars on first MCP server, 10 deployed learning games, 1,400+ tests across ecosystem |
 
 ---
 
@@ -162,7 +162,7 @@ Developer Tooling     ███████████████░░░░�
 | "I ship fast" | 190 releases in 21 days. 10 games designed, built, deployed. Each one live right now |
 | "My AI agent is real" | 1,257+ commits across 47 repos. 60 cycles/day. No demo — just merged PRs |
 | "I build for clients" | 5 artist sites in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
-| "I care about quality" | 1,374+ tests across the ecosystem. 695 in one repo alone. OWASP-hardened throughout |
+| "I care about quality" | 1,400+ tests across the ecosystem. 695 in one repo alone. OWASP-hardened throughout |
 
 ---
 
@@ -269,7 +269,9 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 **Context window management for autonomous agents** — Tool outputs consumed 83% of context. Implemented observation masking (compress to structured summaries), sub-agent isolation (scoped context per task), and 70% utilization trigger for compression. Eliminated mid-task truncation entirely.
 
-**Iframe sandbox security** — PACT Dashboard embeds external services. Every iframe gets `sandbox="allow-scripts"` only — no `allow-same-origin`, no `allow-top-navigation`. HTTPS-only allowlisted origins. Defense-in-depth per OWASP A05:2021.
+**Iframe sandbox security** — PACT Dashboard embeds external services. Every iframe gets `sandbox="allow-scripts"` only — no `allow-same-origin`, no `allow-top-navigation`. HTTPS-only allowlisted origins per OWASP A05:2021.
+
+**Envelope sanitization at API boundaries** — YouTube API responses hit per-field sanitizers directly — any malformed envelope (missing `items`, oversized payloads, wrong types) bypassed validation entirely. Built a structural pre-validator: schema shape check before field-level processing. Catches CWE-20 (improper input validation), CWE-400 (uncontrolled resource consumption), CWE-754 (improper unusual condition checks). 23 new tests, full suite green.
 
 **Helper extraction in hot paths** — Passion Agent's auto-select rules engine had duplicated timing guards, manual deep-freeze loops, and ternary accumulation across three functions. Extracted `computeEntryTiming` (centralized dwellMs clamp+ceil), `freezeActivityMap` (single-call immutability), and `maxSeverity` (null-safe seed). Net -17 lines, 24 targeted edge-case tests, 323 auto-select + 381 rotation tests green.
 

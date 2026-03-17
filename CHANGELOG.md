@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.2] - 2026-03-17
+
+### Changed
+- **Ecosystem test total** — bumped 1,374+ → 1,400+ across Open To and Proof of Craft sections
+- **Showcase zone** — updated to PACT Dashboard envelope sanitizer: defense-in-depth structural pre-validation for YouTube API responses, CWE-20/CWE-400/CWE-754 coverage, +23 tests
+
+### Added
+- **Hard Problems I've Solved** — new entry: envelope sanitization at API boundaries (structural pre-validator before per-field processing)
+
 ## [0.8.1] - 2026-03-15
 
 ### Changed
