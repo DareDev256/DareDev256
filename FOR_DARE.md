@@ -140,7 +140,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 32. **v0.7.9** — Showcase updated to Passionate Learning Suite play page polish: visual loading spinner, engine startup refactor
 33. **v0.8.0** — Major FOR_DARE.md sync: fixed stale Content Strategy Evolution (stuck at v0.7.1), corrected collapsed section list (added Domain Depth + Repo Setup), updated Hard Problems count
 34. **v0.8.1** — Restructured Repo Setup & Dependencies, sharpened Learning Suite description, linked Memory MCP
-35. **v0.8.2** (current) — Bumped ecosystem test totals (1,374+ → 1,400+), showcase updated to PACT envelope sanitizer (CWE-20/CWE-400/CWE-754), new Hard Problems entry
+35. **v0.8.2** — Bumped ecosystem test totals (1,374+ → 1,400+), showcase updated to PACT envelope sanitizer (CWE-20/CWE-400/CWE-754), new Hard Problems entry
+36. **v0.8.3** (current) — Synced FOR_DARE.md with current state: fixed stale Content Strategy Evolution (stuck at v0.8.2), corrected troubleshooting example numbers, removed stale section references from playbooks, fixed Metrics Sync Map
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -187,7 +188,7 @@ You can freely edit anything **outside** these marker pairs. Content **inside** 
 ## Patterns Worth Stealing
 
 ### Recruiter-Optimized Layout
-The v0.7.0 restructure trimmed 20 sections to 12 visible + 4 collapsed. Every cut was intentional — deep content moved behind `<details>` toggles so the main scroll earns its space.
+The v0.7.0 restructure trimmed 20 sections dramatically, and subsequent refinements (v0.7.8 Repo Setup, v0.8.x Hard Problems additions) settled at 9 visible + 6 collapsed. Every cut was intentional — deep content moved behind `<details>` toggles so the main scroll earns its space.
 
 **Visible sections (in order):**
 1. **Hero** — Custom animated emblem (`signature.svg`), bio, badge bar, CTA buttons
@@ -204,7 +205,7 @@ The v0.7.0 restructure trimmed 20 sections to 12 visible + 4 collapsed. Every cu
 - **Domain Depth + Technical DNA** — expertise bar chart + architectural pattern table
 - **How the Passion Ecosystem Works** — merged from 3 prior sections (How We Work, How Passion Ships, Glossary)
 - **All 33 Projects** — 5 category tables
-- **Hard Problems I've Solved** — 5 deep-dive war stories
+- **Hard Problems I've Solved** — 6 deep-dive war stories
 - **What I'd Build Differently** — 4 honest retrospectives
 - **Repo Setup & Dependencies** — fork instructions, external services, auto-update API docs
 

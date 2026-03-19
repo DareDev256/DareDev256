@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.4] - 2026-03-19
+
+### Fixed
+- **FOR_DARE.md** — added missing v0.8.3 entry to Content Strategy Evolution (was stuck at v0.8.2 as "current")
+- **FOR_DARE.md** — corrected Patterns Worth Stealing section count: was "12 visible + 4 collapsed" (stale v0.7.0 snapshot), now reflects current 9+6 structure
+- **FOR_DARE.md** — fixed Hard Problems count in collapsed sections list: 5 → 6 (envelope sanitization entry was added in v0.8.2 but count not bumped)
+
+### Changed
+- **CLAUDE.md** — version bump v0.8.3 → v0.8.4
+
 ## [0.8.3] - 2026-03-18
 
 ### Fixed
