@@ -7,6 +7,18 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.3] - 2026-03-18
+
+### Fixed
+- **FOR_DARE.md** — synced Content Strategy Evolution through v0.8.2 (was stuck at v0.7.9 as "current"), adding 3 missing version entries (v0.8.0–v0.8.2)
+- **FOR_DARE.md** — removed stale references to deleted sections ("What's Next", "The Arc") from Seasonal Content Refresh playbook — both cut in v0.7.0
+- **FOR_DARE.md** — fixed stale example numbers in Troubleshooting (was "28 repos but you have 30", now reflects current 33+ range)
+- **FOR_DARE.md** — corrected Metrics Sync Map: commit badge line reference, removed stale "The Arc" phrasing guidance
+- **FOR_DARE.md** — fixed Maintenance Checklist deployment count (5 → 20+)
+
+### Changed
+- **CLAUDE.md** — version bump v0.8.2 → v0.8.3
+
 ## [0.8.2] - 2026-03-17
 
 ### Changed

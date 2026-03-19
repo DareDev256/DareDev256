@@ -137,7 +137,10 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 29. **v0.7.6** — Synced test counts, refreshed showcase with unit test milestone (24 edge-case tests, 323 auto-select + 381 rotation tests)
 30. **v0.7.7** — Added signature.svg type definition to CLAUDE.md (dimensions, color palette, animation contract, theme support, sync constraints)
 31. **v0.7.8** — Added collapsed "Repo Setup & Dependencies" section: fork instructions, external service inventory, auto-update zone API documentation
-32. **v0.7.9** (current) — Showcase updated to Passionate Learning Suite play page polish: visual loading spinner, engine startup refactor
+32. **v0.7.9** — Showcase updated to Passionate Learning Suite play page polish: visual loading spinner, engine startup refactor
+33. **v0.8.0** — Major FOR_DARE.md sync: fixed stale Content Strategy Evolution (stuck at v0.7.1), corrected collapsed section list (added Domain Depth + Repo Setup), updated Hard Problems count
+34. **v0.8.1** — Restructured Repo Setup & Dependencies, sharpened Learning Suite description, linked Memory MCP
+35. **v0.8.2** (current) — Bumped ecosystem test totals (1,374+ → 1,400+), showcase updated to PACT envelope sanitizer (CWE-20/CWE-400/CWE-754), new Hard Problems entry
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -322,10 +325,10 @@ Step-by-step procedures for the most common maintenance operations. Follow these
 
 ### Seasonal Content Refresh
 
-1. Update "What's Next" roadmap with current priorities
-2. Verify "Open To" role targets match active job search
-3. Check "The Arc" timeline — add milestones if new achievements landed
-4. Review Proof of Craft — swap weakest claim→receipt for stronger evidence
+1. Verify "Open To" role targets match active job search
+2. Review "Currently Building" table — swap out completed/stale projects
+3. Review Proof of Craft — swap weakest claim→receipt for stronger evidence
+4. Check collapsed "Hard Problems" and "What I'd Build Differently" — add new entries if applicable
 5. Bump minor version (this is a content redesign)
 
 ## Metrics Sync Map
@@ -336,7 +339,7 @@ Every hardcoded number in the README must stay consistent across all its occurre
 
 | Section | Context |
 |---------|---------|
-| Hero badges (line ~13) | `Total_Commits-1%2C257+` (URL-encoded) |
+| Hero badges (line ~13) | `Total_Commits-1%2C257+-` (URL-encoded comma) |
 | Featured Projects | Passion Agent card: `1,257+ commits` |
 | How the Passion Ecosystem (collapsed) | `1,257+ commits across ecosystem` |
 | Proof of Craft | agent commit evidence |
@@ -408,8 +411,8 @@ Every hardcoded number in the README must stay consistent across all its occurre
 
 1. Search for the **exact current value** (e.g., `1,257`) — don't search just the number
 2. Update every line listed above — **no partial updates**
-3. For the commit badge (line 12), URL-encode commas as `%2C`
-4. For The Arc section, maintain the narrative phrasing (e.g., "Then 1,257 more" not "1,257+ commits")
+3. For the commit badge (line ~13), URL-encode commas as `%2C`
+4. Keep phrasing consistent with surrounding context (e.g., "1,257+ commits across 47 repos")
 5. Bump patch version, add CHANGELOG entry
 
 ---
@@ -417,7 +420,7 @@ Every hardcoded number in the README must stay consistent across all its occurre
 ## Maintenance Checklist
 
 When updating this README, verify:
-- [ ] All project URLs still resolve (5 live deployments + GitHub links)
+- [ ] All project URLs still resolve (20+ live deployments + GitHub links)
 - [ ] Repo count is accurate (currently 33 public repos — includes awesome-mcp-servers fork)
 - [ ] "Currently Building" section reflects actual current work
 - [ ] Badge services are rendering (check for broken images on profile page)
@@ -459,9 +462,9 @@ All rendering depends on external services. If any break, the profile degrades v
 **Fix:** Check Passion Agent logs. The daily status update is a low-priority task — it only runs when the agent has spare cycles. You can trigger it manually by running the profile update module.
 
 ### Repo/commit counts are wrong
-**Symptom:** Badge says "28 repos" but you have 30.
+**Symptom:** Badge says "33 repos" but you have 35.
 **Cause:** These are hardcoded in the README (not dynamic badges). They need manual updates.
-**Fix:** Search the README for the stale number. Repo count appears in ~4 places, commit count in ~6. Update all instances, bump patch version, add CHANGELOG entry.
+**Fix:** Search the README for the stale number. See the Metrics Sync Map below for exact locations. Repo count appears in 3 places, commit count in 4. Update all instances, bump patch version, add CHANGELOG entry.
 
 ### Profile page looks different from raw README
 **Symptom:** Layout or formatting differs between raw Markdown preview and the rendered profile.
