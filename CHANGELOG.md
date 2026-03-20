@@ -7,6 +7,14 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.5] - 2026-03-19
+
+### Changed
+- **Repo Setup & Dependencies** — restructured from wall-of-text into three clear subsections: numbered replication steps, file inventory table (README.md, signature.svg, CLAUDE.md, FOR_DARE.md, CHANGELOG.md with purpose), and auto-update API reference table (zone names, markers, frequency, content format)
+- External services table now shows badge instance count (~25) for impact awareness when Shields.io goes down
+- **FOR_DARE.md** — synced Content Strategy Evolution with v0.8.4 entry (was marked as current at v0.8.3)
+- **CLAUDE.md** — version bump v0.8.4 → v0.8.5
+
 ## [0.8.4] - 2026-03-19
 
 ### Fixed

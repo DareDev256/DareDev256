@@ -141,7 +141,9 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 33. **v0.8.0** — Major FOR_DARE.md sync: fixed stale Content Strategy Evolution (stuck at v0.7.1), corrected collapsed section list (added Domain Depth + Repo Setup), updated Hard Problems count
 34. **v0.8.1** — Restructured Repo Setup & Dependencies, sharpened Learning Suite description, linked Memory MCP
 35. **v0.8.2** — Bumped ecosystem test totals (1,374+ → 1,400+), showcase updated to PACT envelope sanitizer (CWE-20/CWE-400/CWE-754), new Hard Problems entry
-36. **v0.8.3** (current) — Synced FOR_DARE.md with current state: fixed stale Content Strategy Evolution (stuck at v0.8.2), corrected troubleshooting example numbers, removed stale section references from playbooks, fixed Metrics Sync Map
+36. **v0.8.3** — Synced FOR_DARE.md with current state: fixed stale Content Strategy Evolution (stuck at v0.8.2), corrected troubleshooting example numbers, removed stale section references from playbooks, fixed Metrics Sync Map
+37. **v0.8.4** — Fixed 3 stale references in FOR_DARE.md, synced version history
+38. **v0.8.5** (current) — Restructured Repo Setup & Dependencies: numbered replication steps, file inventory table, auto-update API reference with zone/marker/frequency breakdown. Synced FOR_DARE.md Content Strategy through v0.8.4
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 

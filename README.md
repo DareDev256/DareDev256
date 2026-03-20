@@ -302,18 +302,42 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 <details>
 <summary><strong>Repo Setup & Dependencies</strong></summary>
 
-**Fork this pattern:** Create a repo matching your GitHub username → find-replace `DareDev256` in badge URLs → edit `signature.svg` (pure CSS, no JS) → push to `main`. No build step, no dependencies, five files total. [Docs](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
+### Replicate This Profile
 
-**External services** (render-time only, no build step):
+1. Create a repo matching your GitHub username ([docs](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme))
+2. Find-replace `DareDev256` in all badge URLs with your username
+3. Edit `signature.svg` — pure CSS animations, no JavaScript, fully self-contained
+4. Push to `main` — GitHub renders `README.md` on your profile immediately
+
+No build step. No dependencies. No `package.json`. Five files total:
+
+| File | Purpose |
+|------|---------|
+| `README.md` | The entire product — rendered as the GitHub profile page |
+| `signature.svg` | Animated hero emblem (CSS-only, 800×250, `prefers-color-scheme` aware) |
+| `CLAUDE.md` | AI agent directives — size caps, auto-update zone rules, asset contracts |
+| `FOR_DARE.md` | Project docs — design language, metrics sync map, update playbooks |
+| `CHANGELOG.md` | Version history following [Keep a Changelog](https://keepachangelog.com) |
+
+### External Services (render-time only)
 
 | Service | Purpose | Health |
 |---------|---------|--------|
-| [Shields.io](https://shields.io) | All badges | [status](https://status.shields.io) |
-| [Profile Summary Cards](https://github-profile-summary-cards.vercel.app) | Stats & activity | [test](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DareDev256&theme=tokyonight) |
+| [Shields.io](https://shields.io) | All badges (~25 instances) | [status](https://status.shields.io) |
+| [Profile Summary Cards](https://github-profile-summary-cards.vercel.app) | Stats & commit activity | [test](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DareDev256&theme=tokyonight) |
 | [Profile Trophy](https://github-profile-trophy.vercel.app) | Achievement shelf | [test](https://github-profile-trophy.vercel.app/?username=DareDev256&theme=tokyonight&no-frame=true&column=1) |
 | [komarev.com](https://komarev.com/ghpvc/) | View counter | [test](https://komarev.com/ghpvc/?username=DareDev256) |
 
-**Auto-update API:** Two comment-delimited zones (`DAILY_STATUS_START/END`, `SHOWCASE_SECTION_START/END`) are machine-writable by [Passion Agent](https://passion.jamesdare.com). Content between markers is overwritten each cycle (~daily for status, after notable builds for showcase). Everything outside requires human review. Format specs in [`FOR_DARE.md`](./FOR_DARE.md).
+### Auto-Update API
+
+Two HTML comment-delimited zones are machine-writable by [Passion Agent](https://passion.jamesdare.com). Content between markers is overwritten each cycle — everything outside requires human review.
+
+| Zone | Markers | Frequency | Content |
+|------|---------|-----------|---------|
+| Daily Status | `DAILY_STATUS_START` / `END` | ~Daily (brain cycle) | Task count, repos touched, lines changed |
+| Showcase | `SHOWCASE_SECTION_START` / `END` | After notable builds | Latest shipped work with highlights |
+
+Format specs and safe-editing rules in [`FOR_DARE.md`](./FOR_DARE.md).
 
 </details>
 
