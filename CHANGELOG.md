@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.7] - 2026-03-19
+
+### Changed
+- **Repo Setup & Dependencies** — file inventory table now shows "Editable By" column (Human only vs Human + Agent) to prevent accidental edits in machine-writable zones
+- **External Services table** — added "Impact if Down" column with severity ratings (High/Medium/Low) for triage when badge services break
+- **Auto-Update API** — added expected output format templates for both Daily Status and Showcase zones with exact field patterns, replacing vague "format specs in FOR_DARE.md" reference
+- **Auto-Update API** — added source module name (`passion-profile.mjs`) to zone table so contributors can trace generation logic
+- **Replication guide** — step 3 now specifies where to edit signature.svg (color variables, subtitle `<text>` elements, tagline stats); step 5 adds verification URL pattern and local preview with `grip`
+- **CLAUDE.md** — version bump v0.8.6 → v0.8.7
+
 ## [0.8.6] - 2026-03-19
 
 ### Fixed
