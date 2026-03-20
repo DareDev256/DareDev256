@@ -7,6 +7,20 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.6] - 2026-03-19
+
+### Fixed
+- **FOR_DARE.md** — Metrics Sync Map: commit count claimed 4 locations but only 3 exist (removed phantom "How the Passion Ecosystem" entry that never contained the commit number)
+- **FOR_DARE.md** — Metrics Sync Map: managed repos listed "Featured Projects" as a location, but Featured Projects doesn't mention 47 — replaced with actual 4th location (All 33 Projects table)
+- **FOR_DARE.md** — Metrics Sync Map: module count listed 4 locations but missed "What I'd Build Differently" (`config.json at 92 modules`) — now correctly shows 5
+- **FOR_DARE.md** — Quick Reference: commit count "appears in 4 places" → corrected to 3
+- **FOR_DARE.md** — Metrics Refresh playbook: "commit count appears in ~6 places" → corrected to 3 with cross-reference to Sync Map
+- **FOR_DARE.md** — All Metrics Sync Map entries now include exact context strings (the surrounding text where each number appears) instead of vague section references — eliminates guesswork during updates
+
+### Changed
+- **FOR_DARE.md** — Content Strategy Evolution: added v0.8.6 entry, marked as current
+- **CLAUDE.md** — version bump v0.8.5 → v0.8.6
+
 ## [0.8.5] - 2026-03-19
 
 ### Changed

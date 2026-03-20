@@ -23,7 +23,7 @@ This constraint exists because a bloated profile README hurts more than it helps
 | Update showcase | Passion Agent writes between `SHOWCASE_SECTION_START/END` markers |
 | Check badge health | Visit profile page, look for broken image icons. See [Troubleshooting](#troubleshooting) |
 | Bump repo count | Search `33` in README.md — appears in 3 places (hero badge, Open To table, All Projects header) |
-| Bump commit count | Search `1,257` in README.md — appears in 4 places (hero badge, Featured Projects, How We Work, Proof of Craft) |
+| Bump commit count | Search `1,257` in README.md — appears in 3 places (hero badge, Featured Projects, Proof of Craft) |
 | Add a new project | Add to the correct category table inside `<details>`, update repo count, update Featured if it's a flagship |
 | Change job targets | Edit the "Open To" section header and evidence table |
 | Test changes locally | `grip README.md` or push to a branch and preview at `github.com/DareDev256/DareDev256/blob/<branch>/README.md` |
@@ -143,7 +143,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 35. **v0.8.2** — Bumped ecosystem test totals (1,374+ → 1,400+), showcase updated to PACT envelope sanitizer (CWE-20/CWE-400/CWE-754), new Hard Problems entry
 36. **v0.8.3** — Synced FOR_DARE.md with current state: fixed stale Content Strategy Evolution (stuck at v0.8.2), corrected troubleshooting example numbers, removed stale section references from playbooks, fixed Metrics Sync Map
 37. **v0.8.4** — Fixed 3 stale references in FOR_DARE.md, synced version history
-38. **v0.8.5** (current) — Restructured Repo Setup & Dependencies: numbered replication steps, file inventory table, auto-update API reference with zone/marker/frequency breakdown. Synced FOR_DARE.md Content Strategy through v0.8.4
+38. **v0.8.5** — Restructured Repo Setup & Dependencies: numbered replication steps, file inventory table, auto-update API reference with zone/marker/frequency breakdown. Synced FOR_DARE.md Content Strategy through v0.8.4
+39. **v0.8.6** (current) — Fixed Metrics Sync Map drift: corrected commit count locations (4→3, removed phantom ecosystem entry), fixed managed repos locations (swapped stale "Featured Projects" for actual "All Projects" row), added missing module count location (What I'd Build Differently, now 5), added exact context strings to all metric entries. Fixed Quick Reference and Metrics Refresh playbook with accurate counts
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -314,7 +315,7 @@ Step-by-step procedures for the most common maintenance operations. Follow these
 
 ### Metrics Refresh (Commits, Stars, Modules)
 
-1. Search the old number (e.g., `1,257`) — commit count appears in ~6 places
+1. Search the old number (e.g., `1,257`) — commit count appears in 3 places (see Metrics Sync Map)
 2. Update every instance — **do not leave stale numbers**, they undermine credibility
 3. Update the corresponding badge in the hero section
 4. Bump patch version, add CHANGELOG entry
@@ -343,11 +344,10 @@ Every hardcoded number in the README must stay consistent across all its occurre
 | Section | Context |
 |---------|---------|
 | Hero badges (line ~13) | `Total_Commits-1%2C257+-` (URL-encoded comma) |
-| Featured Projects | Passion Agent card: `1,257+ commits` |
-| How the Passion Ecosystem (collapsed) | `1,257+ commits across ecosystem` |
-| Proof of Craft | agent commit evidence |
+| Featured Projects | Passion Agent card: `89.9% approval across 1,257+ commits` |
+| Proof of Craft | `1,257+ commits across 47 repos` |
 
-**4 visible locations.** Source of truth: `git log --oneline | wc -l` across all managed repos.
+**3 locations.** Source of truth: `git log --oneline | wc -l` across all managed repos.
 
 ### Public Repo Count (`33`)
 
@@ -363,20 +363,21 @@ Every hardcoded number in the README must stay consistent across all its occurre
 
 | Section | Context |
 |---------|---------|
-| Currently Building | Passion Agent description |
-| Featured Projects | Passion Agent card |
-| How the Passion Ecosystem (collapsed) | architecture diagram |
-| Domain Depth (collapsed) | Autonomous Systems evidence |
+| Currently Building | `92 modules, 109K LOC` |
+| Featured Projects | Passion Agent card: `92 modules, 109K LOC` |
+| How the Passion Ecosystem (collapsed) | architecture diagram: `92 modules, 109K LOC` |
+| Domain Depth (collapsed) | Autonomous Systems: `24/7 agent ops, 92 modules` |
+| What I'd Build Differently (collapsed) | `Single config.json at 92 modules` |
 
-**4 locations.** Source of truth: Passion Agent codebase module count.
+**5 locations.** Source of truth: Passion Agent codebase module count.
 
 ### LOC (`109K`)
 
 | Section | Context |
 |---------|---------|
-| Currently Building | Passion Agent description |
-| Featured Projects | Passion Agent card |
-| How the Passion Ecosystem (collapsed) | architecture diagram |
+| Currently Building | `92 modules, 109K LOC` |
+| Featured Projects | Passion Agent card: `92 modules, 109K LOC` |
+| How the Passion Ecosystem (collapsed) | diagram: `92 modules, 109K LOC` |
 
 **3 locations.** Source of truth: `cloc` or `tokei` on the Passion Agent repo.
 
@@ -393,10 +394,10 @@ Every hardcoded number in the README must stay consistent across all its occurre
 
 | Section | Context |
 |---------|---------|
-| Currently Building | `ships across 47 repos` |
-| Featured Projects | Passion Agent card |
-| How the Passion Ecosystem (collapsed) | `47 Managed Repos` |
-| Proof of Craft | `47 repos` |
+| Currently Building | `opens PRs across 47 repos` |
+| Proof of Craft | `1,257+ commits across 47 repos` |
+| How the Passion Ecosystem (collapsed) | `47 Managed Repos` diagram line |
+| All 33 Projects (collapsed) | Passion Agent row: `24/7 brain cycles, 47 repos` |
 
 **4 locations.** Source of truth: Passion Agent config repo list.
 
