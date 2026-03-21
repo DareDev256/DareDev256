@@ -171,7 +171,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 38. **v0.8.5** — Restructured Repo Setup & Dependencies: numbered replication steps, file inventory table, auto-update API reference with zone/marker/frequency breakdown. Synced FOR_DARE.md Content Strategy through v0.8.4
 39. **v0.8.6** — Fixed Metrics Sync Map drift: corrected commit count locations (4→3, removed phantom ecosystem entry), fixed managed repos locations (swapped stale "Featured Projects" for actual "All Projects" row), added missing module count location (What I'd Build Differently, now 5), added exact context strings to all metric entries. Fixed Quick Reference and Metrics Refresh playbook with accurate counts
 40. **v0.8.7** — Enhanced Repo Setup: editability matrix, impact ratings, auto-update format specs
-41. **v0.8.8** (current) — Fixed stale commit count reference in Troubleshooting (4→3, missed in v0.8.6 sync). Added Signature SVG Architecture section documenting all 8 animation systems, timing sequence, color palette contract, and theme-switch behavior
+41. **v0.8.8** — Fixed stale commit count reference in Troubleshooting (4→3, missed in v0.8.6 sync). Added Signature SVG Architecture section documenting all 8 animation systems, timing sequence, color palette contract, and theme-switch behavior
+42. **v0.8.9** (current) — Fixed stale cross-reference in Patterns Worth Stealing: All Projects category table count was 5 (never accurate), corrected to 4 (AI & Automation, Passionate Learning Suite, Interactive Web & Games, Client Websites)
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -234,7 +235,7 @@ The v0.7.0 restructure trimmed 20 sections dramatically, and subsequent refineme
 **Collapsed sections (`<details>`):**
 - **Domain Depth + Technical DNA** — expertise bar chart + architectural pattern table
 - **How the Passion Ecosystem Works** — merged from 3 prior sections (How We Work, How Passion Ships, Glossary)
-- **All 33 Projects** — 5 category tables
+- **All 33 Projects** — 4 category tables
 - **Hard Problems I've Solved** — 6 deep-dive war stories
 - **What I'd Build Differently** — 4 honest retrospectives
 - **Repo Setup & Dependencies** — fork instructions, external services, auto-update API docs

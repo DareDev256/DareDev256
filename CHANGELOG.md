@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.9] - 2026-03-21
+
+### Fixed
+- **FOR_DARE.md** — Patterns Worth Stealing: All Projects claimed "5 category tables" but README only has 4 (AI & Automation, Passionate Learning Suite, Interactive Web & Games, Client Websites) — corrected count
+- **FOR_DARE.md** — Content Strategy Evolution: synced through v0.8.9, was stuck at v0.8.8 as "(current)"
+
+### Changed
+- **CLAUDE.md** — version bump v0.8.8 → v0.8.9
+
 ## [0.8.8] - 2026-03-20
 
 ### Fixed
