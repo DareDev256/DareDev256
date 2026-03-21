@@ -7,6 +7,18 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.8] - 2026-03-20
+
+### Fixed
+- **FOR_DARE.md** — Troubleshooting: commit count reference still said "4" after Metrics Sync Map was corrected to 3 in v0.8.6 — now consistent
+- **FOR_DARE.md** — Content Strategy Evolution: was stuck at v0.8.6 as "(current)", missing v0.8.7 entry — now synced through v0.8.8
+
+### Added
+- **FOR_DARE.md** — Signature SVG Architecture: full documentation of the 8-phase animation sequence, timing table, color contract, theme-switch behavior, and edit safety notes for the `signature.svg` hero emblem
+
+### Changed
+- **CLAUDE.md** — version bump v0.8.7 → v0.8.8
+
 ## [0.8.7] - 2026-03-19
 
 ### Changed

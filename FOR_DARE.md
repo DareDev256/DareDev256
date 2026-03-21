@@ -95,6 +95,31 @@ Five files. The simplicity is the point.
 | `github-readme-stats` (anuraghazra) | Frequent downtime due to Vercel rate limits — cards often show as broken images |
 | `github-readme-streak-stats` | Unreliable uptime, broken badges recurring issue |
 
+### Signature SVG Architecture
+
+The `signature.svg` (800×250, displayed at `width="600"`) is the hero visual — CSS-only animations, zero JavaScript, zero external dependencies. Understanding its layered animation system prevents accidental breakage during edits.
+
+**Animation Sequence (8 systems, staggered over 5s):**
+
+| Phase | Delay | System | What Happens |
+|:-----:|------:|--------|-------------|
+| 1 | 0.2s | `draw` | Infinity path draws in via `stroke-dashoffset` → 0 |
+| 2 | 1.5–2.1s | `spin-cw/ccw` | 3 orbital ellipses fade in, rotate at different speeds (10s/13s/16s) |
+| 3 | 2.0–2.6s | `pulse-r` | 3 electron dots pulse radius 5→8px on orbits |
+| 4 | 2.5–3.2s | `fade` | Nucleus core + concentric rings materialize |
+| 5 | 2.8–3.2s | `fade` + `ring-rotate` | Dharma wheel rings appear; dashed mid-ring rotates (20s loop) |
+| 6 | 3.0–3.56s | `draw` | 8 spokes draw outward from center |
+| 7 | 3.5–4.4s | `fade` | Arrow tips + segment arcs reveal on outer ring |
+| 8 | 3.8–5.0s | `draw` + `fade` | Gradient divider draws, name fades in, subtitles begin cycling |
+
+**Subtitle Cycle:** 4 titles rotate on a 12s loop (`t1`–`t4` keyframes): AI SOLUTIONS ENGINEER → CREATIVE TECHNOLOGIST → AUTONOMOUS AGENT BUILDER → MUSIC VIDEO DIRECTOR · 350+
+
+**Color Contract:** `#6C63FF` (primary), `#A78BFA` (secondary), `#818CF8` (tertiary) — must match `color=6C63FF` on Shields.io badges throughout README.
+
+**Theme Support:** `prefers-color-scheme: light` swaps name fill `#f0f0f0` → `#1a1a2e` and tagline fill `#555` → `#888`. Emblem colors are constant across themes.
+
+**Edit Safety:** The emblem center is at `(130, 115)` — all spoke coordinates, ring radii, and orbit transforms reference this origin. Moving the center requires updating ~40 coordinate values.
+
 ## The War Stories
 
 ### Badge Reliability Wars (Feb 2026)
@@ -144,7 +169,9 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 36. **v0.8.3** — Synced FOR_DARE.md with current state: fixed stale Content Strategy Evolution (stuck at v0.8.2), corrected troubleshooting example numbers, removed stale section references from playbooks, fixed Metrics Sync Map
 37. **v0.8.4** — Fixed 3 stale references in FOR_DARE.md, synced version history
 38. **v0.8.5** — Restructured Repo Setup & Dependencies: numbered replication steps, file inventory table, auto-update API reference with zone/marker/frequency breakdown. Synced FOR_DARE.md Content Strategy through v0.8.4
-39. **v0.8.6** (current) — Fixed Metrics Sync Map drift: corrected commit count locations (4→3, removed phantom ecosystem entry), fixed managed repos locations (swapped stale "Featured Projects" for actual "All Projects" row), added missing module count location (What I'd Build Differently, now 5), added exact context strings to all metric entries. Fixed Quick Reference and Metrics Refresh playbook with accurate counts
+39. **v0.8.6** — Fixed Metrics Sync Map drift: corrected commit count locations (4→3, removed phantom ecosystem entry), fixed managed repos locations (swapped stale "Featured Projects" for actual "All Projects" row), added missing module count location (What I'd Build Differently, now 5), added exact context strings to all metric entries. Fixed Quick Reference and Metrics Refresh playbook with accurate counts
+40. **v0.8.7** — Enhanced Repo Setup: editability matrix, impact ratings, auto-update format specs
+41. **v0.8.8** (current) — Fixed stale commit count reference in Troubleshooting (4→3, missed in v0.8.6 sync). Added Signature SVG Architecture section documenting all 8 animation systems, timing sequence, color palette contract, and theme-switch behavior
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -468,7 +495,7 @@ All rendering depends on external services. If any break, the profile degrades v
 ### Repo/commit counts are wrong
 **Symptom:** Badge says "33 repos" but you have 35.
 **Cause:** These are hardcoded in the README (not dynamic badges). They need manual updates.
-**Fix:** Search the README for the stale number. See the Metrics Sync Map below for exact locations. Repo count appears in 3 places, commit count in 4. Update all instances, bump patch version, add CHANGELOG entry.
+**Fix:** Search the README for the stale number. See the Metrics Sync Map above for exact locations. Repo count appears in 3 places, commit count in 3. Update all instances, bump patch version, add CHANGELOG entry.
 
 ### Profile page looks different from raw README
 **Symptom:** Layout or formatting differs between raw Markdown preview and the rendered profile.
