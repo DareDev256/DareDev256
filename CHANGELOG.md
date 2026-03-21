@@ -7,6 +7,14 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.10] - 2026-03-21
+
+### Fixed
+- **README.md** — Showcase zone: broken GitHub URL with unencoded spaces in repo slug (`TdotsSolutionsz Music Video Portfolio` → `tdotssolutionsz-portfolio`) — same bug previously fixed in v0.6.17, re-introduced by Passion Agent auto-update
+
+### Changed
+- **CLAUDE.md** — version bump v0.8.9 → v0.8.10
+
 ## [0.8.9] - 2026-03-21
 
 ### Fixed

@@ -172,7 +172,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 39. **v0.8.6** — Fixed Metrics Sync Map drift: corrected commit count locations (4→3, removed phantom ecosystem entry), fixed managed repos locations (swapped stale "Featured Projects" for actual "All Projects" row), added missing module count location (What I'd Build Differently, now 5), added exact context strings to all metric entries. Fixed Quick Reference and Metrics Refresh playbook with accurate counts
 40. **v0.8.7** — Enhanced Repo Setup: editability matrix, impact ratings, auto-update format specs
 41. **v0.8.8** — Fixed stale commit count reference in Troubleshooting (4→3, missed in v0.8.6 sync). Added Signature SVG Architecture section documenting all 8 animation systems, timing sequence, color palette contract, and theme-switch behavior
-42. **v0.8.9** (current) — Fixed stale cross-reference in Patterns Worth Stealing: All Projects category table count was 5 (never accurate), corrected to 4 (AI & Automation, Passionate Learning Suite, Interactive Web & Games, Client Websites)
+42. **v0.8.9** — Fixed stale cross-reference in Patterns Worth Stealing: All Projects category table count was 5 (never accurate), corrected to 4 (AI & Automation, Passionate Learning Suite, Interactive Web & Games, Client Websites)
+43. **v0.8.10** (current) — Fixed recurring broken showcase URL: Passion Agent auto-update re-introduced unencoded spaces in `tdotssolutionsz-portfolio` repo slug (same bug as v0.6.17)
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
