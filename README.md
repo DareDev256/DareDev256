@@ -229,6 +229,8 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 | [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Rule-based + semantic + LLM-as-judge scoring | Python |
 | [contract-translator](https://github.com/DareDev256/contract-translator) | Legal → plain English — [**Live**](https://contract-translator.vercel.app) | TypeScript, GPT-4 |
 | [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Semantic vs BM25 comparison | Python |
+| [passion-memory-server](https://github.com/DareDev256/passion-memory-server) | Persistent MCP brain — shared memory across all sessions | Node.js, SQLite, MCP |
+| [DareDev256](https://github.com/DareDev256/DareDev256) | This profile README — auto-updated by Passion Agent | Markdown, SVG |
 
 ### Passionate Learning Suite
 
@@ -352,6 +354,18 @@ Two HTML comment-delimited zones in `README.md` are machine-writable by [Passion
 **Highlights:** <3 bullet points max>
 `+N/-N lines`
 ```
+
+**Field reference:**
+
+| Field | Format | Source |
+|-------|--------|--------|
+| Task count | Integer | Brain cycle execution log |
+| Repo count | Integer | Distinct repos touched in cycle |
+| Line diff | `+N/-N` | Aggregated `git diff --stat` across commits |
+| Success rate | Percentage | Merged PRs ÷ total PRs in cycle |
+| Showcase repo | `[name](url)` | Latest repo with a notable visual or feature change |
+
+> **Integration note:** Writes are idempotent — Passion Agent replaces all content between markers on each run. External consumers can poll the raw file at `https://raw.githubusercontent.com/DareDev256/DareDev256/main/README.md` and parse between markers for machine-readable status.
 
 Full design language, metrics sync map, and update playbooks in [`FOR_DARE.md`](./FOR_DARE.md).
 

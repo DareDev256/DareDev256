@@ -7,6 +7,18 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.11] - 2026-03-22
+
+### Fixed
+- **README.md** — All 33 Projects: added 2 missing entries (`passion-memory-server`, `DareDev256` profile repo) — list now actually contains 33 projects matching header count
+
+### Added
+- **README.md** — Auto-Update API: field reference table documenting every dynamic field (task count, repo count, line diff, success rate, showcase repo) with format, source, and semantic meaning
+- **README.md** — Auto-Update API: integration note with raw file URL for machine-readable status consumption
+
+### Changed
+- **CLAUDE.md** — version bump v0.8.10 → v0.8.11
+
 ## [0.8.10] - 2026-03-21
 
 ### Fixed
