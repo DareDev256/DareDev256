@@ -173,7 +173,9 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 40. **v0.8.7** — Enhanced Repo Setup: editability matrix, impact ratings, auto-update format specs
 41. **v0.8.8** — Fixed stale commit count reference in Troubleshooting (4→3, missed in v0.8.6 sync). Added Signature SVG Architecture section documenting all 8 animation systems, timing sequence, color palette contract, and theme-switch behavior
 42. **v0.8.9** — Fixed stale cross-reference in Patterns Worth Stealing: All Projects category table count was 5 (never accurate), corrected to 4 (AI & Automation, Passionate Learning Suite, Interactive Web & Games, Client Websites)
-43. **v0.8.10** (current) — Fixed recurring broken showcase URL: Passion Agent auto-update re-introduced unencoded spaces in `tdotssolutionsz-portfolio` repo slug (same bug as v0.6.17)
+43. **v0.8.10** — Fixed recurring broken showcase URL: Passion Agent auto-update re-introduced unencoded spaces in `tdotssolutionsz-portfolio` repo slug (same bug as v0.6.17)
+44. **v0.8.11** — Added 2 missing projects to All Projects catalog (`passion-memory-server`, `DareDev256` self-reference), documented auto-update API field reference with formats/sources, added integration note for raw-file polling
+45. **v0.8.12** (current) — Synced Content Strategy Evolution through v0.8.11, added recurring URL encoding troubleshooting entry, added showcase URL validation to maintenance checklist
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -461,8 +463,9 @@ When updating this README, verify:
 - [ ] "Open To" section matches current job search status
 - [ ] Collapsed "How the Passion Ecosystem Works" reflects current agent architecture
 - [ ] CHANGELOG.md is updated with any changes (version bump for non-trivial changes)
+- [ ] Showcase section URL resolves (no spaces in repo slug — recurring bug, see Troubleshooting)
 - [ ] CHANGELOG versions are sequential with no gaps
-- [ ] FOR_DARE.md version history matches CHANGELOG.md (Content Strategy Evolution section)
+- [ ] FOR_DARE.md Content Strategy Evolution synced through current version (check "(current)" marker)
 
 ## External Dependencies (Badge Services)
 
@@ -493,6 +496,12 @@ All rendering depends on external services. If any break, the profile degrades v
 **Symptom:** The "Updated by Passion.EXE" timestamp is days old.
 **Cause:** Passion Agent's brain cycle hasn't run the daily-status task, or it failed.
 **Fix:** Check Passion Agent logs. The daily status update is a low-priority task — it only runs when the agent has spare cycles. You can trigger it manually by running the profile update module.
+
+### Showcase URL has broken link (RECURRING)
+**Symptom:** Showcase section links to a GitHub URL with `%20` or literal spaces — returns 404.
+**Cause:** Passion Agent's `passion-profile.mjs` generates the showcase repo name from the task description, which may contain spaces. GitHub URLs require hyphenated slugs, not spaces.
+**History:** First hit in v0.6.17, recurred in v0.8.10. Same root cause both times — the agent's profile writer doesn't slugify repo names.
+**Fix:** Verify the URL resolves before committing. The repo slug must be lowercase-hyphenated (e.g., `tdotssolutionsz-portfolio`, not `TdotsSolutionsz Music Video Portfolio`). Long-term fix: add URL validation to `passion-profile.mjs` before writing the showcase zone.
 
 ### Repo/commit counts are wrong
 **Symptom:** Badge says "33 repos" but you have 35.

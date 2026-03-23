@@ -7,6 +7,18 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.12] - 2026-03-23
+
+### Fixed
+- **FOR_DARE.md** — Content Strategy Evolution: stuck at v0.8.10 as "(current)", missing v0.8.11 entry — now synced through v0.8.12
+
+### Added
+- **FOR_DARE.md** — Troubleshooting: new "Showcase URL has broken link (RECURRING)" entry documenting the twice-hit URL encoding bug (v0.6.17, v0.8.10) with root cause, history, and long-term fix guidance
+- **FOR_DARE.md** — Maintenance Checklist: added showcase URL validation check (the exact thing that keeps breaking) and Content Strategy sync verification
+
+### Changed
+- **CLAUDE.md** — version bump v0.8.11 → v0.8.12
+
 ## [0.8.11] - 2026-03-22
 
 ### Fixed
