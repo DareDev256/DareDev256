@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.15] - 2026-03-23
+
+### Changed
+- **README.md** — PACT Dashboard descriptions updated across 5 locations (Currently Building, Featured Projects, All 33 Projects, ecosystem diagram, showcase zone) to reflect Royalty Protocol hero — dynamic background video, scroll-triggered reveals, dark luxury tech aesthetic
+- **README.md** — Showcase zone updated with Royalty Protocol as latest notable build, layered on IntelDossier + smart video embeds
+
+### Added
+- **README.md** — New Hard Problems entry: cinematic hero orchestration (staggered reveal choreography, lazy video loading, IntersectionObserver-driven sequences, zero layout shift)
+- **FOR_DARE.md** — Content Strategy Evolution synced through v0.8.15 (was stuck at v0.8.13 as "current", missing v0.8.14 entry)
+
 ## [0.8.14] - 2026-03-23
 
 ### Added

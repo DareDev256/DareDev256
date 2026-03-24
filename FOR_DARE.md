@@ -176,7 +176,9 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 43. **v0.8.10** — Fixed recurring broken showcase URL: Passion Agent auto-update re-introduced unencoded spaces in `tdotssolutionsz-portfolio` repo slug (same bug as v0.6.17)
 44. **v0.8.11** — Added 2 missing projects to All Projects catalog (`passion-memory-server`, `DareDev256` self-reference), documented auto-update API field reference with formats/sources, added integration note for raw-file polling
 45. **v0.8.12** — Synced Content Strategy Evolution through v0.8.11, added recurring URL encoding troubleshooting entry, added showcase URL validation to maintenance checklist
-46. **v0.8.13** (current) — Fixed stale Orchid hex in Design Language (`#A855F7` → `#A78BFA`), added self-documenting header to signature.svg (color contract, animation sequence, edit safety)
+46. **v0.8.13** — Fixed stale Orchid hex in Design Language (`#A855F7` → `#A78BFA`), added self-documenting header to signature.svg (color contract, animation sequence, edit safety)
+47. **v0.8.14** — Documented IntelDossier hero (animated threat indicators, tiered severity bars, source analysis) and intelligent video embed auto-selection across 4 README locations; updated showcase zone
+48. **v0.8.15** (current) — Updated PACT Dashboard descriptions to reflect Royalty Protocol hero (dynamic background video, scroll-triggered reveals, dark luxury aesthetic). Added cinematic hero orchestration to Hard Problems. Synced FOR_DARE.md Content Strategy through v0.8.14
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
