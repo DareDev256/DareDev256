@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.13] - 2026-03-23
+
+### Fixed
+- **FOR_DARE.md** — Design Language color palette: Orchid hex was `#A855F7` (never used anywhere) — corrected to `#A78BFA` to match actual signature.svg secondary color; updated usage description to reflect real SVG element usage (subtitles, arrows, electrons, nucleus ring)
+
+### Added
+- **signature.svg** — Self-documenting header block: color contract, 8-phase animation sequence, dimension/theme specs, edit safety notes — eliminates dependency on FOR_DARE.md for developers opening the SVG directly
+
+### Changed
+- **CLAUDE.md** — version bump v0.8.12 → v0.8.13
+
 ## [0.8.12] - 2026-03-23
 
 ### Fixed

@@ -1,3 +1,36 @@
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  signature.svg — DareDev256 Animated Hero Emblem                ║
+  ╠══════════════════════════════════════════════════════════════════╣
+  ║  Dimensions:   800 × 250 (viewBox), displayed at width="600"    ║
+  ║  Animation:    CSS-only (no JavaScript), 8 staggered phases     ║
+  ║  Dependencies: None — fully self-contained inline SVG           ║
+  ║  Theme:        prefers-color-scheme swaps text fills only;      ║
+  ║                emblem colors stay constant across light/dark     ║
+  ╠══════════════════════════════════════════════════════════════════╣
+  ║  COLOR CONTRACT (must match Shields.io badges in README.md):    ║
+  ║    Primary:   #6C63FF  — infinity path, spokes, nucleus, orbits ║
+  ║    Secondary: #A78BFA  — subtitles, arrows, electrons, mid-ring ║
+  ║    Tertiary:  #818CF8  — segment arcs, inner ring, orbit 3      ║
+  ╠══════════════════════════════════════════════════════════════════╣
+  ║  ANIMATION SEQUENCE (staggered over 5s):                        ║
+  ║    Phase 1  0.2s     Infinity path draws in (stroke-dashoffset) ║
+  ║    Phase 2  1.5–2.1s Orbital ellipses fade in + rotate          ║
+  ║    Phase 3  2.0–2.6s Electron dots pulse on orbits              ║
+  ║    Phase 4  2.5–3.2s Nucleus core + rings materialize           ║
+  ║    Phase 5  2.8–3.2s Dharma wheel rings; dashed mid-ring spins  ║
+  ║    Phase 6  3.0–3.6s 8 spokes draw outward from center         ║
+  ║    Phase 7  3.5–4.4s Arrow tips + segment arcs reveal           ║
+  ║    Phase 8  3.8–5.0s Divider, name, subtitles begin cycling     ║
+  ╠══════════════════════════════════════════════════════════════════╣
+  ║  EDIT SAFETY:                                                   ║
+  ║    Emblem center = (130, 115) — all spoke coords, ring radii,   ║
+  ║    and orbit transforms reference this origin. Moving it         ║
+  ║    requires updating ~40 coordinate values.                     ║
+  ║    Subtitle text must match "Open To" roles in README.md.       ║
+  ║    Tagline stats must match badge numbers in README.md.         ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250">
   <style>
     @keyframes draw { to { stroke-dashoffset: 0; } }

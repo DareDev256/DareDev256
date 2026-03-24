@@ -175,7 +175,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 42. **v0.8.9** — Fixed stale cross-reference in Patterns Worth Stealing: All Projects category table count was 5 (never accurate), corrected to 4 (AI & Automation, Passionate Learning Suite, Interactive Web & Games, Client Websites)
 43. **v0.8.10** — Fixed recurring broken showcase URL: Passion Agent auto-update re-introduced unencoded spaces in `tdotssolutionsz-portfolio` repo slug (same bug as v0.6.17)
 44. **v0.8.11** — Added 2 missing projects to All Projects catalog (`passion-memory-server`, `DareDev256` self-reference), documented auto-update API field reference with formats/sources, added integration note for raw-file polling
-45. **v0.8.12** (current) — Synced Content Strategy Evolution through v0.8.11, added recurring URL encoding troubleshooting entry, added showcase URL validation to maintenance checklist
+45. **v0.8.12** — Synced Content Strategy Evolution through v0.8.11, added recurring URL encoding troubleshooting entry, added showcase URL validation to maintenance checklist
+46. **v0.8.13** (current) — Fixed stale Orchid hex in Design Language (`#A855F7` → `#A78BFA`), added self-documenting header to signature.svg (color contract, animation sequence, edit safety)
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -257,7 +258,7 @@ The README's visual identity is intentional — every color, badge style, and la
 | Color | Hex | Usage | Why |
 |-------|-----|-------|-----|
 | Indigo | `#6C63FF` | Primary brand — hero badges, CTA buttons, signature.svg emblem | Distinctive without being loud; reads well on both light and dark GitHub themes |
-| Orchid | `#A855F7` | License badge, accent | Complements indigo without competing; signals "creative" |
+| Orchid | `#A78BFA` | Subtitle cycling, orbit/electron accents, arrow tips, nucleus ring | Secondary brand color — used throughout signature.svg; see CLAUDE.md color contract |
 | Emerald | `#10B981` | Live deployment badges, success states | Universal "live/active" signal; high contrast on dark backgrounds |
 | Gold | `#FFD700` | Star badges, commit count | Maps to GitHub's own star color for instant recognition |
 | Coral | `#FF6B6B` | AI ecosystem badge, passion.jamesdare.com CTA | Warm accent — stands out in the badge bar as the "human" element |
