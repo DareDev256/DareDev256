@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.14] - 2026-03-23
+
+### Added
+- **README.md** — IntelDossier feature documented across Currently Building, Featured Projects, All 33 Projects, and ecosystem diagram — animated threat indicators, tiered severity bars, source analysis panel
+- **README.md** — Intelligent video embed auto-selection documented in Hard Problems I've Solved — viewport-aware selection engine replacing simultaneous iframe loading
+
+### Changed
+- **README.md** — PACT Dashboard descriptions updated across 4 locations to reflect IntelDossier hero section and smart video embeds
+- **README.md** — Showcase zone updated with IntelDossier + smart video embeds as latest notable build
+- **CLAUDE.md** — version bump v0.8.13 → v0.8.14
+
 ## [0.8.13] - 2026-03-23
 
 ### Fixed

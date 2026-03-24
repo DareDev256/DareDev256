@@ -28,7 +28,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — 121 components, 695 tests, OWASP-hardened. Next.js 16 + React 19 |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — IntelDossier hero, 121 components, 695 tests, OWASP-hardened. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
 | 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — polished loading states, guarded engine startup, each playable |
 
@@ -40,18 +40,18 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 <!-- DAILY_STATUS_END -->
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 19, 2026*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 23, 2026*
 
-**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio)**
+**Tonight's build: [PACT Dashboard](https://github.com/DareDev256/passion-dashboard) — IntelDossier & Smart Video Embeds**
 
-Introducing a stunning Hero Carousel to TdotsSolutionsz Music Video Portfolio! Effortlessly showcase featured videos with smooth animations, interactive controls, and a responsive design that grabs attention and drives clicks.
+IntelDossier: a new hero section surfacing live threat indicators, tiered severity bars, source analysis, and top findings — immediate situational awareness without clicking through tabs. Plus intelligent auto-selection for video embeds that picks the most relevant clip based on viewport and user interaction context.
 
 **Highlights:**
-- Dynamic Hero Carousel showcasing featured music videos.
-- Smooth, eye-catching CSS transition animations.
-- Interactive navigation and responsive design for all devices.
+- Animated threat distribution bars with tiered severity mapping
+- Intelligent video embed auto-selection based on viewport and interaction state
+- Source analysis panel with real-time confidence scoring
 
-`+8/-3 lines`
+`+156/-22 lines`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
@@ -83,7 +83,7 @@ Introducing a stunning Hero Carousel to TdotsSolutionsz Music Video Portfolio! E
 
 ### PACT Dashboard *(private)*
 
-**Cyberpunk command terminal** — real-time agent monitoring, 121 components, keyboard-driven. 695 tests, OWASP-hardened.
+**Cyberpunk command terminal** — IntelDossier hero with animated threat indicators, 121 components, keyboard-driven. 695 tests, OWASP-hardened.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -204,7 +204,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   ├── Career Engine ─── 6+ job APIs, auto-apply pipeline
   └── Memory System ─── somatic markers, narrative identity
         ▼
-  PACT Dashboard ─── Cyberpunk HUD, 121 components
+  PACT Dashboard ─── Cyberpunk HUD, IntelDossier hero, 121 components
         ▼
   Passion Memory MCP ─── Shared brain across all sessions
 ```
@@ -222,7 +222,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐20+ | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Cyberpunk command terminal — 121 components, 695 tests, OWASP-hardened | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Cyberpunk command terminal — IntelDossier hero, smart video embeds, 121 components, 695 tests, OWASP-hardened | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
@@ -284,7 +284,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 **Envelope sanitization at API boundaries** — YouTube API responses hit per-field sanitizers directly — any malformed envelope (missing `items`, oversized payloads, wrong types) bypassed validation entirely. Built a structural pre-validator: schema shape check before field-level processing. Catches CWE-20 (improper input validation), CWE-400 (uncontrolled resource consumption), CWE-754 (improper unusual condition checks). 23 new tests, full suite green.
 
-**Helper extraction in hot paths** — Passion Agent's auto-select rules engine had duplicated timing guards, manual deep-freeze loops, and ternary accumulation across three functions. Extracted `computeEntryTiming` (centralized dwellMs clamp+ceil), `freezeActivityMap` (single-call immutability), and `maxSeverity` (null-safe seed). Net -17 lines, 24 targeted edge-case tests, 323 auto-select + 381 rotation tests green.
+**Intelligent auto-selection for video embeds** — Dashboard embedded videos fought for attention — multiple iframes loading simultaneously, competing for bandwidth, none contextually relevant. Built a viewport-aware selection engine: tracks scroll position, user interaction signals, and content adjacency to dynamically surface the most relevant embed. Combined with the auto-select rules engine refactor (extracted `computeEntryTiming`, `freezeActivityMap`, `maxSeverity`), the system now picks what matters. 323 auto-select + 381 rotation tests green.
 
 </details>
 
