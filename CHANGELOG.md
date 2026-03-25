@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.18] - 2026-03-24
+
+### Changed
+- **README.md** — PACT Dashboard descriptions updated across 5 locations (Currently Building, Featured Projects, All 33 Projects, ecosystem diagram, showcase zone) to reflect Purple Reign intro sequence — pulsating purple aura, metallic sheen title reveal, dark luxury aesthetic
+- **README.md** — Showcase zone updated with Purple Reign + BaseModal refactor + NavLink component as latest notable build
+
+### Added
+- **README.md** — BaseModal architecture and NavLink navigation component documented in PACT Dashboard descriptions — centralized modal logic and animated sidebar navigation
+- **CLAUDE.md** — version bump v0.8.17 → v0.8.18
+
 ## [0.8.17] - 2026-03-24
 
 ### Added

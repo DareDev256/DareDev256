@@ -28,7 +28,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — Royalty Protocol hero, IntelDossier, 121 components, 695 tests, OWASP-hardened. Next.js 16 + React 19 |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — Purple Reign intro, Royalty Protocol hero, BaseModal architecture, 121 components, 695 tests, OWASP-hardened. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
 | 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — polished loading states, guarded engine startup, each playable |
 
@@ -40,18 +40,18 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 <!-- DAILY_STATUS_END -->
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 23, 2026*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 24, 2026*
 
-**Tonight's build: [PACT Dashboard](https://github.com/DareDev256/passion-dashboard) — Royalty Protocol Hero**
+**Tonight's build: [PACT Dashboard](https://github.com/DareDev256/passion-dashboard) — Purple Reign + Component Architecture**
 
-Royalty Protocol: a dark luxury hero experience with dynamic background video, scroll-triggered reveals, and cinematic typography. Built on top of IntelDossier's live threat indicators and smart video embed auto-selection — the dashboard now opens with presence, not just data.
+Purple Reign: a cinematic intro sequence — pulsating purple aura on load, metallic sheen title reveal, staggered tagline fade. Underneath: `BaseModal` refactor centralizes shared modal styling/logic, and a new `NavLink` component adds polished hover underline animations to sidebar navigation.
 
 **Highlights:**
-- Dynamic background video with scroll-triggered reveal animations
-- Dark luxury tech aesthetic — cinematic presentation, refined typography
-- Layered on IntelDossier threat intel + viewport-aware video embed selection
+- Purple Reign intro — pulsating aura, metallic sheen reveal, dark luxury aesthetic
+- `BaseModal` refactor — shared modal logic extracted, consistent styling across all modals
+- `NavLink` component — animated underline hover/active states for dashboard navigation
 
-`+156/-22 lines`
+`+178/-34 lines`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
@@ -83,7 +83,7 @@ Royalty Protocol: a dark luxury hero experience with dynamic background video, s
 
 ### PACT Dashboard *(private)*
 
-**Cyberpunk command terminal** — Royalty Protocol hero with cinematic video backdrop, IntelDossier threat intel, 121 components. 695 tests, OWASP-hardened.
+**Cyberpunk command terminal** — Purple Reign intro sequence, Royalty Protocol hero, BaseModal architecture, NavLink navigation. 121 components, 695 tests, OWASP-hardened.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -204,7 +204,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   ├── Career Engine ─── 6+ job APIs, auto-apply pipeline
   └── Memory System ─── somatic markers, narrative identity
         ▼
-  PACT Dashboard ─── Cyberpunk HUD, Royalty Protocol hero, 121 components
+  PACT Dashboard ─── Cyberpunk HUD, Purple Reign intro, Royalty Protocol hero, 121 components
         ▼
   Passion Memory MCP ─── Shared brain across all sessions
 ```
@@ -222,7 +222,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐20+ | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Cyberpunk command terminal — Royalty Protocol hero, IntelDossier, smart video embeds, 121 components, 695 tests, OWASP-hardened | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Cyberpunk command terminal — Purple Reign intro, Royalty Protocol hero, BaseModal architecture, NavLink navigation, IntelDossier, 121 components, 695 tests, OWASP-hardened | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
