@@ -24,6 +24,8 @@ This constraint exists because a bloated profile README hurts more than it helps
 | Check badge health | Visit profile page, look for broken image icons. See [Troubleshooting](#troubleshooting) |
 | Bump repo count | Search `33` in README.md — appears in 3 places (hero badge, Open To table, All Projects header) |
 | Bump commit count | Search `1,257` in README.md — appears in 3 places (hero badge, Featured Projects, Proof of Craft) |
+| Bump component count | Search `121` in README.md — appears in 5 places (see Metrics Sync Map: PACT Component Count) |
+| Bump approval rate | Search `89.9` in README.md — appears in 4 places (see Metrics Sync Map: Approval Rate) |
 | Add a new project | Add to the correct category table inside `<details>`, update repo count, update Featured if it's a flagship |
 | Change job targets | Edit the "Open To" section header and evidence table |
 | Test changes locally | `grip README.md` or push to a branch and preview at `github.com/DareDev256/DareDev256/blob/<branch>/README.md` |
@@ -179,7 +181,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 46. **v0.8.13** — Fixed stale Orchid hex in Design Language (`#A855F7` → `#A78BFA`), added self-documenting header to signature.svg (color contract, animation sequence, edit safety)
 47. **v0.8.14** — Documented IntelDossier hero (animated threat indicators, tiered severity bars, source analysis) and intelligent video embed auto-selection across 4 README locations; updated showcase zone
 48. **v0.8.15** — Updated PACT Dashboard descriptions to reflect Royalty Protocol hero (dynamic background video, scroll-triggered reveals, dark luxury aesthetic). Added cinematic hero orchestration to Hard Problems. Synced FOR_DARE.md Content Strategy through v0.8.14
-49. **v0.8.16** (current) — Fixed Hard Problems count drift (6→7), corrected CHANGELOG editability in Repo Setup (Human only→Human + Agent), added 2 missing metrics to Sync Map (test count 1,400+, release velocity 190)
+49. **v0.8.16** — Fixed Hard Problems count drift (6→7), corrected CHANGELOG editability in Repo Setup (Human only→Human + Agent), added 2 missing metrics to Sync Map (test count 1,400+, release velocity 190)
+50. **v0.8.17** (current) — Added 4 missing metrics to Sync Map (PACT component count 121 in 5 locations, approval rate 89.9% in 4, PACT test count 695 in 4, fcpxml tool count 53 in 2), added Quick Reference entries for component count and approval rate, added Sync Map completeness check to Maintenance Checklist
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -464,6 +467,49 @@ Every hardcoded number in the README must stay consistent across all its occurre
 
 **2 locations.** Source of truth: `gh release list` across all repos within the measured period.
 
+### PACT Component Count (`121`)
+
+| Section | Context |
+|---------|---------|
+| Currently Building | `121 components, 695 tests, OWASP-hardened` |
+| Featured Projects | PACT Dashboard card: `121 components. 695 tests` |
+| How the Passion Ecosystem (collapsed) | diagram: `Royalty Protocol hero, 121 components` |
+| All 33 Projects (collapsed) | PACT Dashboard row: `121 components, 695 tests` |
+| What I'd Build Differently (collapsed) | `121 components, not enough composition` |
+
+**5 locations.** Source of truth: PACT Dashboard component directory count.
+
+### Approval Rate (`89.9%`)
+
+| Section | Context |
+|---------|---------|
+| Currently Building | Passion Agent: `89.9% approval rate` |
+| Featured Projects | Passion Agent card: `89.9% approval across 1,257+ commits` |
+| Domain Depth (collapsed) | `89.9% approval rate as a live metric` |
+| How the Passion Ecosystem (collapsed) | diagram: `89.9% autonomous approval rate` |
+
+**4 locations.** Source of truth: Passion Agent merged-vs-rejected PR ratio.
+
+### PACT Test Count (`695`)
+
+| Section | Context |
+|---------|---------|
+| Currently Building | `121 components, 695 tests` |
+| Featured Projects | PACT Dashboard card: `695 tests, OWASP-hardened` |
+| Proof of Craft | `695 in one repo alone` |
+| All 33 Projects (collapsed) | PACT Dashboard row: `695 tests, OWASP-hardened` |
+
+**4 locations.** Source of truth: PACT Dashboard test suite count (`vitest --reporter=verbose | tail -1`).
+
+### fcpxml Tool Count (`53`)
+
+| Section | Context |
+|---------|---------|
+| Currently Building | `53 tools, natural language timeline editing` |
+| Featured Projects | fcpxml card: `53 tools — timeline analysis, health checks` |
+
+**2 locations.** Source of truth: `fcpxml-mcp-server` tool registry count.
+
 ### Update Procedure
 
 1. Search for the **exact current value** (e.g., `1,257`) — don't search just the number
@@ -487,6 +533,7 @@ When updating this README, verify:
 - [ ] CHANGELOG.md is updated with any changes (version bump for non-trivial changes)
 - [ ] Showcase section URL resolves (no spaces in repo slug — recurring bug, see Troubleshooting)
 - [ ] CHANGELOG versions are sequential with no gaps
+- [ ] All 13 Sync Map metrics are consistent across their documented locations
 - [ ] FOR_DARE.md Content Strategy Evolution synced through current version (check "(current)" marker)
 
 ## External Dependencies (Badge Services)

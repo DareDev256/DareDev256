@@ -7,6 +7,14 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.17] - 2026-03-24
+
+### Added
+- **FOR_DARE.md** — Metrics Sync Map: 4 new metrics tracked — PACT Component Count (`121`, 5 locations), Approval Rate (`89.9%`, 4 locations), PACT Test Count (`695`, 4 locations), fcpxml Tool Count (`53`, 2 locations). Total tracked metrics now 13 (was 9)
+- **FOR_DARE.md** — Quick Reference: added entries for bumping component count and approval rate (the two most frequently drifting new metrics)
+- **FOR_DARE.md** — Maintenance Checklist: added Sync Map completeness check (all 13 metrics consistent across documented locations)
+- **FOR_DARE.md** — Content Strategy Evolution: synced through v0.8.17
+
 ## [0.8.16] - 2026-03-24
 
 ### Fixed
