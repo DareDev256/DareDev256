@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.16] - 2026-03-24
+
+### Fixed
+- **FOR_DARE.md** — Hard Problems count: "6 deep-dive war stories" → 7 (cinematic hero orchestration was added in v0.8.15 but count wasn't bumped)
+- **README.md** — Repo Setup editability matrix: CHANGELOG.md listed as "Human only" but agents write to it every version — corrected to "Human + Agent"
+
+### Added
+- **FOR_DARE.md** — Metrics Sync Map: added ecosystem test count (`1,400+`, 2 locations) and release velocity (`190`, 2 locations) — both metrics appear in multiple README sections but were missing from the sync map, risking stale-number drift
+
 ## [0.8.15] - 2026-03-23
 
 ### Changed

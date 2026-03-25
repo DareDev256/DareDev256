@@ -178,7 +178,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 45. **v0.8.12** — Synced Content Strategy Evolution through v0.8.11, added recurring URL encoding troubleshooting entry, added showcase URL validation to maintenance checklist
 46. **v0.8.13** — Fixed stale Orchid hex in Design Language (`#A855F7` → `#A78BFA`), added self-documenting header to signature.svg (color contract, animation sequence, edit safety)
 47. **v0.8.14** — Documented IntelDossier hero (animated threat indicators, tiered severity bars, source analysis) and intelligent video embed auto-selection across 4 README locations; updated showcase zone
-48. **v0.8.15** (current) — Updated PACT Dashboard descriptions to reflect Royalty Protocol hero (dynamic background video, scroll-triggered reveals, dark luxury aesthetic). Added cinematic hero orchestration to Hard Problems. Synced FOR_DARE.md Content Strategy through v0.8.14
+48. **v0.8.15** — Updated PACT Dashboard descriptions to reflect Royalty Protocol hero (dynamic background video, scroll-triggered reveals, dark luxury aesthetic). Added cinematic hero orchestration to Hard Problems. Synced FOR_DARE.md Content Strategy through v0.8.14
+49. **v0.8.16** (current) — Fixed Hard Problems count drift (6→7), corrected CHANGELOG editability in Repo Setup (Human only→Human + Agent), added 2 missing metrics to Sync Map (test count 1,400+, release velocity 190)
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -242,7 +243,7 @@ The v0.7.0 restructure trimmed 20 sections dramatically, and subsequent refineme
 - **Domain Depth + Technical DNA** — expertise bar chart + architectural pattern table
 - **How the Passion Ecosystem Works** — merged from 3 prior sections (How We Work, How Passion Ships, Glossary)
 - **All 33 Projects** — 4 category tables
-- **Hard Problems I've Solved** — 6 deep-dive war stories
+- **Hard Problems I've Solved** — 7 deep-dive war stories
 - **What I'd Build Differently** — 4 honest retrospectives
 - **Repo Setup & Dependencies** — fork instructions, external services, auto-update API docs
 
@@ -444,6 +445,24 @@ Every hardcoded number in the README must stay consistent across all its occurre
 | Proof of Craft | star evidence |
 
 **3 locations.** Source of truth: `https://github.com/DareDev256/fcpxml-mcp-server` star count.
+
+### Ecosystem Test Count (`1,400+`)
+
+| Section | Context |
+|---------|---------|
+| Open To table | `1,400+ tests across ecosystem` |
+| Proof of Craft | `1,400+ tests across the ecosystem. 695 in one repo alone` |
+
+**2 locations.** Source of truth: aggregate test count across all repos (`npm test` / `vitest` / `pytest` totals).
+
+### Release Velocity (`190`)
+
+| Section | Context |
+|---------|---------|
+| Open To table | `190 releases in 21 days` |
+| Proof of Craft | `190 releases in 21 days` |
+
+**2 locations.** Source of truth: `gh release list` across all repos within the measured period.
 
 ### Update Procedure
 

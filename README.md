@@ -322,7 +322,7 @@ No build step. No dependencies. No `package.json`. Five files total:
 | `signature.svg` | Human only | Animated hero emblem (CSS-only, 800×250, `prefers-color-scheme` aware) |
 | `CLAUDE.md` | Human only | AI agent directives — size caps, auto-update zone rules, asset contracts |
 | `FOR_DARE.md` | Human only | Design language, metrics sync map, update playbooks |
-| `CHANGELOG.md` | Human only | Version history following [Keep a Changelog](https://keepachangelog.com) |
+| `CHANGELOG.md` | Human + Agent | Version history following [Keep a Changelog](https://keepachangelog.com) |
 
 ### External Services (render-time, no auth required)
 
