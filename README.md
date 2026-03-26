@@ -112,11 +112,11 @@ Stop the scroll with a brand new 'Featured Project Spotlight'! This interactive 
 </td>
 <td width="33%">
 
-### [passion-site](https://github.com/DareDev256/passion-site) [![Live](https://img.shields.io/badge/Live-passion.jamesdare.com-10B981?style=flat-square)](https://passion.jamesdare.com)
+### [passion-memory-server](https://github.com/DareDev256/passion-memory-server)
 
-**The agent's public face** — live presence indicator, real-time status feed, personality showcase.
+**Persistent AI brain** — MCP server for cross-session memory, project state, session handoff. Powers the entire Passion ecosystem.
 
-`HTML` `CSS` `JavaScript`
+`Node.js` `SQLite` `MCP SDK`
 
 </td>
 </tr>
@@ -139,7 +139,7 @@ Stop the scroll with a brand new 'Featured Project Spotlight'! This interactive 
 
 ## Tech Stack
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Anthropic](https://img.shields.io/badge/Anthropic-191919?style=flat-square&logo=anthropic&logoColor=white) ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white) ![Google Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white) ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![MCP](https://img.shields.io/badge/MCP_Protocol-6C63FF?style=flat-square&logoColor=white) ![Anthropic](https://img.shields.io/badge/Anthropic-191919?style=flat-square&logo=anthropic&logoColor=white) ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white) ![Google Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white) ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 
 <details>
 <summary><strong>Domain Depth + Technical DNA</strong></summary>
@@ -147,6 +147,7 @@ Stop the scroll with a brand new 'Featured Project Spotlight'! This interactive 
 ```
 AI Engineering        ████████████████████░  MCP servers, RAG, eval suites, prompt engineering
 Autonomous Systems    ████████████████████░  24/7 agent ops, 92 modules, self-improving loops
+MCP & Integrations    ███████████████████░░  Protocol design, tool registries, memory servers
 Frontend              ██████████████████░░░  React 19, Next.js 16, Three.js, Framer Motion
 Creative Technology   ████████████████░░░░░  FCPXML, content pipelines, 350+ videos directed
 Developer Tooling     ███████████████░░░░░░  Claude Code SDK, Vitest, Playwright, CLI tools
@@ -158,6 +159,7 @@ Developer Tooling     ███████████████░░░░�
 | **Protocol over integration** | MCP for AI tools, Conventional Commits, SSE over WebSockets where bidirectional isn't needed |
 | **Fail at the boundary** | Validate inputs at entry, not deep in business logic. One guard, not scattered checks |
 | **Ship the feedback loop** | 89.9% approval rate as a live metric. CHANGELOG on every commit. Discord on every PR |
+| **MCP-native architecture** | Every AI tool boundary speaks MCP — memory, timeline editing, monitoring. Protocol-first, not API-first |
 
 </details>
 
@@ -167,7 +169,7 @@ Developer Tooling     ███████████████░░░░�
 
 | Claim | Receipt |
 |-------|---------|
-| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** for Final Cut Pro. 20+ stars from working video editors |
+| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** MCP server for Final Cut Pro. 20+ stars. Plus [passion-memory-server](https://github.com/DareDev256/passion-memory-server) — persistent AI brain across sessions |
 | "I ship fast" | 190 releases in 21 days. 10 games designed, built, deployed. Each one live right now |
 | "My AI agent is real" | 1,257+ commits across 47 repos. 60 cycles/day. No demo — just merged PRs |
 | "I build for clients" | 5 artist sites in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |

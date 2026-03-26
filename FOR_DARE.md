@@ -184,7 +184,9 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 49. **v0.8.16** — Fixed Hard Problems count drift (6→7), corrected CHANGELOG editability in Repo Setup (Human only→Human + Agent), added 2 missing metrics to Sync Map (test count 1,400+, release velocity 190)
 50. **v0.8.17** — Added 4 missing metrics to Sync Map (PACT component count 121 in 5 locations, approval rate 89.9% in 4, PACT test count 695 in 4, fcpxml tool count 53 in 2), added Quick Reference entries for component count and approval rate, added Sync Map completeness check to Maintenance Checklist
 51. **v0.8.18** — PACT Dashboard descriptions updated across 5 locations to reflect Purple Reign intro sequence (pulsating aura, metallic sheen reveal, dark luxury aesthetic). Showcase zone updated. BaseModal architecture and NavLink navigation component documented
-52. **v0.8.19** (current) — Fixed layout map section count (9→8 visible — showcase zone is part of Currently Building, not standalone). Added Version Milestones summary table for quick-scan of 52-entry Content Strategy. Synced Content Strategy through v0.8.18
+52. **v0.8.19** — Fixed layout map section count (9→8 visible — showcase zone is part of Currently Building, not standalone). Added Version Milestones summary table for quick-scan of 52-entry Content Strategy. Synced Content Strategy through v0.8.18
+53. **v0.8.20** — PACT Dashboard descriptions updated with auto-select engine. Proof of Craft quality claim sharpened. Auto-Update API docs expanded with raw endpoint and propagation timing
+54. **v0.8.21** (current) — Added MCP Protocol badge to Tech Stack, MCP & Integrations domain to expertise chart, MCP-native architecture pattern to Technical DNA. Promoted passion-memory-server to Featured Projects grid (replaced passion-site). Proof of Craft MCP claim expanded to cite both MCP servers. Synced Content Strategy through v0.8.20
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 

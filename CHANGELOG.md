@@ -7,6 +7,19 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.21] - 2026-03-26
+
+### Added
+- **README.md** — MCP Protocol badge in Tech Stack section — MCP is a core differentiator missing from the badge grid
+- **README.md** — "MCP & Integrations" domain added to Domain Depth expertise chart (protocol design, tool registries, memory servers)
+- **README.md** — "MCP-native architecture" pattern added to Technical DNA table — documents protocol-first approach across ecosystem
+- **README.md** — Proof of Craft MCP claim expanded to cite both `fcpxml-mcp-server` and `passion-memory-server`
+
+### Changed
+- **README.md** — Featured Projects grid: replaced `passion-site` (static HTML site) with `passion-memory-server` (MCP server powering the ecosystem) — stronger technical proof for the portfolio
+- **FOR_DARE.md** — Content Strategy Evolution synced through v0.8.20, added v0.8.21 entry
+- **CLAUDE.md** — Version bump v0.8.20 → v0.8.21
+
 ## [0.8.20] - 2026-03-26
 
 ### Changed
