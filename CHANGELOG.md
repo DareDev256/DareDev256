@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.19] - 2026-03-25
+
+### Fixed
+- **FOR_DARE.md** — Layout map section count: "9 visible + 6 collapsed" → 8 visible — the showcase zone is embedded within Currently Building via HTML comment markers, not a standalone section. Previous count inflated the visible section number since v0.7.2
+- **FOR_DARE.md** — Content Strategy Evolution: stuck at v0.8.17 as "(current)", missing v0.8.18 entry — now synced through v0.8.19
+
+### Added
+- **FOR_DARE.md** — Version Milestones quick-reference table: 9-row summary of the 52-entry Content Strategy arc — shows the growth→trim→stabilize pattern (peak 760 lines at v0.6.0, trimmed to 301 at v0.7.0, steady ~390 since)
+- **FOR_DARE.md** — Clarifying note under layout map explaining that daily status and showcase zones are embedded within Currently Building, not standalone sections
+- **CLAUDE.md** — Version bump v0.8.18 → v0.8.19
+
 ## [0.8.18] - 2026-03-24
 
 ### Changed

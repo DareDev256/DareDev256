@@ -182,9 +182,27 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 47. **v0.8.14** — Documented IntelDossier hero (animated threat indicators, tiered severity bars, source analysis) and intelligent video embed auto-selection across 4 README locations; updated showcase zone
 48. **v0.8.15** — Updated PACT Dashboard descriptions to reflect Royalty Protocol hero (dynamic background video, scroll-triggered reveals, dark luxury aesthetic). Added cinematic hero orchestration to Hard Problems. Synced FOR_DARE.md Content Strategy through v0.8.14
 49. **v0.8.16** — Fixed Hard Problems count drift (6→7), corrected CHANGELOG editability in Repo Setup (Human only→Human + Agent), added 2 missing metrics to Sync Map (test count 1,400+, release velocity 190)
-50. **v0.8.17** (current) — Added 4 missing metrics to Sync Map (PACT component count 121 in 5 locations, approval rate 89.9% in 4, PACT test count 695 in 4, fcpxml tool count 53 in 2), added Quick Reference entries for component count and approval rate, added Sync Map completeness check to Maintenance Checklist
+50. **v0.8.17** — Added 4 missing metrics to Sync Map (PACT component count 121 in 5 locations, approval rate 89.9% in 4, PACT test count 695 in 4, fcpxml tool count 53 in 2), added Quick Reference entries for component count and approval rate, added Sync Map completeness check to Maintenance Checklist
+51. **v0.8.18** — PACT Dashboard descriptions updated across 5 locations to reflect Purple Reign intro sequence (pulsating aura, metallic sheen reveal, dark luxury aesthetic). Showcase zone updated. BaseModal architecture and NavLink navigation component documented
+52. **v0.8.19** (current) — Fixed layout map section count (9→8 visible — showcase zone is part of Currently Building, not standalone). Added Version Milestones summary table for quick-scan of 52-entry Content Strategy. Synced Content Strategy through v0.8.18
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
+
+### Version Milestones (Quick Reference)
+
+| Version | What Changed | Lines |
+|---------|-------------|------:|
+| **v0.1.0** | First real structure — featured projects, badges, view counter | ~150 |
+| **v0.2.0** | Recruiter-optimized — value prop table, proof-based claims | ~200 |
+| **v0.5.0** | Visual redesign — centered hero, metrics ribbon, HTML grid | ~350 |
+| **v0.6.0** | Peak bloat — 20 sections, project goals, contribution guidelines | ~760 |
+| **v0.7.0** | **Major trim** — 760→301 lines, 10 sections cut, custom `signature.svg` | ~301 |
+| **v0.7.4** | Copy polish — tighter hero, impact-first Open To evidence | ~300 |
+| **v0.8.0** | FOR_DARE.md sync era begins — Content Strategy tracking | ~300 |
+| **v0.8.11** | All 33 projects cataloged, auto-update API documented | ~390 |
+| **v0.8.18** | Purple Reign, BaseModal, NavLink — latest PACT Dashboard features | ~390 |
+
+The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 
 ### Repo Count Accuracy
 The README claims "33 public repos" — this includes the `awesome-mcp-servers` fork. If counting only original repos, it's 32. Keep this number updated as new repos are created.
@@ -229,18 +247,17 @@ You can freely edit anything **outside** these marker pairs. Content **inside** 
 ## Patterns Worth Stealing
 
 ### Recruiter-Optimized Layout
-The v0.7.0 restructure trimmed 20 sections dramatically, and subsequent refinements (v0.7.8 Repo Setup, v0.8.x Hard Problems additions) settled at 9 visible + 6 collapsed. Every cut was intentional — deep content moved behind `<details>` toggles so the main scroll earns its space.
+The v0.7.0 restructure trimmed 20 sections dramatically, and subsequent refinements (v0.7.8 Repo Setup, v0.8.x Hard Problems additions) settled at 8 visible + 6 collapsed. Every cut was intentional — deep content moved behind `<details>` toggles so the main scroll earns its space.
 
 **Visible sections (in order):**
 1. **Hero** — Custom animated emblem (`signature.svg`), bio, badge bar, CTA buttons
-2. **Currently Building** — Status table (🟢/🟡) with live daily status from Passion Agent
-3. **Workshop Showcase** — Latest build highlight, auto-updated by Passion Agent
-4. **Featured Projects** — 2×3 HTML grid with stars, live links, and tech tags
-5. **Open To** — Role targets with claim→evidence table
-6. **Tech Stack** — `flat-square` badge grid
-7. **Proof of Craft** — 5 verifiable claim→receipt pairs
-8. **GitHub Stats** — Trophy shelf + profile summary cards (tokyonight theme)
-9. **Closing CTA** — Quote, thesis, three action badges
+2. **Currently Building** — Status table (🟢/🟡) + daily status zone + showcase zone (both auto-updated by Passion Agent)
+3. **Featured Projects** — 2×3 HTML grid with stars, live links, and tech tags
+4. **Open To** — Role targets with claim→evidence table
+5. **Tech Stack** — `flat-square` badge grid
+6. **Proof of Craft** — 5 verifiable claim→receipt pairs
+7. **GitHub Stats** — Trophy shelf + profile summary cards (tokyonight theme)
+8. **Closing CTA** — Quote, thesis, three action badges
 
 **Collapsed sections (`<details>`):**
 - **Domain Depth + Technical DNA** — expertise bar chart + architectural pattern table
@@ -250,7 +267,9 @@ The v0.7.0 restructure trimmed 20 sections dramatically, and subsequent refineme
 - **What I'd Build Differently** — 4 honest retrospectives
 - **Repo Setup & Dependencies** — fork instructions, external services, auto-update API docs
 
-This 9+6 structure is not accidental — visible content converts in 5 seconds; collapsed content proves depth when engineers click through.
+This 8+6 structure is not accidental — visible content converts in 5 seconds; collapsed content proves depth when engineers click through.
+
+> **Note:** The showcase zone and daily status zone are embedded within "Currently Building" via HTML comment markers (`DAILY_STATUS_START/END`, `SHOWCASE_SECTION_START/END`), not standalone sections. Earlier versions of this map incorrectly counted the showcase as section 3.
 
 ### Badge Style Consistency
 All badges use `style=for-the-badge` for visual weight and consistency. Tech stack badges use `style=flat-square` for a more compact, scannable grid. This two-tier system creates visual hierarchy.
