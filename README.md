@@ -28,7 +28,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — Purple Reign intro, Royalty Protocol hero, BaseModal architecture, 121 components, 695 tests, OWASP-hardened. Next.js 16 + React 19 |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — auto-select engine, Purple Reign intro, Royalty Protocol hero, BaseModal architecture, 121 components, 695 tests, OWASP-hardened. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
 | 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — polished loading states, guarded engine startup, each playable |
 
@@ -83,7 +83,7 @@ Stop the scroll with a brand new 'Featured Project Spotlight'! This interactive 
 
 ### PACT Dashboard *(private)*
 
-**Cyberpunk command terminal** — Purple Reign intro sequence, Royalty Protocol hero, BaseModal architecture, NavLink navigation. 121 components, 695 tests, OWASP-hardened.
+**Cyberpunk command terminal** — auto-select engine, Purple Reign intro, Royalty Protocol hero, BaseModal architecture, NavLink navigation. 121 components, 695 tests, OWASP-hardened.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -171,7 +171,7 @@ Developer Tooling     ███████████████░░░░�
 | "I ship fast" | 190 releases in 21 days. 10 games designed, built, deployed. Each one live right now |
 | "My AI agent is real" | 1,257+ commits across 47 repos. 60 cycles/day. No demo — just merged PRs |
 | "I build for clients" | 5 artist sites in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
-| "I care about quality" | 1,400+ tests across the ecosystem. 695 in one repo alone. OWASP-hardened throughout |
+| "I care about quality" | 1,400+ tests across the ecosystem. 695 in one repo alone. OWASP Top 10 security audit, input validation at every boundary |
 
 ---
 
@@ -204,7 +204,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   ├── Career Engine ─── 6+ job APIs, auto-apply pipeline
   └── Memory System ─── somatic markers, narrative identity
         ▼
-  PACT Dashboard ─── Cyberpunk HUD, Purple Reign intro, Royalty Protocol hero, 121 components
+  PACT Dashboard ─── Cyberpunk HUD, auto-select engine, Purple Reign intro, Royalty Protocol hero, 121 components
         ▼
   Passion Memory MCP ─── Shared brain across all sessions
 ```
@@ -222,7 +222,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐20+ | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Cyberpunk command terminal — Purple Reign intro, Royalty Protocol hero, BaseModal architecture, NavLink navigation, IntelDossier, 121 components, 695 tests, OWASP-hardened | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Cyberpunk command terminal — auto-select engine, Purple Reign intro, Royalty Protocol hero, BaseModal architecture, NavLink navigation, IntelDossier, 121 components, 695 tests, OWASP-hardened | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
@@ -337,6 +337,8 @@ No build step. No dependencies. No `package.json`. Five files total:
 
 Two HTML comment-delimited zones in `README.md` are machine-writable by [Passion Agent](https://passion.jamesdare.com). Content between markers is overwritten each cycle — everything outside requires human review.
 
+**Raw endpoint:** `https://raw.githubusercontent.com/DareDev256/DareDev256/main/README.md`
+
 | Zone | Markers | Writer | Frequency |
 |------|---------|--------|-----------|
 | Daily Status | `DAILY_STATUS_START` / `END` | `passion-profile.mjs` | ~Daily (brain cycle) |
@@ -368,7 +370,7 @@ Two HTML comment-delimited zones in `README.md` are machine-writable by [Passion
 | Success rate | Percentage | Merged PRs ÷ total PRs in cycle |
 | Showcase repo | `[name](url)` | Latest repo with a notable visual or feature change |
 
-> **Integration note:** Writes are idempotent — Passion Agent replaces all content between markers on each run. External consumers can poll the raw file at `https://raw.githubusercontent.com/DareDev256/DareDev256/main/README.md` and parse between markers for machine-readable status.
+> **Integration note:** Writes are idempotent — Passion Agent replaces all content between markers on each run. External consumers can poll the raw endpoint and parse between markers for machine-readable status. No authentication required. Updates propagate to the GitHub profile page within seconds of push.
 
 Full design language, metrics sync map, and update playbooks in [`FOR_DARE.md`](./FOR_DARE.md).
 

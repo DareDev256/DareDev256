@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.20] - 2026-03-26
+
+### Changed
+- **README.md** — PACT Dashboard descriptions updated across 4 locations (Currently Building, Featured Projects, All 33 Projects, ecosystem diagram) to reflect auto-select engine — viewport-aware embed selection with `computeEntryTiming`, `freezeActivityMap`, `maxSeverity` rules
+- **README.md** — Proof of Craft quality claim updated: "OWASP-hardened throughout" → "OWASP Top 10 security audit, input validation at every boundary" — reflects the deep security audit across passion-agent
+- **README.md** — Auto-Update API docs: added raw endpoint URL, clarified propagation timing, improved integration note for external consumers
+
+### Added
+- **CLAUDE.md** — version bump v0.8.19 → v0.8.20
+
 ## [0.8.19] - 2026-03-25
 
 ### Fixed
