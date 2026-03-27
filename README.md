@@ -311,7 +311,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 1. Create a repo matching your GitHub username ([docs](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme))
 2. Find-replace `DareDev256` in all badge URLs with your username
-3. Edit `signature.svg` — colors in `:root` variables, subtitles in `<text>` elements, tagline stats in the final `<text>` tag
+3. Edit `signature.svg` — colors in CSS variables (`#6C63FF`, `#A78BFA`, `#818CF8`), subtitles in the four `<text class="sub">` elements, tagline stats in the final `<text class="tag">` element (repos, ecosystem claim)
 4. Push to `main` — GitHub renders `README.md` on your profile immediately
 5. Verify at `github.com/<username>/<username>/blob/main/README.md` — or locally with `grip README.md`
 

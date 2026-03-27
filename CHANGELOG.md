@@ -7,6 +7,21 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.22] - 2026-03-26
+
+### Fixed
+- **CLAUDE.md** — SVG subtitle constraint was misleading: said subtitles "must match role titles in Open To section" but subtitles are brand identity titles (what James *is*), not job targets (what he's *seeking*). Clarified to prevent future agents from "fixing" intentional divergence
+- **README.md** — Repo Setup replication step 3 referenced nonexistent `:root` CSS variables and was vague about which `<text>` elements to edit. Now cites exact class names (`sub`, `tag`) and specific hex values
+
+### Added
+- **FOR_DARE.md** — Metric Verification Commands: one-liner shell commands for checking each of the 13 Sync Map metrics against their source of truth (GitHub API, tokei, jq, vitest). Includes rate-limit note for unauthenticated GitHub API calls
+- **FOR_DARE.md** — Troubleshooting entry for recurring Content Strategy Evolution drift (stuck at old version) — documented pattern across v0.7.1, v0.8.2, v0.8.14 with fix procedure
+- **FOR_DARE.md** — Version Milestones: added v0.8.21 row (MCP-native era)
+- **FOR_DARE.md** — Content Strategy Evolution: synced through v0.8.22
+
+### Changed
+- **CLAUDE.md** — Version bump v0.8.21 → v0.8.22
+
 ## [0.8.21] - 2026-03-26
 
 ### Added

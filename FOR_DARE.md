@@ -186,7 +186,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 51. **v0.8.18** — PACT Dashboard descriptions updated across 5 locations to reflect Purple Reign intro sequence (pulsating aura, metallic sheen reveal, dark luxury aesthetic). Showcase zone updated. BaseModal architecture and NavLink navigation component documented
 52. **v0.8.19** — Fixed layout map section count (9→8 visible — showcase zone is part of Currently Building, not standalone). Added Version Milestones summary table for quick-scan of 52-entry Content Strategy. Synced Content Strategy through v0.8.18
 53. **v0.8.20** — PACT Dashboard descriptions updated with auto-select engine. Proof of Craft quality claim sharpened. Auto-Update API docs expanded with raw endpoint and propagation timing
-54. **v0.8.21** (current) — Added MCP Protocol badge to Tech Stack, MCP & Integrations domain to expertise chart, MCP-native architecture pattern to Technical DNA. Promoted passion-memory-server to Featured Projects grid (replaced passion-site). Proof of Craft MCP claim expanded to cite both MCP servers. Synced Content Strategy through v0.8.20
+54. **v0.8.21** — Added MCP Protocol badge to Tech Stack, MCP & Integrations domain to expertise chart, MCP-native architecture pattern to Technical DNA. Promoted passion-memory-server to Featured Projects grid (replaced passion-site). Proof of Craft MCP claim expanded to cite both MCP servers. Synced Content Strategy through v0.8.20
+55. **v0.8.22** (current) — Fixed misleading SVG subtitle constraint in CLAUDE.md (subtitles ≠ Open To roles). Added Metric Verification Commands to FOR_DARE.md (one-liner per metric). Added Content Strategy drift troubleshooting entry. Sharpened README replication instructions for signature.svg. Updated Version Milestones
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -203,6 +204,7 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 | **v0.8.0** | FOR_DARE.md sync era begins — Content Strategy tracking | ~300 |
 | **v0.8.11** | All 33 projects cataloged, auto-update API documented | ~390 |
 | **v0.8.18** | Purple Reign, BaseModal, NavLink — latest PACT Dashboard features | ~390 |
+| **v0.8.21** | MCP-native era — protocol badge, expertise domain, architecture pattern, memory server promoted | ~393 |
 
 The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 
@@ -539,6 +541,27 @@ Every hardcoded number in the README must stay consistent across all its occurre
 4. Keep phrasing consistent with surrounding context (e.g., "1,257+ commits across 47 repos")
 5. Bump patch version, add CHANGELOG entry
 
+### Metric Verification Commands
+
+One-liner for each source of truth. Run these before updating numbers in the README.
+
+| Metric | Command |
+|--------|---------|
+| Commit count | `cd ~/dev/passion-agent && git log --oneline --all \| wc -l` (aggregate across managed repos) |
+| Public repo count | `curl -s "https://api.github.com/users/DareDev256" \| jq .public_repos` |
+| Module count | `ls -d ~/dev/passion-agent/modules/*/ \| wc -l` |
+| LOC | `tokei ~/dev/passion-agent --sort code` (or `cloc`) |
+| Live deployments | `grep -c "vercel.app" ~/dev/passion-agent/config.json` (approximate) |
+| Managed repos | `jq '.repos \| length' ~/dev/passion-agent/config.json` |
+| fcpxml stars | `curl -s "https://api.github.com/repos/DareDev256/fcpxml-mcp-server" \| jq .stargazers_count` |
+| Ecosystem tests | Aggregate: `npm test` / `vitest` / `pytest` across all repos |
+| PACT components | `find ~/dev/passion-dashboard/src/components -name "*.tsx" \| wc -l` |
+| PACT tests | `cd ~/dev/passion-dashboard && npx vitest --reporter=verbose 2>&1 \| tail -1` |
+| Approval rate | Passion Agent's `passion-learn.mjs` merged÷total ratio |
+| fcpxml tools | `grep -c "def.*tool" ~/dev/fcpxml-mcp-server/src/*.py` (approximate) |
+
+> **Note:** GitHub API has a 60 req/hr unauthenticated rate limit. For bulk checks, use `gh api` (authenticated) instead of `curl`.
+
 ---
 
 ## Maintenance Checklist
@@ -597,6 +620,11 @@ All rendering depends on external services. If any break, the profile degrades v
 **Symptom:** Badge says "33 repos" but you have 35.
 **Cause:** These are hardcoded in the README (not dynamic badges). They need manual updates.
 **Fix:** Search the README for the stale number. See the Metrics Sync Map above for exact locations. Repo count appears in 3 places, commit count in 3. Update all instances, bump patch version, add CHANGELOG entry.
+
+### Content Strategy Evolution gets stuck (RECURRING)
+**Symptom:** FOR_DARE.md's Content Strategy list has "(current)" on an old version, missing recent entries.
+**Cause:** When Passion Agent updates FOR_DARE.md, it often syncs only some sections and misses the Content Strategy. This has recurred at v0.7.1 (fixed v0.8.0), v0.8.2 (fixed v0.8.3), and v0.8.14 (fixed v0.8.15).
+**Fix:** After any version bump, verify the Content Strategy list ends with the new version marked as "(current)". Add missing intermediate entries from CHANGELOG.md. The Maintenance Checklist already tracks this — look for "Content Strategy Evolution synced through current version".
 
 ### Profile page looks different from raw README
 **Symptom:** Layout or formatting differs between raw Markdown preview and the rendered profile.

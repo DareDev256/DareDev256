@@ -29,7 +29,7 @@ Everything outside these markers requires human review.
 
 - CHANGELOG.md follows Keep a Changelog format
 - Semantic versioning: major = full redesign, minor = new sections, patch = updates
-- Current: v0.8.21
+- Current: v0.8.22
 
 ## Assets
 
@@ -46,8 +46,8 @@ Everything outside these markers requires human review.
 
 **Constraints:**
 - Color values must stay in sync with Shields.io badge `color=6C63FF` used throughout README
-- Subtitle text ("AI SOLUTIONS ENGINEER", etc.) must match role titles in Open To section
-- Tagline stats ("47 REPOS", "24/7 AI ECOSYSTEM") must match badge and bio numbers
+- Subtitle text = brand identity titles (AI SOLUTIONS ENGINEER, CREATIVE TECHNOLOGIST, AUTONOMOUS AGENT BUILDER, MUSIC VIDEO DIRECTOR). These are **not** the same as Open To job targets — subtitles describe what James *is*, Open To lists what he's *seeking*. Do not "sync" these.
+- Tagline stats ("47 REPOS", "24/7 AI ECOSYSTEM") must match badge and bio numbers (see FOR_DARE.md Metrics Sync Map)
 - No external dependencies — the SVG is fully self-contained by design (replaced `readme-typing-svg`)
 
 ## See Also
