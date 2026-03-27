@@ -7,6 +7,14 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.24] - 2026-03-27
+
+### Added
+- **README.md** — New "Hard Problems" entry: async cleanup in React animation hooks — documented `useIdleAnimations`/`useTerminal`/`useSSEConnection` timer leak fixes using ref-based unmount guards
+
+### Changed
+- **README.md** — Repo Setup replication instructions: sharpened step 3 (explicit hex values + element classes) and step 5 (added GFM renderer alternative to `grip`)
+
 ## [0.8.23] - 2026-03-26
 
 ### Added

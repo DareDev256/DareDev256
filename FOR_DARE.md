@@ -231,7 +231,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 53. **v0.8.20** — PACT Dashboard descriptions updated with auto-select engine. Proof of Craft quality claim sharpened. Auto-Update API docs expanded with raw endpoint and propagation timing
 54. **v0.8.21** — Added MCP Protocol badge to Tech Stack, MCP & Integrations domain to expertise chart, MCP-native architecture pattern to Technical DNA. Promoted passion-memory-server to Featured Projects grid (replaced passion-site). Proof of Craft MCP claim expanded to cite both MCP servers. Synced Content Strategy through v0.8.20
 55. **v0.8.22** — Fixed misleading SVG subtitle constraint in CLAUDE.md (subtitles ≠ Open To roles). Added Metric Verification Commands to FOR_DARE.md (one-liner per metric). Added Content Strategy drift troubleshooting entry. Sharpened README replication instructions for signature.svg. Updated Version Milestones
-56. **v0.8.23** (current) — Added File Cross-References & Editability map to FOR_DARE.md (dependency graph + breakage risk matrix). Added Pre-Push Quick Check (5-item fast path for agent iteration). Improved README Repo Setup with architecture summary. Synced Content Strategy through v0.8.22
+56. **v0.8.23** — Added File Cross-References & Editability map to FOR_DARE.md (dependency graph + breakage risk matrix). Added Pre-Push Quick Check (5-item fast path for agent iteration). Improved README Repo Setup with architecture summary. Synced Content Strategy through v0.8.22
+57. **v0.8.24** (current) — Added React hooks async cleanup entry to Hard Problems (timer leaks in `useIdleAnimations`/`useTerminal`/`useSSEConnection`, ref-based guards). Sharpened Repo Setup replication steps (explicit hex values, GFM renderer note). Synced Content Strategy through v0.8.23
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 

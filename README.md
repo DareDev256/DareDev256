@@ -289,6 +289,8 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 **Cinematic hero orchestration** — The Royalty Protocol hero needed dynamic background video, scroll-triggered element reveals, and layered typography — all without fighting IntelDossier's real-time threat data. Solved with a staggered reveal choreography: video loads lazily with poster fallback, scroll-driven `IntersectionObserver` triggers per-section fade/translate sequences, and IntelDossier mounts only after the hero viewport exit. Zero layout shift, no competing paint cycles.
 
+**Async cleanup in React animation hooks** — Three independent hooks (`useIdleAnimations`, `useTerminal`, `useSSEConnection`) had timer/reconnect leaks that survived unmount. `useIdleAnimations` had an untracked inner `setTimeout` chaining timers on every idle cycle — leaked chains on unmount. `useTerminal`'s `onerror` handler scheduled reconnects after `cleanup()` had already run. `useSSEConnection`'s `onmessage` captured stale closure state, making disconnect recovery dead code. Fixed all three with `mountedRef`/`cleanedUpRef`/`connectedRef` patterns — refs maintain correct state across async boundaries where closures can't.
+
 </details>
 
 <details>
@@ -314,10 +316,10 @@ No build step, no dependencies, no `package.json`. GitHub renders `README.md` as
 ### Replicate This Profile
 
 1. Create a repo matching your GitHub username ([docs](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme))
-2. Find-replace `DareDev256` in all badge URLs with your username
-3. Edit `signature.svg` — colors in CSS variables (`#6C63FF`, `#A78BFA`, `#818CF8`), subtitles in the four `<text class="sub">` elements, tagline stats in the final `<text class="tag">` element (repos, ecosystem claim)
-4. Push to `main` — GitHub renders `README.md` on your profile immediately
-5. Verify at `github.com/<username>/<username>/blob/main/README.md` — or locally with `grip README.md`
+2. Find-replace `DareDev256` in all badge URLs and GitHub links with your username
+3. Edit `signature.svg` — update hex colors in CSS (`#6C63FF` primary, `#A78BFA` secondary, `#818CF8` tertiary), rewrite the four `<text class="sub">` elements (rotating subtitles), and update stats in `<text class="tag">` (repos count, ecosystem claim)
+4. Push to `main` — GitHub renders `README.md` on your profile within seconds
+5. Verify at `github.com/<username>/<username>/blob/main/README.md` — locally preview with `grip README.md` or any GFM renderer
 
 Five files total:
 
