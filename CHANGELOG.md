@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.23] - 2026-03-26
+
+### Added
+- **FOR_DARE.md** — File Cross-References & Editability map: dependency graph showing how all 5 files reference each other, with editability matrix and breakage risk ratings per file
+- **FOR_DARE.md** — Pre-Push Quick Check: condensed 5-item fast-path checklist for Passion Agent's rapid iteration cycles (version chain, metric consistency, Content Strategy sync, showcase URL, line count)
+- **README.md** — "How It Works" architecture summary in Repo Setup collapsed section — explains the zero-build-step rendering pipeline and agent write zones in two sentences
+
+### Changed
+- **FOR_DARE.md** — Content Strategy Evolution synced through v0.8.22, added v0.8.23 entry
+- **CLAUDE.md** — Version bump v0.8.22 → v0.8.23
+
 ## [0.8.22] - 2026-03-26
 
 ### Fixed

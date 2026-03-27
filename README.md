@@ -307,6 +307,10 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 <details>
 <summary><strong>Repo Setup & Dependencies</strong></summary>
 
+### How It Works
+
+No build step, no dependencies, no `package.json`. GitHub renders `README.md` as the profile page. External badge services inject dynamic images at render time. Passion Agent writes to two marker-delimited zones (daily status + showcase) via automated brain cycles — everything else requires human review.
+
 ### Replicate This Profile
 
 1. Create a repo matching your GitHub username ([docs](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme))
@@ -315,7 +319,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 4. Push to `main` — GitHub renders `README.md` on your profile immediately
 5. Verify at `github.com/<username>/<username>/blob/main/README.md` — or locally with `grip README.md`
 
-No build step. No dependencies. No `package.json`. Five files total:
+Five files total:
 
 | File | Editable By | Purpose |
 |------|:-----------:|---------|

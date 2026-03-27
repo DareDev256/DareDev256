@@ -30,6 +30,16 @@ This constraint exists because a bloated profile README hurts more than it helps
 | Change job targets | Edit the "Open To" section header and evidence table |
 | Test changes locally | `grip README.md` or push to a branch and preview at `github.com/DareDev256/DareDev256/blob/<branch>/README.md` |
 
+### Pre-Push Quick Check (5-item fast path)
+
+For Passion Agent's rapid iteration cycles — run this before every push. The full [Maintenance Checklist](#maintenance-checklist) covers edge cases; this covers the failures that actually recur.
+
+1. **Version chain:** CHANGELOG heading = CLAUDE.md version field (e.g., both say `v0.8.23`)
+2. **Metric consistency:** Any number you changed — search README for all occurrences (see [Metrics Sync Map](#metrics-sync-map))
+3. **Content Strategy:** FOR_DARE.md Content Strategy Evolution ends with current version marked `(current)`
+4. **Showcase URL:** If showcase zone was updated, verify the repo URL resolves (no spaces — [recurring bug](#showcase-url-has-broken-link-recurring))
+5. **Line count:** `grep -c '' README.md` — must be under 400 total, visible sections under 120 lines
+
 ---
 
 ## What This Thing Actually Does
@@ -77,6 +87,39 @@ DareDev256/
 ```
 
 Five files. The simplicity is the point.
+
+### File Cross-References & Editability
+
+Every file references or constrains at least one other file. This map prevents edits that break cross-file contracts.
+
+```
+README.md ──img src──→ signature.svg (line 7, hero image)
+    │
+    ├── Uses color #6C63FF from signature.svg palette across 20+ Shields.io badges
+    ├── Contains 2 machine-writable zones (DAILY_STATUS, SHOWCASE) written by Passion Agent
+    └── Numbers (commits, repos, modules) must match Metrics Sync Map in FOR_DARE.md
+
+CLAUDE.md ──defines rules for──→ README.md (size cap, structure, auto-update zones)
+    │
+    ├── References signature.svg constraints (color palette, subtitle text, tagline stats)
+    └── Version field must match CHANGELOG.md latest heading
+
+FOR_DARE.md ──documents──→ all files (architecture, playbooks, metrics, troubleshooting)
+    │
+    └── Metrics Sync Map tracks 13 hardcoded numbers across README.md locations
+
+signature.svg ──standalone── (no outbound references — fully self-contained)
+    │
+    └── Color contract (#6C63FF, #A78BFA, #818CF8) consumed by README.md badges
+```
+
+| File | Editable By | Inbound References | Breakage Risk |
+|------|:-----------:|-------------------|:-------------:|
+| `README.md` | Human + Agent | Rendered by GitHub as profile page | **High** — visible to all visitors |
+| `signature.svg` | Human only | `README.md` line 7 (`<img src>`) | **High** — hero visual, above the fold |
+| `CLAUDE.md` | Human only | Agent reads before every task | Medium — wrong rules = wrong agent output |
+| `FOR_DARE.md` | Human only | Referenced by CLAUDE.md "See Also" | Low — internal docs, not rendered |
+| `CHANGELOG.md` | Human + Agent | Version must match CLAUDE.md | Low — not visitor-facing |
 
 ## Tech Stack & Why
 
@@ -187,7 +230,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 52. **v0.8.19** — Fixed layout map section count (9→8 visible — showcase zone is part of Currently Building, not standalone). Added Version Milestones summary table for quick-scan of 52-entry Content Strategy. Synced Content Strategy through v0.8.18
 53. **v0.8.20** — PACT Dashboard descriptions updated with auto-select engine. Proof of Craft quality claim sharpened. Auto-Update API docs expanded with raw endpoint and propagation timing
 54. **v0.8.21** — Added MCP Protocol badge to Tech Stack, MCP & Integrations domain to expertise chart, MCP-native architecture pattern to Technical DNA. Promoted passion-memory-server to Featured Projects grid (replaced passion-site). Proof of Craft MCP claim expanded to cite both MCP servers. Synced Content Strategy through v0.8.20
-55. **v0.8.22** (current) — Fixed misleading SVG subtitle constraint in CLAUDE.md (subtitles ≠ Open To roles). Added Metric Verification Commands to FOR_DARE.md (one-liner per metric). Added Content Strategy drift troubleshooting entry. Sharpened README replication instructions for signature.svg. Updated Version Milestones
+55. **v0.8.22** — Fixed misleading SVG subtitle constraint in CLAUDE.md (subtitles ≠ Open To roles). Added Metric Verification Commands to FOR_DARE.md (one-liner per metric). Added Content Strategy drift troubleshooting entry. Sharpened README replication instructions for signature.svg. Updated Version Milestones
+56. **v0.8.23** (current) — Added File Cross-References & Editability map to FOR_DARE.md (dependency graph + breakage risk matrix). Added Pre-Push Quick Check (5-item fast path for agent iteration). Improved README Repo Setup with architecture summary. Synced Content Strategy through v0.8.22
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
