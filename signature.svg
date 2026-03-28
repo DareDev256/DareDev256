@@ -32,7 +32,29 @@
   ║    Tagline stats must match badge numbers in README.md.         ║
   ╚══════════════════════════════════════════════════════════════════╝
 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250"
+     role="img" aria-label="James Dare — AI Solutions Engineer, Creative Technologist, Autonomous Agent Builder, Music Video Director">
+  <!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  SECURITY CONSTRAINTS (enforced by review, not runtime)         ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  ✗ No <script> or <foreignObject> elements — ever              ║
+    ║  ✗ No on* event handlers (onclick, onload, onerror, etc.)      ║
+    ║  ✗ No url() in CSS — prevents data exfiltration via tracking   ║
+    ║  ✗ No @import or @font-face with external src                  ║
+    ║  ✗ No <use xlink:href="http..."> external references           ║
+    ║  ✓ CSS-only animations (@keyframes) — no JavaScript animation  ║
+    ║  ✓ All resources inline — zero network requests at render time  ║
+    ║  ✓ prefers-color-scheme for theme — no JS theme detection      ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  WHY: This SVG is served raw via raw.githubusercontent.com and  ║
+    ║  may be embedded on jamesdare.com outside GitHub's sanitizer.   ║
+    ║  These constraints prevent CWE-79 (XSS via SVG injection) and  ║
+    ║  CWE-918 (SSRF via external resource loading).                  ║
+    ╚══════════════════════════════════════════════════════════════════╝
+  -->
+  <title>James Dare — AI Solutions Engineer</title>
+  <desc>Animated hero emblem for DareDev256 GitHub profile. CSS-only animations, no JavaScript. Features infinity path, orbital system, dharma wheel, and cycling subtitle titles.</desc>
   <style>
     @keyframes draw { to { stroke-dashoffset: 0; } }
     @keyframes spin-cw { to { transform: rotate(360deg); } }

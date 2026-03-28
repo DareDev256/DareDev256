@@ -381,6 +381,14 @@ Two HTML comment-delimited zones in `README.md` are machine-writable by [Passion
 
 > **Integration note:** Writes are idempotent — Passion Agent replaces all content between markers on each run. External consumers can poll the raw endpoint and parse between markers for machine-readable status. No authentication required. Updates propagate to the GitHub profile page within seconds of push.
 
+### Security Model
+
+| Layer | Protection | Threat Mitigated |
+|-------|-----------|-----------------|
+| `signature.svg` | No `<script>`, `<foreignObject>`, `on*` handlers, `url()`, `@import`, or external refs. `role="img"` + `<title>`/`<desc>` enforce non-interactive semantics | CWE-79 (XSS via SVG), CWE-918 (SSRF via external resource load) |
+| Auto-update zones | HTML comment markers (`DAILY_STATUS_START/END`, `SHOWCASE_SECTION_START/END`) — content between markers only. Everything outside requires human review | CWE-94 (code injection via agent write path) |
+| External badges | Render-time `<img>` tags only — no `<iframe>`, no `<object>`, no embedded scripts. GitHub camo proxy strips cookies and tracking | CWE-829 (untrusted third-party resource inclusion) |
+
 Full design language, metrics sync map, and update playbooks in [`FOR_DARE.md`](./FOR_DARE.md).
 
 </details>

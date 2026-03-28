@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.27] - 2026-03-27
+
+### Security
+- **signature.svg** — Hardened root `<svg>` element: added `role="img"`, `aria-label`, `<title>`, `<desc>` for non-interactive semantics. Added security constraints comment block documenting forbidden patterns (`<script>`, `<foreignObject>`, `on*` handlers, `url()`, `@import`, external refs) — mitigates CWE-79 (XSS via SVG injection) and CWE-918 (SSRF via external resource loading)
+- **README.md** — Added Security Model table inside Repo Setup section documenting SVG hardening, auto-update zone boundaries, and external badge isolation strategy
+
 ## [0.8.26] - 2026-03-27
 
 ### Added
