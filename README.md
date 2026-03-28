@@ -28,7 +28,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — auto-select engine, Purple Reign intro, Royalty Protocol hero, BaseModal architecture, 121 components, 695 tests, OWASP-hardened. Next.js 16 + React 19 |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — auto-select engine, `useSSE` streaming architecture, Purple Reign intro, Royalty Protocol hero, BaseModal architecture, 121 components, 695 tests, OWASP-hardened. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
 | 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — polished loading states, guarded engine startup, each playable |
 
@@ -82,7 +82,7 @@ Stop the scroll with a brand new 'Featured Project Spotlight'! This interactive 
 
 ### PACT Dashboard *(private)*
 
-**Cyberpunk command terminal** — auto-select engine, Purple Reign intro, Royalty Protocol hero, BaseModal architecture, NavLink navigation. 121 components, 695 tests, OWASP-hardened.
+**Cyberpunk command terminal** — auto-select engine, `useSSE` streaming architecture, Purple Reign intro, Royalty Protocol hero, BaseModal architecture. 121 components, 695 tests, OWASP-hardened.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -205,7 +205,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   ├── Career Engine ─── 6+ job APIs, auto-apply pipeline
   └── Memory System ─── somatic markers, narrative identity
         ▼
-  PACT Dashboard ─── Cyberpunk HUD, auto-select engine, Purple Reign intro, Royalty Protocol hero, 121 components
+  PACT Dashboard ─── Cyberpunk HUD, auto-select engine, useSSE streaming, Purple Reign intro, Royalty Protocol hero, 121 components
         ▼
   Passion Memory MCP ─── Shared brain across all sessions
 ```
@@ -223,7 +223,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐20+ | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Cyberpunk command terminal — auto-select engine, Purple Reign intro, Royalty Protocol hero, BaseModal architecture, NavLink navigation, IntelDossier, 121 components, 695 tests, OWASP-hardened | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Cyberpunk command terminal — auto-select engine, `useSSE` streaming, Purple Reign intro, Royalty Protocol hero, BaseModal architecture, NavLink navigation, IntelDossier, 121 components, 695 tests, OWASP-hardened | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
@@ -288,6 +288,8 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 **Intelligent auto-selection for video embeds** — Dashboard embedded videos fought for attention — multiple iframes loading simultaneously, competing for bandwidth, none contextually relevant. Built a viewport-aware selection engine: tracks scroll position, user interaction signals, and content adjacency to dynamically surface the most relevant embed. Combined with the auto-select rules engine refactor (extracted `computeEntryTiming`, `freezeActivityMap`, `maxSeverity`), the system now picks what matters. 323 auto-select + 381 rotation tests green.
 
 **Cinematic hero orchestration** — The Royalty Protocol hero needed dynamic background video, scroll-triggered element reveals, and layered typography — all without fighting IntelDossier's real-time threat data. Solved with a staggered reveal choreography: video loads lazily with poster fallback, scroll-driven `IntersectionObserver` triggers per-section fade/translate sequences, and IntelDossier mounts only after the hero viewport exit. Zero layout shift, no competing paint cycles.
+
+**SSE data layer extraction** — `useSSEConnection` was a 200-line monolith handling transport, parsing, reconnect, and domain state. Extracted core data-fetching logic into a focused `useSSE` hook, leaving `useSSEConnection` as a thin transport wrapper. Added first-class loading and error state UI — previously, failed streams showed nothing. Now downstream consumers get typed `{data, error, isLoading}` instead of raw EventSource management. Halved the surface area for SSE bugs.
 
 **Async cleanup in React animation hooks** — Three independent hooks (`useIdleAnimations`, `useTerminal`, `useSSEConnection`) had timer/reconnect leaks that survived unmount. `useIdleAnimations` had an untracked inner `setTimeout` chaining timers on every idle cycle — leaked chains on unmount. `useTerminal`'s `onerror` handler scheduled reconnects after `cleanup()` had already run. `useSSEConnection`'s `onmessage` captured stale closure state, making disconnect recovery dead code. Fixed all three with `mountedRef`/`cleanedUpRef`/`connectedRef` patterns — refs maintain correct state across async boundaries where closures can't.
 

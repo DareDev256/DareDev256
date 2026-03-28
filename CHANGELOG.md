@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.26] - 2026-03-27
+
+### Added
+- **README.md** — New "Hard Problems" entry: SSE data layer extraction — `useSSEConnection` refactored into focused `useSSE` hook with typed `{data, error, isLoading}` state and first-class loading/error UI
+
+### Changed
+- **README.md** — PACT Dashboard descriptions updated across 4 locations (Currently Building, Featured Projects, All 33 Projects, ecosystem diagram) to reflect `useSSE` streaming architecture
+- **FOR_DARE.md** — Hard Problems count 8 → 9
+- **CLAUDE.md** — Version bump v0.8.25 → v0.8.26
+
 ## [0.8.25] - 2026-03-27
 
 ### Fixed
