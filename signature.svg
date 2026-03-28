@@ -27,7 +27,8 @@
   ║    Emblem center = (130, 115) — all spoke coords, ring radii,   ║
   ║    and orbit transforms reference this origin. Moving it         ║
   ║    requires updating ~40 coordinate values.                     ║
-  ║    Subtitle text must match "Open To" roles in README.md.       ║
+  ║    Subtitle text = brand identity titles (what James *is*),     ║
+  ║    NOT the "Open To" job targets (what he's *seeking*).        ║
   ║    Tagline stats must match badge numbers in README.md.         ║
   ╚══════════════════════════════════════════════════════════════════╝
 -->

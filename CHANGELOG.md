@@ -7,6 +7,19 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.25] - 2026-03-27
+
+### Fixed
+- **signature.svg** — Stale header comment: "Subtitle text must match 'Open To' roles" contradicted CLAUDE.md v0.8.22 fix. Subtitles are brand identity titles, not job targets. Corrected to match the established constraint
+- **FOR_DARE.md** — Hard Problems count drift: listed "7 deep-dive war stories" but README has 8 entries after the v0.8.24 async cleanup addition. Updated to 8
+
+### Added
+- **FOR_DARE.md** — Version Milestones: added v0.8.24 row (React hooks cleanup, SVG instruction sharpening)
+- **FOR_DARE.md** — Content Strategy Evolution: synced through v0.8.24, added v0.8.25 entry as current
+
+### Changed
+- **CLAUDE.md** — Version bump v0.8.24 → v0.8.25
+
 ## [0.8.24] - 2026-03-27
 
 ### Added

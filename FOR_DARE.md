@@ -232,7 +232,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 54. **v0.8.21** — Added MCP Protocol badge to Tech Stack, MCP & Integrations domain to expertise chart, MCP-native architecture pattern to Technical DNA. Promoted passion-memory-server to Featured Projects grid (replaced passion-site). Proof of Craft MCP claim expanded to cite both MCP servers. Synced Content Strategy through v0.8.20
 55. **v0.8.22** — Fixed misleading SVG subtitle constraint in CLAUDE.md (subtitles ≠ Open To roles). Added Metric Verification Commands to FOR_DARE.md (one-liner per metric). Added Content Strategy drift troubleshooting entry. Sharpened README replication instructions for signature.svg. Updated Version Milestones
 56. **v0.8.23** — Added File Cross-References & Editability map to FOR_DARE.md (dependency graph + breakage risk matrix). Added Pre-Push Quick Check (5-item fast path for agent iteration). Improved README Repo Setup with architecture summary. Synced Content Strategy through v0.8.22
-57. **v0.8.24** (current) — Added React hooks async cleanup entry to Hard Problems (timer leaks in `useIdleAnimations`/`useTerminal`/`useSSEConnection`, ref-based guards). Sharpened Repo Setup replication steps (explicit hex values, GFM renderer note). Synced Content Strategy through v0.8.23
+57. **v0.8.24** — Added React hooks async cleanup entry to Hard Problems (timer leaks in `useIdleAnimations`/`useTerminal`/`useSSEConnection`, ref-based guards). Sharpened Repo Setup replication steps (explicit hex values, GFM renderer note). Synced Content Strategy through v0.8.23
+58. **v0.8.25** (current) — Fixed stale SVG header comment: subtitle constraint said "must match Open To roles" but subtitles are brand identity titles (corrected in CLAUDE.md at v0.8.22, never synced to SVG). Fixed Hard Problems count drift (7→8, missed v0.8.24 addition). Added v0.8.24 to Version Milestones. Synced Content Strategy through v0.8.24
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -250,6 +251,7 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 | **v0.8.11** | All 33 projects cataloged, auto-update API documented | ~390 |
 | **v0.8.18** | Purple Reign, BaseModal, NavLink — latest PACT Dashboard features | ~390 |
 | **v0.8.21** | MCP-native era — protocol badge, expertise domain, architecture pattern, memory server promoted | ~393 |
+| **v0.8.24** | React hooks async cleanup documented, SVG/replication instructions sharpened | ~398 |
 
 The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 
@@ -312,7 +314,7 @@ The v0.7.0 restructure trimmed 20 sections dramatically, and subsequent refineme
 - **Domain Depth + Technical DNA** — expertise bar chart + architectural pattern table
 - **How the Passion Ecosystem Works** — merged from 3 prior sections (How We Work, How Passion Ships, Glossary)
 - **All 33 Projects** — 4 category tables
-- **Hard Problems I've Solved** — 7 deep-dive war stories
+- **Hard Problems I've Solved** — 8 deep-dive war stories
 - **What I'd Build Differently** — 4 honest retrospectives
 - **Repo Setup & Dependencies** — fork instructions, external services, auto-update API docs
 
