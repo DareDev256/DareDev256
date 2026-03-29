@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.29] - 2026-03-28
+
+### Fixed
+- **README.md** — PACT Dashboard description drift: 3 of 4 locations still used "Cyberpunk command terminal" / "Cyberpunk HUD" after v0.8.28 standardized Currently Building to "Agent command terminal". Unified all 4 instances (Featured Projects, All 33 Projects, ecosystem diagram) to match recruiter-scannable framing
+- **README.md** — Ecosystem diagram was missing "695 tests" for PACT Dashboard — the only location that omitted the test count metric after v0.8.28 added it elsewhere
+
+### Changed
+- **README.md** — Learning Suite description in Currently Building: replaced implementation details ("polished loading states, guarded engine startup") with curriculum topics ("prompt engineering, red teaming, bias detection, hallucination hunting") — what recruiters scan for
+- **README.md** — New "What I'd Build Differently" entry: Learning Suite shared layout — 10 games with identical shells built independently, reflecting on the speed-vs-architecture tradeoff
+- **CLAUDE.md** — Version bump v0.8.28 → v0.8.29
+
 ## [0.8.28] - 2026-03-28
 
 ### Changed

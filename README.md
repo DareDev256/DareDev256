@@ -30,7 +30,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
 | 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — auto-select engine, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
-| 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — polished loading states, guarded engine startup, each playable |
+| 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — prompt engineering, red teaming, bias detection, hallucination hunting. Each live and playable |
 
 <!-- DAILY_STATUS_START -->
 > *Updated by [Passion.EXE](https://github.com/DareDev256/passion-agent) — Mar 28, 2026 at 9:02 PM ET*
@@ -82,7 +82,7 @@ Stop the scroll with a brand new 'Featured Project Spotlight'! This interactive 
 
 ### PACT Dashboard *(private)*
 
-**Cyberpunk command terminal** — auto-select engine, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests.
+**Agent command terminal** — auto-select engine, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -205,7 +205,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   ├── Career Engine ─── 6+ job APIs, auto-apply pipeline
   └── Memory System ─── somatic markers, narrative identity
         ▼
-  PACT Dashboard ─── Cyberpunk HUD, auto-select engine, useSSE streaming, 121 components, OWASP-hardened
+  PACT Dashboard ─── Agent command terminal, auto-select engine, useSSE streaming, 121 components, 695 tests, OWASP-hardened
         ▼
   Passion Memory MCP ─── Shared brain across all sessions
 ```
@@ -223,7 +223,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐20+ | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Cyberpunk command terminal — auto-select engine, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Agent command terminal — auto-select engine, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
@@ -305,6 +305,8 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 **Test strategy** — 618 tests in fcpxml-mcp-server, mostly unit. But the bugs that shipped were integration-level — malformed XML that parsed fine individually but broke combined. Should have started with 10 integration tests using real FCPXML files.
 
 **PACT component explosion** — 121 components, not enough composition. A `<DataCard>` with render props beats three single-use wrappers sharing 80% markup. Component count should go down as a codebase matures.
+
+**Learning Suite shared layout** — 10 games with nearly identical shells (header, score, timer, explanation panel), each implemented independently. A shared `<GameShell>` with render props would have cut 40% of the markup. Noticed at game 4, kept shipping because each was a 2-hour build. Speed over architecture was the right call for the first 5; doubling down past that was the mistake.
 
 </details>
 
