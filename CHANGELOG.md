@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.30] - 2026-03-29
+
+### Added
+- **README.md** — New showcase: passion-site v3.53.0 parallax engine — 4-layer wheel-driven scroll parallax, ambient sine-wave drift, momentum decay with return-to-center
+- **README.md** — Two new "Hard Problems" entries: wheel-driven parallax engine (depth-factor mapping, CSS custom property offsets, single rAF loop) and enum aliasing flake in test suite (`MarkerType.INCOMPLETE`/`TODO` identity vs value assertion)
+
+### Changed
+- **CLAUDE.md** — Version bump v0.8.29 → v0.8.30
+
 ## [0.8.29] - 2026-03-28
 
 ### Fixed

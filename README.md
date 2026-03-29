@@ -39,18 +39,18 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 <!-- DAILY_STATUS_END -->
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 28, 2026*
+> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Mar 29, 2026*
 
-**Tonight's build: [passion-site](https://github.com/DareDev256/passion-site)**
+**Tonight's build: [passion-site](https://github.com/DareDev256/passion-site)** — v3.53.0
 
-Introduced a visually stunning, interactive carousel on the homepage to highlight featured projects. This dynamic component uses smooth animations and clear project previews to immediately engage visitors and drive exploration.
+Rebuilt the lock screen hero with a 4-layer parallax engine — wheel-driven scroll separates depth planes at different rates, ambient sine-wave drift keeps the scene breathing without interaction, and momentum decay naturally returns layers to center. The hero feels cinematic and alive.
 
 **Highlights:**
-- Interactive "Featured Project" Carousel
-- Smooth, Engaging Animations
-- Clickable Project Cards with Hover Effects
+- Wheel-driven scroll parallax (4 depth layers)
+- Ambient sine-wave drift — zero-input animation
+- Momentum decay with natural return-to-center
 
-`+313/-27 lines`
+`parallax engine` `requestAnimationFrame` `CSS custom properties`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
@@ -290,6 +290,10 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 **Cinematic hero orchestration** — The Royalty Protocol hero needed dynamic background video, scroll-triggered element reveals, and layered typography — all without fighting IntelDossier's real-time threat data. Solved with a staggered reveal choreography: video loads lazily with poster fallback, scroll-driven `IntersectionObserver` triggers per-section fade/translate sequences, and IntelDossier mounts only after the hero viewport exit. Zero layout shift, no competing paint cycles.
 
 **SSE data layer extraction** — `useSSEConnection` was a 200-line monolith handling transport, parsing, reconnect, and domain state. Extracted core data-fetching logic into a focused `useSSE` hook, leaving `useSSEConnection` as a thin transport wrapper. Added first-class loading and error state UI — previously, failed streams showed nothing. Now downstream consumers get typed `{data, error, isLoading}` instead of raw EventSource management. Halved the surface area for SSE bugs.
+
+**Wheel-driven parallax engine** — The lock screen hero needed cinematic depth without scroll-jacking the page. Built a 4-layer parallax system: each layer maps `wheel` delta to a displacement scaled by its depth factor (`0.15×` background → `0.6×` foreground). Added ambient sine-wave drift (`sin(t × 0.001)`) so the scene breathes even idle, plus exponential momentum decay (`velocity *= 0.95` per frame) that returns layers to center naturally. All offsets applied via CSS custom properties — zero layout thrash, single `requestAnimationFrame` loop for all layers.
+
+**Enum aliasing flake in test suite** — `tests/test_models.py` intermittently failed because `MarkerType.INCOMPLETE` and `MarkerType.TODO` resolved to the same underlying value. Python enums alias duplicate values to the first-defined member, so `MarkerType(1)` always returned `TODO` regardless of which was asserted. The test expected `INCOMPLETE` by name but got `TODO` by identity. Fixed by asserting on `.value` instead of enum identity — correct behavior, stable test.
 
 **Async cleanup in React animation hooks** — Three independent hooks (`useIdleAnimations`, `useTerminal`, `useSSEConnection`) had timer/reconnect leaks that survived unmount. `useIdleAnimations` had an untracked inner `setTimeout` chaining timers on every idle cycle — leaked chains on unmount. `useTerminal`'s `onerror` handler scheduled reconnects after `cleanup()` had already run. `useSSEConnection`'s `onmessage` captured stale closure state, making disconnect recovery dead code. Fixed all three with `mountedRef`/`cleanedUpRef`/`connectedRef` patterns — refs maintain correct state across async boundaries where closures can't.
 

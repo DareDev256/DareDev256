@@ -314,7 +314,7 @@ The v0.7.0 restructure trimmed 20 sections dramatically, and subsequent refineme
 - **Domain Depth + Technical DNA** — expertise bar chart + architectural pattern table
 - **How the Passion Ecosystem Works** — merged from 3 prior sections (How We Work, How Passion Ships, Glossary)
 - **All 33 Projects** — 4 category tables
-- **Hard Problems I've Solved** — 9 deep-dive war stories
+- **Hard Problems I've Solved** — 11 deep-dive war stories
 - **What I'd Build Differently** — 4 honest retrospectives
 - **Repo Setup & Dependencies** — fork instructions, external services, auto-update API docs
 
