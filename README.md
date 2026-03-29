@@ -28,7 +28,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — auto-select engine, `useSSE` streaming architecture, Purple Reign intro, Royalty Protocol hero, BaseModal architecture, 121 components, 695 tests, OWASP-hardened. Next.js 16 + React 19 |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — auto-select engine, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
 | 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — polished loading states, guarded engine startup, each playable |
 
@@ -82,7 +82,7 @@ Stop the scroll with a brand new 'Featured Project Spotlight'! This interactive 
 
 ### PACT Dashboard *(private)*
 
-**Cyberpunk command terminal** — auto-select engine, `useSSE` streaming architecture, Purple Reign intro, Royalty Protocol hero, BaseModal architecture. 121 components, 695 tests, OWASP-hardened.
+**Cyberpunk command terminal** — auto-select engine, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -205,7 +205,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   ├── Career Engine ─── 6+ job APIs, auto-apply pipeline
   └── Memory System ─── somatic markers, narrative identity
         ▼
-  PACT Dashboard ─── Cyberpunk HUD, auto-select engine, useSSE streaming, Purple Reign intro, Royalty Protocol hero, 121 components
+  PACT Dashboard ─── Cyberpunk HUD, auto-select engine, useSSE streaming, 121 components, OWASP-hardened
         ▼
   Passion Memory MCP ─── Shared brain across all sessions
 ```
@@ -223,7 +223,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐20+ | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Cyberpunk command terminal — auto-select engine, `useSSE` streaming, Purple Reign intro, Royalty Protocol hero, BaseModal architecture, NavLink navigation, IntelDossier, 121 components, 695 tests, OWASP-hardened | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Cyberpunk command terminal — auto-select engine, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
@@ -353,33 +353,14 @@ Two HTML comment-delimited zones in `README.md` are machine-writable by [Passion
 | Daily Status | `DAILY_STATUS_START` / `END` | `passion-profile.mjs` | ~Daily (brain cycle) |
 | Showcase | `SHOWCASE_SECTION_START` / `END` | `passion-profile.mjs` | After notable builds |
 
-**Expected output format — Daily Status:**
-```
-> *Updated by [Passion.EXE](...) — <Mon> <DD>, <YYYY> at <HH:MM> <AM/PM> ET*
-> Today: **N tasks** across **N repos** · **+N/-N lines** · N% success rate
-> Latest: <type> on <repo>, <type> on <repo>
-```
+**Zone formats** (Passion Agent replaces content between markers on each run — writes are idempotent):
 
-**Expected output format — Showcase:**
-```
-> *Last updated by [Passion Agent](...) — <Mon> <DD>, <YYYY>*
-**Tonight's build: [<repo-name>](<url>)**
-<1-2 sentence description>
-**Highlights:** <3 bullet points max>
-`+N/-N lines`
-```
+| Zone | Template | Key Fields |
+|------|----------|------------|
+| Daily Status | `> Updated by [Passion.EXE](...) — <date>` `> Today: **N tasks** across **N repos** · **+N/-N lines** · N% success rate` | Task/repo count from brain cycle log, line diff from `git diff --stat`, success = merged ÷ total PRs |
+| Showcase | `**Tonight's build: [repo](url)**` + 1-2 sentence summary + highlights (3 bullets max) + `+N/-N lines` | Latest repo with a notable visual or feature change |
 
-**Field reference:**
-
-| Field | Format | Source |
-|-------|--------|--------|
-| Task count | Integer | Brain cycle execution log |
-| Repo count | Integer | Distinct repos touched in cycle |
-| Line diff | `+N/-N` | Aggregated `git diff --stat` across commits |
-| Success rate | Percentage | Merged PRs ÷ total PRs in cycle |
-| Showcase repo | `[name](url)` | Latest repo with a notable visual or feature change |
-
-> **Integration note:** Writes are idempotent — Passion Agent replaces all content between markers on each run. External consumers can poll the raw endpoint and parse between markers for machine-readable status. No authentication required. Updates propagate to the GitHub profile page within seconds of push.
+> **Integration:** Poll the raw endpoint and parse between markers for machine-readable status. No auth required. Updates propagate to the profile page within seconds of push.
 
 ### Security Model
 

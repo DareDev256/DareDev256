@@ -7,6 +7,14 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.28] - 2026-03-28
+
+### Changed
+- **README.md** — Tightened PACT Dashboard descriptions across 4 locations (Currently Building, Featured Projects, All 33 Projects, ecosystem diagram): cut cosmetic feature names (Purple Reign, Royalty Protocol, BaseModal, NavLink, IntelDossier) to surface what recruiters scan for (capabilities, test count, security posture)
+- **README.md** — Condensed Auto-Update API documentation: merged verbose format examples and 5-row field reference table into a single scannable zone-format table with inline field descriptions. Cuts 19 lines while preserving all integration details
+- **README.md** — Total line count reduced 408 → 389 (back under 400 cap)
+- **CLAUDE.md** — Version bump v0.8.27 → v0.8.28
+
 ## [0.8.27] - 2026-03-27
 
 ### Security
