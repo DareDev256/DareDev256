@@ -7,6 +7,19 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.31] - 2026-03-29
+
+### Fixed
+- **FOR_DARE.md** — Content Strategy Evolution drift: stuck at v0.8.25 "(current)", missing 5 entries (v0.8.26–v0.8.30). Added all missing entries with accurate summaries from CHANGELOG
+- **FOR_DARE.md** — Stale Metrics Sync Map context: PACT Component Count ecosystem diagram row still referenced "Royalty Protocol hero" (removed in v0.8.28). Updated to match current README text
+- **FOR_DARE.md** — "What I'd Build Differently" count drift: listed 4 retrospectives but README has 5 (Learning Suite entry added in v0.8.29). Corrected to 5
+
+### Added
+- **FOR_DARE.md** — Version Milestones: added v0.8.27 (SVG security hardening) and v0.8.30 (parallax engine showcase) rows
+
+### Changed
+- **CLAUDE.md** — Version bump v0.8.30 → v0.8.31
+
 ## [0.8.30] - 2026-03-29
 
 ### Added

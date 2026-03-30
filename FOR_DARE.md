@@ -233,7 +233,13 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 55. **v0.8.22** — Fixed misleading SVG subtitle constraint in CLAUDE.md (subtitles ≠ Open To roles). Added Metric Verification Commands to FOR_DARE.md (one-liner per metric). Added Content Strategy drift troubleshooting entry. Sharpened README replication instructions for signature.svg. Updated Version Milestones
 56. **v0.8.23** — Added File Cross-References & Editability map to FOR_DARE.md (dependency graph + breakage risk matrix). Added Pre-Push Quick Check (5-item fast path for agent iteration). Improved README Repo Setup with architecture summary. Synced Content Strategy through v0.8.22
 57. **v0.8.24** — Added React hooks async cleanup entry to Hard Problems (timer leaks in `useIdleAnimations`/`useTerminal`/`useSSEConnection`, ref-based guards). Sharpened Repo Setup replication steps (explicit hex values, GFM renderer note). Synced Content Strategy through v0.8.23
-58. **v0.8.25** (current) — Fixed stale SVG header comment: subtitle constraint said "must match Open To roles" but subtitles are brand identity titles (corrected in CLAUDE.md at v0.8.22, never synced to SVG). Fixed Hard Problems count drift (7→8, missed v0.8.24 addition). Added v0.8.24 to Version Milestones. Synced Content Strategy through v0.8.24
+58. **v0.8.25** — Fixed stale SVG header comment: subtitle constraint said "must match Open To roles" but subtitles are brand identity titles (corrected in CLAUDE.md at v0.8.22, never synced to SVG). Fixed Hard Problems count drift (7→8, missed v0.8.24 addition). Added v0.8.24 to Version Milestones. Synced Content Strategy through v0.8.24
+59. **v0.8.26** — New Hard Problems entry: SSE data layer extraction (`useSSEConnection` → focused `useSSE` hook). PACT descriptions updated with `useSSE` streaming across 4 locations
+60. **v0.8.27** — Security hardening: `signature.svg` got `role="img"`, `aria-label`, `<title>`, `<desc>` + security constraints comment. README Security Model table added
+61. **v0.8.28** — PACT description overhaul: stripped cosmetic names (Purple Reign, Royalty Protocol, BaseModal, NavLink) across 4 locations, surfacing capabilities/test count/security. Auto-Update API condensed (−19 lines). Total 408→389
+62. **v0.8.29** — PACT description drift fix (3 of 4 locations still said "Cyberpunk"). Learning Suite copy switched to curriculum topics. New "What I'd Build Differently" entry (shared layout). Ecosystem diagram got missing "695 tests"
+63. **v0.8.30** — New showcase: passion-site parallax engine. Two new Hard Problems: wheel-driven parallax engine, enum aliasing flake in test suite
+64. **v0.8.31** (current) — FOR_DARE.md sync: Content Strategy Evolution restored (v0.8.26–v0.8.30), fixed Metrics Sync Map stale context (Royalty Protocol→capabilities), corrected retrospective count (4→5), added Version Milestones for v0.8.27 + v0.8.30
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -252,6 +258,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 | **v0.8.18** | Purple Reign, BaseModal, NavLink — latest PACT Dashboard features | ~390 |
 | **v0.8.21** | MCP-native era — protocol badge, expertise domain, architecture pattern, memory server promoted | ~393 |
 | **v0.8.24** | React hooks async cleanup documented, SVG/replication instructions sharpened | ~398 |
+| **v0.8.27** | SVG security hardening (`role="img"`, `aria-label`, forbidden-pattern docs) | ~393 |
+| **v0.8.30** | Parallax engine showcase, 2 new Hard Problems (parallax + enum aliasing) | ~396 |
 
 The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 
@@ -315,7 +323,7 @@ The v0.7.0 restructure trimmed 20 sections dramatically, and subsequent refineme
 - **How the Passion Ecosystem Works** — merged from 3 prior sections (How We Work, How Passion Ships, Glossary)
 - **All 33 Projects** — 4 category tables
 - **Hard Problems I've Solved** — 11 deep-dive war stories
-- **What I'd Build Differently** — 4 honest retrospectives
+- **What I'd Build Differently** — 5 honest retrospectives
 - **Repo Setup & Dependencies** — fork instructions, external services, auto-update API docs
 
 This 8+6 structure is not accidental — visible content converts in 5 seconds; collapsed content proves depth when engineers click through.
@@ -543,7 +551,7 @@ Every hardcoded number in the README must stay consistent across all its occurre
 |---------|---------|
 | Currently Building | `121 components, 695 tests, OWASP-hardened` |
 | Featured Projects | PACT Dashboard card: `121 components. 695 tests` |
-| How the Passion Ecosystem (collapsed) | diagram: `Royalty Protocol hero, 121 components` |
+| How the Passion Ecosystem (collapsed) | diagram: `121 components, 695 tests, OWASP-hardened` |
 | All 33 Projects (collapsed) | PACT Dashboard row: `121 components, 695 tests` |
 | What I'd Build Differently (collapsed) | `121 components, not enough composition` |
 
