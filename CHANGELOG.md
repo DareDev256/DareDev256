@@ -7,6 +7,18 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.32] - 2026-03-30
+
+### Fixed
+- **README.md** — Recurring broken showcase URL (3rd occurrence: v0.6.17, v0.8.10, v0.8.32): Passion Agent wrote `TdotsSolutionsz Music Video Portfolio` with literal spaces in GitHub URL — guaranteed 404. Corrected to hyphenated slug `tdotssolutionsz-portfolio`
+
+### Added
+- **FOR_DARE.md** — Content Strategy Evolution: added v0.8.32 entry, marked as current
+- **FOR_DARE.md** — Troubleshooting: added prevention pattern (grep one-liner) to Showcase URL section — catches spaces in repo slugs before they ship. Documented this as 3rd recurrence with version history
+
+### Changed
+- **CLAUDE.md** — Version bump v0.8.31 → v0.8.32
+
 ## [0.8.31] - 2026-03-29
 
 ### Fixed

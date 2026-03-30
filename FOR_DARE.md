@@ -239,7 +239,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 61. **v0.8.28** — PACT description overhaul: stripped cosmetic names (Purple Reign, Royalty Protocol, BaseModal, NavLink) across 4 locations, surfacing capabilities/test count/security. Auto-Update API condensed (−19 lines). Total 408→389
 62. **v0.8.29** — PACT description drift fix (3 of 4 locations still said "Cyberpunk"). Learning Suite copy switched to curriculum topics. New "What I'd Build Differently" entry (shared layout). Ecosystem diagram got missing "695 tests"
 63. **v0.8.30** — New showcase: passion-site parallax engine. Two new Hard Problems: wheel-driven parallax engine, enum aliasing flake in test suite
-64. **v0.8.31** (current) — FOR_DARE.md sync: Content Strategy Evolution restored (v0.8.26–v0.8.30), fixed Metrics Sync Map stale context (Royalty Protocol→capabilities), corrected retrospective count (4→5), added Version Milestones for v0.8.27 + v0.8.30
+64. **v0.8.31** — FOR_DARE.md sync: Content Strategy Evolution restored (v0.8.26–v0.8.30), fixed Metrics Sync Map stale context (Royalty Protocol→capabilities), corrected retrospective count (4→5), added Version Milestones for v0.8.27 + v0.8.30
+65. **v0.8.32** (current) — Fixed recurring broken showcase URL (3rd occurrence: v0.6.17, v0.8.10, v0.8.32) — literal spaces in GitHub repo slug. Added Showcase URL Validation section to Troubleshooting with pre-commit slugification pattern
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -670,6 +671,7 @@ All rendering depends on external services. If any break, the profile degrades v
 **Cause:** Passion Agent's `passion-profile.mjs` generates the showcase repo name from the task description, which may contain spaces. GitHub URLs require hyphenated slugs, not spaces.
 **History:** First hit in v0.6.17, recurred in v0.8.10. Same root cause both times — the agent's profile writer doesn't slugify repo names.
 **Fix:** Verify the URL resolves before committing. The repo slug must be lowercase-hyphenated (e.g., `tdotssolutionsz-portfolio`, not `TdotsSolutionsz Music Video Portfolio`). Long-term fix: add URL validation to `passion-profile.mjs` before writing the showcase zone.
+**Prevention pattern:** Before committing any showcase update, run: `grep -oP 'github\.com/DareDev256/\K[^)"\s]+' README.md | while read slug; do [[ "$slug" == *" "* ]] && echo "BROKEN: $slug"; done` — catches spaces before they ship. This bug has recurred 3 times (v0.6.17, v0.8.10, v0.8.32).
 
 ### Repo/commit counts are wrong
 **Symptom:** Badge says "33 repos" but you have 35.
