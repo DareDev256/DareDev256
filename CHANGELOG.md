@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.33] - 2026-03-30
+
+### Changed
+- **README.md** — Tightened Repo Setup & Dependencies section: clearer replication instructions (added badge instance count, SVG center coordinate reference), merged redundant Auto-Update API tables into single format table, sharpened Security Model threat descriptions. Total 395→388 lines (−7)
+- **README.md** — Improved file inventory table: added zero-JS note for SVG, distinguished internal docs from design docs, linked Passion Agent to live URL in architecture description
+
 ## [0.8.32] - 2026-03-30
 
 ### Fixed

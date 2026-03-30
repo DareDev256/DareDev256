@@ -319,25 +319,25 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 ### How It Works
 
-No build step, no dependencies, no `package.json`. GitHub renders `README.md` as the profile page. External badge services inject dynamic images at render time. Passion Agent writes to two marker-delimited zones (daily status + showcase) via automated brain cycles — everything else requires human review.
+Zero dependencies — no build step, no `package.json`, no CI. GitHub renders `README.md` as the profile page at `github.com/DareDev256`. Badge services inject dynamic images at render time. [Passion Agent](https://passion.jamesdare.com) writes to two marker-delimited zones (daily status + showcase) on automated 30-minute brain cycles — everything outside markers requires human review.
 
 ### Replicate This Profile
 
 1. Create a repo matching your GitHub username ([docs](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme))
-2. Find-replace `DareDev256` in all badge URLs and GitHub links with your username
-3. Edit `signature.svg` — update hex colors in CSS (`#6C63FF` primary, `#A78BFA` secondary, `#818CF8` tertiary), rewrite the four `<text class="sub">` elements (rotating subtitles), and update stats in `<text class="tag">` (repos count, ecosystem claim)
-4. Push to `main` — GitHub renders `README.md` on your profile within seconds
-5. Verify at `github.com/<username>/<username>/blob/main/README.md` — locally preview with `grip README.md` or any GFM renderer
+2. Find-replace `DareDev256` with your username across all badge URLs and GitHub links (~25 instances)
+3. Edit `signature.svg` — swap hex colors (`#6C63FF` primary, `#A78BFA` secondary, `#818CF8` tertiary), rewrite the four `<text class="sub">` subtitles, update `<text class="tag">` stats. Emblem center is at `(130, 115)` — all coordinates reference this origin
+4. Push to `main` — GitHub renders within seconds
+5. Verify at `github.com/<your-username>` — preview locally with `grip README.md` or any GFM-compatible renderer
 
-Five files total:
+**Five files, no extras:**
 
 | File | Editable By | Purpose |
 |------|:-----------:|---------|
-| `README.md` | Human + Agent | The entire product — GitHub renders this as the profile page |
-| `signature.svg` | Human only | Animated hero emblem (CSS-only, 800×250, `prefers-color-scheme` aware) |
-| `CLAUDE.md` | Human only | AI agent directives — size caps, auto-update zone rules, asset contracts |
-| `FOR_DARE.md` | Human only | Design language, metrics sync map, update playbooks |
-| `CHANGELOG.md` | Human + Agent | Version history following [Keep a Changelog](https://keepachangelog.com) |
+| `README.md` | Human + Agent | The profile page — GitHub renders this on every visit |
+| `signature.svg` | Human only | Hero emblem — CSS-only animations, 800×250, `prefers-color-scheme` aware, zero JS |
+| `CLAUDE.md` | Human only | Agent directives — size caps, auto-update zone rules, asset contracts |
+| `FOR_DARE.md` | Human only | Internal docs — design language, metrics sync map, troubleshooting |
+| `CHANGELOG.md` | Human + Agent | Version history — [Keep a Changelog](https://keepachangelog.com) format |
 
 ### External Services (render-time, no auth required)
 
@@ -350,31 +350,24 @@ Five files total:
 
 ### Auto-Update API
 
-Two HTML comment-delimited zones in `README.md` are machine-writable by [Passion Agent](https://passion.jamesdare.com). Content between markers is overwritten each cycle — everything outside requires human review.
+Two HTML comment-delimited zones are machine-writable by [Passion Agent](https://passion.jamesdare.com). Writes are idempotent — content between markers is fully replaced each cycle.
 
 **Raw endpoint:** `https://raw.githubusercontent.com/DareDev256/DareDev256/main/README.md`
 
-| Zone | Markers | Writer | Frequency |
-|------|---------|--------|-----------|
-| Daily Status | `DAILY_STATUS_START` / `END` | `passion-profile.mjs` | ~Daily (brain cycle) |
-| Showcase | `SHOWCASE_SECTION_START` / `END` | `passion-profile.mjs` | After notable builds |
+| Zone | Markers | Frequency | Format |
+|------|---------|-----------|--------|
+| Daily Status | `DAILY_STATUS_START` / `END` | ~Daily | `Today: **N tasks** across **N repos** · **+N/-N lines** · N% success rate` |
+| Showcase | `SHOWCASE_SECTION_START` / `END` | After notable builds | `Tonight's build: [repo](url)` + summary + 3 highlights + diff stats |
 
-**Zone formats** (Passion Agent replaces content between markers on each run — writes are idempotent):
-
-| Zone | Template | Key Fields |
-|------|----------|------------|
-| Daily Status | `> Updated by [Passion.EXE](...) — <date>` `> Today: **N tasks** across **N repos** · **+N/-N lines** · N% success rate` | Task/repo count from brain cycle log, line diff from `git diff --stat`, success = merged ÷ total PRs |
-| Showcase | `**Tonight's build: [repo](url)**` + 1-2 sentence summary + highlights (3 bullets max) + `+N/-N lines` | Latest repo with a notable visual or feature change |
-
-> **Integration:** Poll the raw endpoint and parse between markers for machine-readable status. No auth required. Updates propagate to the profile page within seconds of push.
+> **Integration:** Poll the raw endpoint and parse between markers for machine-readable status. No auth required. Propagates within seconds of push.
 
 ### Security Model
 
-| Layer | Protection | Threat Mitigated |
-|-------|-----------|-----------------|
-| `signature.svg` | No `<script>`, `<foreignObject>`, `on*` handlers, `url()`, `@import`, or external refs. `role="img"` + `<title>`/`<desc>` enforce non-interactive semantics | CWE-79 (XSS via SVG), CWE-918 (SSRF via external resource load) |
-| Auto-update zones | HTML comment markers (`DAILY_STATUS_START/END`, `SHOWCASE_SECTION_START/END`) — content between markers only. Everything outside requires human review | CWE-94 (code injection via agent write path) |
-| External badges | Render-time `<img>` tags only — no `<iframe>`, no `<object>`, no embedded scripts. GitHub camo proxy strips cookies and tracking | CWE-829 (untrusted third-party resource inclusion) |
+| Layer | Protection | Mitigates |
+|-------|-----------|-----------|
+| `signature.svg` | No `<script>`, `<foreignObject>`, `on*`, `url()`, `@import`, external refs. `role="img"` + `<title>`/`<desc>` enforce non-interactive semantics | CWE-79 (XSS), CWE-918 (SSRF) |
+| Auto-update zones | Marker-delimited write boundaries — agent can only overwrite content between `START/END` comment pairs. All other content requires human review | CWE-94 (code injection) |
+| External badges | `<img>` tags only — no `<iframe>`, `<object>`, or embedded scripts. GitHub's camo proxy strips cookies and tracking headers | CWE-829 (untrusted inclusion) |
 
 Full design language, metrics sync map, and update playbooks in [`FOR_DARE.md`](./FOR_DARE.md).
 
