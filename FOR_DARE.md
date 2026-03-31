@@ -242,7 +242,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 64. **v0.8.31** — FOR_DARE.md sync: Content Strategy Evolution restored (v0.8.26–v0.8.30), fixed Metrics Sync Map stale context (Royalty Protocol→capabilities), corrected retrospective count (4→5), added Version Milestones for v0.8.27 + v0.8.30
 65. **v0.8.32** — Fixed recurring broken showcase URL (3rd occurrence: v0.6.17, v0.8.10, v0.8.32) — literal spaces in GitHub repo slug. Added Showcase URL Validation section to Troubleshooting with pre-commit slugification pattern
 66. **v0.8.33** — Tightened Repo Setup: clearer replication instructions (badge instance count, SVG center coordinate), merged Auto-Update API tables, sharpened Security Model threat descriptions. 395→388 lines
-67. **v0.8.34** (current) — Enhanced Repo Setup documentation: file sizes in inventory table, `prefers-color-scheme` customization note in replication steps, concrete `curl | sed` polling example for auto-update API, linked CWE references to mitre.org
+67. **v0.8.34** — Enhanced Repo Setup documentation: file sizes in inventory table, `prefers-color-scheme` customization note in replication steps, concrete `curl | sed` polling example for auto-update API, linked CWE references to mitre.org
+68. **v0.8.35** (current) — Fixed duplicate table header in README Repo Setup (3-column remnant before 4-column header). Fixed 3 stale Metrics Sync Map context strings in FOR_DARE.md (PACT Component Count and Test Count entries drifted from actual README text)
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -553,7 +554,7 @@ Every hardcoded number in the README must stay consistent across all its occurre
 | Section | Context |
 |---------|---------|
 | Currently Building | `121 components, 695 tests, OWASP-hardened` |
-| Featured Projects | PACT Dashboard card: `121 components. 695 tests` |
+| Featured Projects | PACT Dashboard card: `121 components, 695 tests` |
 | How the Passion Ecosystem (collapsed) | diagram: `121 components, 695 tests, OWASP-hardened` |
 | All 33 Projects (collapsed) | PACT Dashboard row: `121 components, 695 tests` |
 | What I'd Build Differently (collapsed) | `121 components, not enough composition` |
@@ -576,9 +577,9 @@ Every hardcoded number in the README must stay consistent across all its occurre
 | Section | Context |
 |---------|---------|
 | Currently Building | `121 components, 695 tests` |
-| Featured Projects | PACT Dashboard card: `695 tests, OWASP-hardened` |
+| Featured Projects | PACT Dashboard card: `OWASP-hardened. 121 components, 695 tests` |
 | Proof of Craft | `695 in one repo alone` |
-| All 33 Projects (collapsed) | PACT Dashboard row: `695 tests, OWASP-hardened` |
+| All 33 Projects (collapsed) | PACT Dashboard row: `OWASP-hardened. 121 components, 695 tests` |
 
 **4 locations.** Source of truth: PACT Dashboard test suite count (`vitest --reporter=verbose | tail -1`).
 

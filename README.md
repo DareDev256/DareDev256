@@ -331,8 +331,6 @@ Zero dependencies — no build step, no `package.json`, no CI. GitHub renders `R
 
 **Five files, no extras:**
 
-| File | Editable By | Purpose |
-|------|:-----------:|---------|
 | File | Editable By | Size | Purpose |
 |------|:-----------:|-----:|---------|
 | `README.md` | Human + Agent | ~29KB | The profile page — GitHub renders this on every visit |

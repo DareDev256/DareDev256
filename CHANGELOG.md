@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.35] - 2026-03-30
+
+### Fixed
+- **README.md** — Removed duplicate 3-column table header from file inventory in Repo Setup section — stale remnant from pre-v0.8.34 header upgrade caused malformed table rendering on GitHub (3-column header + 4-column data rows)
+- **FOR_DARE.md** — Fixed 3 stale Metrics Sync Map context strings: PACT Component Count Featured Projects entry had period instead of comma (`121 components. 695 tests` → `121 components, 695 tests`); PACT Test Count Featured Projects and All 33 Projects entries used reversed phrasing (`695 tests, OWASP-hardened` → `OWASP-hardened. 121 components, 695 tests`) to match actual README text
+
+### Changed
+- **CLAUDE.md** — Version bump v0.8.34 → v0.8.35
+
 ## [0.8.34] - 2026-03-30
 
 ### Changed
