@@ -7,6 +7,11 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.34] - 2026-03-30
+
+### Changed
+- **README.md** — Enhanced Repo Setup documentation: added file sizes to inventory table, added `prefers-color-scheme` light-mode customization note to replication step 3, added concrete `curl | sed` one-liner for auto-update zone polling, linked all CWE references in Security Model table to mitre.org entries for verifiability
+
 ## [0.8.33] - 2026-03-30
 
 ### Changed
