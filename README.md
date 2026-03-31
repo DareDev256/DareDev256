@@ -28,7 +28,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — auto-select engine, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests. Next.js 16 + React 19 |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — **auto-select engine** surfaces the most relevant task by scoring viewport context, interaction signals, and content adjacency in real time. `useSSE` streaming, OWASP-hardened. 121 components, 695 tests. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
 | 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — prompt engineering, red teaming, bias detection, hallucination hunting. Each live and playable |
 
@@ -82,7 +82,7 @@ Revamped the portfolio with a sleek, interactive music video carousel! This cent
 
 ### PACT Dashboard *(private)*
 
-**Agent command terminal** — auto-select engine, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests.
+**Agent command terminal** — auto-select engine picks the highest-signal task by scoring scroll position, user interaction, and content adjacency. `useSSE` streaming, OWASP-hardened. 121 components, 695 tests.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -205,7 +205,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   ├── Career Engine ─── 6+ job APIs, auto-apply pipeline
   └── Memory System ─── somatic markers, narrative identity
         ▼
-  PACT Dashboard ─── Agent command terminal, auto-select engine, useSSE streaming, 121 components, 695 tests, OWASP-hardened
+  PACT Dashboard ─── Agent command terminal, auto-select engine (viewport-aware scoring → surfaces relevant tasks automatically), useSSE streaming, 121 components, 695 tests, OWASP-hardened
         ▼
   Passion Memory MCP ─── Shared brain across all sessions
 ```
@@ -223,7 +223,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐20+ | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Agent command terminal — auto-select engine, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Agent command terminal — auto-select engine scores viewport context + interaction signals to surface the right task. `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
@@ -285,7 +285,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 **Envelope sanitization at API boundaries** — YouTube API responses hit per-field sanitizers directly — any malformed envelope (missing `items`, oversized payloads, wrong types) bypassed validation entirely. Built a structural pre-validator: schema shape check before field-level processing. Catches CWE-20 (improper input validation), CWE-400 (uncontrolled resource consumption), CWE-754 (improper unusual condition checks). 23 new tests, full suite green.
 
-**Intelligent auto-selection for video embeds** — Dashboard embedded videos fought for attention — multiple iframes loading simultaneously, competing for bandwidth, none contextually relevant. Built a viewport-aware selection engine: tracks scroll position, user interaction signals, and content adjacency to dynamically surface the most relevant embed. Combined with the auto-select rules engine refactor (extracted `computeEntryTiming`, `freezeActivityMap`, `maxSeverity`), the system now picks what matters. 323 auto-select + 381 rotation tests green.
+**Intelligent auto-selection engine** — Dashboard had competing embeds loading simultaneously — bandwidth waste, zero contextual relevance. Built a viewport-aware scoring engine: combines scroll position, user interaction signals (clicks, hovers, dwell time), and content adjacency to rank and surface the single most relevant item in real time. Refactored the rules layer (`computeEntryTiming`, `freezeActivityMap`, `maxSeverity`) so scoring is deterministic and testable. Result: the dashboard auto-focuses on what matters without user intervention. 323 auto-select + 381 rotation tests green.
 
 **Cinematic hero orchestration** — The Royalty Protocol hero needed dynamic background video, scroll-triggered element reveals, and layered typography — all without fighting IntelDossier's real-time threat data. Solved with a staggered reveal choreography: video loads lazily with poster fallback, scroll-driven `IntersectionObserver` triggers per-section fade/translate sequences, and IntelDossier mounts only after the hero viewport exit. Zero layout shift, no competing paint cycles.
 

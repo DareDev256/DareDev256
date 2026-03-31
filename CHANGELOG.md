@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.36] - 2026-03-30
+
+### Changed
+- **README.md** — Detailed the auto-select engine across all 5 reference points (Currently Building, Featured Projects, ecosystem diagram, All 33 Projects, Hard Problems): expanded from bare "auto-select engine" label to describe viewport-aware scoring, interaction signal tracking, and content adjacency ranking — the actual engineering behind the feature
+- **README.md** — Sharpened Hard Problems auto-select entry: reframed from "video embeds" to the general-purpose scoring engine it became, added dwell time as an interaction signal, emphasized deterministic testability of the rules layer
+
 ## [0.8.35] - 2026-03-30
 
 ### Fixed
