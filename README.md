@@ -336,8 +336,8 @@ Zero dependencies — no build step, no `package.json`, no CI. GitHub renders `R
 | `README.md` | Human + Agent | ~29KB | The profile page — GitHub renders this on every visit |
 | `signature.svg` | Human only | ~15KB | Hero emblem — CSS-only animations, 800×250, `prefers-color-scheme` aware, zero JS |
 | `CLAUDE.md` | Human only | ~3KB | Agent directives — size caps, auto-update zone rules, asset contracts |
-| `FOR_DARE.md` | Human only | ~48KB | Internal docs — design language, metrics sync map, troubleshooting |
-| `CHANGELOG.md` | Human + Agent | ~49KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
+| `FOR_DARE.md` | Human only | ~50KB | Internal docs — design language, metrics sync map, troubleshooting |
+| `CHANGELOG.md` | Human + Agent | ~51KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
 
 ### External Services (render-time, no auth required)
 
@@ -374,6 +374,7 @@ Two HTML comment-delimited zones are machine-writable by [Passion Agent](https:/
 | `signature.svg` | No `<script>`, `<foreignObject>`, `on*`, `url()`, `@import`, external refs. `role="img"` + `<title>`/`<desc>` enforce non-interactive semantics | [CWE-79](https://cwe.mitre.org/data/definitions/79.html) (XSS), [CWE-918](https://cwe.mitre.org/data/definitions/918.html) (SSRF) |
 | Auto-update zones | Marker-delimited write boundaries — agent can only overwrite content between `START/END` comment pairs. All other content requires human review | [CWE-94](https://cwe.mitre.org/data/definitions/94.html) (code injection) |
 | External badges | `<img>` tags only — no `<iframe>`, `<object>`, or embedded scripts. GitHub's camo proxy strips cookies and tracking headers | [CWE-829](https://cwe.mitre.org/data/definitions/829.html) (untrusted inclusion) |
+| Accessibility | `signature.svg` carries `role="img"`, `aria-label`, `<title>`, and `<desc>` — screen readers announce the emblem as a single labeled image. All badge `<img>` tags include `alt` text | [WCAG 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html) (non-text content) |
 
 Full design language, metrics sync map, and update playbooks in [`FOR_DARE.md`](./FOR_DARE.md).
 

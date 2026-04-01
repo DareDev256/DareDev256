@@ -245,7 +245,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 67. **v0.8.34** — Enhanced Repo Setup documentation: file sizes in inventory table, `prefers-color-scheme` customization note in replication steps, concrete `curl | sed` polling example for auto-update API, linked CWE references to mitre.org
 68. **v0.8.35** — Fixed duplicate table header in README Repo Setup (3-column remnant before 4-column header). Fixed 3 stale Metrics Sync Map context strings in FOR_DARE.md (PACT Component Count and Test Count entries drifted from actual README text)
 69. **v0.8.36** — Detailed the auto-select engine across all 5 reference points (Currently Building, Featured Projects, ecosystem diagram, All 33 Projects, Hard Problems). Sharpened Hard Problems auto-select entry with dwell time signal and deterministic testability emphasis
-70. **v0.8.37** (current) — Documentation hygiene: synced Content Strategy through v0.8.36 (5th occurrence of recurring drift), added Hard Problems count drift troubleshooting entry with recurrence history, added count consistency check to Maintenance Checklist
+70. **v0.8.37** — Documentation hygiene: synced Content Strategy through v0.8.36 (5th occurrence of recurring drift), added Hard Problems count drift troubleshooting entry with recurrence history, added count consistency check to Maintenance Checklist
+71. **v0.8.38** (current) — Fixed stale file sizes in Repo Setup table (FOR_DARE.md ~48KB→~50KB, CHANGELOG.md ~49KB→~51KB). Added Accessibility row to Security Model table (WCAG 1.1.1 non-text content). Added class→phase quick-reference map to signature.svg header comment for targeted edits
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 

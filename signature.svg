@@ -23,6 +23,16 @@
   ║    Phase 7  3.5–4.4s Arrow tips + segment arcs reveal           ║
   ║    Phase 8  3.8–5.0s Divider, name, subtitles begin cycling     ║
   ╠══════════════════════════════════════════════════════════════════╣
+  ║  CLASS → PHASE QUICK REFERENCE (for targeted edits):             ║
+  ║    .inf          → Phase 1  Infinity path draw-in               ║
+  ║    .ob .ob1–.ob3 → Phase 2  Orbital ellipses                    ║
+  ║    .el .e1–.e3   → Phase 3  Electron dots                       ║
+  ║    .nc .nc-ring  → Phase 4  Nucleus core + rings                ║
+  ║    .wr-out/mid/in→ Phase 5  Dharma wheel rings                  ║
+  ║    .sk .k1–.k8   → Phase 6  Spokes (8 lines from center)       ║
+  ║    .arr .a1–.a8  → Phase 7  Arrow tips + segment arcs (.sg)     ║
+  ║    .nm .sub .tag → Phase 8  Name, cycling subtitles, tagline    ║
+  ╠══════════════════════════════════════════════════════════════════╣
   ║  EDIT SAFETY:                                                   ║
   ║    Emblem center = (130, 115) — all spoke coords, ring radii,   ║
   ║    and orbit transforms reference this origin. Moving it         ║

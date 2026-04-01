@@ -7,6 +7,19 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.38] - 2026-03-31
+
+### Fixed
+- **README.md** — Stale file sizes in Repo Setup table: FOR_DARE.md listed as ~48KB (actual ~50KB), CHANGELOG.md listed as ~49KB (actual ~51KB)
+
+### Added
+- **README.md** — Accessibility row in Security Model table: documents `role="img"`, `aria-label`, `<title>`, `<desc>` on signature.svg and `alt` text on all badge images, linked to WCAG 1.1.1
+- **signature.svg** — Class→phase quick-reference map in header comment: maps all 8 CSS class groups (`.inf`, `.ob`, `.el`, `.nc`, `.wr-*`, `.sk`, `.arr`, `.nm`/`.sub`/`.tag`) to their animation phases for targeted edits
+- **FOR_DARE.md** — Content Strategy Evolution entry for v0.8.38
+
+### Changed
+- **CLAUDE.md** — Version bump v0.8.37 → v0.8.38
+
 ## [0.8.37] - 2026-03-31
 
 ### Fixed
