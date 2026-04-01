@@ -243,7 +243,9 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 65. **v0.8.32** — Fixed recurring broken showcase URL (3rd occurrence: v0.6.17, v0.8.10, v0.8.32) — literal spaces in GitHub repo slug. Added Showcase URL Validation section to Troubleshooting with pre-commit slugification pattern
 66. **v0.8.33** — Tightened Repo Setup: clearer replication instructions (badge instance count, SVG center coordinate), merged Auto-Update API tables, sharpened Security Model threat descriptions. 395→388 lines
 67. **v0.8.34** — Enhanced Repo Setup documentation: file sizes in inventory table, `prefers-color-scheme` customization note in replication steps, concrete `curl | sed` polling example for auto-update API, linked CWE references to mitre.org
-68. **v0.8.35** (current) — Fixed duplicate table header in README Repo Setup (3-column remnant before 4-column header). Fixed 3 stale Metrics Sync Map context strings in FOR_DARE.md (PACT Component Count and Test Count entries drifted from actual README text)
+68. **v0.8.35** — Fixed duplicate table header in README Repo Setup (3-column remnant before 4-column header). Fixed 3 stale Metrics Sync Map context strings in FOR_DARE.md (PACT Component Count and Test Count entries drifted from actual README text)
+69. **v0.8.36** — Detailed the auto-select engine across all 5 reference points (Currently Building, Featured Projects, ecosystem diagram, All 33 Projects, Hard Problems). Sharpened Hard Problems auto-select entry with dwell time signal and deterministic testability emphasis
+70. **v0.8.37** (current) — Documentation hygiene: synced Content Strategy through v0.8.36 (5th occurrence of recurring drift), added Hard Problems count drift troubleshooting entry with recurrence history, added count consistency check to Maintenance Checklist
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -636,6 +638,7 @@ When updating this README, verify:
 - [ ] CHANGELOG.md is updated with any changes (version bump for non-trivial changes)
 - [ ] Showcase section URL resolves (no spaces in repo slug — recurring bug, see Troubleshooting)
 - [ ] CHANGELOG versions are sequential with no gaps
+- [ ] Hard Problems entry count matches FOR_DARE.md collapsed section description (currently 11)
 - [ ] All 13 Sync Map metrics are consistent across their documented locations
 - [ ] FOR_DARE.md Content Strategy Evolution synced through current version (check "(current)" marker)
 
@@ -685,6 +688,12 @@ All rendering depends on external services. If any break, the profile degrades v
 **Symptom:** FOR_DARE.md's Content Strategy list has "(current)" on an old version, missing recent entries.
 **Cause:** When Passion Agent updates FOR_DARE.md, it often syncs only some sections and misses the Content Strategy. This has recurred at v0.7.1 (fixed v0.8.0), v0.8.2 (fixed v0.8.3), and v0.8.14 (fixed v0.8.15).
 **Fix:** After any version bump, verify the Content Strategy list ends with the new version marked as "(current)". Add missing intermediate entries from CHANGELOG.md. The Maintenance Checklist already tracks this — look for "Content Strategy Evolution synced through current version".
+
+### Hard Problems count drifts from actual entries (RECURRING)
+**Symptom:** FOR_DARE.md "Patterns Worth Stealing" says "N deep-dive war stories" but the collapsed section in README has a different count.
+**Cause:** When new Hard Problems entries are added to README, the count in FOR_DARE.md's layout description is often missed. This has recurred at v0.8.16 (6→7) and v0.8.25 (7→8).
+**Fix:** Count entries in the README's `<details>` block under "Hard Problems I've Solved" — each `**bold opener**` is one entry. Update the count in FOR_DARE.md's collapsed section list (search "deep-dive war stories"). The Maintenance Checklist now tracks this.
+**Prevention:** After adding any Hard Problems entry, search FOR_DARE.md for "deep-dive" and update the count.
 
 ### Profile page looks different from raw README
 **Symptom:** Layout or formatting differs between raw Markdown preview and the rendered profile.

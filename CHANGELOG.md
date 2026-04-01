@@ -7,6 +7,18 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.37] - 2026-03-31
+
+### Fixed
+- **FOR_DARE.md** — Content Strategy Evolution stuck at v0.8.35 "(current)", missing v0.8.36 entry (5th occurrence of recurring drift — previously fixed at v0.8.0, v0.8.3, v0.8.15, v0.8.31). Added v0.8.36 and v0.8.37 entries, moved "(current)" marker
+
+### Added
+- **FOR_DARE.md** — New Troubleshooting entry: "Hard Problems count drifts from actual entries (RECURRING)" — documents v0.8.16 and v0.8.25 recurrence history, fix procedure, and prevention pattern
+- **FOR_DARE.md** — Maintenance Checklist: added Hard Problems entry count consistency check (currently 11)
+
+### Changed
+- **CLAUDE.md** — Version bump v0.8.36 → v0.8.37
+
 ## [0.8.36] - 2026-03-30
 
 ### Changed
