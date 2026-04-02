@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.41] - 2026-04-02
+
+### Added
+- **README.md** — New Hard Problems entry: "SSE invalidation starvation under rapid agent cycles" — documents hybrid throttle-debounce replacement (300ms trailing + 1.5s max-wait ceiling) and abort-signal guards on `usePassionAPI` fetch parsing that eliminated stale UI data
+
+### Changed
+- **README.md** — Updated PACT Dashboard descriptions (Currently Building + Featured Projects) to reflect SSE invalidation hardening and `useIntersectionObserver` hook adoption
+- **CLAUDE.md** — Version bump v0.8.40 → v0.8.41
+
 ## [0.8.40] - 2026-04-01
 
 ### Added

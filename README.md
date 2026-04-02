@@ -28,7 +28,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — **auto-select engine** surfaces the most relevant task by scoring viewport context, interaction signals, and content adjacency in real time. `useSSE` streaming, OWASP-hardened. 121 components, 695 tests. Next.js 16 + React 19 |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — **auto-select engine** surfaces the most relevant task by scoring viewport context, interaction signals, and content adjacency in real time. Hybrid throttle-debounce SSE invalidation, abort-signal-guarded fetches, `useIntersectionObserver` hook. OWASP-hardened. 121 components, 695 tests. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
 | 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — prompt engineering, red teaming, bias detection, hallucination hunting. Each live and playable |
 
@@ -82,7 +82,7 @@ Introduced a stunning 'Featured Music Video' section with an engaging 'Watch Now
 
 ### PACT Dashboard *(private)*
 
-**Agent command terminal** — auto-select engine picks the highest-signal task by scoring scroll position, user interaction, and content adjacency. `useSSE` streaming, OWASP-hardened. 121 components, 695 tests.
+**Agent command terminal** — auto-select engine picks the highest-signal task by scoring scroll position, user interaction, and content adjacency. Hybrid throttle-debounce SSE invalidation, abort-guarded fetches. OWASP-hardened. 121 components, 695 tests.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -291,6 +291,8 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 **Cinematic hero orchestration** — The Royalty Protocol hero needed dynamic background video, scroll-triggered element reveals, and layered typography — all without fighting IntelDossier's real-time threat data. Solved with a staggered reveal choreography: video loads lazily with poster fallback, scroll-driven `IntersectionObserver` triggers per-section fade/translate sequences, and IntelDossier mounts only after the hero viewport exit. Zero layout shift, no competing paint cycles.
 
 **SSE data layer extraction** — `useSSEConnection` was a 200-line monolith handling transport, parsing, reconnect, and domain state. Extracted core data-fetching logic into a focused `useSSE` hook, leaving `useSSEConnection` as a thin transport wrapper. Added first-class loading and error state UI — previously, failed streams showed nothing. Now downstream consumers get typed `{data, error, isLoading}` instead of raw EventSource management. Halved the surface area for SSE bugs.
+
+**SSE invalidation starvation under rapid agent cycles** — PACT Dashboard's SSE-driven cache invalidation used a plain trailing debounce that reset on every event. During rapid agent cycles (multiple PRs landing in seconds), the debounce timer restarted endlessly — the UI never refreshed, showing stale data for minutes. Replaced with a hybrid throttle-debounce: 300ms trailing edge for burst coalescing + 1.5s max-wait ceiling guaranteeing freshness. Also added abort-signal guards around `res.json()` in `usePassionAPI` — cancelled fetches were still parsing responses and briefly surfacing stale data before the next valid response arrived. Both fixes eliminated the "dashboard shows old data" class of bugs entirely.
 
 **Duplicated observer setup across components** — Multiple PACT components independently created `IntersectionObserver` instances with near-identical setup, threshold configuration, and cleanup logic. Extracted a `useIntersectionObserver` hook that encapsulates observer initialization, target element observation, and teardown behind a single ref-based API. Eliminated 4 redundant observer implementations, consistent disconnect-on-unmount behavior across all consumers.
 
