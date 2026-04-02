@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.40] - 2026-04-01
+
+### Added
+- **README.md** — New Hard Problems entry: "Silent marker loss from duplicate clip names" — documents `auto_at_intervals` bug where name-only clip lookup caused silent marker overwrites; fixed with `(clip_name, clip_index)` tuple keying
+- **README.md** — New Hard Problems entry: "Duplicated observer setup across components" — documents extraction of `useIntersectionObserver` hook from 4 redundant `IntersectionObserver` implementations across PACT components
+
+### Changed
+- **CLAUDE.md** — Version bump v0.8.39 → v0.8.40
+
 ## [0.8.39] - 2026-04-01
 
 ### Added
