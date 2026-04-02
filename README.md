@@ -7,7 +7,7 @@
 <a href="https://jamesdare.com"><img src="./signature.svg" alt="James Dare — AI Solutions Engineer" width="600" /></a>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=DareDev256&color=blueviolet&style=flat-square&label=Profile+Views)
-[![Repos](https://img.shields.io/badge/Public_Repos-33-6C63FF?style=flat-square&logo=github&logoColor=white)](https://github.com/DareDev256?tab=repositories)
+[![Repos](https://img.shields.io/badge/Public_Repos-34-6C63FF?style=flat-square&logo=github&logoColor=white)](https://github.com/DareDev256?tab=repositories)
 [![Stars](https://img.shields.io/badge/Total_Stars-36-FFD700?style=flat-square&logo=star&logoColor=white)](https://github.com/DareDev256)
 [![Deployments](https://img.shields.io/badge/Live_Deployments-20+-10B981?style=flat-square&logo=vercel&logoColor=white)](https://jamesdare.com)
 [![Commits](https://img.shields.io/badge/Total_Commits-1%2C257+-E8B931?style=flat-square&logo=git&logoColor=white)](https://github.com/DareDev256)
@@ -131,7 +131,7 @@ Introduced a captivating, animated Hero Section to the website's homepage. Featu
 |-------------|-------|
 | Ship AI products end-to-end | MCP servers, RAG pipelines, autonomous agents, LLM eval — in production, not slides |
 | Creative→technical leadership | 350+ music videos directed → now directing AI systems at the same pace |
-| Full-stack velocity | 33 repos, 20+ live deployments, 190 releases in 21 days — solo |
+| Full-stack velocity | 34 repos, 20+ live deployments, 190 releases in 21 days — solo |
 | Developer empathy | 20+ stars on first MCP server, 10 deployed learning games, 1,400+ tests across ecosystem |
 
 ---
@@ -215,7 +215,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 </details>
 
 <details>
-<summary><strong>All 33 Projects</strong></summary>
+<summary><strong>All 34 Projects</strong></summary>
 
 ### AI & Automation
 
@@ -268,6 +268,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 | [seanpane-website](https://github.com/DareDev256/seanpane-website) | [seanpane-website.vercel.app](https://seanpane-website.vercel.app) |
 | [whyg35-website](https://github.com/DareDev256/whyg35-website) | [whyg35-website.vercel.app](https://whyg35-website.vercel.app) |
 | [shortiie-raw-website](https://github.com/DareDev256/shortiie-raw-website) | [shortiie-raw-website.vercel.app](https://shortiie-raw-website.vercel.app) |
+| [Website](https://github.com/DareDev256/Website) | [jamesdare.com](https://jamesdare.com) |
 | casper-tng-website *(private)* | [casper-tng-website.vercel.app](https://casper-tng-website.vercel.app) |
 
 </details>

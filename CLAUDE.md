@@ -9,7 +9,7 @@
 - New content goes inside existing `<details>` blocks, NOT as new visible sections
 - Never add ASCII art, timeline blocks, tables, or multi-line code blocks outside `<details>`
 - Never expand collapsed sections into visible content
-- New projects → add to collapsed "All 33 Projects" block, update count
+- New projects → add to collapsed "All 34 Projects" block, update count
 
 ## Structure (do not change)
 
@@ -29,7 +29,7 @@ Everything outside these markers requires human review.
 
 - CHANGELOG.md follows Keep a Changelog format
 - Semantic versioning: major = full redesign, minor = new sections, patch = updates
-- Current: v0.8.38
+- Current: v0.8.39
 
 ## Assets
 

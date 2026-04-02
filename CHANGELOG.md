@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.39] - 2026-04-01
+
+### Added
+- **README.md** — Added Website repo (jamesdare.com portfolio) to Client Websites in All Projects catalog — was referenced in showcase but missing from the project list
+
+### Changed
+- **README.md** — Bumped public repo count 33 → 34 across all 3 locations (hero badge, Open To table, All Projects header) per Metrics Sync Map
+- **CLAUDE.md** — Version bump v0.8.38 → v0.8.39, updated project count reference in size cap rules
+
 ## [0.8.38] - 2026-03-31
 
 ### Fixed

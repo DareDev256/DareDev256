@@ -8,7 +8,7 @@
 - **DO NOT expand collapsed sections into visible content.**
 - **DO NOT add ASCII art, timeline blocks, or multi-line code blocks** outside of `<details>`.
 - **Auto-update zones** (`DAILY_STATUS_START/END`, `SHOWCASE_SECTION_START/END`) are fine — keep showcase to 1-2 lines max.
-- **If adding a new project**: add it to the collapsed "All 33 Projects" details block, update the count. Do NOT add it to the visible Featured Projects table unless replacing an existing entry.
+- **If adding a new project**: add it to the collapsed "All 34 Projects" details block, update the count. Do NOT add it to the visible Featured Projects table unless replacing an existing entry.
 - **If updating metrics**: update in-place (badge numbers, table cells). Do NOT add new metric displays.
 
 This constraint exists because a bloated profile README hurts more than it helps. Recruiters scan, they don't read. Every visible line must earn its place.
@@ -22,7 +22,7 @@ This constraint exists because a bloated profile README hurts more than it helps
 | Update daily status | Passion Agent handles this automatically via `DAILY_STATUS_START/END` markers |
 | Update showcase | Passion Agent writes between `SHOWCASE_SECTION_START/END` markers |
 | Check badge health | Visit profile page, look for broken image icons. See [Troubleshooting](#troubleshooting) |
-| Bump repo count | Search `33` in README.md — appears in 3 places (hero badge, Open To table, All Projects header) |
+| Bump repo count | Search `34` in README.md — appears in 3 places (hero badge, Open To table, All Projects header) |
 | Bump commit count | Search `1,257` in README.md — appears in 3 places (hero badge, Featured Projects, Proof of Craft) |
 | Bump component count | Search `121` in README.md — appears in 5 places (see Metrics Sync Map: PACT Component Count) |
 | Bump approval rate | Search `89.9` in README.md — appears in 4 places (see Metrics Sync Map: Approval Rate) |
@@ -271,7 +271,7 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 
 ### Repo Count Accuracy
-The README claims "33 public repos" — this includes the `awesome-mcp-servers` fork. If counting only original repos, it's 32. Keep this number updated as new repos are created.
+The README claims "34 public repos" — this includes the `awesome-mcp-servers` fork. If counting only original repos, it's 33. Keep this number updated as new repos are created.
 
 ## Dynamic Content Zones
 
@@ -328,7 +328,7 @@ The v0.7.0 restructure trimmed 20 sections dramatically, and subsequent refineme
 **Collapsed sections (`<details>`):**
 - **Domain Depth + Technical DNA** — expertise bar chart + architectural pattern table
 - **How the Passion Ecosystem Works** — merged from 3 prior sections (How We Work, How Passion Ships, Glossary)
-- **All 33 Projects** — 4 category tables
+- **All 34 Projects** — 4 category tables
 - **Hard Problems I've Solved** — 11 deep-dive war stories
 - **What I'd Build Differently** — 5 honest retrospectives
 - **Repo Setup & Dependencies** — fork instructions, external services, auto-update API docs
@@ -373,7 +373,7 @@ This two-tier system creates visual weight where it matters (CTAs) and density w
 
 1. **Hero and closing CTA** use `<div align="center">` — everything else is left-aligned
 2. **Featured Projects** use a `<table>` with `width="33%"` cells — not Markdown tables (which can't control column width)
-3. **All Projects** live inside `<details>` to control scroll depth — never promote all 33 projects to top-level
+3. **All Projects** live inside `<details>` to control scroll depth — never promote all 34 projects to top-level
 4. **ASCII diagrams** use exactly 67 display columns — this is the widest that renders without horizontal scroll on mobile GitHub
 5. **Sections flow** hook → proof → detail → CTA — never put detail before proof
 
@@ -431,7 +431,7 @@ Step-by-step procedures for the most common maintenance operations. Follow these
 ### New Repo Added
 
 1. Add entry to the correct category table inside `<details>` in All Projects
-2. Search `33` (or current count) → update in 3 places: hero badge, Open To table, All Projects header
+2. Search `34` (or current count) → update in 3 places: hero badge, Open To table, All Projects header
 3. If it's a flagship: add to Featured Projects `<table>` grid (max 6 cells — 2 rows of 3)
 4. If it has live deployment: add `[![Live](badge)](url)` inline
 5. Bump patch version, add CHANGELOG entry
@@ -472,13 +472,13 @@ Every hardcoded number in the README must stay consistent across all its occurre
 
 **3 locations.** Source of truth: `git log --oneline | wc -l` across all managed repos.
 
-### Public Repo Count (`33`)
+### Public Repo Count (`34`)
 
 | Section | Context |
 |---------|---------|
-| Hero badges (line ~10) | `Public_Repos-33` |
+| Hero badges (line ~10) | `Public_Repos-34` |
 | Open To table | shipping velocity evidence |
-| All Projects header (collapsed) | `All 33 Projects` |
+| All Projects header (collapsed) | `All 34 Projects` |
 
 **3 locations.** Source of truth: `https://github.com/DareDev256?tab=repositories`.
 
@@ -520,7 +520,7 @@ Every hardcoded number in the README must stay consistent across all its occurre
 | Currently Building | `opens PRs across 47 repos` |
 | Proof of Craft | `1,257+ commits across 47 repos` |
 | How the Passion Ecosystem (collapsed) | `47 Managed Repos` diagram line |
-| All 33 Projects (collapsed) | Passion Agent row: `24/7 brain cycles, 47 repos` |
+| All 34 Projects (collapsed) | Passion Agent row: `24/7 brain cycles, 47 repos` |
 
 **4 locations.** Source of truth: Passion Agent config repo list.
 
@@ -559,7 +559,7 @@ Every hardcoded number in the README must stay consistent across all its occurre
 | Currently Building | `121 components, 695 tests, OWASP-hardened` |
 | Featured Projects | PACT Dashboard card: `121 components, 695 tests` |
 | How the Passion Ecosystem (collapsed) | diagram: `121 components, 695 tests, OWASP-hardened` |
-| All 33 Projects (collapsed) | PACT Dashboard row: `121 components, 695 tests` |
+| All 34 Projects (collapsed) | PACT Dashboard row: `121 components, 695 tests` |
 | What I'd Build Differently (collapsed) | `121 components, not enough composition` |
 
 **5 locations.** Source of truth: PACT Dashboard component directory count.
@@ -582,7 +582,7 @@ Every hardcoded number in the README must stay consistent across all its occurre
 | Currently Building | `121 components, 695 tests` |
 | Featured Projects | PACT Dashboard card: `OWASP-hardened. 121 components, 695 tests` |
 | Proof of Craft | `695 in one repo alone` |
-| All 33 Projects (collapsed) | PACT Dashboard row: `OWASP-hardened. 121 components, 695 tests` |
+| All 34 Projects (collapsed) | PACT Dashboard row: `OWASP-hardened. 121 components, 695 tests` |
 
 **4 locations.** Source of truth: PACT Dashboard test suite count (`vitest --reporter=verbose | tail -1`).
 
@@ -630,7 +630,7 @@ One-liner for each source of truth. Run these before updating numbers in the REA
 
 When updating this README, verify:
 - [ ] All project URLs still resolve (20+ live deployments + GitHub links)
-- [ ] Repo count is accurate (currently 33 public repos — includes awesome-mcp-servers fork)
+- [ ] Repo count is accurate (currently 34 public repos — includes awesome-mcp-servers fork)
 - [ ] "Currently Building" section reflects actual current work
 - [ ] Badge services are rendering (check for broken images on profile page)
 - [ ] Stats cards are loading (github-profile-summary-cards.vercel.app)
