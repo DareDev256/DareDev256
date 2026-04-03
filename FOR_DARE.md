@@ -246,7 +246,11 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 68. **v0.8.35** — Fixed duplicate table header in README Repo Setup (3-column remnant before 4-column header). Fixed 3 stale Metrics Sync Map context strings in FOR_DARE.md (PACT Component Count and Test Count entries drifted from actual README text)
 69. **v0.8.36** — Detailed the auto-select engine across all 5 reference points (Currently Building, Featured Projects, ecosystem diagram, All 33 Projects, Hard Problems). Sharpened Hard Problems auto-select entry with dwell time signal and deterministic testability emphasis
 70. **v0.8.37** — Documentation hygiene: synced Content Strategy through v0.8.36 (5th occurrence of recurring drift), added Hard Problems count drift troubleshooting entry with recurrence history, added count consistency check to Maintenance Checklist
-71. **v0.8.38** (current) — Fixed stale file sizes in Repo Setup table (FOR_DARE.md ~48KB→~50KB, CHANGELOG.md ~49KB→~51KB). Added Accessibility row to Security Model table (WCAG 1.1.1 non-text content). Added class→phase quick-reference map to signature.svg header comment for targeted edits
+71. **v0.8.38** — Fixed stale file sizes in Repo Setup table (FOR_DARE.md ~48KB→~50KB, CHANGELOG.md ~49KB→~51KB). Added Accessibility row to Security Model table (WCAG 1.1.1 non-text content). Added class→phase quick-reference map to signature.svg header comment for targeted edits
+72. **v0.8.39** — Added Website repo (jamesdare.com) to Client Websites in All Projects catalog. Bumped public repo count 33→34 across hero badge, Open To table, and All Projects header
+73. **v0.8.40** — Two new Hard Problems entries: silent marker loss from duplicate clip names (`auto_at_intervals` tuple keying fix), duplicated observer setup across components (`useIntersectionObserver` hook extraction)
+74. **v0.8.41** — New Hard Problems entry: SSE invalidation starvation under rapid agent cycles (hybrid throttle-debounce + abort-signal guards). Updated PACT Dashboard descriptions with SSE hardening and `useIntersectionObserver`
+75. **v0.8.42** (current) — Documentation hygiene: synced Content Strategy through v0.8.41 (6th occurrence of recurring drift), fixed Hard Problems count (11→14), fixed stale "All 33 Projects" reference in CLAUDE.md (should be 34), added v0.8.38 to Version Milestones
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -267,6 +271,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 | **v0.8.24** | React hooks async cleanup documented, SVG/replication instructions sharpened | ~398 |
 | **v0.8.27** | SVG security hardening (`role="img"`, `aria-label`, forbidden-pattern docs) | ~393 |
 | **v0.8.30** | Parallax engine showcase, 2 new Hard Problems (parallax + enum aliasing) | ~396 |
+| **v0.8.38** | Accessibility docs, SVG class map, file size fixes | ~403 |
+| **v0.8.42** | Content Strategy sync, Hard Problems count fix (11→14) | ~403 |
 
 The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 
@@ -639,7 +645,7 @@ When updating this README, verify:
 - [ ] CHANGELOG.md is updated with any changes (version bump for non-trivial changes)
 - [ ] Showcase section URL resolves (no spaces in repo slug — recurring bug, see Troubleshooting)
 - [ ] CHANGELOG versions are sequential with no gaps
-- [ ] Hard Problems entry count matches FOR_DARE.md collapsed section description (currently 11)
+- [ ] Hard Problems entry count matches FOR_DARE.md collapsed section description (currently 14)
 - [ ] All 13 Sync Map metrics are consistent across their documented locations
 - [ ] FOR_DARE.md Content Strategy Evolution synced through current version (check "(current)" marker)
 

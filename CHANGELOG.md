@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.42] - 2026-04-02
+
+### Fixed
+- **FOR_DARE.md** — Content Strategy Evolution stuck at v0.8.38 "(current)", missing v0.8.39–v0.8.41 entries (6th occurrence of recurring drift — previously fixed at v0.8.0, v0.8.3, v0.8.15, v0.8.31, v0.8.37). Added 4 entries, moved "(current)" marker to v0.8.42
+- **FOR_DARE.md** — Hard Problems entry count stale in Maintenance Checklist: listed as 11, actual count is 14 (missed additions at v0.8.24, v0.8.26, v0.8.30)
+- **CLAUDE.md** — Stale collapsed section reference: "All 33 Projects" → "All 34 Projects" (repo count bumped at v0.8.39, CLAUDE.md never synced)
+
+### Changed
+- **FOR_DARE.md** — Added v0.8.38 and v0.8.42 to Version Milestones quick-reference table
+- **CLAUDE.md** — Version bump v0.8.41 → v0.8.42
+
 ## [0.8.41] - 2026-04-02
 
 ### Added
