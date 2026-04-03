@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.44] - 2026-04-02
+
+### Added
+- **README.md** — New Hard Problems entry: "Spring-physics gauge needle in SVG" — documents MomentumGauge spring-based animation loop (`stiffness × (target - current) - damping × velocity`) with ref-only state to avoid re-render thrash
+- **README.md** — New Hard Problems entry: "Comprehensive `auto_at_intervals` test coverage" — documents unit test suite covering interval scheduling, edge cases (zero-length timelines, single-frame clips), error handling within callbacks, and cancellation cleanup. JSDoc annotations added for full IDE support
+
+### Changed
+- **README.md** — Updated PACT Dashboard descriptions across 4 locations (Currently Building, Featured Projects, All Projects catalog, Ecosystem diagram) to reflect spring-physics MomentumGauge SVG needle
+- **CLAUDE.md** — Version bump v0.8.43 → v0.8.44
+
 ## [0.8.43] - 2026-04-02
 
 ### Fixed

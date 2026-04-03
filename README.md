@@ -28,7 +28,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — **auto-select engine** surfaces the most relevant task by scoring viewport context, interaction signals, and content adjacency in real time. Hybrid throttle-debounce SSE invalidation, abort-signal-guarded fetches, `useIntersectionObserver` hook. OWASP-hardened. 121 components, 695 tests. Next.js 16 + React 19 |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — **auto-select engine** surfaces the most relevant task by scoring viewport context, interaction signals, and content adjacency in real time. Spring-physics **MomentumGauge** SVG needle, hybrid throttle-debounce SSE invalidation, abort-signal-guarded fetches, `useIntersectionObserver` hook. OWASP-hardened. 121 components, 695 tests. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
 | 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — prompt engineering, red teaming, bias detection, hallucination hunting. Each live and playable |
 
@@ -83,7 +83,7 @@ Introduced a stunning 'Featured Music Video' section with an engaging 'Watch Now
 
 ### PACT Dashboard *(private)*
 
-**Agent command terminal** — auto-select engine picks the highest-signal task by scoring scroll position, user interaction, and content adjacency. Hybrid throttle-debounce SSE invalidation, abort-guarded fetches. OWASP-hardened. 121 components, 695 tests.
+**Agent command terminal** — auto-select engine picks the highest-signal task by scoring scroll position, user interaction, and content adjacency. Spring-physics MomentumGauge needle, hybrid throttle-debounce SSE invalidation, abort-guarded fetches. OWASP-hardened. 121 components, 695 tests.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -206,7 +206,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   ├── Career Engine ─── 6+ job APIs, auto-apply pipeline
   └── Memory System ─── somatic markers, narrative identity
         ▼
-  PACT Dashboard ─── Agent command terminal, auto-select engine (viewport-aware scoring → surfaces relevant tasks automatically), useSSE streaming, 121 components, 695 tests, OWASP-hardened
+  PACT Dashboard ─── Agent command terminal, auto-select engine (viewport-aware scoring → surfaces relevant tasks automatically), spring-physics MomentumGauge, useSSE streaming, 121 components, 695 tests, OWASP-hardened
         ▼
   Passion Memory MCP ─── Shared brain across all sessions
 ```
@@ -224,7 +224,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐20+ | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Agent command terminal — auto-select engine scores viewport context + interaction signals to surface the right task. `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Agent command terminal — auto-select engine scores viewport context + interaction signals to surface the right task. Spring-physics MomentumGauge, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
@@ -302,6 +302,10 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 **Silent marker loss from duplicate clip names** — `auto_at_intervals` placed markers by clip name, but duplicate names in the same timeline caused later markers to silently overwrite earlier ones — data loss with no error. Root cause: name-only lookup isn't unique when editors reuse clip names. Fixed by keying on `(clip_name, clip_index)` tuples, making every marker placement positionally unambiguous. Zero regressions, full marker coverage on timelines with 50+ duplicate names.
 
 **Enum aliasing flake in test suite** — `tests/test_models.py` intermittently failed because `MarkerType.INCOMPLETE` and `MarkerType.TODO` resolved to the same underlying value. Python enums alias duplicate values to the first-defined member, so `MarkerType(1)` always returned `TODO` regardless of which was asserted. The test expected `INCOMPLETE` by name but got `TODO` by identity. Fixed by asserting on `.value` instead of enum identity — correct behavior, stable test.
+
+**Spring-physics gauge needle in SVG** — The MomentumGauge needed a needle that felt physical, not tweened. CSS transitions gave a dead, linear sweep — wrong for a metric that represents live agent momentum. Implemented a spring-based animation loop: each frame applies `acceleration = stiffness × (target - current) - damping × velocity`, integrated via `requestAnimationFrame`. The needle overshoots on rapid value changes and settles naturally, giving immediate visual feedback on momentum shifts. All state lives in refs (not React state) to avoid re-render thrash — the SVG `transform` attribute updates directly. Tuned `stiffness: 0.08`, `damping: 0.7` for a responsive-but-not-jittery feel.
+
+**Comprehensive `auto_at_intervals` test coverage** — The `auto_at_intervals` utility had zero tests despite being the backbone of timed marker placement across timelines. Added thorough unit tests covering: correct interval scheduling, edge cases (zero-length timelines, single-frame clips, intervals larger than clip duration), error handling within callbacks (ensures one bad callback doesn't halt the entire marker pass), and cleanup on cancellation. JSDoc annotations now document every parameter, return value, and side effect — enabling IDE autocompletion and inline documentation for the first time.
 
 **Async cleanup in React animation hooks** — Three independent hooks (`useIdleAnimations`, `useTerminal`, `useSSEConnection`) had timer/reconnect leaks that survived unmount. `useIdleAnimations` had an untracked inner `setTimeout` chaining timers on every idle cycle — leaked chains on unmount. `useTerminal`'s `onerror` handler scheduled reconnects after `cleanup()` had already run. `useSSEConnection`'s `onmessage` captured stale closure state, making disconnect recovery dead code. Fixed all three with `mountedRef`/`cleanedUpRef`/`connectedRef` patterns — refs maintain correct state across async boundaries where closures can't.
 

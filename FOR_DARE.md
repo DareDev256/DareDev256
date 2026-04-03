@@ -251,7 +251,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 73. **v0.8.40** — Two new Hard Problems entries: silent marker loss from duplicate clip names (`auto_at_intervals` tuple keying fix), duplicated observer setup across components (`useIntersectionObserver` hook extraction)
 74. **v0.8.41** — New Hard Problems entry: SSE invalidation starvation under rapid agent cycles (hybrid throttle-debounce + abort-signal guards). Updated PACT Dashboard descriptions with SSE hardening and `useIntersectionObserver`
 75. **v0.8.42** — Documentation hygiene: synced Content Strategy through v0.8.41 (6th occurrence of recurring drift), fixed Hard Problems count (11→14), fixed stale "All 33 Projects" reference in CLAUDE.md (should be 34), added v0.8.38 to Version Milestones
-76. **v0.8.43** (current) — Fixed stale file sizes in Repo Setup table (README.md ~30KB→~32KB, CHANGELOG.md ~52KB→~54KB). Fixed Hard Problems count in Patterns Worth Stealing (11→14 — v0.8.42 claimed this fix but missed this location, 7th recurrence). Updated troubleshooting recurrence history
+76. **v0.8.43** — Fixed stale file sizes in Repo Setup table (README.md ~30KB→~32KB, CHANGELOG.md ~52KB→~54KB). Fixed Hard Problems count in Patterns Worth Stealing (11→14 — v0.8.42 claimed this fix but missed this location, 7th recurrence). Updated troubleshooting recurrence history
+77. **v0.8.44** (current) — Added 2 new Hard Problems entries (spring-physics MomentumGauge SVG needle, comprehensive `auto_at_intervals` test coverage + JSDoc). Updated PACT Dashboard descriptions across 4 README locations to reflect MomentumGauge. Synced Hard Problems count 14→16
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -275,6 +276,7 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 | **v0.8.38** | Accessibility docs, SVG class map, file size fixes | ~403 |
 | **v0.8.42** | Content Strategy sync, Hard Problems count fix (11→14) | ~403 |
 | **v0.8.43** | Stale file sizes, Hard Problems count drift (7th recurrence) | ~403 |
+| **v0.8.44** | MomentumGauge + `auto_at_intervals` docs, 2 new Hard Problems | ~407 |
 
 The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 
@@ -337,7 +339,7 @@ The v0.7.0 restructure trimmed 20 sections dramatically, and subsequent refineme
 - **Domain Depth + Technical DNA** — expertise bar chart + architectural pattern table
 - **How the Passion Ecosystem Works** — merged from 3 prior sections (How We Work, How Passion Ships, Glossary)
 - **All 34 Projects** — 4 category tables
-- **Hard Problems I've Solved** — 14 deep-dive war stories
+- **Hard Problems I've Solved** — 16 deep-dive war stories
 - **What I'd Build Differently** — 5 honest retrospectives
 - **Repo Setup & Dependencies** — fork instructions, external services, auto-update API docs
 
@@ -647,7 +649,7 @@ When updating this README, verify:
 - [ ] CHANGELOG.md is updated with any changes (version bump for non-trivial changes)
 - [ ] Showcase section URL resolves (no spaces in repo slug — recurring bug, see Troubleshooting)
 - [ ] CHANGELOG versions are sequential with no gaps
-- [ ] Hard Problems entry count matches FOR_DARE.md collapsed section description (currently 14)
+- [ ] Hard Problems entry count matches FOR_DARE.md collapsed section description (currently 16)
 - [ ] All 13 Sync Map metrics are consistent across their documented locations
 - [ ] FOR_DARE.md Content Strategy Evolution synced through current version (check "(current)" marker)
 
