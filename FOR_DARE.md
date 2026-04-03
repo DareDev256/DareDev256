@@ -250,7 +250,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 72. **v0.8.39** — Added Website repo (jamesdare.com) to Client Websites in All Projects catalog. Bumped public repo count 33→34 across hero badge, Open To table, and All Projects header
 73. **v0.8.40** — Two new Hard Problems entries: silent marker loss from duplicate clip names (`auto_at_intervals` tuple keying fix), duplicated observer setup across components (`useIntersectionObserver` hook extraction)
 74. **v0.8.41** — New Hard Problems entry: SSE invalidation starvation under rapid agent cycles (hybrid throttle-debounce + abort-signal guards). Updated PACT Dashboard descriptions with SSE hardening and `useIntersectionObserver`
-75. **v0.8.42** (current) — Documentation hygiene: synced Content Strategy through v0.8.41 (6th occurrence of recurring drift), fixed Hard Problems count (11→14), fixed stale "All 33 Projects" reference in CLAUDE.md (should be 34), added v0.8.38 to Version Milestones
+75. **v0.8.42** — Documentation hygiene: synced Content Strategy through v0.8.41 (6th occurrence of recurring drift), fixed Hard Problems count (11→14), fixed stale "All 33 Projects" reference in CLAUDE.md (should be 34), added v0.8.38 to Version Milestones
+76. **v0.8.43** (current) — Fixed stale file sizes in Repo Setup table (README.md ~30KB→~32KB, CHANGELOG.md ~52KB→~54KB). Fixed Hard Problems count in Patterns Worth Stealing (11→14 — v0.8.42 claimed this fix but missed this location, 7th recurrence). Updated troubleshooting recurrence history
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -273,6 +274,7 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 | **v0.8.30** | Parallax engine showcase, 2 new Hard Problems (parallax + enum aliasing) | ~396 |
 | **v0.8.38** | Accessibility docs, SVG class map, file size fixes | ~403 |
 | **v0.8.42** | Content Strategy sync, Hard Problems count fix (11→14) | ~403 |
+| **v0.8.43** | Stale file sizes, Hard Problems count drift (7th recurrence) | ~403 |
 
 The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 
@@ -335,7 +337,7 @@ The v0.7.0 restructure trimmed 20 sections dramatically, and subsequent refineme
 - **Domain Depth + Technical DNA** — expertise bar chart + architectural pattern table
 - **How the Passion Ecosystem Works** — merged from 3 prior sections (How We Work, How Passion Ships, Glossary)
 - **All 34 Projects** — 4 category tables
-- **Hard Problems I've Solved** — 11 deep-dive war stories
+- **Hard Problems I've Solved** — 14 deep-dive war stories
 - **What I'd Build Differently** — 5 honest retrospectives
 - **Repo Setup & Dependencies** — fork instructions, external services, auto-update API docs
 
@@ -698,7 +700,7 @@ All rendering depends on external services. If any break, the profile degrades v
 
 ### Hard Problems count drifts from actual entries (RECURRING)
 **Symptom:** FOR_DARE.md "Patterns Worth Stealing" says "N deep-dive war stories" but the collapsed section in README has a different count.
-**Cause:** When new Hard Problems entries are added to README, the count in FOR_DARE.md's layout description is often missed. This has recurred at v0.8.16 (6→7) and v0.8.25 (7→8).
+**Cause:** When new Hard Problems entries are added to README, the count in FOR_DARE.md's layout description is often missed. This has recurred at v0.8.16 (6→7), v0.8.25 (7→8), and v0.8.42 (claimed 11→14 fix but missed Patterns Worth Stealing section — fixed in v0.8.43).
 **Fix:** Count entries in the README's `<details>` block under "Hard Problems I've Solved" — each `**bold opener**` is one entry. Update the count in FOR_DARE.md's collapsed section list (search "deep-dive war stories"). The Maintenance Checklist now tracks this.
 **Prevention:** After adding any Hard Problems entry, search FOR_DARE.md for "deep-dive" and update the count.
 

@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.43] - 2026-04-02
+
+### Fixed
+- **README.md** — Stale file sizes in Repo Setup table: README.md listed as ~30KB (actual ~32KB), CHANGELOG.md listed as ~52KB (actual ~54KB)
+- **FOR_DARE.md** — Hard Problems count in Patterns Worth Stealing still said "11 deep-dive war stories" despite v0.8.42 claiming this fix — actual count is 14 (7th recurrence of count drift). Updated to 14
+- **FOR_DARE.md** — Troubleshooting recurrence history for Hard Problems count drift was stale: only listed v0.8.16 and v0.8.25, missing v0.8.42 incomplete fix
+
+### Changed
+- **FOR_DARE.md** — Added v0.8.43 to Content Strategy Evolution and Version Milestones
+- **CLAUDE.md** — Version bump v0.8.42 → v0.8.43
+
 ## [0.8.42] - 2026-04-02
 
 ### Fixed
