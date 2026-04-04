@@ -252,7 +252,9 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 74. **v0.8.41** — New Hard Problems entry: SSE invalidation starvation under rapid agent cycles (hybrid throttle-debounce + abort-signal guards). Updated PACT Dashboard descriptions with SSE hardening and `useIntersectionObserver`
 75. **v0.8.42** — Documentation hygiene: synced Content Strategy through v0.8.41 (6th occurrence of recurring drift), fixed Hard Problems count (11→14), fixed stale "All 33 Projects" reference in CLAUDE.md (should be 34), added v0.8.38 to Version Milestones
 76. **v0.8.43** — Fixed stale file sizes in Repo Setup table (README.md ~30KB→~32KB, CHANGELOG.md ~52KB→~54KB). Fixed Hard Problems count in Patterns Worth Stealing (11→14 — v0.8.42 claimed this fix but missed this location, 7th recurrence). Updated troubleshooting recurrence history
-77. **v0.8.44** (current) — Added 2 new Hard Problems entries (spring-physics MomentumGauge SVG needle, comprehensive `auto_at_intervals` test coverage + JSDoc). Updated PACT Dashboard descriptions across 4 README locations to reflect MomentumGauge. Synced Hard Problems count 14→16
+77. **v0.8.44** — Added 2 new Hard Problems entries (spring-physics MomentumGauge SVG needle, comprehensive `auto_at_intervals` test coverage + JSDoc). Updated PACT Dashboard descriptions across 4 README locations to reflect MomentumGauge. Synced Hard Problems count 14→16
+78. **v0.8.45** — Enhanced auto-select engine descriptions with UX value and accessibility across 5 README locations
+79. **v0.8.46** (current) — Added scannable index to Hard Problems section (16 entries categorized by domain). Fixed stale file sizes in Repo Setup table (README ~32KB→~34KB, CHANGELOG ~54KB→~57KB, FOR_DARE ~50KB→~51KB). Synced Content Strategy through v0.8.45 (8th recurrence of drift)
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -277,6 +279,7 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 | **v0.8.42** | Content Strategy sync, Hard Problems count fix (11→14) | ~403 |
 | **v0.8.43** | Stale file sizes, Hard Problems count drift (7th recurrence) | ~403 |
 | **v0.8.44** | MomentumGauge + `auto_at_intervals` docs, 2 new Hard Problems | ~407 |
+| **v0.8.46** | Hard Problems index, stale file sizes, Content Strategy sync | ~415 |
 
 The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 

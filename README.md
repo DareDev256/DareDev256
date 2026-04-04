@@ -277,6 +277,15 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 <details>
 <summary><strong>Hard Problems I've Solved</strong></summary>
 
+> **16 war stories** — each one a real bug, not a tutorial exercise.
+>
+> **Parsing & Data:** Zero-denominator FCPXML · Silent marker loss · Enum aliasing flake
+> **Performance:** Per-frame memory allocation · Wheel-driven parallax · Spring-physics gauge needle
+> **Architecture:** Context window management · SSE data layer extraction · Duplicated observer cleanup · Async hook cleanup
+> **Security:** Iframe sandbox · Envelope sanitization at API boundaries
+> **UX Engineering:** Intelligent auto-selection engine · Cinematic hero orchestration · SSE invalidation starvation
+> **Testing:** Comprehensive `auto_at_intervals` coverage
+
 **Zero-denominator crashes in FCPXML time parsing** — Final Cut Pro XML uses rational time notation (`1001/30000s`). Malformed files sent `0/0` framedurations causing crashes. Traced every division operation, added guards at the parsing boundary. 5 fixes, 7 new tests, 618 passing.
 
 **Per-frame memory allocation in animation loop** — `Function.prototype.bind()` inside `requestAnimationFrame` was allocating ~60 objects/second. Cached the reference, extracted timing values to CSS custom properties. Eliminated ~3,600 unnecessary allocations per minute.
@@ -345,11 +354,11 @@ Zero dependencies — no build step, no `package.json`, no CI. GitHub renders `R
 
 | File | Editable By | Size | Purpose |
 |------|:-----------:|-----:|---------|
-| `README.md` | Human + Agent | ~32KB | The profile page — GitHub renders this on every visit |
+| `README.md` | Human + Agent | ~34KB | The profile page — GitHub renders this on every visit |
 | `signature.svg` | Human only | ~16KB | Hero emblem — CSS-only animations, 800×250, `prefers-color-scheme` aware, zero JS |
 | `CLAUDE.md` | Human only | ~3KB | Agent directives — size caps, auto-update zone rules, asset contracts |
-| `FOR_DARE.md` | Human only | ~50KB | Internal docs — design language, metrics sync map, troubleshooting |
-| `CHANGELOG.md` | Human + Agent | ~54KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
+| `FOR_DARE.md` | Human only | ~51KB | Internal docs — design language, metrics sync map, troubleshooting |
+| `CHANGELOG.md` | Human + Agent | ~57KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
 
 ### External Services (render-time, no auth required)
 

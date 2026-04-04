@@ -7,6 +7,19 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.46] - 2026-04-04
+
+### Added
+- **README.md** — Scannable index at top of "Hard Problems I've Solved" details block: 16 entries categorized by domain (Parsing & Data, Performance, Architecture, Security, UX Engineering, Testing) with one-liner labels for recruiter scanning
+
+### Fixed
+- **README.md** — Stale file sizes in Repo Setup table: README.md ~32KB→~34KB, CHANGELOG.md ~54KB→~57KB, FOR_DARE.md ~50KB→~51KB
+- **FOR_DARE.md** — Content Strategy Evolution stuck at v0.8.44 "(current)", missing v0.8.45 entry (8th recurrence of recurring drift). Added v0.8.45 + v0.8.46 entries, moved "(current)" marker
+- **FOR_DARE.md** — Version Milestones table missing v0.8.46 entry
+
+### Changed
+- **CLAUDE.md** — Version bump v0.8.45 → v0.8.46
+
 ## [0.8.45] - 2026-04-03
 
 ### Changed
