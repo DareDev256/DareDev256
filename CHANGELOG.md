@@ -7,6 +7,13 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.45] - 2026-04-03
+
+### Changed
+- **README.md** — Enhanced auto-select engine descriptions across all 5 locations (Currently Building, Featured Projects, All Projects catalog, Ecosystem diagram, Hard Problems) to articulate UX value: "eliminates manual task hunting" with animated focus transitions and guided data exploration
+- **README.md** — Added WCAG accessibility callout (OWASP-hardened → OWASP-hardened, WCAG-accessible) to PACT Dashboard descriptions and `aria-live` region documentation in Hard Problems entry
+- **CLAUDE.md** — Version bump v0.8.44 → v0.8.45
+
 ## [0.8.44] - 2026-04-02
 
 ### Added
