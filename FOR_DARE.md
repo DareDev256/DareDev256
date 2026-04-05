@@ -256,7 +256,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 78. **v0.8.45** — Enhanced auto-select engine descriptions with UX value and accessibility across 5 README locations
 79. **v0.8.46** — Added scannable index to Hard Problems section (16 entries categorized by domain). Fixed stale file sizes in Repo Setup table (README ~32KB→~34KB, CHANGELOG ~54KB→~57KB, FOR_DARE ~50KB→~51KB). Synced Content Strategy through v0.8.45 (8th recurrence of drift)
 80. **v0.8.47** — Fixed recurring broken showcase URL (4th occurrence: v0.6.17, v0.8.10, v0.8.32, v0.8.47) — literal spaces in GitHub repo slug `TdotsSolutionsz Music Video Portfolio` → `tdotssolutionsz-portfolio`. Updated troubleshooting recurrence history
-81. **v0.8.48** (current) — Fixed stale file sizes in Repo Setup table (README ~34KB→~35KB, CHANGELOG ~57KB→~59KB, FOR_DARE ~51KB→~54KB). Added file-size-drift troubleshooting entry (4th recurrence: v0.8.38, v0.8.43, v0.8.46, v0.8.48). Added file size check to Maintenance Checklist. Added v0.8.47 to Version Milestones
+81. **v0.8.48** — Fixed stale file sizes in Repo Setup table (README ~34KB→~35KB, CHANGELOG ~57KB→~59KB, FOR_DARE ~51KB→~54KB). Added file-size-drift troubleshooting entry (4th recurrence: v0.8.38, v0.8.43, v0.8.46, v0.8.48). Added file size check to Maintenance Checklist. Added v0.8.47 to Version Milestones
+82. **v0.8.49** (current) — Fixed recurring broken showcase URL (5th occurrence: v0.6.17, v0.8.10, v0.8.32, v0.8.47, v0.8.49). Added Recurring Bug Summary table to Troubleshooting — surfaces the 4 most frequent recurring bugs with occurrence counts, versions, root causes, and prevention steps. Updated troubleshooting recurrence histories
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -284,6 +285,7 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 | **v0.8.46** | Hard Problems index, stale file sizes, Content Strategy sync | ~415 |
 | **v0.8.47** | Fixed recurring broken showcase URL (4th occurrence) | ~416 |
 | **v0.8.48** | Stale file sizes, file-size-drift troubleshooting, Maintenance Checklist hardened | ~416 |
+| **v0.8.49** | Fixed showcase URL (5th recurrence), Recurring Bug Summary table | ~416 |
 
 The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 
@@ -676,6 +678,19 @@ All rendering depends on external services. If any break, the profile degrades v
 
 ## Troubleshooting
 
+### Recurring Bug Summary
+
+These bugs have each recurred 3+ times. They share a root cause: auto-generated content from Passion Agent bypasses validation that humans would catch. Fixing the agent's output functions is the permanent solution; until then, the Pre-Push Quick Check catches all of them.
+
+| Bug | Occurrences | Versions | Root Cause | Prevention |
+|-----|:-----------:|----------|------------|------------|
+| **Showcase URL spaces** | 5 | v0.6.17, v0.8.10, v0.8.32, v0.8.47, v0.8.49 | Agent writes repo name from task description without slugifying | Pre-Push Quick Check #4; `grep` for spaces in GitHub URLs |
+| **File size drift** | 4 | v0.8.38, v0.8.43, v0.8.46, v0.8.48 | Every edit grows files but Repo Setup table sizes are hardcoded | Pre-Push Quick Check; `wc -c` after version bump |
+| **Content Strategy drift** | 8+ | v0.8.0, v0.8.3, v0.8.15, v0.8.31, v0.8.37, v0.8.42, v0.8.46+ | Agent syncs some FOR_DARE.md sections but misses Content Strategy | Maintenance Checklist; check "(current)" marker |
+| **Hard Problems count drift** | 7+ | v0.8.16, v0.8.25, v0.8.42, v0.8.43, v0.8.44+ | New entries added to README but count in FOR_DARE.md not updated | Search "deep-dive" in FOR_DARE.md after adding entries |
+
+> **Pattern:** All four bugs are write-without-validate errors. The agent updates content but doesn't cross-check dependent references. The Pre-Push Quick Check was designed to catch these — enforce it.
+
 ### Broken badge images on profile
 **Symptom:** One or more badges render as broken image icons or alt text.
 **Cause:** External badge service is down or rate-limited.
@@ -694,9 +709,9 @@ All rendering depends on external services. If any break, the profile degrades v
 ### Showcase URL has broken link (RECURRING)
 **Symptom:** Showcase section links to a GitHub URL with `%20` or literal spaces — returns 404.
 **Cause:** Passion Agent's `passion-profile.mjs` generates the showcase repo name from the task description, which may contain spaces. GitHub URLs require hyphenated slugs, not spaces.
-**History:** First hit in v0.6.17, recurred in v0.8.10, v0.8.32, v0.8.47. Same root cause every time — the agent's profile writer doesn't slugify repo names.
+**History:** First hit in v0.6.17, recurred in v0.8.10, v0.8.32, v0.8.47, v0.8.49. Same root cause every time — the agent's profile writer doesn't slugify repo names.
 **Fix:** Verify the URL resolves before committing. The repo slug must be lowercase-hyphenated (e.g., `tdotssolutionsz-portfolio`, not `TdotsSolutionsz Music Video Portfolio`). Long-term fix: add URL validation to `passion-profile.mjs` before writing the showcase zone.
-**Prevention pattern:** Before committing any showcase update, run: `grep -oP 'github\.com/DareDev256/\K[^)"\s]+' README.md | while read slug; do [[ "$slug" == *" "* ]] && echo "BROKEN: $slug"; done` — catches spaces before they ship. This bug has recurred 4 times (v0.6.17, v0.8.10, v0.8.32, v0.8.47).
+**Prevention pattern:** Before committing any showcase update, run: `grep -oP 'github\.com/DareDev256/\K[^)"\s]+' README.md | while read slug; do [[ "$slug" == *" "* ]] && echo "BROKEN: $slug"; done` — catches spaces before they ship. This bug has recurred 5 times (v0.6.17, v0.8.10, v0.8.32, v0.8.47, v0.8.49).
 
 ### Repo/commit counts are wrong
 **Symptom:** Badge says "33 repos" but you have 35.

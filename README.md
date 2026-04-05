@@ -42,7 +42,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 <!-- SHOWCASE_SECTION_START -->
 > *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Apr 4, 2026*
 
-**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/TdotsSolutionsz Music Video Portfolio)**
+**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio)**
 
 The portfolio now boasts a dynamic, interactive hero section featuring a prominent music video. Visitors are immediately drawn in with smooth animations and a clear call to action, offering a compelling preview of the showcased work.
 
