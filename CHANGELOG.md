@@ -7,6 +7,20 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.48] - 2026-04-04
+
+### Fixed
+- **README.md** — Stale file sizes in Repo Setup table: README.md ~34KB→~35KB, CHANGELOG.md ~57KB→~59KB, FOR_DARE.md ~51KB→~54KB (4th recurrence of file-size drift: v0.8.38, v0.8.43, v0.8.46, v0.8.48)
+
+### Added
+- **FOR_DARE.md** — New troubleshooting entry: "File sizes in Repo Setup drift from actual (RECURRING)" — documents the recurring pattern, fix procedure, and prevention steps
+- **FOR_DARE.md** — Added file size consistency check to Maintenance Checklist
+- **FOR_DARE.md** — Added v0.8.47 and v0.8.48 to Version Milestones table
+- **FOR_DARE.md** — Added v0.8.48 to Content Strategy Evolution with "(current)" marker
+
+### Changed
+- **CLAUDE.md** — Version bump v0.8.47 → v0.8.48
+
 ## [0.8.47] - 2026-04-04
 
 ### Fixed

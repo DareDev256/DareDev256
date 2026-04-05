@@ -255,7 +255,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 77. **v0.8.44** — Added 2 new Hard Problems entries (spring-physics MomentumGauge SVG needle, comprehensive `auto_at_intervals` test coverage + JSDoc). Updated PACT Dashboard descriptions across 4 README locations to reflect MomentumGauge. Synced Hard Problems count 14→16
 78. **v0.8.45** — Enhanced auto-select engine descriptions with UX value and accessibility across 5 README locations
 79. **v0.8.46** — Added scannable index to Hard Problems section (16 entries categorized by domain). Fixed stale file sizes in Repo Setup table (README ~32KB→~34KB, CHANGELOG ~54KB→~57KB, FOR_DARE ~50KB→~51KB). Synced Content Strategy through v0.8.45 (8th recurrence of drift)
-80. **v0.8.47** (current) — Fixed recurring broken showcase URL (4th occurrence: v0.6.17, v0.8.10, v0.8.32, v0.8.47) — literal spaces in GitHub repo slug `TdotsSolutionsz Music Video Portfolio` → `tdotssolutionsz-portfolio`. Updated troubleshooting recurrence history
+80. **v0.8.47** — Fixed recurring broken showcase URL (4th occurrence: v0.6.17, v0.8.10, v0.8.32, v0.8.47) — literal spaces in GitHub repo slug `TdotsSolutionsz Music Video Portfolio` → `tdotssolutionsz-portfolio`. Updated troubleshooting recurrence history
+81. **v0.8.48** (current) — Fixed stale file sizes in Repo Setup table (README ~34KB→~35KB, CHANGELOG ~57KB→~59KB, FOR_DARE ~51KB→~54KB). Added file-size-drift troubleshooting entry (4th recurrence: v0.8.38, v0.8.43, v0.8.46, v0.8.48). Added file size check to Maintenance Checklist. Added v0.8.47 to Version Milestones
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -281,6 +282,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 | **v0.8.43** | Stale file sizes, Hard Problems count drift (7th recurrence) | ~403 |
 | **v0.8.44** | MomentumGauge + `auto_at_intervals` docs, 2 new Hard Problems | ~407 |
 | **v0.8.46** | Hard Problems index, stale file sizes, Content Strategy sync | ~415 |
+| **v0.8.47** | Fixed recurring broken showcase URL (4th occurrence) | ~416 |
+| **v0.8.48** | Stale file sizes, file-size-drift troubleshooting, Maintenance Checklist hardened | ~416 |
 
 The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 
@@ -656,6 +659,7 @@ When updating this README, verify:
 - [ ] Hard Problems entry count matches FOR_DARE.md collapsed section description (currently 16)
 - [ ] All 13 Sync Map metrics are consistent across their documented locations
 - [ ] FOR_DARE.md Content Strategy Evolution synced through current version (check "(current)" marker)
+- [ ] Repo Setup file sizes match actual (`wc -c` rounded to nearest KB) — recurring drift, see Troubleshooting
 
 ## External Dependencies (Badge Services)
 
@@ -709,6 +713,12 @@ All rendering depends on external services. If any break, the profile degrades v
 **Cause:** When new Hard Problems entries are added to README, the count in FOR_DARE.md's layout description is often missed. This has recurred at v0.8.16 (6→7), v0.8.25 (7→8), and v0.8.42 (claimed 11→14 fix but missed Patterns Worth Stealing section — fixed in v0.8.43).
 **Fix:** Count entries in the README's `<details>` block under "Hard Problems I've Solved" — each `**bold opener**` is one entry. Update the count in FOR_DARE.md's collapsed section list (search "deep-dive war stories"). The Maintenance Checklist now tracks this.
 **Prevention:** After adding any Hard Problems entry, search FOR_DARE.md for "deep-dive" and update the count.
+
+### File sizes in Repo Setup drift from actual (RECURRING)
+**Symptom:** README's Repo Setup table lists file sizes (e.g., `~34KB`) that no longer match `wc -c` output.
+**Cause:** Every CHANGELOG entry, README tweak, or FOR_DARE.md update grows the files by 1–3KB, but the table values are hardcoded. Fixed at v0.8.38, v0.8.43, v0.8.46, and v0.8.48 — same root cause each time.
+**Fix:** Run `wc -c README.md CHANGELOG.md FOR_DARE.md CLAUDE.md signature.svg`, round each to the nearest KB, and update the Repo Setup table in README.md. The Maintenance Checklist now tracks this.
+**Prevention:** After any version bump, compare listed sizes against actual. A 2KB+ drift is worth fixing.
 
 ### Profile page looks different from raw README
 **Symptom:** Layout or formatting differs between raw Markdown preview and the rendered profile.
