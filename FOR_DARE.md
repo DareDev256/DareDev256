@@ -254,7 +254,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 76. **v0.8.43** — Fixed stale file sizes in Repo Setup table (README.md ~30KB→~32KB, CHANGELOG.md ~52KB→~54KB). Fixed Hard Problems count in Patterns Worth Stealing (11→14 — v0.8.42 claimed this fix but missed this location, 7th recurrence). Updated troubleshooting recurrence history
 77. **v0.8.44** — Added 2 new Hard Problems entries (spring-physics MomentumGauge SVG needle, comprehensive `auto_at_intervals` test coverage + JSDoc). Updated PACT Dashboard descriptions across 4 README locations to reflect MomentumGauge. Synced Hard Problems count 14→16
 78. **v0.8.45** — Enhanced auto-select engine descriptions with UX value and accessibility across 5 README locations
-79. **v0.8.46** (current) — Added scannable index to Hard Problems section (16 entries categorized by domain). Fixed stale file sizes in Repo Setup table (README ~32KB→~34KB, CHANGELOG ~54KB→~57KB, FOR_DARE ~50KB→~51KB). Synced Content Strategy through v0.8.45 (8th recurrence of drift)
+79. **v0.8.46** — Added scannable index to Hard Problems section (16 entries categorized by domain). Fixed stale file sizes in Repo Setup table (README ~32KB→~34KB, CHANGELOG ~54KB→~57KB, FOR_DARE ~50KB→~51KB). Synced Content Strategy through v0.8.45 (8th recurrence of drift)
+80. **v0.8.47** (current) — Fixed recurring broken showcase URL (4th occurrence: v0.6.17, v0.8.10, v0.8.32, v0.8.47) — literal spaces in GitHub repo slug `TdotsSolutionsz Music Video Portfolio` → `tdotssolutionsz-portfolio`. Updated troubleshooting recurrence history
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -689,9 +690,9 @@ All rendering depends on external services. If any break, the profile degrades v
 ### Showcase URL has broken link (RECURRING)
 **Symptom:** Showcase section links to a GitHub URL with `%20` or literal spaces — returns 404.
 **Cause:** Passion Agent's `passion-profile.mjs` generates the showcase repo name from the task description, which may contain spaces. GitHub URLs require hyphenated slugs, not spaces.
-**History:** First hit in v0.6.17, recurred in v0.8.10. Same root cause both times — the agent's profile writer doesn't slugify repo names.
+**History:** First hit in v0.6.17, recurred in v0.8.10, v0.8.32, v0.8.47. Same root cause every time — the agent's profile writer doesn't slugify repo names.
 **Fix:** Verify the URL resolves before committing. The repo slug must be lowercase-hyphenated (e.g., `tdotssolutionsz-portfolio`, not `TdotsSolutionsz Music Video Portfolio`). Long-term fix: add URL validation to `passion-profile.mjs` before writing the showcase zone.
-**Prevention pattern:** Before committing any showcase update, run: `grep -oP 'github\.com/DareDev256/\K[^)"\s]+' README.md | while read slug; do [[ "$slug" == *" "* ]] && echo "BROKEN: $slug"; done` — catches spaces before they ship. This bug has recurred 3 times (v0.6.17, v0.8.10, v0.8.32).
+**Prevention pattern:** Before committing any showcase update, run: `grep -oP 'github\.com/DareDev256/\K[^)"\s]+' README.md | while read slug; do [[ "$slug" == *" "* ]] && echo "BROKEN: $slug"; done` — catches spaces before they ship. This bug has recurred 4 times (v0.6.17, v0.8.10, v0.8.32, v0.8.47).
 
 ### Repo/commit counts are wrong
 **Symptom:** Badge says "33 repos" but you have 35.

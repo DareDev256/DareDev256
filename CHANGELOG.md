@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.47] - 2026-04-04
+
+### Fixed
+- **README.md** — Recurring broken showcase URL (4th occurrence: v0.6.17, v0.8.10, v0.8.32, v0.8.47): literal spaces in GitHub repo slug `TdotsSolutionsz Music Video Portfolio` → corrected to `tdotssolutionsz-portfolio`
+- **FOR_DARE.md** — Updated troubleshooting recurrence history for showcase URL bug (3→4 occurrences), synced Content Strategy through v0.8.47
+
+### Changed
+- **CLAUDE.md** — Version bump v0.8.46 → v0.8.47
+
 ## [0.8.46] - 2026-04-04
 
 ### Added
