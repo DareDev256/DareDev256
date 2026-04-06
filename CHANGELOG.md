@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.50] - 2026-04-05
+
+### Changed
+- **README.md** — Sharpened PACT Dashboard descriptions across 4 locations (Currently Building, Featured Projects, ecosystem diagram, All Projects) — each now has context-appropriate depth instead of repeating the full auto-select implementation details everywhere. Improved scannability for recruiters
+- **README.md** — Tightened Hard Problems entries: auto-selection engine and envelope sanitization entries condensed without losing technical substance
+
+### Fixed
+- **README.md** — Stale file size in Repo Setup table: FOR_DARE.md listed as ~54KB (actual ~55KB)
+- **CLAUDE.md** — Version bump v0.8.49 → v0.8.50
+
 ## [0.8.49] - 2026-04-05
 
 ### Fixed

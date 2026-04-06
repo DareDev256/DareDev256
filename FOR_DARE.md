@@ -257,7 +257,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 79. **v0.8.46** — Added scannable index to Hard Problems section (16 entries categorized by domain). Fixed stale file sizes in Repo Setup table (README ~32KB→~34KB, CHANGELOG ~54KB→~57KB, FOR_DARE ~50KB→~51KB). Synced Content Strategy through v0.8.45 (8th recurrence of drift)
 80. **v0.8.47** — Fixed recurring broken showcase URL (4th occurrence: v0.6.17, v0.8.10, v0.8.32, v0.8.47) — literal spaces in GitHub repo slug `TdotsSolutionsz Music Video Portfolio` → `tdotssolutionsz-portfolio`. Updated troubleshooting recurrence history
 81. **v0.8.48** — Fixed stale file sizes in Repo Setup table (README ~34KB→~35KB, CHANGELOG ~57KB→~59KB, FOR_DARE ~51KB→~54KB). Added file-size-drift troubleshooting entry (4th recurrence: v0.8.38, v0.8.43, v0.8.46, v0.8.48). Added file size check to Maintenance Checklist. Added v0.8.47 to Version Milestones
-82. **v0.8.49** (current) — Fixed recurring broken showcase URL (5th occurrence: v0.6.17, v0.8.10, v0.8.32, v0.8.47, v0.8.49). Added Recurring Bug Summary table to Troubleshooting — surfaces the 4 most frequent recurring bugs with occurrence counts, versions, root causes, and prevention steps. Updated troubleshooting recurrence histories
+82. **v0.8.49** — Fixed recurring broken showcase URL (5th occurrence: v0.6.17, v0.8.10, v0.8.32, v0.8.47, v0.8.49). Added Recurring Bug Summary table to Troubleshooting — surfaces the 4 most frequent recurring bugs with occurrence counts, versions, root causes, and prevention steps. Updated troubleshooting recurrence histories
+83. **v0.8.50** (current) — Sharpened PACT Dashboard descriptions across 4 README locations for context-appropriate depth (progressive disclosure instead of copy-pasted implementation details). Tightened Hard Problems entries (auto-selection engine, envelope sanitization). Fixed stale FOR_DARE.md file size in Repo Setup (~54KB→~55KB)
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -286,6 +287,7 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 | **v0.8.47** | Fixed recurring broken showcase URL (4th occurrence) | ~416 |
 | **v0.8.48** | Stale file sizes, file-size-drift troubleshooting, Maintenance Checklist hardened | ~416 |
 | **v0.8.49** | Fixed showcase URL (5th recurrence), Recurring Bug Summary table | ~416 |
+| **v0.8.50** | Progressive disclosure — PACT descriptions sharpened per context | ~416 |
 
 The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 

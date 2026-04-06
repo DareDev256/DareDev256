@@ -28,7 +28,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — **auto-select engine** eliminates manual task hunting: scores viewport position, interaction signals (clicks, hovers, dwell), and content adjacency to surface the highest-relevance item automatically with animated focus transitions. Spring-physics **MomentumGauge** SVG needle, hybrid throttle-debounce SSE invalidation, abort-signal-guarded fetches, `useIntersectionObserver` hook. OWASP-hardened, WCAG-accessible. 121 components, 695 tests. Next.js 16 + React 19 |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — **auto-select engine** surfaces the highest-relevance task via viewport scoring and interaction signals. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened, WCAG-accessible. 121 components, 695 tests. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
 | 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — prompt engineering, red teaming, bias detection, hallucination hunting. Each live and playable |
 
@@ -83,7 +83,7 @@ The portfolio now boasts a dynamic, interactive hero section featuring a promine
 
 ### PACT Dashboard *(private)*
 
-**Agent command terminal** — auto-select engine eliminates manual navigation: scores viewport position, interaction signals, and content adjacency to auto-focus the most relevant task with animated transitions. Spring-physics MomentumGauge needle, hybrid throttle-debounce SSE invalidation, abort-guarded fetches. OWASP-hardened, WCAG-accessible. 121 components, 695 tests.
+**Agent command terminal** — auto-select engine scores viewport context and interaction signals to surface the most relevant task. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened. 121 components, 695 tests.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -206,7 +206,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   ├── Career Engine ─── 6+ job APIs, auto-apply pipeline
   └── Memory System ─── somatic markers, narrative identity
         ▼
-  PACT Dashboard ─── Agent command terminal, auto-select engine (viewport-aware scoring + interaction signals → auto-focuses relevant tasks with animated transitions), spring-physics MomentumGauge, useSSE streaming, 121 components, 695 tests, OWASP-hardened, WCAG-accessible
+  PACT Dashboard ─── Agent command terminal, auto-select engine, spring-physics MomentumGauge, useSSE streaming, 121 components, 695 tests
         ▼
   Passion Memory MCP ─── Shared brain across all sessions
 ```
@@ -224,7 +224,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐20+ | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Agent command terminal — auto-select engine eliminates manual task hunting by scoring viewport context, interaction signals, and content adjacency to auto-focus the right task with animated transitions. Spring-physics MomentumGauge, `useSSE` streaming, OWASP-hardened, WCAG-accessible. 121 components, 695 tests | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Agent command terminal — auto-select engine, spring-physics MomentumGauge, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
@@ -294,9 +294,9 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 **Iframe sandbox security** — PACT Dashboard embeds external services. Every iframe gets `sandbox="allow-scripts"` only — no `allow-same-origin`, no `allow-top-navigation`. HTTPS-only allowlisted origins per OWASP A05:2021.
 
-**Envelope sanitization at API boundaries** — YouTube API responses hit per-field sanitizers directly — any malformed envelope (missing `items`, oversized payloads, wrong types) bypassed validation entirely. Built a structural pre-validator: schema shape check before field-level processing. Extended the same principle to the ContactForm: message field now runs through XSS sanitization (strips `<script>`, event handlers, encoded payloads) before touching any handler — mitigates CWE-79 injection via user-submitted content. Catches CWE-20 (improper input validation), CWE-400 (uncontrolled resource consumption), CWE-754 (improper unusual condition checks). 23 new tests, full suite green.
+**Envelope sanitization at API boundaries** — YouTube API responses hit per-field sanitizers directly — malformed envelopes (missing `items`, oversized payloads, wrong types) bypassed validation. Built a structural pre-validator: schema shape check before field-level processing. Applied the same pattern to ContactForm with XSS sanitization (strips `<script>`, event handlers, encoded payloads). Catches CWE-20, CWE-79, CWE-400, CWE-754. 23 new tests, full suite green.
 
-**Intelligent auto-selection engine** — Dashboard had competing embeds loading simultaneously — bandwidth waste, zero contextual relevance, and users manually hunting for the right task. Built a viewport-aware scoring engine: combines scroll position, user interaction signals (clicks, hovers, dwell time), and content adjacency to rank and surface the single most relevant item in real time with animated focus transitions. Refactored the rules layer (`computeEntryTiming`, `freezeActivityMap`, `maxSeverity`) so scoring is deterministic and testable. Added `aria-live` regions and focus-management so screen readers announce the active selection. Integration tests verify data-source interaction and UI rendering under edge cases (empty data, rapid state updates, concurrent score recalculations). Result: guided data exploration — the dashboard auto-focuses on what matters without user intervention. 323 auto-select + 381 rotation + integration tests green.
+**Intelligent auto-selection engine** — Dashboard had competing embeds loading simultaneously — bandwidth waste and users manually hunting for the right task. Built a viewport-aware scoring engine: combines scroll position, interaction signals (clicks, hovers, dwell time), and content adjacency to surface the most relevant item with animated focus transitions. Rules layer (`computeEntryTiming`, `freezeActivityMap`, `maxSeverity`) is deterministic and testable. `aria-live` regions announce the active selection for screen readers. 323 auto-select + 381 rotation + integration tests green.
 
 **Cinematic hero orchestration** — The Royalty Protocol hero needed dynamic background video, scroll-triggered element reveals, and layered typography — all without fighting IntelDossier's real-time threat data. Solved with a staggered reveal choreography: video loads lazily with poster fallback, scroll-driven `IntersectionObserver` triggers per-section fade/translate sequences, and IntelDossier mounts only after the hero viewport exit. Zero layout shift, no competing paint cycles.
 
@@ -357,7 +357,7 @@ Zero dependencies — no build step, no `package.json`, no CI. GitHub renders `R
 | `README.md` | Human + Agent | ~35KB | The profile page — GitHub renders this on every visit |
 | `signature.svg` | Human only | ~16KB | Hero emblem — CSS-only animations, 800×250, `prefers-color-scheme` aware, zero JS |
 | `CLAUDE.md` | Human only | ~3KB | Agent directives — size caps, auto-update zone rules, asset contracts |
-| `FOR_DARE.md` | Human only | ~54KB | Internal docs — design language, metrics sync map, troubleshooting |
+| `FOR_DARE.md` | Human only | ~55KB | Internal docs — design language, metrics sync map, troubleshooting |
 | `CHANGELOG.md` | Human + Agent | ~59KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
 
 ### External Services (render-time, no auth required)

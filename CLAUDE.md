@@ -29,7 +29,7 @@ Everything outside these markers requires human review.
 
 - CHANGELOG.md follows Keep a Changelog format
 - Semantic versioning: major = full redesign, minor = new sections, patch = updates
-- Current: v0.8.49
+- Current: v0.8.50
 
 ## Assets
 
