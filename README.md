@@ -340,15 +340,17 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 ### How It Works
 
-Zero dependencies — no build step, no `package.json`, no CI. GitHub renders `README.md` as the profile page at `github.com/DareDev256`. Badge services inject dynamic images at render time. [Passion Agent](https://passion.jamesdare.com) writes to two marker-delimited zones (daily status + showcase) on automated 30-minute brain cycles — everything outside markers requires human review.
+Zero dependencies — no build step, no `package.json`, no CI pipeline. GitHub renders `README.md` as the profile page at `github.com/DareDev256`. Dynamic badges are fetched from third-party APIs at render time (Shields.io, komarev, GitHub stats cards). [Passion Agent](https://passion.jamesdare.com) writes to two marker-delimited zones (daily status + showcase) on automated 30-minute brain cycles — everything outside markers requires human review.
 
 ### Replicate This Profile
 
-1. Create a repo matching your GitHub username ([docs](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme))
-2. Find-replace `DareDev256` with your username across all badge URLs and GitHub links (~25 instances)
+**Prerequisites:** A GitHub account and a GFM-compatible Markdown previewer (`grip`, VS Code, or push-to-branch).
+
+1. Create a repo matching your GitHub username exactly ([GitHub docs](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)) — the repo name **must** be identical to your username (case-sensitive)
+2. Find-replace `DareDev256` with your username across all badge URLs and GitHub links (~25 instances in `README.md`)
 3. Edit `signature.svg` — swap hex colors (`#6C63FF` primary, `#A78BFA` secondary, `#818CF8` tertiary), rewrite the four `<text class="sub">` subtitles, update `<text class="tag">` stats. Emblem center is at `(130, 115)` — all coordinates reference this origin. Update the `prefers-color-scheme: light` media query fills if your theme needs different light-mode colors
 4. Push to `main` — GitHub renders within seconds
-5. Verify at `github.com/<your-username>` — preview locally with `grip README.md` or any GFM-compatible renderer
+5. Verify at `github.com/<your-username>` — preview locally with `grip README.md` or push to a feature branch and check `github.com/<your-username>/<your-username>/blob/<branch>/README.md`
 
 **Five files, no extras:**
 
@@ -357,8 +359,8 @@ Zero dependencies — no build step, no `package.json`, no CI. GitHub renders `R
 | `README.md` | Human + Agent | ~34KB | The profile page — GitHub renders this on every visit |
 | `signature.svg` | Human only | ~16KB | Hero emblem — CSS-only animations, 800×250, `prefers-color-scheme` aware, zero JS |
 | `CLAUDE.md` | Human only | ~3KB | Agent directives — size caps, auto-update zone rules, asset contracts |
-| `FOR_DARE.md` | Human only | ~57KB | Internal docs — design language, metrics sync map, troubleshooting |
-| `CHANGELOG.md` | Human + Agent | ~60KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
+| `FOR_DARE.md` | Human only | ~55KB | Internal docs — design language, metrics sync map, troubleshooting |
+| `CHANGELOG.md` | Human + Agent | ~59KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
 
 ### External Services (render-time, no auth required)
 
@@ -377,15 +379,19 @@ Two HTML comment-delimited zones are machine-writable by [Passion Agent](https:/
 
 | Zone | Markers | Frequency | Format |
 |------|---------|-----------|--------|
-| Daily Status | `DAILY_STATUS_START` / `END` | ~Daily | `Today: **N tasks** across **N repos** · **+N/-N lines** · N% success rate` |
-| Showcase | `SHOWCASE_SECTION_START` / `END` | After notable builds | `Tonight's build: [repo](url)` + summary + 3 highlights + diff stats |
+| Daily Status | `<!-- DAILY_STATUS_START -->` / `<!-- DAILY_STATUS_END -->` | ~Daily | `Today: **N tasks** across **N repos** · **+N/-N lines** · N% success rate` |
+| Showcase | `<!-- SHOWCASE_SECTION_START -->` / `<!-- SHOWCASE_SECTION_END -->` | After notable builds | `Tonight's build: [repo](url)` + summary + highlights + diff stats |
 
-> **Integration:** Poll the raw endpoint and parse between markers for machine-readable status. No auth required. Propagates within seconds of push.
+> **Integration:** Poll the raw endpoint and parse between markers for machine-readable status. No auth required. Propagates within seconds of push. Writes are idempotent — content between markers is fully replaced each cycle.
 >
 > ```bash
 > # Extract daily status
 > curl -s https://raw.githubusercontent.com/DareDev256/DareDev256/main/README.md \
 >   | sed -n '/DAILY_STATUS_START/,/DAILY_STATUS_END/p'
+>
+> # Extract latest showcase
+> curl -s https://raw.githubusercontent.com/DareDev256/DareDev256/main/README.md \
+>   | sed -n '/SHOWCASE_SECTION_START/,/SHOWCASE_SECTION_END/p'
 > ```
 
 ### Security Model
@@ -397,7 +403,7 @@ Two HTML comment-delimited zones are machine-writable by [Passion Agent](https:/
 | External badges | `<img>` tags only — no `<iframe>`, `<object>`, or embedded scripts. GitHub's camo proxy strips cookies and tracking headers | [CWE-829](https://cwe.mitre.org/data/definitions/829.html) (untrusted inclusion) |
 | Accessibility | `signature.svg` carries `role="img"`, `aria-label`, `<title>`, and `<desc>` — screen readers announce the emblem as a single labeled image. All badge `<img>` tags include `alt` text | [WCAG 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html) (non-text content) |
 
-Full design language, metrics sync map, and update playbooks in [`FOR_DARE.md`](./FOR_DARE.md).
+Full design language, metrics sync map, and update playbooks in [`FOR_DARE.md`](./FOR_DARE.md). Color palette contract: `#6C63FF` (primary), `#A78BFA` (secondary), `#818CF8` (tertiary) — shared between `signature.svg` and all Shields.io badges.
 
 </details>
 

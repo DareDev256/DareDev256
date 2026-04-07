@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.51] - 2026-04-06
+
+### Changed
+- **README.md** — Improved setup instructions: added prerequisites note, clarified case-sensitive repo naming requirement, expanded local preview options (branch preview URL)
+- **README.md** — Auto-Update API docs: marker format now shows full HTML comment syntax (`<!-- DAILY_STATUS_START -->`) instead of shorthand, added showcase zone extraction example alongside existing daily status example, moved idempotency note into the integration callout
+- **README.md** — Added color palette contract reference (`#6C63FF`/`#A78BFA`/`#818CF8`) to Security Model section footer for cross-file discoverability
+
+### Fixed
+- **README.md** — Stale file sizes in Repo Setup table: FOR_DARE.md ~57KB→~55KB, CHANGELOG.md ~60KB→~59KB (5th recurrence of file-size drift)
+- **CLAUDE.md** — Version bump v0.8.50 → v0.8.51
+
 ## [0.8.50] - 2026-04-05
 
 ### Changed
