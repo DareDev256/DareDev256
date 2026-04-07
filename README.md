@@ -360,16 +360,18 @@ Zero dependencies — no build step, no `package.json`, no CI pipeline. GitHub r
 | `signature.svg` | Human only | ~16KB | Hero emblem — CSS-only animations, 800×250, `prefers-color-scheme` aware, zero JS |
 | `CLAUDE.md` | Human only | ~3KB | Agent directives — size caps, auto-update zone rules, asset contracts |
 | `FOR_DARE.md` | Human only | ~55KB | Internal docs — design language, metrics sync map, troubleshooting |
-| `CHANGELOG.md` | Human + Agent | ~59KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
+| `CHANGELOG.md` | Human + Agent | ~60KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
 
 ### External Services (render-time, no auth required)
 
-| Service | Purpose | Impact if Down | Health |
-|---------|---------|:--------------:|--------|
-| [Shields.io](https://shields.io) | All badges (~25 instances) | **High** — most visual elements break | [status](https://status.shields.io) |
-| [Profile Summary Cards](https://github-profile-summary-cards.vercel.app) | Stats & commit activity | Medium — stats section blank | [test](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DareDev256&theme=tokyonight) |
-| [Profile Trophy](https://github-profile-trophy.vercel.app) | Achievement shelf | Low — cosmetic only | [test](https://github-profile-trophy.vercel.app/?username=DareDev256&theme=tokyonight&no-frame=true&column=1) |
-| [komarev.com](https://komarev.com/ghpvc/) | View counter | Low — single badge | [test](https://komarev.com/ghpvc/?username=DareDev256) |
+| Service | Purpose | Cache TTL | Impact if Down | Health |
+|---------|---------|:---------:|:--------------:|--------|
+| [Shields.io](https://shields.io) | All badges (~25 instances) | ~5 min | **High** — most visual elements break | [status](https://status.shields.io) |
+| [Profile Summary Cards](https://github-profile-summary-cards.vercel.app) | Stats & commit activity | ~6 hrs | Medium — stats section blank | [test](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DareDev256&theme=tokyonight) |
+| [Profile Trophy](https://github-profile-trophy.vercel.app) | Achievement shelf | ~6 hrs | Low — cosmetic only | [test](https://github-profile-trophy.vercel.app/?username=DareDev256&theme=tokyonight&no-frame=true&column=1) |
+| [komarev.com](https://komarev.com/ghpvc/) | View counter | None | Low — single badge | [test](https://komarev.com/ghpvc/?username=DareDev256) |
+
+> **Stale badges?** GitHub's [camo proxy](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-anonymized-urls) adds its own ~2 hour image cache on top of service TTLs. Hard-refresh or append `&cacheBust=1` to badge URLs to force re-fetch during development.
 
 ### Auto-Update API
 
@@ -402,6 +404,20 @@ Two HTML comment-delimited zones are machine-writable by [Passion Agent](https:/
 | Auto-update zones | Marker-delimited write boundaries — agent can only overwrite content between `START/END` comment pairs. All other content requires human review | [CWE-94](https://cwe.mitre.org/data/definitions/94.html) (code injection) |
 | External badges | `<img>` tags only — no `<iframe>`, `<object>`, or embedded scripts. GitHub's camo proxy strips cookies and tracking headers | [CWE-829](https://cwe.mitre.org/data/definitions/829.html) (untrusted inclusion) |
 | Accessibility | `signature.svg` carries `role="img"`, `aria-label`, `<title>`, and `<desc>` — screen readers announce the emblem as a single labeled image. All badge `<img>` tags include `alt` text | [WCAG 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html) (non-text content) |
+
+### Commit Conventions
+
+All commits follow [Conventional Commits](https://www.conventionalcommits.org/) with a tight prefix vocabulary:
+
+| Prefix | When | Version Bump |
+|--------|------|:------------:|
+| `docs:` | README content, CHANGELOG, FOR_DARE.md, inline comments | Patch |
+| `fix:` | Broken badges, stale metrics, rendering bugs | Patch |
+| `feat:` | New visible sections, new project entries, structural additions | Minor |
+| `refactor:` | Section rewrites, layout changes that don't add features | Minor |
+| `chore:` | Tooling, git config, non-content maintenance | None |
+
+**Version chain:** Every version bump touches exactly 3 files — `CHANGELOG.md` (new heading), `CLAUDE.md` (version field), and the commit message. If any of the three disagree, the chain is broken. See FOR_DARE.md [Pre-Push Quick Check](#pre-push-quick-check-5-item-fast-path).
 
 Full design language, metrics sync map, and update playbooks in [`FOR_DARE.md`](./FOR_DARE.md). Color palette contract: `#6C63FF` (primary), `#A78BFA` (secondary), `#818CF8` (tertiary) — shared between `signature.svg` and all Shields.io badges.
 

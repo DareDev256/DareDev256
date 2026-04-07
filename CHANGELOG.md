@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.52] - 2026-04-06
+
+### Added
+- **README.md** — Cache TTL column in External Services table: documents badge refresh intervals (Shields.io ~5min, stats cards ~6hrs, komarev real-time) plus GitHub camo proxy caching note for troubleshooting stale badges
+- **README.md** — Commit Conventions subsection in Repo Setup: documents prefix vocabulary (`docs:`, `fix:`, `feat:`, `refactor:`, `chore:`), version bump rules, and the 3-file version chain invariant
+
+### Fixed
+- **README.md** — Stale file size in Repo Setup table: CHANGELOG.md ~59KB → ~60KB (6th recurrence of file-size drift)
+- **CLAUDE.md** — Version bump v0.8.51 → v0.8.52
+
 ## [0.8.51] - 2026-04-06
 
 ### Changed
