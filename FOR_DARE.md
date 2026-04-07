@@ -258,7 +258,10 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 80. **v0.8.47** — Fixed recurring broken showcase URL (4th occurrence: v0.6.17, v0.8.10, v0.8.32, v0.8.47) — literal spaces in GitHub repo slug `TdotsSolutionsz Music Video Portfolio` → `tdotssolutionsz-portfolio`. Updated troubleshooting recurrence history
 81. **v0.8.48** — Fixed stale file sizes in Repo Setup table (README ~34KB→~35KB, CHANGELOG ~57KB→~59KB, FOR_DARE ~51KB→~54KB). Added file-size-drift troubleshooting entry (4th recurrence: v0.8.38, v0.8.43, v0.8.46, v0.8.48). Added file size check to Maintenance Checklist. Added v0.8.47 to Version Milestones
 82. **v0.8.49** — Fixed recurring broken showcase URL (5th occurrence: v0.6.17, v0.8.10, v0.8.32, v0.8.47, v0.8.49). Added Recurring Bug Summary table to Troubleshooting — surfaces the 4 most frequent recurring bugs with occurrence counts, versions, root causes, and prevention steps. Updated troubleshooting recurrence histories
-83. **v0.8.50** (current) — Sharpened PACT Dashboard descriptions across 4 README locations for context-appropriate depth (progressive disclosure instead of copy-pasted implementation details). Tightened Hard Problems entries (auto-selection engine, envelope sanitization). Fixed stale FOR_DARE.md file size in Repo Setup (~54KB→~55KB)
+83. **v0.8.50** — Sharpened PACT Dashboard descriptions across 4 README locations for context-appropriate depth (progressive disclosure instead of copy-pasted implementation details). Tightened Hard Problems entries (auto-selection engine, envelope sanitization). Fixed stale FOR_DARE.md file size in Repo Setup (~54KB→~55KB)
+84. **v0.8.51** — Improved setup instructions (prerequisites, case-sensitive repo naming), expanded Auto-Update API docs (full marker syntax, showcase extraction example), added color palette cross-reference to Security Model. Fixed stale file sizes (FOR_DARE ~57KB→~55KB, CHANGELOG ~60KB→~59KB)
+85. **v0.8.52** — Added Cache TTL column to External Services table, Commit Conventions subsection to Repo Setup. Fixed CHANGELOG file size drift (~59KB→~60KB)
+86. **v0.8.53** (current) — Documentation hygiene: synced Content Strategy through v0.8.52 (9th recurrence of drift), fixed stale file sizes in Repo Setup (README ~34KB→~35KB, CHANGELOG ~60KB→~62KB, FOR_DARE ~55KB→~57KB — 7th recurrence of file-size drift). Updated Recurring Bug Summary counts and version lists
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -288,6 +291,9 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 | **v0.8.48** | Stale file sizes, file-size-drift troubleshooting, Maintenance Checklist hardened | ~416 |
 | **v0.8.49** | Fixed showcase URL (5th recurrence), Recurring Bug Summary table | ~416 |
 | **v0.8.50** | Progressive disclosure — PACT descriptions sharpened per context | ~416 |
+| **v0.8.51** | Setup instructions, Auto-Update API docs, color palette cross-ref | ~420 |
+| **v0.8.52** | Cache TTL docs, Commit Conventions section | ~424 |
+| **v0.8.53** | Content Strategy sync, file-size drift fix, Recurring Bug Summary update | ~438 |
 
 The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 
@@ -687,8 +693,8 @@ These bugs have each recurred 3+ times. They share a root cause: auto-generated 
 | Bug | Occurrences | Versions | Root Cause | Prevention |
 |-----|:-----------:|----------|------------|------------|
 | **Showcase URL spaces** | 5 | v0.6.17, v0.8.10, v0.8.32, v0.8.47, v0.8.49 | Agent writes repo name from task description without slugifying | Pre-Push Quick Check #4; `grep` for spaces in GitHub URLs |
-| **File size drift** | 4 | v0.8.38, v0.8.43, v0.8.46, v0.8.48 | Every edit grows files but Repo Setup table sizes are hardcoded | Pre-Push Quick Check; `wc -c` after version bump |
-| **Content Strategy drift** | 8+ | v0.8.0, v0.8.3, v0.8.15, v0.8.31, v0.8.37, v0.8.42, v0.8.46+ | Agent syncs some FOR_DARE.md sections but misses Content Strategy | Maintenance Checklist; check "(current)" marker |
+| **File size drift** | 7 | v0.8.38, v0.8.43, v0.8.46, v0.8.48, v0.8.51, v0.8.52, v0.8.53 | Every edit grows files but Repo Setup table sizes are hardcoded | Pre-Push Quick Check; `wc -c` after version bump |
+| **Content Strategy drift** | 9+ | v0.8.0, v0.8.3, v0.8.15, v0.8.31, v0.8.37, v0.8.42, v0.8.46, v0.8.53+ | Agent syncs some FOR_DARE.md sections but misses Content Strategy | Maintenance Checklist; check "(current)" marker |
 | **Hard Problems count drift** | 7+ | v0.8.16, v0.8.25, v0.8.42, v0.8.43, v0.8.44+ | New entries added to README but count in FOR_DARE.md not updated | Search "deep-dive" in FOR_DARE.md after adding entries |
 
 > **Pattern:** All four bugs are write-without-validate errors. The agent updates content but doesn't cross-check dependent references. The Pre-Push Quick Check was designed to catch these — enforce it.

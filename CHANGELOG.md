@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.53] - 2026-04-06
+
+### Fixed
+- **README.md** — Stale file sizes in Repo Setup table: README.md ~34KB → ~35KB, FOR_DARE.md ~55KB → ~57KB, CHANGELOG.md ~60KB → ~62KB (7th recurrence of file-size drift)
+- **FOR_DARE.md** — Content Strategy Evolution stuck at v0.8.50 "(current)" — synced through v0.8.53 with entries for v0.8.51, v0.8.52, v0.8.53 (9th recurrence of Content Strategy drift)
+- **FOR_DARE.md** — Version Milestones table missing entries for v0.8.51, v0.8.52, v0.8.53
+- **FOR_DARE.md** — Recurring Bug Summary stale counts: file-size drift 4 → 7 (missing v0.8.51, v0.8.52, v0.8.53), Content Strategy drift 8+ → 9+
+- **CLAUDE.md** — Version bump v0.8.52 → v0.8.53
+
 ## [0.8.52] - 2026-04-06
 
 ### Added
