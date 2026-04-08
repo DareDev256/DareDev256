@@ -261,7 +261,9 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 83. **v0.8.50** — Sharpened PACT Dashboard descriptions across 4 README locations for context-appropriate depth (progressive disclosure instead of copy-pasted implementation details). Tightened Hard Problems entries (auto-selection engine, envelope sanitization). Fixed stale FOR_DARE.md file size in Repo Setup (~54KB→~55KB)
 84. **v0.8.51** — Improved setup instructions (prerequisites, case-sensitive repo naming), expanded Auto-Update API docs (full marker syntax, showcase extraction example), added color palette cross-reference to Security Model. Fixed stale file sizes (FOR_DARE ~57KB→~55KB, CHANGELOG ~60KB→~59KB)
 85. **v0.8.52** — Added Cache TTL column to External Services table, Commit Conventions subsection to Repo Setup. Fixed CHANGELOG file size drift (~59KB→~60KB)
-86. **v0.8.53** (current) — Documentation hygiene: synced Content Strategy through v0.8.52 (9th recurrence of drift), fixed stale file sizes in Repo Setup (README ~34KB→~35KB, CHANGELOG ~60KB→~62KB, FOR_DARE ~55KB→~57KB — 7th recurrence of file-size drift). Updated Recurring Bug Summary counts and version lists
+86. **v0.8.53** — Documentation hygiene: synced Content Strategy through v0.8.52 (9th recurrence of drift), fixed stale file sizes in Repo Setup (README ~34KB→~35KB, CHANGELOG ~60KB→~62KB, FOR_DARE ~55KB→~57KB — 7th recurrence of file-size drift). Updated Recurring Bug Summary counts and version lists
+87. **v0.8.54** — Updated PACT Dashboard descriptions across 4 locations to reflect current feature set (System Matrix grid, Intel/Ops dual-panel layout, live Threat Level indicator, persistent Session Clock)
+88. **v0.8.55** (current) — Fixed Content Strategy drift (10th recurrence): v0.8.54 entry missing, "(current)" marker stuck on v0.8.53. Updated Recurring Bug Summary count and version list
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -294,6 +296,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 | **v0.8.51** | Setup instructions, Auto-Update API docs, color palette cross-ref | ~420 |
 | **v0.8.52** | Cache TTL docs, Commit Conventions section | ~424 |
 | **v0.8.53** | Content Strategy sync, file-size drift fix, Recurring Bug Summary update | ~438 |
+| **v0.8.54** | PACT Dashboard descriptions updated to current feature set | ~438 |
+| **v0.8.55** | Content Strategy drift fix (10th recurrence) | ~439 |
 
 The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 
@@ -694,7 +698,7 @@ These bugs have each recurred 3+ times. They share a root cause: auto-generated 
 |-----|:-----------:|----------|------------|------------|
 | **Showcase URL spaces** | 5 | v0.6.17, v0.8.10, v0.8.32, v0.8.47, v0.8.49 | Agent writes repo name from task description without slugifying | Pre-Push Quick Check #4; `grep` for spaces in GitHub URLs |
 | **File size drift** | 7 | v0.8.38, v0.8.43, v0.8.46, v0.8.48, v0.8.51, v0.8.52, v0.8.53 | Every edit grows files but Repo Setup table sizes are hardcoded | Pre-Push Quick Check; `wc -c` after version bump |
-| **Content Strategy drift** | 9+ | v0.8.0, v0.8.3, v0.8.15, v0.8.31, v0.8.37, v0.8.42, v0.8.46, v0.8.53+ | Agent syncs some FOR_DARE.md sections but misses Content Strategy | Maintenance Checklist; check "(current)" marker |
+| **Content Strategy drift** | 10+ | v0.8.0, v0.8.3, v0.8.15, v0.8.31, v0.8.37, v0.8.42, v0.8.46, v0.8.53, v0.8.55 | Agent syncs some FOR_DARE.md sections but misses Content Strategy | Maintenance Checklist; check "(current)" marker |
 | **Hard Problems count drift** | 7+ | v0.8.16, v0.8.25, v0.8.42, v0.8.43, v0.8.44+ | New entries added to README but count in FOR_DARE.md not updated | Search "deep-dive" in FOR_DARE.md after adding entries |
 
 > **Pattern:** All four bugs are write-without-validate errors. The agent updates content but doesn't cross-check dependent references. The Pre-Push Quick Check was designed to catch these — enforce it.

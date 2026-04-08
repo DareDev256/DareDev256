@@ -7,6 +7,14 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.55] - 2026-04-08
+
+### Fixed
+- **FOR_DARE.md** — Content Strategy Evolution stuck at v0.8.53 "(current)" — missing v0.8.54 entry (10th recurrence of Content Strategy drift: v0.8.0, v0.8.3, v0.8.15, v0.8.31, v0.8.37, v0.8.42, v0.8.46, v0.8.53, v0.8.55)
+- **FOR_DARE.md** — Version Milestones table missing v0.8.54 and v0.8.55 entries
+- **FOR_DARE.md** — Recurring Bug Summary: Content Strategy drift count 9+ → 10+, added v0.8.55 to version list
+- **CLAUDE.md** — Version bump v0.8.54 → v0.8.55
+
 ## [0.8.54] - 2026-04-07
 
 ### Changed
