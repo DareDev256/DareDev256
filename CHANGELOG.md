@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.56] - 2026-04-08
+
+### Added
+- **FOR_DARE.md** — Table of Contents with 15-entry navigation index (section → description → anchor links) — the 57KB reference file had no way to jump to sections without searching
+- **FOR_DARE.md** — Automated validation script in Maintenance Checklist section — a `bash validate.sh` one-liner that checks version chain consistency, Content Strategy "(current)" marker, showcase URL spaces, and README line count. Catches the 4 most common recurring bugs (10+ Content Strategy drifts, 7+ file-size drifts, 5+ showcase URL breaks) before they ship
+
 ## [0.8.55] - 2026-04-08
 
 ### Fixed

@@ -359,7 +359,7 @@ Zero dependencies — no build step, no `package.json`, no CI pipeline. GitHub r
 | `README.md` | Human + Agent | ~35KB | The profile page — GitHub renders this on every visit |
 | `signature.svg` | Human only | ~16KB | Hero emblem — CSS-only animations, 800×250, `prefers-color-scheme` aware, zero JS |
 | `CLAUDE.md` | Human only | ~3KB | Agent directives — size caps, auto-update zone rules, asset contracts |
-| `FOR_DARE.md` | Human only | ~57KB | Internal docs — design language, metrics sync map, troubleshooting |
+| `FOR_DARE.md` | Human only | ~60KB | Internal docs — design language, metrics sync map, troubleshooting |
 | `CHANGELOG.md` | Human + Agent | ~62KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
 
 ### External Services (render-time, no auth required)

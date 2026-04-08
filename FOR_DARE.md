@@ -1,5 +1,29 @@
 # FOR_DARE.md — DareDev256 GitHub Profile README
 
+## Table of Contents
+
+> **Navigation for a 60KB reference file.** Jump to what you need.
+
+| Section | What's There |
+|---------|-------------|
+| [README Size Constraint](#readme-size-constraint-critical) | Hard cap rules, what agents can/can't add |
+| [Quick Reference](#quick-reference) | Common tasks → exact steps, Pre-Push Quick Check |
+| [What This Thing Actually Does](#what-this-thing-actually-does) | Purpose, audience, why it matters |
+| [Architecture in Human Terms](#architecture-in-human-terms) | Data flow, codebase map, file cross-references |
+| [Tech Stack & Why](#tech-stack--why) | Services, rejected alternatives, SVG architecture |
+| [The War Stories](#the-war-stories) | Badge reliability, Content Strategy Evolution, Version Milestones |
+| [Dynamic Content Zones](#dynamic-content-zones) | Auto-update markers, safe editing rules |
+| [Patterns Worth Stealing](#patterns-worth-stealing) | Layout structure (8 visible + 6 collapsed), badge hierarchy |
+| [Design Language](#design-language) | Color palette, badge styles, layout rules, typography |
+| [How Changes Get Made](#how-changes-get-made-contribution-model) | Contribution model, branch conventions, PR flow |
+| [Update Playbooks](#update-playbooks) | Step-by-step: new repo, metrics refresh, seasonal update |
+| [Metrics Sync Map](#metrics-sync-map) | 13 hardcoded numbers × all their README locations |
+| [Maintenance Checklist](#maintenance-checklist) | Pre-push verification, automated validation |
+| [External Dependencies](#external-dependencies-badge-services) | Badge services, health checks, fallbacks |
+| [Troubleshooting](#troubleshooting) | Recurring Bug Summary, 8 known issues with fixes |
+
+---
+
 ## README Size Constraint (CRITICAL)
 
 **The README.md MUST stay under 120 visible lines.** Total file can be ~300 lines with `<details>` blocks.
@@ -263,7 +287,8 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 85. **v0.8.52** — Added Cache TTL column to External Services table, Commit Conventions subsection to Repo Setup. Fixed CHANGELOG file size drift (~59KB→~60KB)
 86. **v0.8.53** — Documentation hygiene: synced Content Strategy through v0.8.52 (9th recurrence of drift), fixed stale file sizes in Repo Setup (README ~34KB→~35KB, CHANGELOG ~60KB→~62KB, FOR_DARE ~55KB→~57KB — 7th recurrence of file-size drift). Updated Recurring Bug Summary counts and version lists
 87. **v0.8.54** — Updated PACT Dashboard descriptions across 4 locations to reflect current feature set (System Matrix grid, Intel/Ops dual-panel layout, live Threat Level indicator, persistent Session Clock)
-88. **v0.8.55** (current) — Fixed Content Strategy drift (10th recurrence): v0.8.54 entry missing, "(current)" marker stuck on v0.8.53. Updated Recurring Bug Summary count and version list
+88. **v0.8.55** — Fixed Content Strategy drift (10th recurrence): v0.8.54 entry missing, "(current)" marker stuck on v0.8.53. Updated Recurring Bug Summary count and version list
+89. **v0.8.56** (current) — Added Table of Contents to FOR_DARE.md (15-entry navigation index for 57KB file). Added automated validation script to Maintenance Checklist — catches version chain mismatches, Content Strategy drift, showcase URL spaces, and line count violations in one pass
 
 **Lesson:** Profile READMEs are marketing documents. Structure them for the reader (recruiter, hiring manager), not for yourself.
 
@@ -298,6 +323,7 @@ The README went through several iterations (see CHANGELOG.md for full version hi
 | **v0.8.53** | Content Strategy sync, file-size drift fix, Recurring Bug Summary update | ~438 |
 | **v0.8.54** | PACT Dashboard descriptions updated to current feature set | ~438 |
 | **v0.8.55** | Content Strategy drift fix (10th recurrence) | ~439 |
+| **v0.8.56** | TOC + automated validation script for FOR_DARE.md | ~439 |
 
 The pattern: content grew until v0.6.0 (760 lines), got aggressively trimmed at v0.7.0 (301 lines), and has held steady at ~390 since. Growth now goes into collapsed `<details>` blocks, not visible surface area.
 
@@ -674,6 +700,64 @@ When updating this README, verify:
 - [ ] All 13 Sync Map metrics are consistent across their documented locations
 - [ ] FOR_DARE.md Content Strategy Evolution synced through current version (check "(current)" marker)
 - [ ] Repo Setup file sizes match actual (`wc -c` rounded to nearest KB) — recurring drift, see Troubleshooting
+
+### Automated Validation
+
+The Pre-Push Quick Check items 1–5 can be verified in one pass. Run this from the repo root:
+
+```bash
+#!/bin/bash
+# validate.sh — Catches the 4 most common recurring bugs before they ship.
+# Run from repo root: bash validate.sh
+
+FAIL=0
+
+# 1. Version chain: CHANGELOG heading = CLAUDE.md version field
+CL_VER=$(grep '^## \[0' CHANGELOG.md | head -1 | sed 's/.*\[\([0-9.]*\)\].*/\1/')
+CM_VER=$(grep 'Current:' CLAUDE.md | sed 's/.*v//')
+if [ "$CL_VER" != "$CM_VER" ]; then
+  echo "❌ Version mismatch: CHANGELOG=$CL_VER, CLAUDE.md=$CM_VER"
+  FAIL=1
+else
+  echo "✅ Version chain: $CL_VER"
+fi
+
+# 2. Content Strategy "(current)" marker on latest version
+CS_VER=$(grep '^[0-9].*\*\* (current)' FOR_DARE.md | sed 's/.*v\([0-9][0-9.]*\)\*\*.*/\1/' | head -1)
+if [ "$CS_VER" != "$CL_VER" ]; then
+  echo "❌ Content Strategy stuck on v$CS_VER (expected v$CL_VER)"
+  FAIL=1
+else
+  echo "✅ Content Strategy current"
+fi
+
+# 3. Showcase URL — no spaces in GitHub URLs
+if grep -o 'github\.com/DareDev256/[^)"]*' README.md | grep -q ' '; then
+  echo "❌ Showcase URL contains spaces"
+  FAIL=1
+else
+  echo "✅ No spaces in GitHub URLs"
+fi
+
+# 4. Line count
+LINES=$(wc -l < README.md | tr -d ' ')
+if [ "$LINES" -gt 450 ]; then
+  echo "❌ README.md at $LINES lines (cap: ~440)"
+  FAIL=1
+else
+  echo "✅ README.md line count: $LINES"
+fi
+
+# 5. File size drift (warn if README table values are 2KB+ off)
+for f in README.md FOR_DARE.md CHANGELOG.md; do
+  ACTUAL_KB=$(( $(wc -c < "$f") / 1024 ))
+  echo "   $f: ${ACTUAL_KB}KB"
+done
+
+exit $FAIL
+```
+
+> **Usage:** `bash validate.sh` before every push. Returns exit code 1 on failure — safe to add as a git pre-push hook.
 
 ## External Dependencies (Badge Services)
 
