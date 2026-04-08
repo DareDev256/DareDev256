@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.54] - 2026-04-07
+
+### Changed
+- **README.md** — Updated PACT Dashboard descriptions across 4 locations (Currently Building, Featured Projects, ecosystem diagram, All Projects) to reflect current feature set: System Matrix grid, Intel/Ops dual-panel layout, live Threat Level indicator, and persistent Session Clock
+- **CLAUDE.md** — Version bump v0.8.53 → v0.8.54
+
 ## [0.8.53] - 2026-04-06
 
 ### Fixed

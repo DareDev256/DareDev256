@@ -28,7 +28,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — **auto-select engine** surfaces the highest-relevance task via viewport scoring and interaction signals. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened, WCAG-accessible. 121 components, 695 tests. Next.js 16 + React 19 |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — System Matrix grid, Intel/Ops dual-panel layout, live Threat Level indicator, persistent Session Clock. **Auto-select engine** surfaces highest-relevance tasks via viewport scoring. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened, WCAG-accessible. 121 components, 695 tests. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
 | 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — prompt engineering, red teaming, bias detection, hallucination hunting. Each live and playable |
 
@@ -83,7 +83,7 @@ The portfolio now boasts a dynamic, interactive hero section featuring a promine
 
 ### PACT Dashboard *(private)*
 
-**Agent command terminal** — auto-select engine scores viewport context and interaction signals to surface the most relevant task. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened. 121 components, 695 tests.
+**Agent command terminal** — System Matrix overview, Intel/Ops panels, Threat Level monitor, Session Clock. Auto-select engine scores viewport context to surface the most relevant task. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened. 121 components, 695 tests.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -206,7 +206,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   ├── Career Engine ─── 6+ job APIs, auto-apply pipeline
   └── Memory System ─── somatic markers, narrative identity
         ▼
-  PACT Dashboard ─── Agent command terminal, auto-select engine, spring-physics MomentumGauge, useSSE streaming, 121 components, 695 tests
+  PACT Dashboard ─── System Matrix · Intel/Ops panels · Threat Level · Session Clock · auto-select engine · MomentumGauge · useSSE streaming · 121 components, 695 tests
         ▼
   Passion Memory MCP ─── Shared brain across all sessions
 ```
@@ -224,7 +224,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐20+ | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Agent command terminal — auto-select engine, spring-physics MomentumGauge, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Agent command terminal — System Matrix, Intel/Ops panels, Threat Level, Session Clock, auto-select engine, MomentumGauge, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
