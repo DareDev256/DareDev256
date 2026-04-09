@@ -7,6 +7,14 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.58] - 2026-04-08
+
+### Added
+- **CI Pipeline** — GitHub Actions workflow (`.github/workflows/validate-readme.yml`) that validates README line count, auto-update marker integrity, marker zone ordering, version consistency between CHANGELOG and CLAUDE.md, signature.svg presence, and secret scanning on every push/PR to main
+
+### Fixed
+- **CI** — Repo had no CI pipeline — added automated validation to catch recurring drift bugs (file-size drift, missing markers, version mismatches) before they ship
+
 ## [0.8.57] - 2026-04-08
 
 ### Changed

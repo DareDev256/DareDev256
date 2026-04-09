@@ -339,7 +339,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 ### How It Works
 
-Zero dependencies — no build step, no `package.json`, no CI pipeline. GitHub renders `README.md` as the profile page at `github.com/DareDev256`. Dynamic badges are fetched from third-party APIs at render time (Shields.io, komarev, GitHub stats cards). [Passion Agent](https://passion.jamesdare.com) writes to two marker-delimited zones (daily status + showcase) on automated 30-minute brain cycles — everything outside markers requires human review.
+Zero dependencies — no build step, no `package.json`. CI validates README constraints on every push/PR via GitHub Actions. GitHub renders `README.md` as the profile page at `github.com/DareDev256`. Dynamic badges are fetched from third-party APIs at render time (Shields.io, komarev, GitHub stats cards). [Passion Agent](https://passion.jamesdare.com) writes to two marker-delimited zones (daily status + showcase) on automated 30-minute brain cycles — everything outside markers requires human review.
 
 ### Replicate This Profile
 

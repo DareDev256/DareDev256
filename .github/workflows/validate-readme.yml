@@ -1,0 +1,93 @@
+name: Validate README
+
+on:
+  push:
+    branches: [main]
+    paths: ['README.md', 'CHANGELOG.md', 'CLAUDE.md', 'signature.svg']
+  pull_request:
+    branches: [main]
+    paths: ['README.md', 'CHANGELOG.md', 'CLAUDE.md', 'signature.svg']
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check README line count
+        run: |
+          total=$(wc -l < README.md)
+          echo "README.md: $total lines"
+          if [ "$total" -gt 500 ]; then
+            echo "::error::README.md exceeds 500 total lines ($total). Target: ~300 lines max."
+            exit 1
+          fi
+
+      - name: Check auto-update markers
+        run: |
+          missing=0
+          for marker in DAILY_STATUS_START DAILY_STATUS_END SHOWCASE_SECTION_START SHOWCASE_SECTION_END; do
+            if ! grep -q "<!-- ${marker} -->" README.md; then
+              echo "::error::Missing marker: <!-- ${marker} -->"
+              missing=1
+            fi
+          done
+          if [ "$missing" -eq 1 ]; then
+            exit 1
+          fi
+          echo "All auto-update markers present."
+
+      - name: Check marker zone ordering
+        run: |
+          ds_start=$(grep -n 'DAILY_STATUS_START' README.md | head -1 | cut -d: -f1)
+          ds_end=$(grep -n 'DAILY_STATUS_END' README.md | head -1 | cut -d: -f1)
+          sc_start=$(grep -n 'SHOWCASE_SECTION_START' README.md | head -1 | cut -d: -f1)
+          sc_end=$(grep -n 'SHOWCASE_SECTION_END' README.md | head -1 | cut -d: -f1)
+
+          if [ "$ds_start" -ge "$ds_end" ]; then
+            echo "::error::DAILY_STATUS_START must come before DAILY_STATUS_END"
+            exit 1
+          fi
+          if [ "$sc_start" -ge "$sc_end" ]; then
+            echo "::error::SHOWCASE_SECTION_START must come before SHOWCASE_SECTION_END"
+            exit 1
+          fi
+          echo "Marker zones correctly ordered."
+
+      - name: Check version consistency
+        run: |
+          # Extract version from CHANGELOG (first [x.y.z] heading)
+          cl_version=$(grep -oP '## \[\K[0-9]+\.[0-9]+\.[0-9]+' CHANGELOG.md | head -1)
+          echo "CHANGELOG version: $cl_version"
+
+          # Extract version from CLAUDE.md
+          claude_version=$(grep -oP 'Current: v\K[0-9]+\.[0-9]+\.[0-9]+' CLAUDE.md)
+          echo "CLAUDE.md version: $claude_version"
+
+          if [ -n "$cl_version" ] && [ -n "$claude_version" ]; then
+            if [ "$cl_version" != "$claude_version" ]; then
+              echo "::warning::Version mismatch — CHANGELOG: $cl_version, CLAUDE.md: $claude_version"
+            fi
+          fi
+
+      - name: Check signature.svg exists
+        run: |
+          if [ ! -f signature.svg ]; then
+            echo "::error::signature.svg is missing — hero image will be broken"
+            exit 1
+          fi
+          echo "signature.svg present ($(wc -c < signature.svg) bytes)"
+
+      - name: Validate no secrets in committed files
+        run: |
+          found=0
+          for pattern in 'sk-[a-zA-Z0-9]' 'ghp_[a-zA-Z0-9]' 'AKIA[A-Z0-9]' 'Bearer [a-zA-Z0-9]'; do
+            if grep -rq "$pattern" README.md CHANGELOG.md FOR_DARE.md 2>/dev/null; then
+              echo "::error::Potential secret found matching pattern: $pattern"
+              found=1
+            fi
+          done
+          if [ "$found" -eq 1 ]; then
+            exit 1
+          fi
+          echo "No secrets detected."
