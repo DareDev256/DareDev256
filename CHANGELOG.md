@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.57] - 2026-04-08
+
+### Changed
+- **README.md** — Updated PACT Dashboard descriptions across 4 locations (Currently Building, Featured Projects, ecosystem diagram, All Projects) to document tier-visual feedback system: `getTierVisuals` translates combo tiers into distinct retro-arcade visual styles (colors, glow intensities, label treatments), communicating scoring state visually
+- **README.md** — Expanded auto-selection engine entry in Hard Problems to document `getTierVisuals` utility and its role in the visual feedback loop
+
+### Fixed
+- **README.md** — Stale file size in Repo Setup table: FOR_DARE.md ~60KB → ~61KB (8th recurrence of file-size drift)
+- **CLAUDE.md** — Version bump v0.8.56 → v0.8.57
+
 ## [0.8.56] - 2026-04-08
 
 ### Added

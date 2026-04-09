@@ -28,7 +28,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — System Matrix grid, Intel/Ops dual-panel layout, live Threat Level indicator, persistent Session Clock. **Auto-select engine** surfaces highest-relevance tasks via viewport scoring. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened, WCAG-accessible. 121 components, 695 tests. Next.js 16 + React 19 |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — System Matrix grid, Intel/Ops dual-panel layout, live Threat Level indicator, persistent Session Clock. **Auto-select engine** surfaces highest-relevance tasks via viewport scoring + tier-visual feedback (combo tiers → distinct visual styles). Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened, WCAG-accessible. 121 components, 695 tests. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
 | 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — prompt engineering, red teaming, bias detection, hallucination hunting. Each live and playable |
 
@@ -82,7 +82,7 @@ The portfolio now boasts a dynamic, interactive hero section featuring a promine
 
 ### PACT Dashboard *(private)*
 
-**Agent command terminal** — System Matrix overview, Intel/Ops panels, Threat Level monitor, Session Clock. Auto-select engine scores viewport context to surface the most relevant task. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened. 121 components, 695 tests.
+**Agent command terminal** — System Matrix overview, Intel/Ops panels, Threat Level monitor, Session Clock. Auto-select engine scores viewport context to surface the most relevant task, with tier-visual feedback mapping combo tiers to distinct retro-arcade visual styles. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened. 121 components, 695 tests.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -205,7 +205,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   ├── Career Engine ─── 6+ job APIs, auto-apply pipeline
   └── Memory System ─── somatic markers, narrative identity
         ▼
-  PACT Dashboard ─── System Matrix · Intel/Ops panels · Threat Level · Session Clock · auto-select engine · MomentumGauge · useSSE streaming · 121 components, 695 tests
+  PACT Dashboard ─── System Matrix · Intel/Ops panels · Threat Level · Session Clock · auto-select engine (tier-visual feedback) · MomentumGauge · useSSE streaming · 121 components, 695 tests
         ▼
   Passion Memory MCP ─── Shared brain across all sessions
 ```
@@ -223,7 +223,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐20+ | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Agent command terminal — System Matrix, Intel/Ops panels, Threat Level, Session Clock, auto-select engine, MomentumGauge, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Agent command terminal — System Matrix, Intel/Ops panels, Threat Level, Session Clock, auto-select engine with tier-visual feedback, MomentumGauge, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
@@ -295,7 +295,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 **Envelope sanitization at API boundaries** — YouTube API responses hit per-field sanitizers directly — malformed envelopes (missing `items`, oversized payloads, wrong types) bypassed validation. Built a structural pre-validator: schema shape check before field-level processing. Applied the same pattern to ContactForm with XSS sanitization (strips `<script>`, event handlers, encoded payloads). Catches CWE-20, CWE-79, CWE-400, CWE-754. 23 new tests, full suite green.
 
-**Intelligent auto-selection engine** — Dashboard had competing embeds loading simultaneously — bandwidth waste and users manually hunting for the right task. Built a viewport-aware scoring engine: combines scroll position, interaction signals (clicks, hovers, dwell time), and content adjacency to surface the most relevant item with animated focus transitions. Rules layer (`computeEntryTiming`, `freezeActivityMap`, `maxSeverity`) is deterministic and testable. `aria-live` regions announce the active selection for screen readers. 323 auto-select + 381 rotation + integration tests green.
+**Intelligent auto-selection engine** — Dashboard had competing embeds loading simultaneously — bandwidth waste and users manually hunting for the right task. Built a viewport-aware scoring engine: combines scroll position, interaction signals (clicks, hovers, dwell time), and content adjacency to surface the most relevant item with animated focus transitions. Rules layer (`computeEntryTiming`, `freezeActivityMap`, `maxSeverity`) is deterministic and testable. Tier-visual feedback via `getTierVisuals` translates combo tiers into distinct retro-arcade visual styles (colors, glow intensities, label treatments) — the UI communicates scoring state visually without extra text. `aria-live` regions announce the active selection for screen readers. 323 auto-select + 381 rotation + integration tests green.
 
 **Cinematic hero orchestration** — The Royalty Protocol hero needed dynamic background video, scroll-triggered element reveals, and layered typography — all without fighting IntelDossier's real-time threat data. Solved with a staggered reveal choreography: video loads lazily with poster fallback, scroll-driven `IntersectionObserver` triggers per-section fade/translate sequences, and IntelDossier mounts only after the hero viewport exit. Zero layout shift, no competing paint cycles.
 
@@ -358,7 +358,7 @@ Zero dependencies — no build step, no `package.json`, no CI pipeline. GitHub r
 | `README.md` | Human + Agent | ~35KB | The profile page — GitHub renders this on every visit |
 | `signature.svg` | Human only | ~16KB | Hero emblem — CSS-only animations, 800×250, `prefers-color-scheme` aware, zero JS |
 | `CLAUDE.md` | Human only | ~3KB | Agent directives — size caps, auto-update zone rules, asset contracts |
-| `FOR_DARE.md` | Human only | ~60KB | Internal docs — design language, metrics sync map, troubleshooting |
+| `FOR_DARE.md` | Human only | ~61KB | Internal docs — design language, metrics sync map, troubleshooting |
 | `CHANGELOG.md` | Human + Agent | ~62KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
 
 ### External Services (render-time, no auth required)
