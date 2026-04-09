@@ -81,8 +81,8 @@ jobs:
       - name: Validate no secrets in committed files
         run: |
           found=0
-          for pattern in 'sk-[a-zA-Z0-9]' 'ghp_[a-zA-Z0-9]' 'AKIA[A-Z0-9]' 'Bearer [a-zA-Z0-9]'; do
-            if grep -rq "$pattern" README.md CHANGELOG.md FOR_DARE.md 2>/dev/null; then
+          for pattern in 'sk-[a-zA-Z0-9_-]{20,}' 'ghp_[a-zA-Z0-9]{20,}' 'AKIA[A-Z0-9]{16,}' 'Bearer [a-zA-Z0-9._-]{20,}'; do
+            if grep -Erq "$pattern" README.md CHANGELOG.md FOR_DARE.md 2>/dev/null; then
               echo "::error::Potential secret found matching pattern: $pattern"
               found=1
             fi

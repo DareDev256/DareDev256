@@ -7,6 +7,11 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.59] - 2026-04-08
+
+### Fixed
+- **CI Pipeline** — Secret scanning regex `sk-[a-zA-Z0-9]` false-positived on `task-type` in FOR_DARE.md. Tightened all patterns to require 16-20+ character matches using extended regex (`grep -E`), eliminating false positives while still catching real API keys
+
 ## [0.8.58] - 2026-04-08
 
 ### Added
