@@ -7,6 +7,12 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.60] - 2026-04-09
+
+### Changed
+- **README.md** — Updated PACT Dashboard descriptions across 4 locations (Currently Building, Featured Projects, ecosystem diagram, All Projects) to document the new Auto-Select toggle: `useAutoSelect` hook manages enabled/disabled state with localStorage persistence, toggle component gates the scoring pipeline so manual browsing bypasses curation, and panel data updates dynamically with animated transitions when toggled
+- **README.md** — Expanded auto-selection engine entry in Hard Problems to document the user-facing toggle architecture, hook design (`useAutoSelect`), and panel data behavior on mode switch
+
 ## [0.8.59] - 2026-04-08
 
 ### Fixed
