@@ -81,9 +81,15 @@ jobs:
       - name: Validate no secrets in committed files
         run: |
           found=0
-          for pattern in 'sk-[a-zA-Z0-9_-]{20,}' 'ghp_[a-zA-Z0-9]{20,}' 'AKIA[A-Z0-9]{16,}' 'Bearer [a-zA-Z0-9._-]{20,}'; do
-            if grep -Erq "$pattern" README.md CHANGELOG.md FOR_DARE.md 2>/dev/null; then
+          scan_files="README.md CHANGELOG.md CLAUDE.md FOR_DARE.md"
+          # Word-bounded patterns prevent mid-word matches (e.g. "flask-session-key...")
+          # Quantifiers sized to real key lengths: OpenAI 20+, GitHub PAT 36+, AWS 16+
+          for pattern in '\bsk-[a-zA-Z0-9_-]{20,}' '\bghp_[a-zA-Z0-9]{36,}' '\bAKIA[A-Z0-9]{16,}' '\bBearer [a-zA-Z0-9._\-]{20,}'; do
+            # Skip documentation lines that describe patterns (backtick-wrapped)
+            matches=$(grep -En "$pattern" $scan_files 2>/dev/null | grep -v '`[^`]*'"$pattern" || true)
+            if [ -n "$matches" ]; then
               echo "::error::Potential secret found matching pattern: $pattern"
+              echo "$matches"
               found=1
             fi
           done

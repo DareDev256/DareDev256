@@ -7,6 +7,11 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.62] - 2026-04-10
+
+### Fixed
+- **CI Pipeline** — Secret-scan regex hardened with `\b` word boundaries to prevent mid-word false positives (e.g. `flask-session-...`), tightened GitHub PAT quantifier from `{20,}` to `{36,}` to match real PAT lengths, added documentation-line exclusion filter (backtick-wrapped patterns skip scanning), and expanded scan scope to include CLAUDE.md
+
 ## [0.8.61] - 2026-04-10
 
 ### Fixed
