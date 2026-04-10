@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.61] - 2026-04-10
+
+### Fixed
+- **README.md** — Stale file sizes in Repo Setup table: README.md ~35KB → ~37KB, CHANGELOG.md ~62KB → ~64KB (9th recurrence of file-size drift)
+
+### Changed
+- **README.md** — Expanded Repo Setup "How It Works" paragraph to describe the CI pipeline's 5 validation checks (line count, marker integrity, version chain, SVG presence, secret scanning) instead of the previous generic "CI validates README constraints" one-liner
+- **README.md** — Added `.github/workflows/validate-readme.yml` to the file inventory table (5 files → 6 files) — the CI pipeline was added at v0.8.58 but never documented in the repo file listing
+- **README.md** — Added CI validation row to Security Model table documenting secret-scan patterns and structural drift prevention (CWE-798)
+- **CLAUDE.md** — Version bump v0.8.60 → v0.8.61
+
 ## [0.8.60] - 2026-04-09
 
 ### Changed
