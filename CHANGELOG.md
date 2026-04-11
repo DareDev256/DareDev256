@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.64] - 2026-04-11
+
+### Changed
+- **README.md** — Updated PACT Dashboard descriptions across 4 locations (Currently Building, Featured Projects, ecosystem diagram, All Projects) to document JSDoc-documented `SelectionEngine` API — comprehensive inline documentation for every public method, parameter, return type, and side effect enables IDE autocompletion and contributor onboarding
+- **README.md** — Expanded intelligent auto-selection engine war story in Hard Problems to document the JSDoc coverage milestone for `SelectionEngine`
+
+### Fixed
+- **README.md** — Stale file sizes in Repo Setup table: README.md ~37KB → ~39KB, CHANGELOG.md ~67KB → ~68KB (11th recurrence of file-size drift)
+- **CLAUDE.md** — Version bump v0.8.63 → v0.8.64
+
 ## [0.8.63] - 2026-04-11
 
 ### Changed
