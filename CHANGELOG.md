@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.63] - 2026-04-11
+
+### Changed
+- **README.md** — Updated PACT Dashboard descriptions across 4 locations (Currently Building, Featured Projects, ecosystem diagram, All Projects) to document the new `buildProjectLink` centralized URL utility — consolidates scattered project link generation into a single source of truth for repo links, deploy URLs, and badge hrefs
+- **README.md** — Added 17th war story to Hard Problems: "Scattered project link generation across components" — documents the divergent URL-construction patterns, slug normalization inconsistencies, and latent encoding bugs fixed by the refactor
+- **README.md** — Updated Hard Problems summary: 16 → 17 war stories, added "Link-generation consolidation" to Architecture category
+
+### Fixed
+- **README.md** — Stale file sizes in Repo Setup table: CHANGELOG.md ~64KB → ~67KB, FOR_DARE.md ~61KB → ~62KB, `.github/workflows/validate-readme.yml` ~2KB → ~4KB (10th recurrence of file-size drift)
+- **CLAUDE.md** — Version bump v0.8.62 → v0.8.63
+
 ## [0.8.62] - 2026-04-10
 
 ### Fixed

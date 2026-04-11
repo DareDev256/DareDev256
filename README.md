@@ -28,7 +28,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — System Matrix grid, Intel/Ops dual-panel layout, live Threat Level indicator, persistent Session Clock. **Auto-Select mode** (`useAutoSelect` hook + toggle) lets users switch between manual browsing and intelligent panel curation — engine scores viewport context, interaction signals, and content adjacency to surface highest-relevance panels with tier-visual feedback. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened, WCAG-accessible. 121 components, 695 tests. Next.js 16 + React 19 |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — System Matrix grid, Intel/Ops dual-panel layout, live Threat Level indicator, persistent Session Clock. **Auto-Select mode** (`useAutoSelect` hook + toggle) lets users switch between manual browsing and intelligent panel curation — engine scores viewport context, interaction signals, and content adjacency to surface highest-relevance panels with tier-visual feedback. Centralized `buildProjectLink` utility handles all project URL generation (repo links, deploy URLs, badge hrefs) from a single source of truth. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened, WCAG-accessible. 121 components, 695 tests. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
 | 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — prompt engineering, red teaming, bias detection, hallucination hunting. Each live and playable |
 
@@ -83,7 +83,7 @@ The portfolio now boasts a dynamic, interactive hero section featuring a promine
 
 ### PACT Dashboard *(private)*
 
-**Agent command terminal** — System Matrix overview, Intel/Ops panels, Threat Level monitor, Session Clock. User-togglable Auto-Select mode (`useAutoSelect` hook) dynamically curates visible panels by scoring viewport context, interaction signals, and content adjacency — tier-visual feedback maps combo tiers to distinct retro-arcade visual styles. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened. 121 components, 695 tests.
+**Agent command terminal** — System Matrix overview, Intel/Ops panels, Threat Level monitor, Session Clock. User-togglable Auto-Select mode (`useAutoSelect` hook) dynamically curates visible panels by scoring viewport context, interaction signals, and content adjacency — tier-visual feedback maps combo tiers to distinct retro-arcade visual styles. Centralized `buildProjectLink` utility eliminates duplicated URL generation across components. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened. 121 components, 695 tests.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -224,7 +224,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐20+ | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Agent command terminal — System Matrix, Intel/Ops panels, Threat Level, Session Clock, Auto-Select toggle (`useAutoSelect` hook) with tier-visual feedback, MomentumGauge, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Agent command terminal — System Matrix, Intel/Ops panels, Threat Level, Session Clock, Auto-Select toggle (`useAutoSelect` hook) with tier-visual feedback, `buildProjectLink` centralized URL utility, MomentumGauge, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
@@ -277,11 +277,11 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 <details>
 <summary><strong>Hard Problems I've Solved</strong></summary>
 
-> **16 war stories** — each one a real bug, not a tutorial exercise.
+> **17 war stories** — each one a real bug, not a tutorial exercise.
 >
 > **Parsing & Data:** Zero-denominator FCPXML · Silent marker loss · Enum aliasing flake
 > **Performance:** Per-frame memory allocation · Wheel-driven parallax · Spring-physics gauge needle
-> **Architecture:** Context window management · SSE data layer extraction · Duplicated observer cleanup · Async hook cleanup
+> **Architecture:** Context window management · SSE data layer extraction · Duplicated observer cleanup · Async hook cleanup · Link-generation consolidation
 > **Security:** Iframe sandbox · Envelope sanitization at API boundaries
 > **UX Engineering:** Intelligent auto-selection engine (user-togglable) · Cinematic hero orchestration · SSE invalidation starvation
 > **Testing:** Comprehensive `auto_at_intervals` coverage
@@ -311,6 +311,8 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 **Silent marker loss from duplicate clip names** — `auto_at_intervals` placed markers by clip name, but duplicate names in the same timeline caused later markers to silently overwrite earlier ones — data loss with no error. Root cause: name-only lookup isn't unique when editors reuse clip names. Fixed by keying on `(clip_name, clip_index)` tuples, making every marker placement positionally unambiguous. Zero regressions, full marker coverage on timelines with 50+ duplicate names.
 
 **Enum aliasing flake in test suite** — `tests/test_models.py` intermittently failed because `MarkerType.INCOMPLETE` and `MarkerType.TODO` resolved to the same underlying value. Python enums alias duplicate values to the first-defined member, so `MarkerType(1)` always returned `TODO` regardless of which was asserted. The test expected `INCOMPLETE` by name but got `TODO` by identity. Fixed by asserting on `.value` instead of enum identity — correct behavior, stable test.
+
+**Scattered project link generation across components** — Multiple PACT components independently constructed project URLs — repo links, deployment URLs, badge hrefs — each with slightly different slug normalization and fallback logic. URL format bugs surfaced inconsistently depending on which component rendered first. Extracted a `buildProjectLink` utility as a single source of truth: takes a project identifier and link type, applies consistent slug normalization, and returns the correct URL with proper encoding. Eliminated 3 divergent URL-construction patterns and caught 2 latent encoding bugs (spaces in project names, special characters in deployment subdomains) that only manifested in edge-case projects.
 
 **Spring-physics gauge needle in SVG** — The MomentumGauge needed a needle that felt physical, not tweened. CSS transitions gave a dead, linear sweep — wrong for a metric that represents live agent momentum. Implemented a spring-based animation loop: each frame applies `acceleration = stiffness × (target - current) - damping × velocity`, integrated via `requestAnimationFrame`. The needle overshoots on rapid value changes and settles naturally, giving immediate visual feedback on momentum shifts. All state lives in refs (not React state) to avoid re-render thrash — the SVG `transform` attribute updates directly. Tuned `stiffness: 0.08`, `damping: 0.7` for a responsive-but-not-jittery feel.
 
@@ -359,9 +361,9 @@ Zero dependencies — no build step, no `package.json`. [CI pipeline](/.github/w
 | `README.md` | Human + Agent | ~37KB | The profile page — GitHub renders this on every visit |
 | `signature.svg` | Human only | ~16KB | Hero emblem — CSS-only animations, 800×250, `prefers-color-scheme` aware, zero JS |
 | `CLAUDE.md` | Human only | ~3KB | Agent directives — size caps, auto-update zone rules, asset contracts |
-| `FOR_DARE.md` | Human only | ~61KB | Internal docs — design language, metrics sync map, troubleshooting |
-| `CHANGELOG.md` | Human + Agent | ~64KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
-| `.github/workflows/validate-readme.yml` | Human only | ~2KB | CI — line count, markers, version chain, secret scan on push/PR |
+| `FOR_DARE.md` | Human only | ~62KB | Internal docs — design language, metrics sync map, troubleshooting |
+| `CHANGELOG.md` | Human + Agent | ~67KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
+| `.github/workflows/validate-readme.yml` | Human only | ~4KB | CI — line count, markers, version chain, secret scan on push/PR |
 
 ### External Services (render-time, no auth required)
 
