@@ -28,7 +28,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — System Matrix grid, Intel/Ops dual-panel layout, live Threat Level indicator, persistent Session Clock. **Auto-Select mode** (`useAutoSelect` hook + toggle) lets users switch between manual browsing and intelligent panel curation — JSDoc-documented `SelectionEngine` API scores viewport context, interaction signals, and content adjacency to surface highest-relevance panels with tier-visual feedback. Centralized `buildProjectLink` utility handles all project URL generation (repo links, deploy URLs, badge hrefs) from a single source of truth. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened, WCAG-accessible. 121 components, 695 tests. Next.js 16 + React 19 |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — System Matrix grid, Signal Pulse intel panel, live Threat Level indicator, persistent Session Clock. **Auto-Select mode** (`useAutoSelect` hook + toggle) lets users switch between manual browsing and intelligent panel curation — the Signal Pulse panel uses JSDoc-documented `SelectionEngine` API to score viewport context, interaction signals, and content adjacency, surfacing the most pertinent intelligence readout with tier-visual feedback. Centralized `buildProjectLink` utility handles all project URL generation (repo links, deploy URLs, badge hrefs) from a single source of truth. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened, WCAG-accessible. 121 components, 695 tests. Next.js 16 + React 19 |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 20+ stars |
 | 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — prompt engineering, red teaming, bias detection, hallucination hunting. Each live and playable |
 
@@ -83,7 +83,7 @@ The portfolio now boasts a dynamic, interactive hero section featuring a promine
 
 ### PACT Dashboard *(private)*
 
-**Agent command terminal** — System Matrix overview, Intel/Ops panels, Threat Level monitor, Session Clock. User-togglable Auto-Select mode (`useAutoSelect` hook) dynamically curates visible panels via JSDoc-documented `SelectionEngine` API — scores viewport context, interaction signals, and content adjacency. Tier-visual feedback maps combo tiers to distinct retro-arcade visual styles. Centralized `buildProjectLink` utility eliminates duplicated URL generation across components. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened. 121 components, 695 tests.
+**Agent command terminal** — System Matrix overview, Signal Pulse intel panel, Threat Level monitor, Session Clock. User-togglable Auto-Select mode (`useAutoSelect` hook) dynamically curates Signal Pulse readouts via JSDoc-documented `SelectionEngine` API — scores viewport context, interaction signals, and content adjacency to surface the most pertinent intelligence. Tier-visual feedback maps combo tiers to distinct retro-arcade visual styles. Centralized `buildProjectLink` utility eliminates duplicated URL generation across components. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened. 121 components, 695 tests.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -160,6 +160,7 @@ Developer Tooling     ███████████████░░░░�
 | **Fail at the boundary** | Validate inputs at entry, not deep in business logic. One guard, not scattered checks |
 | **Ship the feedback loop** | 89.9% approval rate as a live metric. CHANGELOG on every commit. Discord on every PR |
 | **MCP-native architecture** | Every AI tool boundary speaks MCP — memory, timeline editing, monitoring. Protocol-first, not API-first |
+| **Viewport-aware scoring** | Signal Pulse auto-selects panels via deterministic scoring (scroll position × interaction signals × content adjacency). Rules layer is pure functions — testable, no hidden state |
 
 </details>
 
@@ -206,7 +207,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   ├── Career Engine ─── 6+ job APIs, auto-apply pipeline
   └── Memory System ─── somatic markers, narrative identity
         ▼
-  PACT Dashboard ─── System Matrix · Intel/Ops panels · Threat Level · Session Clock · Auto-Select toggle (useAutoSelect hook) · JSDoc-documented SelectionEngine API · tier-visual feedback · MomentumGauge · useSSE streaming · 121 components, 695 tests
+  PACT Dashboard ─── System Matrix · Signal Pulse panel (auto-select via SelectionEngine API) · Threat Level · Session Clock · tier-visual feedback · MomentumGauge · useSSE streaming · 121 components, 695 tests
         ▼
   Passion Memory MCP ─── Shared brain across all sessions
 ```
@@ -224,7 +225,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐20+ | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Agent command terminal — System Matrix, Intel/Ops panels, Threat Level, Session Clock, Auto-Select toggle (`useAutoSelect` hook) with JSDoc-documented `SelectionEngine` API and tier-visual feedback, `buildProjectLink` centralized URL utility, MomentumGauge, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Agent command terminal — System Matrix, Signal Pulse panel (auto-selects highest-relevance intel via `SelectionEngine` API), Threat Level, Session Clock, tier-visual feedback, `buildProjectLink` centralized URL utility, MomentumGauge, `useSSE` streaming, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
@@ -283,7 +284,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 > **Performance:** Per-frame memory allocation · Wheel-driven parallax · Spring-physics gauge needle
 > **Architecture:** Context window management · SSE data layer extraction · Duplicated observer cleanup · Async hook cleanup · Link-generation consolidation
 > **Security:** Iframe sandbox · Envelope sanitization at API boundaries
-> **UX Engineering:** Intelligent auto-selection engine (user-togglable) · Cinematic hero orchestration · SSE invalidation starvation
+> **UX Engineering:** Signal Pulse auto-selection engine (user-togglable) · Cinematic hero orchestration · SSE invalidation starvation
 > **Testing:** Comprehensive `auto_at_intervals` coverage
 
 **Zero-denominator crashes in FCPXML time parsing** — Final Cut Pro XML uses rational time notation (`1001/30000s`). Malformed files sent `0/0` framedurations causing crashes. Traced every division operation, added guards at the parsing boundary. 5 fixes, 7 new tests, 618 passing.
@@ -296,7 +297,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 **Envelope sanitization at API boundaries** — YouTube API responses hit per-field sanitizers directly — malformed envelopes (missing `items`, oversized payloads, wrong types) bypassed validation. Built a structural pre-validator: schema shape check before field-level processing. Applied the same pattern to ContactForm with XSS sanitization (strips `<script>`, event handlers, encoded payloads). Catches CWE-20, CWE-79, CWE-400, CWE-754. 23 new tests, full suite green.
 
-**Intelligent auto-selection engine** — Dashboard had competing embeds loading simultaneously — bandwidth waste and users manually hunting for the right task. Built a viewport-aware scoring engine: combines scroll position, interaction signals (clicks, hovers, dwell time), and content adjacency to surface the most relevant item with animated focus transitions. Rules layer (`computeEntryTiming`, `freezeActivityMap`, `maxSeverity`) is deterministic and testable. Tier-visual feedback via `getTierVisuals` translates combo tiers into distinct retro-arcade visual styles (colors, glow intensities, label treatments) — the UI communicates scoring state visually without extra text. `aria-live` regions announce the active selection for screen readers. User-facing **Auto-Select toggle** exposes this via a `useAutoSelect` hook — manages enabled state, syncs preference to localStorage, and gates the scoring pipeline so manual browsing bypasses curation entirely. Panel data updates dynamically when toggled: enabled → curated subset with animated transitions, disabled → full panel list with preserved scroll position. Full `SelectionEngine` API is JSDoc-documented — every public method, parameter, return type, and side effect has inline documentation enabling IDE autocompletion and contributor onboarding. 323 auto-select + 381 rotation + integration tests green.
+**Intelligent auto-selection engine (Signal Pulse)** — Dashboard had competing embeds loading simultaneously — bandwidth waste and users manually hunting for the right intel readout. Built a viewport-aware scoring engine for the Signal Pulse panel: combines scroll position, interaction signals (clicks, hovers, dwell time), and content adjacency to surface the most pertinent intelligence readout with animated focus transitions. Rules layer (`computeEntryTiming`, `freezeActivityMap`, `maxSeverity`) is deterministic and testable. Tier-visual feedback via `getTierVisuals` translates combo tiers into distinct retro-arcade visual styles (colors, glow intensities, label treatments) — the UI communicates scoring state visually without extra text. `aria-live` regions announce the active selection for screen readers. User-facing **Auto-Select toggle** exposes this via a `useAutoSelect` hook — manages enabled state, syncs preference to localStorage, and gates the scoring pipeline so manual browsing bypasses curation entirely. Panel data updates dynamically when toggled: enabled → curated subset with animated transitions, disabled → full panel list with preserved scroll position. Full `SelectionEngine` API is JSDoc-documented — every public method, parameter, return type, and side effect has inline documentation enabling IDE autocompletion and contributor onboarding. 323 auto-select + 381 rotation + integration tests green.
 
 **Cinematic hero orchestration** — The Royalty Protocol hero needed dynamic background video, scroll-triggered element reveals, and layered typography — all without fighting IntelDossier's real-time threat data. Solved with a staggered reveal choreography: video loads lazily with poster fallback, scroll-driven `IntersectionObserver` triggers per-section fade/translate sequences, and IntelDossier mounts only after the hero viewport exit. Zero layout shift, no competing paint cycles.
 
@@ -362,7 +363,7 @@ Zero dependencies — no build step, no `package.json`. [CI pipeline](/.github/w
 | `signature.svg` | Human only | ~16KB | Hero emblem — CSS-only animations, 800×250, `prefers-color-scheme` aware, zero JS |
 | `CLAUDE.md` | Human only | ~3KB | Agent directives — size caps, auto-update zone rules, asset contracts |
 | `FOR_DARE.md` | Human only | ~62KB | Internal docs — design language, metrics sync map, troubleshooting |
-| `CHANGELOG.md` | Human + Agent | ~68KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
+| `CHANGELOG.md` | Human + Agent | ~69KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
 | `.github/workflows/validate-readme.yml` | Human only | ~4KB | CI — line count, markers, version chain, secret scan on push/PR |
 
 ### External Services (render-time, no auth required)

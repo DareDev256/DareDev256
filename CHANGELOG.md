@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.65] - 2026-04-11
+
+### Changed
+- **README.md** — Introduced "Signal Pulse" panel name across 5 PACT Dashboard descriptions (Currently Building, Featured Projects, ecosystem diagram, All Projects, Hard Problems) — the auto-selection feature now consistently references the panel it operates on, connecting `SelectionEngine` API documentation to the specific UI surface it drives
+- **README.md** — Added "Viewport-aware scoring" pattern to Domain Depth technical DNA table, documenting the deterministic scoring architecture (scroll position × interaction signals × content adjacency) as a named architectural pattern alongside the existing 5 patterns
+- **README.md** — Updated Hard Problems summary to reference "Signal Pulse auto-selection engine" instead of generic "Intelligent auto-selection engine"
+
+### Fixed
+- **README.md** — Stale file size in Repo Setup table: CHANGELOG.md ~68KB → ~69KB (12th recurrence of file-size drift)
+- **CLAUDE.md** — Version bump v0.8.64 → v0.8.65
+
 ## [0.8.64] - 2026-04-11
 
 ### Changed
