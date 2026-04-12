@@ -7,6 +7,17 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.66] - 2026-04-12
+
+### Changed
+- **README.md** — Added recency weighting as a named scoring dimension in Signal Pulse auto-select descriptions across 5 locations (Currently Building, Featured Projects, ecosystem diagram, All Projects, Hard Problems) — the `SelectionEngine` now explicitly prioritizes recent high-signal data, improving how the panel surfaces up-to-date intelligence readouts
+- **README.md** — Documented security audit findings across PACT Dashboard descriptions: security-audited export routes with input sanitization at every boundary
+- **README.md** — Updated `fcpxml-mcp-server` descriptions across 2 locations (Currently Building, All Projects) to document hardened `sanitizeInput` (empty/whitespace-string rejection) and `validateVideoId` (prototype pollution–safe) utilities
+- **README.md** — Added "prototype pollution–safe validation" to Proof of Craft quality row
+
+### Fixed
+- **CLAUDE.md** — Version bump v0.8.65 → v0.8.66
+
 ## [0.8.65] - 2026-04-11
 
 ### Changed
