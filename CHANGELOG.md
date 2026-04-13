@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.67] - 2026-04-12
+
+### Changed
+- **README.md** — Updated CI pipeline documentation from "5 validation checks" to "6 validation checks", explicitly naming marker zone ordering (START before END) as a distinct check previously omitted from the prose
+- **README.md** — Expanded CI validation row in Security Model table to document word-bounded secret-scan patterns with exact quantifiers (`{20+}`, `{36+}`, `{16+}`) and the doc-line exclusion filter (backtick-wrapped patterns skip scanning), replacing the generic `sk-*`/`ghp_*` notation that obscured the hardened regex work from v0.8.62
+
+### Fixed
+- **README.md** — Stale file sizes in Repo Setup table: README.md ~40KB → ~39KB, CHANGELOG.md ~70KB → ~69KB (13th recurrence of file-size drift)
+- **CLAUDE.md** — Version bump v0.8.66 → v0.8.67
+
 ## [0.8.66] - 2026-04-12
 
 ### Changed
