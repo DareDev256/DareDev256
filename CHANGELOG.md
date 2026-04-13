@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.69] - 2026-04-12
+
+### Fixed
+- **CI pipeline** — Secret-scan doc-line exclusion filter used BRE (basic regex) while patterns contained ERE syntax (`{20,}` quantifiers), making the exclusion a silent no-op — added `-E` flag to `grep -v` so the filter actually matches backtick-wrapped documentation patterns
+- **CI pipeline** — Exclusion pattern only checked for an opening backtick, not a closing one — patterns outside backtick spans could be incorrectly excluded; now requires both opening and closing backticks (`\`…\``)
+
+### Changed
+- **README.md** — Updated secret-scan documentation to reflect ERE-mode exclusion and backtick-delimited matching
+
 ## [0.8.68] - 2026-04-12
 
 ### Changed
