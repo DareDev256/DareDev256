@@ -7,6 +7,18 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.68] - 2026-04-12
+
+### Changed
+- **README.md** — Expanded CI pipeline documentation from a single prose sentence to a numbered 6-step validation list with exact trigger paths (`README.md`, `CHANGELOG.md`, `CLAUDE.md`, `signature.svg`), line-count threshold (500), and per-check descriptions — makes the validation contract scannable instead of buried in a run-on sentence
+- **README.md** — Added step 4 to "Replicate This Profile" setup instructions documenting CI workflow adoption — previous instructions omitted the CI pipeline entirely, so forks would lack validation until they discovered the workflow file independently
+- **README.md** — Added `grep -oP` parsing example to Auto-Update API integration snippet — extracts task count and success rate as machine-readable values, complementing the existing raw-Markdown extraction commands
+- **README.md** — Condensed Security Model CI validation row to reference the new numbered list via anchor link instead of repeating all 6 checks inline, reducing duplication between the two sections
+
+### Fixed
+- **README.md** — Stale file sizes in Repo Setup table: README.md ~39KB → ~40KB, CHANGELOG.md ~69KB → ~72KB (14th recurrence of file-size drift)
+- **CLAUDE.md** — Version bump v0.8.67 → v0.8.68
+
 ## [0.8.67] - 2026-04-12
 
 ### Changed
