@@ -7,6 +7,15 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.71] - 2026-04-14
+
+### Security
+- **CI pipeline** — Added SVG security validation step (check 6 of 7) that enforces the constraints documented in `signature.svg` at CI time — blocks `<script>`, `<foreignObject>`, inline event handlers (`on*=`), non-fragment `url()`, `@import`, `@font-face`, and external `xlink:href`. Previously these were "enforced by review only" while CI had no enforcement, leaving a gap for CWE-79 (XSS via SVG injection) and CWE-918 (SSRF via external resource loading)
+- **CI pipeline** — Secret scan now includes `signature.svg` in scanned files — SVG can contain embedded data URIs or comment-hidden credentials that were previously unscanned
+
+### Changed
+- **README.md** — Updated CI pipeline documentation from 6 checks to 7 checks, added SVG security check description, updated Security Model table with expanded CWE coverage, updated workflow file size estimate
+
 ## [0.8.69] - 2026-04-12
 
 ### Fixed

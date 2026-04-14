@@ -342,14 +342,15 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 ### How It Works
 
-Zero dependencies — no build step, no `package.json`, no runtime. [CI pipeline](/.github/workflows/validate-readme.yml) runs 6 validation checks on every push/PR to `main` (triggers only when `README.md`, `CHANGELOG.md`, `CLAUDE.md`, or `signature.svg` change):
+Zero dependencies — no build step, no `package.json`, no runtime. [CI pipeline](/.github/workflows/validate-readme.yml) runs 7 validation checks on every push/PR to `main` (triggers only when `README.md`, `CHANGELOG.md`, `CLAUDE.md`, or `signature.svg` change):
 
 1. **Line count** — README must stay under 500 total lines
 2. **Marker presence** — all 4 auto-update markers (`DAILY_STATUS_START/END`, `SHOWCASE_SECTION_START/END`) must exist
 3. **Zone ordering** — each `START` marker must appear before its corresponding `END`
 4. **Version chain** — first `[x.y.z]` heading in `CHANGELOG.md` must match version in `CLAUDE.md`
 5. **SVG presence** — `signature.svg` must exist in repo root
-6. **Secret scanning** — word-bounded ERE regex (`\bsk-…{20+}`, `\bghp_…{36+}`, `\bAKIA…{16+}`, `\bBearer …{20+}`) with ERE-mode doc-line exclusion (backtick-delimited patterns require both opening and closing backticks to skip scanning)
+6. **SVG security** — blocks `<script>`, `<foreignObject>`, inline event handlers (`on*=`), non-fragment `url()`, `@import`, `@font-face`, and external `xlink:href` — enforces CWE-79/CWE-918 constraints documented in `signature.svg`
+7. **Secret scanning** — word-bounded ERE regex (`\bsk-…{20+}`, `\bghp_…{36+}`, `\bAKIA…{16+}`, `\bBearer …{20+}`) with ERE-mode doc-line exclusion (backtick-delimited patterns require both opening and closing backticks to skip scanning); now also scans `signature.svg`
 
 GitHub renders `README.md` as the profile page at `github.com/DareDev256`. Dynamic badges are fetched from third-party APIs at render time (Shields.io, komarev, GitHub stats cards). [Passion Agent](https://passion.jamesdare.com) writes to two marker-delimited zones (daily status + showcase) on automated 30-minute brain cycles — everything outside markers requires human review.
 
@@ -373,7 +374,7 @@ GitHub renders `README.md` as the profile page at `github.com/DareDev256`. Dynam
 | `CLAUDE.md` | Human only | ~3KB | Agent directives — size caps, auto-update zone rules, asset contracts |
 | `FOR_DARE.md` | Human only | ~62KB | Internal docs — design language, metrics sync map, troubleshooting |
 | `CHANGELOG.md` | Human + Agent | ~76KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
-| `.github/workflows/validate-readme.yml` | Human only | ~4KB | CI — line count, markers, version chain, secret scan on push/PR |
+| `.github/workflows/validate-readme.yml` | Human only | ~5KB | CI — line count, markers, version chain, SVG security, secret scan on push/PR |
 
 ### External Services (render-time, no auth required)
 
@@ -421,7 +422,7 @@ Two HTML comment-delimited zones are machine-writable by [Passion Agent](https:/
 | `signature.svg` | No `<script>`, `<foreignObject>`, `on*`, `url()`, `@import`, external refs. `role="img"` + `<title>`/`<desc>` enforce non-interactive semantics | [CWE-79](https://cwe.mitre.org/data/definitions/79.html) (XSS), [CWE-918](https://cwe.mitre.org/data/definitions/918.html) (SSRF) |
 | Auto-update zones | Marker-delimited write boundaries — agent can only overwrite content between `START/END` comment pairs. All other content requires human review | [CWE-94](https://cwe.mitre.org/data/definitions/94.html) (code injection) |
 | External badges | `<img>` tags only — no `<iframe>`, `<object>`, or embedded scripts. GitHub's camo proxy strips cookies and tracking headers | [CWE-829](https://cwe.mitre.org/data/definitions/829.html) (untrusted inclusion) |
-| CI validation | GitHub Actions runs [6 checks](#how-it-works) on every push/PR — structural integrity (line count, markers, version chain, SVG presence) plus word-bounded ERE secret scanning with backtick-delimited doc-line exclusion (requires both opening and closing backticks to prevent over-exclusion) | [CWE-798](https://cwe.mitre.org/data/definitions/798.html) (hardcoded credentials), structural drift |
+| CI validation | GitHub Actions runs [7 checks](#how-it-works) on every push/PR — structural integrity (line count, markers, version chain, SVG presence), SVG security enforcement (blocks XSS vectors), and word-bounded ERE secret scanning with backtick-delimited doc-line exclusion | [CWE-79](https://cwe.mitre.org/data/definitions/79.html), [CWE-798](https://cwe.mitre.org/data/definitions/798.html), [CWE-918](https://cwe.mitre.org/data/definitions/918.html), structural drift |
 | Accessibility | `signature.svg` carries `role="img"`, `aria-label`, `<title>`, and `<desc>` — screen readers announce the emblem as a single labeled image. All badge `<img>` tags include `alt` text | [WCAG 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html) (non-text content) |
 
 ### Commit Conventions
