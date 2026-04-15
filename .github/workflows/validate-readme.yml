@@ -15,6 +15,11 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Check README line count
+        # Enforces the size cap from CLAUDE.md: ~120 visible lines, ~300 total.
+        # The CI threshold (500) is a hard ceiling — the real target is ~300.
+        # Remediation: Move new content into existing <details> blocks instead
+        # of adding visible sections. Check FOR_DARE.md "README Size Constraint"
+        # for the full rules. Run `wc -l README.md` locally before pushing.
         run: |
           total=$(wc -l < README.md)
           echo "README.md: $total lines"
@@ -24,6 +29,12 @@ jobs:
           fi
 
       - name: Check auto-update markers
+        # Passion Agent writes between these 4 markers on 30-min brain cycles.
+        # If any marker is missing, agent writes silently fail or corrupt the
+        # README by appending content outside the intended zone.
+        # Remediation: Restore the missing HTML comment marker exactly as shown
+        # in the error output. See FOR_DARE.md "Dynamic Content Zones" for the
+        # full marker format and placement rules.
         run: |
           missing=0
           for marker in DAILY_STATUS_START DAILY_STATUS_END SHOWCASE_SECTION_START SHOWCASE_SECTION_END; do
@@ -38,6 +49,13 @@ jobs:
           echo "All auto-update markers present."
 
       - name: Check marker zone ordering
+        # A START marker appearing after its END marker means the zone is
+        # inverted — sed/awk extraction between markers returns nothing or
+        # captures the wrong content. Usually caused by a bad merge or manual
+        # reorder of README sections.
+        # Remediation: Open README.md and ensure each START comment appears
+        # above its corresponding END comment. The daily status zone comes
+        # first (inside "Currently Building"), then the showcase zone.
         run: |
           ds_start=$(grep -n 'DAILY_STATUS_START' README.md | head -1 | cut -d: -f1)
           ds_end=$(grep -n 'DAILY_STATUS_END' README.md | head -1 | cut -d: -f1)
@@ -55,6 +73,13 @@ jobs:
           echo "Marker zones correctly ordered."
 
       - name: Check version consistency
+        # The version chain spans 3 files: CHANGELOG.md heading → CLAUDE.md
+        # version field → commit message. A mismatch means one file was bumped
+        # but not the other, breaking the audit trail.
+        # Remediation: Ensure the first [x.y.z] heading in CHANGELOG.md matches
+        # the "Current: vX.Y.Z" line in CLAUDE.md. The commit message should
+        # include the same version in parentheses, e.g., "docs: ... (v0.8.72)".
+        # See FOR_DARE.md "Pre-Push Quick Check" for the exact grep commands.
         run: |
           # Extract version from CHANGELOG (first [x.y.z] heading)
           cl_version=$(grep -oP '## \[\K[0-9]+\.[0-9]+\.[0-9]+' CHANGELOG.md | head -1)
@@ -71,6 +96,11 @@ jobs:
           fi
 
       - name: Check signature.svg exists
+        # The hero image on the GitHub profile page. If missing, visitors see
+        # a broken image icon above the fold — first impression destroyed.
+        # Remediation: Restore signature.svg to the repo root. The file must
+        # be a self-contained SVG (no external deps). See CLAUDE.md "Assets"
+        # section for the full specification (dimensions, colors, animations).
         run: |
           if [ ! -f signature.svg ]; then
             echo "::error::signature.svg is missing — hero image will be broken"
@@ -135,6 +165,15 @@ jobs:
           echo "SVG security constraints validated — no prohibited elements or attributes."
 
       - name: Validate no secrets in committed files
+        # Scans all documentation files for leaked API keys, tokens, and
+        # credentials using word-bounded ERE patterns sized to real key
+        # lengths. Doc-line exclusion skips patterns inside backtick spans
+        # (e.g., regex examples in FOR_DARE.md) to avoid false positives.
+        # Remediation: If a real secret is flagged, rotate it immediately —
+        # the key is already in git history even if you remove it from the
+        # file. Use `git filter-repo` or BFG Repo-Cleaner to purge history.
+        # If it's a false positive in documentation, wrap the pattern in
+        # backticks (`pattern`) to trigger the doc-line exclusion filter.
         run: |
           found=0
           scan_files="README.md CHANGELOG.md CLAUDE.md FOR_DARE.md signature.svg"

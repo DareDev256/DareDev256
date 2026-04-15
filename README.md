@@ -342,7 +342,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 ### How It Works
 
-Zero dependencies — no build step, no `package.json`, no runtime. [CI pipeline](/.github/workflows/validate-readme.yml) runs 7 validation checks on every push/PR to `main` (triggers only when `README.md`, `CHANGELOG.md`, `CLAUDE.md`, or `signature.svg` change):
+Zero dependencies — no build step, no `package.json`, no runtime. [CI pipeline](/.github/workflows/validate-readme.yml) runs 7 validation checks on every push/PR to `main` (triggers only when `README.md`, `CHANGELOG.md`, `CLAUDE.md`, or `signature.svg` change). Each step includes inline remediation comments explaining how to fix failures:
 
 1. **Line count** — README must stay under 500 total lines
 2. **Marker presence** — all 4 auto-update markers (`DAILY_STATUS_START/END`, `SHOWCASE_SECTION_START/END`) must exist
@@ -369,12 +369,12 @@ GitHub renders `README.md` as the profile page at `github.com/DareDev256`. Dynam
 
 | File | Editable By | Size | Purpose |
 |------|:-----------:|-----:|---------|
-| `README.md` | Human + Agent | ~44KB | The profile page — GitHub renders this on every visit |
+| `README.md` | Human + Agent | ~42KB | The profile page — GitHub renders this on every visit |
 | `signature.svg` | Human only | ~16KB | Hero emblem — CSS-only animations, 800×250, `prefers-color-scheme` aware, zero JS |
 | `CLAUDE.md` | Human only | ~3KB | Agent directives — size caps, auto-update zone rules, asset contracts |
 | `FOR_DARE.md` | Human only | ~62KB | Internal docs — design language, metrics sync map, troubleshooting |
-| `CHANGELOG.md` | Human + Agent | ~76KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
-| `.github/workflows/validate-readme.yml` | Human only | ~5KB | CI — line count, markers, version chain, SVG security, secret scan on push/PR |
+| `CHANGELOG.md` | Human + Agent | ~75KB | Version history — [Keep a Changelog](https://keepachangelog.com) format |
+| `.github/workflows/validate-readme.yml` | Human only | ~7KB | CI — line count, markers, version chain, SVG security, secret scan on push/PR. Each step includes inline remediation docs |
 
 ### External Services (render-time, no auth required)
 

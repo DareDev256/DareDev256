@@ -7,6 +7,16 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.72] - 2026-04-14
+
+### Changed
+- **CI pipeline** — Added inline remediation comments to all 7 validation steps in `validate-readme.yml` — each step now documents what the check enforces, why it matters, and exactly how to fix failures (restore markers, rotate secrets, check FOR_DARE.md references). Previously only step 6 (SVG security) had contextual documentation; steps 1–5 and 7 printed error messages without explaining root cause or fix
+- **README.md** — Updated "Repo Setup" CI pipeline description to mention inline remediation docs, updated workflow file size ~5KB → ~7KB to reflect added documentation
+
+### Fixed
+- **README.md** — Stale file sizes in Repo Setup table: README.md ~44KB → ~42KB, CHANGELOG.md ~76KB → ~75KB (15th recurrence of file-size drift)
+- **CLAUDE.md** — Version bump v0.8.71 → v0.8.72
+
 ## [0.8.71] - 2026-04-14
 
 ### Security
