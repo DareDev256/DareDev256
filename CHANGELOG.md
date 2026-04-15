@@ -7,6 +7,11 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.8.73] - 2026-04-15
+
+### Changed
+- **README.md** — Documented `AutoSelect` dropdown component across 4 locations (Currently Building, Featured Projects, All Projects, Hard Problems) — the component pre-selects contextually relevant defaults across dashboard dropdowns by inferring the best option from active panel state, recent selections, and data recency, reducing manual interaction friction. Distinct from Signal Pulse panel auto-selection (viewport scoring), which curates intel readouts
+
 ## [0.8.72] - 2026-04-14
 
 ### Changed
