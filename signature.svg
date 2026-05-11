@@ -48,11 +48,11 @@
     ╔══════════════════════════════════════════════════════════════════╗
     ║  SECURITY CONSTRAINTS (enforced by review, not runtime)         ║
     ╠══════════════════════════════════════════════════════════════════╣
-    ║  ✗ No <script> or <foreignObject> elements — ever              ║
-    ║  ✗ No on* event handlers (onclick, onload, onerror, etc.)      ║
-    ║  ✗ No url() in CSS — prevents data exfiltration via tracking   ║
-    ║  ✗ No @import or @font-face with external src                  ║
-    ║  ✗ No <use xlink:href="http..."> external references           ║
+    ║  X No script or foreignObject elements - ever                   ║
+    ║  X No on-prefix event handlers (click/load/error/etc.)          ║
+    ║  X No url() in CSS - prevents exfiltration via tracking         ║
+    ║  X No CSS at-import or at-font-face with external src           ║
+    ║  X No use xlink-href external references                        ║
     ║  ✓ CSS-only animations (@keyframes) — no JavaScript animation  ║
     ║  ✓ All resources inline — zero network requests at render time  ║
     ║  ✓ prefers-color-scheme for theme — no JS theme detection      ║
