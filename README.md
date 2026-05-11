@@ -7,10 +7,10 @@
 <a href="https://jamesdare.com"><img src="./signature.svg" alt="James Dare — AI Solutions Engineer" width="600" /></a>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=DareDev256&color=blueviolet&style=flat-square&label=Profile+Views)
-[![Repos](https://img.shields.io/badge/Public_Repos-34-6C63FF?style=flat-square&logo=github&logoColor=white)](https://github.com/DareDev256?tab=repositories)
-[![Stars](https://img.shields.io/badge/Total_Stars-36-FFD700?style=flat-square&logo=star&logoColor=white)](https://github.com/DareDev256)
+[![Repos](https://img.shields.io/badge/Public_Repos-35-6C63FF?style=flat-square&logo=github&logoColor=white)](https://github.com/DareDev256?tab=repositories)
+[![Stars](https://img.shields.io/badge/Total_Stars-67+-FFD700?style=flat-square&logo=star&logoColor=white)](https://github.com/DareDev256)
 [![Deployments](https://img.shields.io/badge/Live_Deployments-20+-10B981?style=flat-square&logo=vercel&logoColor=white)](https://jamesdare.com)
-[![Commits](https://img.shields.io/badge/Total_Commits-1%2C257+-E8B931?style=flat-square&logo=git&logoColor=white)](https://github.com/DareDev256)
+[![Commits](https://img.shields.io/badge/Total_Commits-1%2C400+-E8B931?style=flat-square&logo=git&logoColor=white)](https://github.com/DareDev256)
 [![Ecosystem](https://img.shields.io/badge/AI_Ecosystem-24%2F7-FF6B6B?style=flat-square&logo=robot&logoColor=white)](https://passion.jamesdare.com)
 
 Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold record**. Built and sold **KushdUp Filmsz** to **6ixBuzz** (3M+ followers). Now I architect AI systems that run 24/7 and ship without me.
@@ -28,30 +28,14 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal — System Matrix grid, Signal Pulse intel panel, live Threat Level indicator, persistent Session Clock. **Auto-Select mode** (`useAutoSelect` hook + toggle) lets users switch between manual browsing and intelligent panel curation — the Signal Pulse panel uses JSDoc-documented `SelectionEngine` API to score viewport context, interaction signals, content adjacency, and **recency weighting**, surfacing the most pertinent up-to-date intelligence readout with tier-visual feedback. **`AutoSelect` dropdown component** pre-selects contextually relevant defaults across dashboard dropdowns — reduces interaction friction by inferring the best option from active panel state, recent selections, and data recency. Centralized `buildProjectLink` utility handles all project URL generation (repo links, deploy URLs, badge hrefs) from a single source of truth. Security-audited export routes with input sanitization at every boundary. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened, WCAG-accessible. 121 components, 695 tests. Next.js 16 + React 19 |
-| 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. Hardened `sanitizeInput` (rejects empty/whitespace strings) and `validateVideoId` (prototype pollution–safe). 20+ stars |
+| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal for Passion — live ops panel, viewport-aware auto-select, SSE streaming, OWASP-hardened. 121 components, 695 tests. Next.js 16 + React 19 |
+| 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 44 stars |
 | 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — prompt engineering, red teaming, bias detection, hallucination hunting. Each live and playable |
 
 <!-- DAILY_STATUS_START -->
-> *Updated by [Passion.EXE](https://github.com/DareDev256/passion-agent) — Apr 15, 2026 at 7:04 AM ET*
->
-> Today: **7 tasks** across **3 repos** · **+1048/-66 lines** · 100% success rate
-> Latest: feat on passion-dashboard, fix on nba-odds-shell, tests on Website
 <!-- DAILY_STATUS_END -->
 
 <!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](https://github.com/DareDev256/passion-agent) — Apr 4, 2026*
-
-**Tonight's build: [TdotsSolutionsz Music Video Portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio)**
-
-The portfolio now boasts a dynamic, interactive hero section featuring a prominent music video. Visitors are immediately drawn in with smooth animations and a clear call to action, offering a compelling preview of the showcased work.
-
-**Highlights:**
-- Visually striking interactive hero section with featured music video.
-- Smooth animations and transitions for an engaging user experience.
-- Polished README with screenshots and a clear explanation of the new feature.
-
-`+1/-1 lines`
 <!-- SHOWCASE_SECTION_END -->
 
 ---
@@ -83,7 +67,7 @@ The portfolio now boasts a dynamic, interactive hero section featuring a promine
 
 ### PACT Dashboard *(private)*
 
-**Agent command terminal** — System Matrix overview, Signal Pulse intel panel, Threat Level monitor, Session Clock. User-togglable Auto-Select mode (`useAutoSelect` hook) dynamically curates Signal Pulse readouts via JSDoc-documented `SelectionEngine` API — scores viewport context, interaction signals, content adjacency, and recency to surface the most pertinent up-to-date intelligence. `AutoSelect` dropdown component extends this pattern to all dashboard dropdowns — contextually pre-selects defaults from active state and data recency, reducing manual selection friction. Tier-visual feedback maps combo tiers to distinct retro-arcade visual styles. Centralized `buildProjectLink` utility eliminates duplicated URL generation across components. Security-audited export routes. Spring-physics MomentumGauge, hybrid SSE invalidation, OWASP-hardened. 121 components, 695 tests.
+**Agent command terminal** — live ops view for Passion. Viewport-aware auto-select, hybrid SSE invalidation, spring-physics gauges, OWASP-hardened export routes. 121 components, 695 tests.
 
 `Next.js 16` `React 19` `TanStack Query`
 
@@ -133,7 +117,7 @@ The portfolio now boasts a dynamic, interactive hero section featuring a promine
 | Ship AI products end-to-end | MCP servers, RAG pipelines, autonomous agents, LLM eval — in production, not slides |
 | Creative→technical leadership | 350+ music videos directed → now directing AI systems at the same pace |
 | Full-stack velocity | 34 repos, 20+ live deployments, 190 releases in 21 days — solo |
-| Developer empathy | 20+ stars on first MCP server, 10 deployed learning games, 1,400+ tests across ecosystem |
+| Developer empathy | 44 stars on first MCP server, 10 deployed learning games, 1,400+ tests across ecosystem |
 
 ---
 
@@ -170,7 +154,7 @@ Developer Tooling     ███████████████░░░░�
 
 | Claim | Receipt |
 |-------|---------|
-| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** MCP server for Final Cut Pro. 20+ stars. Plus [passion-memory-server](https://github.com/DareDev256/passion-memory-server) — persistent AI brain across sessions |
+| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** MCP server for Final Cut Pro. 44 stars. Plus [passion-memory-server](https://github.com/DareDev256/passion-memory-server) — persistent AI brain across sessions |
 | "I ship fast" | 190 releases in 21 days. 10 games designed, built, deployed. Each one live right now |
 | "My AI agent is real" | 1,257+ commits across 47 repos. 60 cycles/day. No demo — just merged PRs |
 | "I build for clients" | 5 artist sites in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
@@ -223,9 +207,9 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 | Project | What It Does | Stack |
 |---------|-------------|-------|
-| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐20+ | First MCP server for Final Cut Pro XML — natural language video editing. Hardened sanitization (empty-string rejection, prototype pollution–safe video ID validation) | Python, MCP SDK |
+| [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐44 | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
 | Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Agent command terminal — System Matrix, Signal Pulse panel (recency-weighted auto-select via `SelectionEngine` API), `AutoSelect` dropdown component (context-aware default pre-selection across all dashboard dropdowns), Threat Level, Session Clock, tier-visual feedback, `buildProjectLink` centralized URL utility, MomentumGauge, `useSSE` streaming, security-audited export routes, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
+| PACT Dashboard *(private)* | Agent command terminal — live ops view, viewport-aware auto-select, SSE streaming, spring-physics gauges, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
