@@ -23,9 +23,9 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 | Status | Project | Description |
 |:------:|---------|-------------|
 | 🟢 | **[second-opinion](https://github.com/DareDev256/second-opinion)** | Evidence-grounded AI appointment brief generator for adenomyosis patients. Anthropic Opus 4.7 hackathon submission. [Live →](https://second-opinion-eta.vercel.app) |
-| 🟢 | **Passion Agent** *(private)* | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval |
+| 🟢 | **Passion OS** *(private)* | Agent + Dashboard + Interactive + Memory MCP + Brain v2 — my personal AI operating system. 92 modules, 109K LOC, 47 repos, 89.9% PR approval, running 24/7 on Mac Mini |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 44 stars |
-| 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — prompt engineering, red teaming, bias detection, hallucination hunting. Each live and playable |
+| 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 6 deployed AI literacy games — prompt engineering, red teaming, bias detection, hallucination hunting. Each live and playable |
 
 <!-- DAILY_STATUS_START -->
 <!-- DAILY_STATUS_END -->
