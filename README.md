@@ -22,10 +22,10 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 
 | Status | Project | Description |
 |:------:|---------|-------------|
-| 🟢 | **Passion Agent** | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval rate |
-| 🟢 | **[PACT Dashboard](https://github.com/DareDev256/passion-dashboard)** *(private)* | Agent command terminal for Passion — live ops panel, viewport-aware auto-select, SSE streaming, OWASP-hardened. 121 components, 695 tests. Next.js 16 + React 19 |
+| 🟢 | **Sandy** | AI front-of-house for luxury hotels. Hospitality 2030 hackathon at Rosewood Sand Hill — Greycroft × Anthropic × ElevenLabs. Voice + memory + tiered complaint intelligence |
+| 🟢 | **[second-opinion](https://github.com/DareDev256/second-opinion)** | Evidence-grounded AI appointment brief generator for adenomyosis patients. Anthropic Opus 4.7 hackathon submission. [Live →](https://second-opinion-eta.vercel.app) |
+| 🟢 | **Passion Agent** *(private)* | Autonomous AI — 92 modules, 109K LOC. Picks work, writes code, opens PRs across 47 repos. 89.9% approval |
 | 🟢 | **[fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server)** | First MCP server for Final Cut Pro — 53 tools, natural language timeline editing. 44 stars |
-| 🟢 | **[Passionate Learning Suite](https://github.com/DareDev256/passion-learning-suite)** | 10 deployed AI literacy games — prompt engineering, red teaming, bias detection, hallucination hunting. Each live and playable |
 
 <!-- DAILY_STATUS_START -->
 <!-- DAILY_STATUS_END -->
@@ -91,11 +91,12 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 </td>
 <td width="33%">
 
-### [passion-memory-server](https://github.com/DareDev256/passion-memory-server)
+### [music-time-machine](https://github.com/DareDev256/music-time-machine)
+![Stars](https://img.shields.io/github/stars/DareDev256/music-time-machine?style=flat-square&color=yellow)
 
-**Persistent AI brain** — MCP server for cross-session memory, project state, session handoff. Powers the entire Passion ecosystem.
+**Music intelligence dashboard** — track any song across Spotify, YouTube, Billboard. The bridge between my music-video years and the AI ecosystem.
 
-`Node.js` `SQLite` `MCP SDK`
+`TypeScript` `Music APIs` `Next.js`
 
 </td>
 </tr>
@@ -111,7 +112,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 |-------------|-------|
 | Ship AI products end-to-end | MCP servers, RAG pipelines, autonomous agents, LLM eval — in production, not slides |
 | Creative→technical leadership | 350+ music videos directed → now directing AI systems at the same pace |
-| Full-stack velocity | 34 repos, 20+ live deployments, 190 releases in 21 days — solo |
+| Full-stack velocity | 35 public repos, 20+ live deployments, 770 commits in 2026 alone — solo |
 | Developer empathy | 44 stars on first MCP server, 10 deployed learning games, 1,400+ tests across ecosystem |
 
 ---
@@ -149,7 +150,7 @@ Developer Tooling     ███████████████░░░░�
 
 | Claim | Receipt |
 |-------|---------|
-| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** MCP server for Final Cut Pro. 44 stars. Plus [passion-memory-server](https://github.com/DareDev256/passion-memory-server) — persistent AI brain across sessions |
+| "I build MCP servers" | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) — **first** MCP server for Final Cut Pro. 44 stars. Plus a private memory MCP powering my agent ecosystem across sessions |
 | "I ship fast" | 190 releases in 21 days. 10 games designed, built, deployed. Each one live right now |
 | "My AI agent is real" | 1,257+ commits across 47 repos. 60 cycles/day. No demo — just merged PRs |
 | "I build for clients" | 5 artist sites in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
@@ -180,7 +181,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
   Passion Memory MCP ─── Shared brain across all sessions
 ```
 
-**What makes this different:** Memory persists across sessions via [Passion Memory MCP](https://github.com/DareDev256/passion-memory-server). LLM routing by task type. Subprocess isolation per task. PR approval feedback shifts future prioritization. Zero human intervention from cycle start to merged PR.
+**What makes this different:** Memory persists across sessions via a private memory MCP. LLM routing by task type. Subprocess isolation per task. PR approval feedback shifts future prioritization. Zero human intervention from cycle start to merged PR.
 
 </details>
 
@@ -201,8 +202,8 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 | [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Rule-based + semantic + LLM-as-judge scoring | Python |
 | [contract-translator](https://github.com/DareDev256/contract-translator) | Legal → plain English — [**Live**](https://contract-translator.vercel.app) | TypeScript, GPT-4 |
 | [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Semantic vs BM25 comparison | Python |
-| [passion-memory-server](https://github.com/DareDev256/passion-memory-server) | Persistent MCP brain — shared memory across all sessions | Node.js, SQLite, MCP |
-| [DareDev256](https://github.com/DareDev256/DareDev256) | This profile README — auto-updated by Passion Agent | Markdown, SVG |
+| Passion Memory Server *(private)* | Persistent MCP brain — shared memory across all sessions | Node.js, SQLite, MCP |
+| [DareDev256](https://github.com/DareDev256/DareDev256) | This profile README | Markdown, SVG |
 
 ### Passionate Learning Suite
 
