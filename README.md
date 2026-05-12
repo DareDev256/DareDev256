@@ -51,20 +51,20 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 </td>
 <td width="33%">
 
-### Passion Agent *(private)*
+### Passion OS *(private)*
 
-**My autonomous brain** — 92 modules, 109K LOC. Selects tasks, writes code, opens PRs. 89.9% approval across 1,257+ commits.
+**My personal AI operating system** — four modules wired into one brain. **Agent**: 92 modules, 109K LOC, 1,400+ commits, 89.9% PR approval across 47 repos. **Dashboard**: live ops view, 121 components, 695 tests. **Interactive**: webcam-driven spatial-gesture OS. **Memory MCP**: cross-session brain with somatic markers. Brain v2 adds salience routing + amygdala feedback + cerebellum pattern learner. Runs 24/7 on the Mac Mini.
 
-`Node.js` `Claude Code SDK` `MCP`
+`Node.js` `Next.js 16` `Claude Code SDK` `MCP` `MediaPipe`
 
 </td>
 <td width="33%">
 
-### PACT Dashboard *(private)*
+### [second-opinion](https://github.com/DareDev256/second-opinion) [![Live](https://img.shields.io/badge/Live-Try_It-10B981?style=flat-square)](https://second-opinion-eta.vercel.app)
 
-**Agent command terminal** — live ops view for Passion. Viewport-aware auto-select, hybrid SSE invalidation, spring-physics gauges, OWASP-hardened export routes. 121 components, 695 tests.
+**Anthropic Opus 4.7 hackathon submission.** Evidence-grounded AI appointment brief generator for adenomyosis patients. Built for my fiancée. Claude-grounded, citation-tracked, real-world use.
 
-`Next.js 16` `React 19` `TanStack Query`
+`TypeScript` `Claude API` `Healthcare AI`
 
 </td>
 </tr>
