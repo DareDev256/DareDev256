@@ -71,7 +71,7 @@ Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold r
 <tr>
 <td width="33%">
 
-### [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator)
+### [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) [![Live](https://img.shields.io/badge/Live-Try_It-10B981?style=flat-square)](https://prompts.tdotssolutionsz.com)
 ![Stars](https://img.shields.io/github/stars/DareDev256/Ultimate-Image-Video-Prompt-Generator?style=flat-square&color=yellow)
 
 **Prompt engineering workbench** — structured builder for 5 AI models: Nano Banana, Veo3, DALL-E, Kling, Sora.
@@ -198,7 +198,7 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 | [second-opinion](https://github.com/DareDev256/second-opinion) | Anthropic Opus 4.7 hackathon submission — adenomyosis appointment brief generator — [**Live**](https://second-opinion-eta.vercel.app) | TypeScript, Claude API |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
 | [passion-framework](https://github.com/DareDev256/passion-framework) | Full autonomous AI agent framework — 92 modules, OSS scaffold | JavaScript |
-| [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) ⭐7 | Structured prompt builder for 5 AI image/video models | TypeScript |
+| [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) ⭐7 | Structured prompt builder for 5 AI image/video models — [**Live**](https://prompts.tdotssolutionsz.com) | TypeScript |
 | [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | Document retrieval with source attribution | Python, FAISS |
 | [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Rule-based + semantic + LLM-as-judge scoring | Python |
 | [contract-translator](https://github.com/DareDev256/contract-translator) | Legal → plain English — [**Live**](https://contract-translator.vercel.app) | TypeScript, GPT-4 |
