@@ -6,12 +6,7 @@
 
 <a href="https://jamesdare.com"><img src="./signature.svg" alt="James Dare — AI Solutions Engineer" width="600" /></a>
 
-![Profile Views](https://komarev.com/ghpvc/?username=DareDev256&color=blueviolet&style=flat-square&label=Profile+Views)
-[![Repos](https://img.shields.io/badge/Public_Repos-35-6C63FF?style=flat-square&logo=github&logoColor=white)](https://github.com/DareDev256?tab=repositories)
-[![Stars](https://img.shields.io/badge/Total_Stars-67+-FFD700?style=flat-square&logo=star&logoColor=white)](https://github.com/DareDev256)
-[![Deployments](https://img.shields.io/badge/Live_Deployments-20+-10B981?style=flat-square&logo=vercel&logoColor=white)](https://jamesdare.com)
-[![Commits](https://img.shields.io/badge/Total_Commits-1%2C400+-E8B931?style=flat-square&logo=git&logoColor=white)](https://github.com/DareDev256)
-[![Ecosystem](https://img.shields.io/badge/AI_Ecosystem-24%2F7-FF6B6B?style=flat-square&logo=robot&logoColor=white)](https://passion.jamesdare.com)
+[![Stars](https://img.shields.io/badge/Stars-71-FFD700?style=flat-square&logo=star&logoColor=white)](https://github.com/DareDev256) [![Deployments](https://img.shields.io/badge/Live_Deployments-20+-10B981?style=flat-square&logo=vercel&logoColor=white)](https://jamesdare.com) [![Commits](https://img.shields.io/badge/Commits_2026-770-E8B931?style=flat-square&logo=git&logoColor=white)](https://github.com/DareDev256)
 
 Directed **350+ music videos** — Chief Keef, Migos, Masicka. Earned a **gold record**. Built and sold **KushdUp Filmsz** to **6ixBuzz** (3M+ followers). Now I architect AI systems that run 24/7 and ship without me.
 
@@ -159,17 +154,6 @@ Developer Tooling     ███████████████░░░░�
 | "My AI agent is real" | 1,257+ commits across 47 repos. 60 cycles/day. No demo — just merged PRs |
 | "I build for clients" | 5 artist sites in production — Swagger Rite (Sony Music), Casper TNG, WhyG, Seanpane, Shortiie Raw |
 | "I care about quality" | 1,400+ tests across the ecosystem. 695 in one repo alone (unit + integration). OWASP Top 10 security audit, input sanitization at every boundary, prototype pollution–safe validation |
-
----
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=DareDev256&theme=tokyonight&no-frame=true&column=6&margin-w=10&margin-h=10" alt="GitHub Trophies" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DareDev256&theme=tokyonight" alt="GitHub Stats" height="165" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=DareDev256&theme=tokyonight&utcOffset=-5" alt="Commit Activity" height="165" />
-</p>
 
 ---
 
@@ -432,12 +416,6 @@ Full design language, metrics sync map, and update playbooks in [`FOR_DARE.md`](
 
 <div align="center">
 
-*"Same eye that framed a music video now frames a system architecture. Same urgency — infinite scale."*
-
-[![See Everything I've Built](https://img.shields.io/badge/See_Everything_I've_Built-jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jamesdare.com)
-[![Let's Build Something](https://img.shields.io/badge/Let's_Build_Something-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/james-olusoga-00179940/)
-[![Watch the Agent Work](https://img.shields.io/badge/Watch_the_Agent_Work-passion.jamesdare.com-FF6B6B?style=for-the-badge&logo=robot&logoColor=white)](https://passion.jamesdare.com)
-
-<sub>Built with obsession in Toronto · Profile auto-maintained by <a href="https://passion.jamesdare.com">Passion Agent</a></sub>
+<sub>Toronto · <a href="https://jamesdare.com">jamesdare.com</a></sub>
 
 </div>
