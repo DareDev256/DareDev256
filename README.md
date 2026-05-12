@@ -193,16 +193,16 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 | Project | What It Does | Stack |
 |---------|-------------|-------|
 | [fcpxml-mcp-server](https://github.com/DareDev256/fcpxml-mcp-server) ⭐44 | First MCP server for Final Cut Pro XML — natural language video editing | Python, MCP SDK |
-| Passion Agent *(private)* | Autonomous AI system — 24/7 brain cycles, 47 repos, 3 LLM backends | Node.js, Claude SDK |
-| PACT Dashboard *(private)* | Agent command terminal — live ops view, viewport-aware auto-select, SSE streaming, spring-physics gauges, OWASP-hardened. 121 components, 695 tests | Next.js 16, React 19 |
+| Passion OS *(private)* | Agent + Dashboard + Interactive + Memory MCP + Brain v2 — 92 modules, 109K LOC, 47 repos, 89.9% PR approval, 24/7 on Mac Mini | Node.js, Next.js 16, Claude SDK, MCP |
 | Viral Clone *(private)* | AI content pipeline — TikTok → original short-form via 4 AI services | TypeScript, grammY |
+| [second-opinion](https://github.com/DareDev256/second-opinion) | Anthropic Opus 4.7 hackathon submission — adenomyosis appointment brief generator — [**Live**](https://second-opinion-eta.vercel.app) | TypeScript, Claude API |
 | [passion-site](https://github.com/DareDev256/passion-site) | Live agent presence — [**Live**](https://passion.jamesdare.com) | HTML, CSS, JS |
-| [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
+| [passion-framework](https://github.com/DareDev256/passion-framework) | Full autonomous AI agent framework — 92 modules, OSS scaffold | JavaScript |
+| [UIVPG](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) ⭐7 | Structured prompt builder — [**Live**](https://ultimate-image-prompt-generator.vercel.app) | TypeScript |
 | [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | Document retrieval with source attribution | Python, FAISS |
 | [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Rule-based + semantic + LLM-as-judge scoring | Python |
 | [contract-translator](https://github.com/DareDev256/contract-translator) | Legal → plain English — [**Live**](https://contract-translator.vercel.app) | TypeScript, GPT-4 |
 | [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Semantic vs BM25 comparison | Python |
-| Passion Memory Server *(private)* | Persistent MCP brain — shared memory across all sessions | Node.js, SQLite, MCP |
 | [DareDev256](https://github.com/DareDev256/DareDev256) | This profile README | Markdown, SVG |
 
 ### Passionate Learning Suite
@@ -215,10 +215,6 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 | [hallucination-hunter](https://github.com/DareDev256/hallucination-hunter) | Spot AI hallucinations — [**Live**](https://hallucination-hunter.vercel.app) |
 | [prompt-craft](https://github.com/DareDev256/prompt-craft) | Prompt engineering challenges — [**Live**](https://prompt-craft-jet.vercel.app) |
 | [tool-match](https://github.com/DareDev256/tool-match) | Match intents to AI tools — [**Live**](https://tool-match-sable.vercel.app) |
-| [api-architect](https://github.com/DareDev256/api-architect) | REST API design challenges — [**Live**](https://api-architect-gamma.vercel.app) |
-| [netrunner](https://github.com/DareDev256/netrunner) | Networking fundamentals — [**Live**](https://netrunner-gilt.vercel.app) |
-| [cybershield](https://github.com/DareDev256/cybershield) | Cybersecurity essentials — [**Live**](https://cybershield.vercel.app) |
-| [circuit-prophet](https://github.com/DareDev256/circuit-prophet) | Electrical & hardware basics — [**Live**](https://circuit-prophet.vercel.app) |
 
 ### Interactive Web & Games
 
@@ -226,8 +222,13 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 |---------|-------------|
 | [vibe-coder](https://github.com/DareDev256/vibe-coder) | Vampire Survivors-style idle game — [**Live**](https://daredev256.github.io/vibe-coder/) |
 | [tdotssolutionsz-portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio) | Synthwave 3D portfolio — [**Live**](https://tdotssolutionsz.com) |
-| [pulsemap](https://github.com/DareDev256/pulsemap) | Disease surveillance dashboard — [**Live**](https://pulsemap-three.vercel.app) |
-| [music-time-machine](https://github.com/DareDev256/music-time-machine) | Music intelligence dashboard |
+| [pulsemap](https://github.com/DareDev256/pulsemap) ⭐2 | Disease surveillance dashboard — [**Live**](https://pulsemap-three.vercel.app) |
+| [music-time-machine](https://github.com/DareDev256/music-time-machine) ⭐2 | Music intelligence dashboard |
+| [toronto-parking-viz](https://github.com/DareDev256/toronto-parking-viz) | Interactive 3D timelapse of Toronto parking tickets — [**Live**](https://toronto-parking-viz.vercel.app) — deck.gl + Mapbox |
+| [hand-playground](https://github.com/DareDev256/hand-playground) | Hand-tracking interaction lab — 7 spatial-UI gesture exercises with MediaPipe |
+| [whats-poppin](https://github.com/DareDev256/whats-poppin) | Bubble pop game with cultural sauce — [**Live**](https://passion-pop.vercel.app) |
+| [lockedin](https://github.com/DareDev256/lockedin) | One-tap connection card — Follow All / Connect / DM / Book — [**Live**](https://tapin-bay.vercel.app) |
+| [tapin-native](https://github.com/DareDev256/tapin-native) | Expo iOS deep-link feasibility spike |
 | [memory-master-mvp](https://github.com/DareDev256/memory-master-mvp) | AI spaced repetition with 45 tests |
 | [buildright](https://github.com/DareDev256/buildright) | Duolingo-style mobile learning |
 
@@ -235,12 +236,14 @@ Passion Agent (24/7 Mac Mini) ─── 92 modules, 109K LOC
 
 | Project | Live |
 |---------|------|
-| [swagger-rite-website](https://github.com/DareDev256/swagger-rite-website) | [swagger-rite-website.vercel.app](https://swagger-rite-website.vercel.app) |
-| [seanpane-website](https://github.com/DareDev256/seanpane-website) | [seanpane-website.vercel.app](https://seanpane-website.vercel.app) |
-| [whyg35-website](https://github.com/DareDev256/whyg35-website) | [whyg35-website.vercel.app](https://whyg35-website.vercel.app) |
-| [shortiie-raw-website](https://github.com/DareDev256/shortiie-raw-website) | [shortiie-raw-website.vercel.app](https://shortiie-raw-website.vercel.app) |
-| [Website](https://github.com/DareDev256/Website) | [jamesdare.com](https://jamesdare.com) |
-| casper-tng-website *(private)* | [casper-tng-website.vercel.app](https://casper-tng-website.vercel.app) |
+| [syreneffect-site](https://github.com/DareDev256/syreneffect-site) | The Syren Effect — Twitch streamer + content creator site — [**Live**](https://syreneffect-site.vercel.app) |
+| [shopbayhq-site](https://github.com/DareDev256/shopbayhq-site) | ShopBayHQ marketing site — [**Live**](https://shopbayhq-site.vercel.app) |
+| swagger-rite-website *(private)* | Swagger Rite (Sony Music) — [**Live**](https://swagger-rite-website.vercel.app) |
+| seanpane-website *(private)* | Seanpane artist site — [**Live**](https://seanpane-website.vercel.app) |
+| whyg35-website *(private)* | WhyG35 artist site — [**Live**](https://whyg35-website.vercel.app) |
+| shortiie-raw-website *(private)* | Shortiie Raw artist site — [**Live**](https://shortiie-raw-website.vercel.app) |
+| casper-tng-website *(private)* | Casper TNG — [**Live**](https://casper-tng-website.vercel.app) |
+| jamesdare.com *(private repo)* | Personal portfolio — [**Live**](https://jamesdare.com) |
 
 </details>
 
