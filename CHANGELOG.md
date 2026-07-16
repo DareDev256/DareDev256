@@ -7,6 +7,45 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.9.0] - 2026-07-15
+
+### Fixed
+- **8 dead links removed.** Every `github.com/DareDev256/<repo>` link pointing at a private
+  repo rendered as a 404 to visitors. The worst offender was `second-opinion` — the #1
+  "Currently Building" row *and* a Featured card, linked 3 times, 404 every time. Also dead:
+  `passion-learning-suite` (a Currently Building row), `passion-site`, `passion-framework`,
+  `contract-translator`, `memory-master-mvp`, `shopbayhq-site`. All 29 linked repos were
+  audited against `gh api repos/... --jq '.private'`; only public ones survive.
+- **Stale metrics corrected against live data.** `Stars-71` → real total was 99.
+  `fcpxml-mcp-server: 44 stars` (3 places) → real 68. `UIVPG ⭐7` → real 8.
+  `35 public repos` → real 32. Hardcoded `Commits_2026-770` removed.
+- **second-opinion now links its live demo** (`second-opinion-eta.vercel.app`, verified 200)
+  instead of its private repo — the hackathon work stays showcased with no dead link and no
+  visibility change to the repo.
+
+### Changed
+- **README cut 427 → ~150 lines** (39KB → ~11KB), bringing it back under the size cap that
+  `CLAUDE.md` has always declared non-negotiable ("under 120 visible lines and ~300 total").
+  The file had drifted ~40% over the ceiling its own rules set.
+- **All star/fork counts are now dynamic Shields.io endpoints** that read live from the
+  GitHub API. Hardcoded counts were the root cause of the metric drift, not a symptom —
+  they cannot go stale again.
+- **Bio compressed to one line.** The 350+ videos / Chief Keef / Migos / Masicka / gold
+  record / KushdUp→6ixBuzz résumé block was the "doing too much" signal. The credentials are
+  strong; enumerating them was the problem.
+- **`chain-recall` added** — public, starred, an Anthropic SF hackathon build, and somehow
+  absent from the profile entirely.
+- New **Hackathons** section groups the two hackathon builds.
+- Learning-suite games now link individually (all 6 verified live) rather than through the
+  private `passion-learning-suite` umbrella repo.
+- Unverifiable ecosystem claims cut: "89.9% PR approval", "1,257+ commits", "190 releases in
+  21 days", "1,400+ tests", "20+ live deployments". Kept only what a visitor can check.
+- "Hard problems" trimmed from 17 war stories to the 6 strongest.
+
+### Added
+- `CLAUDE.md` **Link Rule** — never link a private repo; verify with `gh api` before adding.
+- `CLAUDE.md` **Metrics Rule** — no hardcoded counts; dynamic badges only.
+
 ## [0.8.73] - 2026-04-15
 
 ### Changed

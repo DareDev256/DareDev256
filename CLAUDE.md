@@ -9,13 +9,40 @@
 - New content goes inside existing `<details>` blocks, NOT as new visible sections
 - Never add ASCII art, timeline blocks, tables, or multi-line code blocks outside `<details>`
 - Never expand collapsed sections into visible content
-- New projects → add to collapsed "All 34 Projects" block, update count
+- New projects → add to the collapsed "Everything else" block
 
 ## Structure (do not change)
 
-Visible sections in order: Hero → Currently Building → Featured Projects → Open To → Tech Stack → Proof of Craft → GitHub Stats → Footer
+Visible sections in order: Hero → Featured → Hackathons → Also Worth a Look → Open To → Footer
 
-Collapsed sections: Domain Depth + Technical DNA, How the Passion Ecosystem Works, All 34 Projects, Hard Problems I've Solved, What I'd Build Differently, Repo Setup & Dependencies
+Collapsed sections: AI literacy games, Everything else, Hard problems I've actually solved, What I'd build differently
+
+## Link Rule (v0.9.0 — non-negotiable)
+
+**Never link a private repo.** A `github.com/DareDev256/<private-repo>` link renders as a
+404 to every visitor — the profile's own credibility surface, broken. Before adding any
+repo link, verify it is public:
+
+```bash
+gh api repos/DareDev256/<repo> --jq '.private'   # must print: false
+```
+
+For private work with a public deployment (e.g. second-opinion), link the **live demo
+only** and name the project in bold without a repo link. v0.9.0 removed 8 such dead links.
+
+## Metrics Rule (v0.9.0 — non-negotiable)
+
+**No hardcoded counts.** Star totals, fork counts, repo counts, and commit counts drift
+silently and make the profile lie. Use Shields.io dynamic endpoints, which read live:
+
+```
+https://img.shields.io/github/stars/DareDev256/<repo>?style=flat-square
+https://img.shields.io/github/forks/DareDev256/<repo>?style=flat-square
+```
+
+Any claim with a number in it must be verifiable from a live source or cut. v0.9.0 removed
+the hardcoded `Stars-71` (real: 99), `44 stars` (real: 68), `⭐7` (real: 8), `Commits_2026-770`,
+`35 public repos` (real: 32), and several unverifiable ecosystem stats.
 
 ## Auto-Update Zones
 
@@ -29,7 +56,7 @@ Everything outside these markers requires human review.
 
 - CHANGELOG.md follows Keep a Changelog format
 - Semantic versioning: major = full redesign, minor = new sections, patch = updates
-- Current: v0.8.73
+- Current: v0.9.0
 
 ## Assets
 
