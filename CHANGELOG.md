@@ -7,6 +7,11 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [0.9.1] - 2026-07-16
+
+### Fixed
+- UIPG described as "five image/video models — Nano Banana, Veo3, DALL·E, Kling, Sora". Verified against `web/src/lib/models.ts`: **9 engines** (2 image, 7 video). DALL-E was replaced by GPT-Image-2 in UIPG v2.0 and Sora was never in the registry — the list was carried over from the old README without checking.
+
 ## [0.9.0] - 2026-07-15
 
 ### Fixed

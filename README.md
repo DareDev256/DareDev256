@@ -27,7 +27,7 @@ The first MCP server for Final Cut Pro. Natural-language timeline editing — an
 ### [Ultimate Image & Video Prompt Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) · [Live →](https://prompts.tdotssolutionsz.com)
 [![Stars](https://img.shields.io/github/stars/DareDev256/Ultimate-Image-Video-Prompt-Generator?style=flat-square&color=FFD700)](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator/stargazers)
 
-Structured prompt workbench for five image/video models — Nano Banana, Veo3, DALL·E, Kling, Sora. `TypeScript`
+Structured prompt workbench for nine image/video engines — Nano Banana Pro, GPT-Image-2, Seedance, Veo, Kling, plus the open-source spectrum. `TypeScript`
 
 <!-- DAILY_STATUS_START -->
 <!-- DAILY_STATUS_END -->
