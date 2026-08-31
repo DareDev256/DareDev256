@@ -7,6 +7,24 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-08-31
+
+### Changed
+- Cut the page down. Total 21,376 characters to 17,304; visible prose 10,371 to 7,022.
+  Nothing was deleted, it moved. Hard problems and the second project table are now inside
+  the collapsed blocks with the games and the retrospective, so the page opens on four
+  sections instead of six and the evidence is one click down rather than a wall.
+- Prose reduced to statements. The contributor paragraph became a list, coldopen lost two
+  explanatory paragraphs, portfolio-os lost the aside about z-index normalisation. Every
+  fact and every link survived.
+- Badge diet. fcp-mcp-server 5 badges to 3, coldopen and portfolio-os 3 each to 1, and the
+  ten-shield tech row under Open to is now a line of plain text. A badge wall is the most
+  reliable tell that a page was assembled rather than written.
+
+### Removed
+- The perfectpixel-studio and VisionClaw rows. Both are forks with no commits of mine and
+  are being deleted, so listing them would leave two more dead links.
+
 ## [1.0.0] - 2026-08-31
 
 Full rebuild, driven by a five-round gauntlet loop: build, then a separate fresh-context

@@ -4,7 +4,9 @@
 
 # James Dare
 
-**AI Solutions Engineer, Toronto.** I build MCP servers, agents, and retrieval systems that ship. The decade before this I directed music videos, [101 of them indexed here](https://tdotssolutionsz.com), including Casper TNG's "Dope Boy", the single [Music Canada certified Gold on 21 July 2022](https://musiccanada.com/gold-platinum/?_gp_search=dope%20boy) to Casper TNG ft. Fresh on Morojele Music Group. The first thing I built here was an MCP server for Final Cut Pro.
+**AI Solutions Engineer, Toronto.** MCP servers, agents, retrieval systems.
+
+Before this I directed music videos for a decade, [101 of them](https://tdotssolutionsz.com). One of them, Casper TNG's "Dope Boy", was [certified Gold](https://musiccanada.com/gold-platinum/?_gp_search=dope%20boy) in 2022. The first thing I built here was an MCP server for Final Cut Pro.
 
 [![jamesdare.com](https://img.shields.io/badge/jamesdare.com-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jamesdare.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-818CF8?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/james-olusoga-00179940/) [![X](https://img.shields.io/badge/X-0E0B22?style=for-the-badge&logo=x&logoColor=white)](https://x.com/tdotssolutionsz)
 
@@ -16,17 +18,21 @@
 
 ### [fcp-mcp-server](https://github.com/DareDev256/fcp-mcp-server) · [PyPI](https://pypi.org/project/fcp-mcp-server/)
 
-[![Stars](https://img.shields.io/github/stars/DareDev256/fcp-mcp-server?style=flat-square&color=A78BFA&label=stars)](https://github.com/DareDev256/fcp-mcp-server) [![Forks](https://img.shields.io/github/forks/DareDev256/fcp-mcp-server?style=flat-square&color=818CF8&label=forks)](https://github.com/DareDev256/fcp-mcp-server) [![PyPI](https://img.shields.io/pypi/v/fcp-mcp-server?style=flat-square&color=6C63FF&label=pypi)](https://pypi.org/project/fcp-mcp-server/) [![Downloads](https://img.shields.io/pypi/dm/fcp-mcp-server?style=flat-square&color=A78BFA&label=downloads)](https://pypistats.org/packages/fcp-mcp-server) [![CI](https://github.com/DareDev256/fcp-mcp-server/actions/workflows/test.yml/badge.svg)](https://github.com/DareDev256/fcp-mcp-server/actions)
+[![Stars](https://img.shields.io/github/stars/DareDev256/fcp-mcp-server?style=flat-square&color=A78BFA&label=stars)](https://github.com/DareDev256/fcp-mcp-server) [![Downloads](https://img.shields.io/pypi/dm/fcp-mcp-server?style=flat-square&color=6C63FF&label=installs)](https://pypistats.org/packages/fcp-mcp-server) [![CI](https://github.com/DareDev256/fcp-mcp-server/actions/workflows/test.yml/badge.svg)](https://github.com/DareDev256/fcp-mcp-server/actions)
 
-**Outside contributors.** Two developers outside this project wrote fixes for it and I merged them. [@mikegrant25](https://github.com/mikegrant25) sent [#6](https://github.com/DareDev256/fcp-mcp-server/pull/6), anchoring `apply_template` output to the projects sandbox after finding it could write outside. [@jardelapp](https://github.com/jardelapp) sent [#7](https://github.com/DareDev256/fcp-mcp-server/pull/7), probing real audio duration instead of stamping the timeline span onto the asset, and [#8](https://github.com/DareDev256/fcp-mcp-server/pull/8), skipping video decoding in silence detection, a pass that had been decoding the whole stream and timing out on a 2.5GB camera file. Merged as [`69fcbad`](https://github.com/DareDev256/fcp-mcp-server/commit/69fcbadbb4fffafd1f29bc66ffc61ac451b3183a), [`25857dc`](https://github.com/DareDev256/fcp-mcp-server/commit/25857dcab4d0f693565b933f0fc248a989b6b762), [`608724d`](https://github.com/DareDev256/fcp-mcp-server/commit/608724d76c167cc5bfa0960644fe5d7a662cbff9).
+Grouped tools over FCPXML, so Claude can read a real timeline, health-check it, and write back non-destructive edits. On PyPI since 2026-07-25. `defusedxml` throughout, sandboxed writes, adversarial input tests, a private disclosure channel.
 
-Grouped tools over the FCPXML operation set, so Claude can read a real timeline, run a health check, and write back non-destructive edits. On PyPI since 2026-07-25. Hardened for other people's libraries: adversarial input tests, `defusedxml` throughout, sandboxed writes, and a private disclosure channel.
+Two developers outside the project sent fixes and I merged them:
+
+- [@mikegrant25](https://github.com/mikegrant25) · [#6](https://github.com/DareDev256/fcp-mcp-server/pull/6): `apply_template` could write outside its sandbox
+- [@jardelapp](https://github.com/jardelapp) · [#7](https://github.com/DareDev256/fcp-mcp-server/pull/7): audio duration was stamped from the timeline span instead of probed
+- [@jardelapp](https://github.com/jardelapp) · [#8](https://github.com/DareDev256/fcp-mcp-server/pull/8): silence detection decoded the whole video stream, timing out on a 2.5GB camera file
 
 ### [coldopen](https://github.com/DareDev256/coldopen) · six artists, six live domains
 
-[![Last commit](https://img.shields.io/github/last-commit/DareDev256/coldopen?style=flat-square&color=6C63FF&label=last%20commit)](https://github.com/DareDev256/coldopen/commits/main) [![Top language](https://img.shields.io/github/languages/top/DareDev256/coldopen?style=flat-square&color=818CF8)](https://github.com/DareDev256/coldopen) [![License](https://img.shields.io/github/license/DareDev256/coldopen?style=flat-square&color=A78BFA)](https://github.com/DareDev256/coldopen/blob/main/LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/DareDev256/coldopen?style=flat-square&color=6C63FF&label=last%20commit)](https://github.com/DareDev256/coldopen/commits/main)
 
-Five of these six sites were hand-built, and shortiieraw.com was generated by the engine derived from them. Every build starts by naming the world it lives in. K Money's is *The Vault*, so his catalogue renders as a wall of hung work.
+Five hand-built. The sixth was generated by the engine the other five produced. Each build starts by naming the world it lives in: K Money's is *The Vault*, so his catalogue hangs on the wall like work in one.
 
 | Site | The world | The artist |
 |---|---|---|
@@ -37,17 +43,17 @@ Five of these six sites were hand-built, and shortiieraw.com was generated by th
 | **[officialstreetbud.com](https://officialstreetbud.com)** | The Streetlight | **Street Bud** · [Instagram](https://www.instagram.com/streetbud_/) · [YouTube](https://www.youtube.com/channel/UCkKhQTvBYCfC8aRMeE0peuQ) · [Spotify](https://open.spotify.com/artist/6tQmUQ1aBbgQwEqXFjVwB6) |
 | **[shortiieraw.com](https://shortiieraw.com)** *(generated)* | Carry-On | **Shortiie Raw** · [Instagram](https://www.instagram.com/shortiieraw/) · [YouTube](https://www.youtube.com/@ShortiieRaw) · [Spotify](https://open.spotify.com/artist/0WnHD0zH7mlYxetaIYvMBO) |
 
-The engine names the world first, derives type, colour, motion, and section names from that one decision, then refuses the build if it drifts. Every renderable value is a `Fact` that will not construct without a `sourceUrl` and a `verifiedAt`, so an unsourced claim renders as a redaction bar carrying the reason rather than a number.
+Type, colour, motion and section names all derive from that one decision, and the build is refused if it drifts. Every renderable value is a `Fact` that will not construct without a `sourceUrl` and a `verifiedAt`, so an unsourced claim renders as a redaction bar instead of a number.
 
-coldopen ran its own blind A/B on 2026-08-21, written up in [docs/GAUNTLET.md](https://github.com/DareDev256/coldopen/blob/main/docs/GAUNTLET.md). A fresh-context judge shown five screenshots at 1440x900 named savv4x.com, which is hand-built, at 70% confidence, and ranked the generated site first of the five. Scope, per the doc: one judge, one round, one viewport, no mobile, no panel, and a judge who volunteered it was partly guessing.
+Blind A/B, 2026-08-21: a fresh judge shown five screenshots picked savv4x.com, which is hand-built, at 70% confidence, and ranked the generated site first of the five for looking hand-made. One judge, one round, one viewport. [docs/GAUNTLET.md](https://github.com/DareDev256/coldopen/blob/main/docs/GAUNTLET.md) lists what that does not cover.
 
-The public repo is the engine, its guards, its tests, and a [`_template`](https://github.com/DareDev256/coldopen/tree/main/worlds/_template) you fill in. The worked examples in the tree are [100bandplan](https://github.com/DareDev256/coldopen/blob/main/worlds/100bandplan/release-die2young.ts), a site I own, and the generated Shortiie Raw builds the A/B above was run on. The hand-built client sites are not in the repo.
+Public: the engine, its guards, its tests, and a [`_template`](https://github.com/DareDev256/coldopen/tree/main/worlds/_template). Client site code is not in the repo.
 
 ### [portfolio-os](https://github.com/DareDev256/portfolio-os) · [Live](https://portfolio-os-navy.vercel.app)
 
-[![Last commit](https://img.shields.io/github/last-commit/DareDev256/portfolio-os?style=flat-square&color=6C63FF&label=last%20commit)](https://github.com/DareDev256/portfolio-os/commits/main) [![Top language](https://img.shields.io/github/languages/top/DareDev256/portfolio-os?style=flat-square&color=818CF8)](https://github.com/DareDev256/portfolio-os) [![License](https://img.shields.io/github/license/DareDev256/portfolio-os?style=flat-square&color=A78BFA)](https://github.com/DareDev256/portfolio-os/blob/main/LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/DareDev256/portfolio-os?style=flat-square&color=6C63FF&label=last%20commit)](https://github.com/DareDev256/portfolio-os/commits/main)
 
-A desktop operating system that boots in a browser tab. Draggable and resizable windows, a `Cmd+K` command palette, a magnifying dock, deep-linkable routes, and a Three.js cyberspace view. No React, Vue or Svelte import anywhere in the tree: the DOM is built by hand, and Three.js and DOMPurify come in as pinned CDN modules. The window manager, the router, and the focus stack are hand-written, which means z-index normalization has to stay ceiling-bounded or a long session slowly walks every window out of range. One Vite config builds three deliberately divergent surfaces from it: a static hiring page at `/`, the OS at `/os`, and the coldopen method writeup at `/coldopen`.
+A desktop OS that boots in a browser tab. Draggable windows, a `Cmd+K` palette, a magnifying dock, deep-linkable routes, a Three.js cyberspace view. No React, Vue or Svelte anywhere in the tree: the DOM is built by hand, and Three.js and DOMPurify come in as pinned CDN modules. One Vite config builds three surfaces from it, at `/`, `/os` and `/coldopen`.
 
 ## Currently
 
@@ -59,17 +65,6 @@ A desktop operating system that boots in a browser tab. Draggable and resizable 
 <sub>Generated 2026-08-31 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
 <!-- DAILY_STATUS_END -->
 
----
-
-## Hard problems, with receipts
-
-Three real defects from public repos.
-
-**Every broadcast frame rate was arithmetic on the wrong timebase.** `TimeValue` built its denominators with `int(fps)`. `int(23.976)` is 23, so 3604 seconds was stored as `86410/23s` and read back as 3756.957s, a 152 second error on a number that is exact on the page. It hit 23.976, 29.97 and 59.94, the three broadcast rates the issue names, and only the clean integer rates were correct. Rates are exact rationals and are now carried as such end to end, resolved through a new `rational.py`. [fcp-mcp-server #17](https://github.com/DareDev256/fcp-mcp-server/issues/17)
-
-**A tool moved nothing and reported success.** `snap_to_beats` built its work list from spine children only. A music video is cut by laying an audio bed and hanging every visual off it as a connected clip, so on the real music video I was cutting the spine held one `<gap>`, 0 of 129 clips were considered, and the tool reported success. It now walks connected clips lane by lane and names every cut in its report: considered, moved, already on a beat, out of reach of a marker, or skipped for a collision. [fcp-mcp-server #16](https://github.com/DareDev256/fcp-mcp-server/issues/16)
-
-**A 200 came from the wrong file.** A page hung on its boot screen in production. Its script tag used a relative `./app.js`, which at a path with no trailing slash resolves to `/app.js`, hits the SPA rewrite, and returns `index.html` with a 200. The script tag now carries the absolute `/fandom-flow/app.js`. It passed local testing because the local URL carried the trailing slash the deployed link does not. [portfolio-os CHANGELOG 4.14.1](https://github.com/DareDev256/portfolio-os/blob/main/CHANGELOG.md)
 
 ---
 
@@ -77,21 +72,9 @@ Three real defects from public repos.
 
 | Project | Built | |
 |---|---|---|
-| **[chain-recall](https://github.com/DareDev256/chain-recall)** · an AI memory layer for luxury hotel chains. The chain already pays for Oracle OPERA, so the pitch is to open the guest history it already owns at the moment that converts: arrival at the desk. Voice front end. | Anthropic Hackathon, San Francisco · 8 hours · May 2026 · Next.js, Claude, ElevenLabs | [![Stars](https://img.shields.io/github/stars/DareDev256/chain-recall?style=flat-square&color=A78BFA&label=stars)](https://github.com/DareDev256/chain-recall) [Live →](https://chain-recall.vercel.app) |
+| **[chain-recall](https://github.com/DareDev256/chain-recall)** · an AI memory layer for luxury hotel chains. They already pay for Oracle OPERA, so the pitch is to open the guest history they own at the moment that converts: arrival at the desk. Voice front end. | Anthropic Hackathon, San Francisco · 8 hours · May 2026 · Next.js, Claude, ElevenLabs | [![Stars](https://img.shields.io/github/stars/DareDev256/chain-recall?style=flat-square&color=A78BFA&label=stars)](https://github.com/DareDev256/chain-recall) [Live →](https://chain-recall.vercel.app) |
 | **second-opinion** · an evidence-grounded appointment brief for adenomyosis patients, who get a short specialist window and lose most of it to recap. Every claim carries its citation. | Anthropic Opus 4.7 Hackathon · repo private, demo open | [Live →](https://second-opinion-eta.vercel.app) |
 
----
-
-## Also worth a look
-
-| Project | What it is | |
-|---|---|---|
-| [Ultimate Image & Video Prompt Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | A prompt workbench for nine generation engines, stills and motion. Nine incompatible parameter grammars normalized into one wizard. Every suggestion is credited to the creator it came from. | [Live →](https://prompts.tdotssolutionsz.com) |
-| [pulsemap](https://github.com/DareDev256/pulsemap) | Global disease surveillance dashboard on WHO data. Mapbox GL, Supabase, Next.js. | [Live →](https://pulsemap-three.vercel.app) |
-| [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | RAG pipeline that returns the chunk behind every answer, so retrieval can be checked. | |
-| [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Regression testing for LLM systems: rule-based, semantic, and LLM-as-judge scoring, wired for CI. | |
-| [clickfix-defense-kit](https://github.com/DareDev256/clickfix-defense-kit) | macOS anti-infostealer toolkit, written after a real ClickFix attack came at me. Blocks `curl \| sh` paste attacks and audits what already ran. | |
-| [music-time-machine](https://github.com/DareDev256/music-time-machine) | One song tracked across Spotify, YouTube, Billboard, and Genius. | |
 
 ---
 
@@ -99,7 +82,7 @@ Three real defects from public repos.
 
 **AI Solutions Engineer** · **Developer Relations** · **Solutions Architect** · **Founding Engineer** · Toronto or remote
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-6C63FF?style=flat-square&logoColor=white) ![Anthropic](https://img.shields.io/badge/Anthropic-191919?style=flat-square&logo=anthropic&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
+TypeScript · Python · Node · React · Next.js · MCP · SQLite · Playwright
 
 ---
 
@@ -122,12 +105,16 @@ Engine and every game spec are public in **[passion-learning-suite](https://gith
 </details>
 
 <details>
-<summary><strong>Everything else</strong></summary>
+<summary><strong>Other projects</strong></summary>
 
 | Project | What it is | |
 |---|---|---|
-| [perfectpixel-studio](https://github.com/DareDev256/perfectpixel-studio) | Fork of gykim80/perfectpixel-studio, kept for reference. Sprite-sheet studio: eight directions and a full action set from one text prompt. Wails, Go, React. | |
-| [VisionClaw](https://github.com/DareDev256/VisionClaw) | Fork of Intent-Lab/VisionClaw, kept for reference. Voice and vision agent for Meta Ray-Ban glasses, over Gemini Live. | |
+| [Ultimate Image & Video Prompt Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | A prompt workbench for nine generation engines, stills and motion. Nine incompatible parameter grammars normalized into one wizard. Every suggestion is credited to the creator it came from. | [Live →](https://prompts.tdotssolutionsz.com) |
+| [pulsemap](https://github.com/DareDev256/pulsemap) | Global disease surveillance dashboard on WHO data. Mapbox GL, Supabase, Next.js. | [Live →](https://pulsemap-three.vercel.app) |
+| [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | RAG pipeline that returns the chunk behind every answer, so retrieval can be checked. | |
+| [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Regression testing for LLM systems: rule-based, semantic, and LLM-as-judge scoring, wired for CI. | |
+| [clickfix-defense-kit](https://github.com/DareDev256/clickfix-defense-kit) | macOS anti-infostealer toolkit, written after a real ClickFix attack came at me. Blocks `curl \| sh` paste attacks and audits what already ran. | |
+| [music-time-machine](https://github.com/DareDev256/music-time-machine) | One song tracked across Spotify, YouTube, Billboard, and Genius. | |
 | [toronto-parking-viz](https://github.com/DareDev256/toronto-parking-viz) | 3D timelapse of Toronto parking tickets. deck.gl and Mapbox. | [Live →](https://toronto-parking-viz.vercel.app) |
 | [hand-playground](https://github.com/DareDev256/hand-playground) | Seven exercises in spatial gesture UI. MediaPipe, React, Canvas 2D. | |
 | [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Semantic vector search against BM25, side by side, on the same corpus. | |
@@ -142,7 +129,13 @@ Engine and every game spec are public in **[passion-learning-suite](https://gith
 </details>
 
 <details>
-<summary><strong>Four more hard problems</strong></summary>
+<summary><strong>Seven bugs, with receipts</strong></summary>
+
+**Every broadcast frame rate was arithmetic on the wrong timebase.** `TimeValue` built its denominators with `int(fps)`. `int(23.976)` is 23, so 3604 seconds was stored as `86410/23s` and read back as 3756.957s, a 152 second error on a number that is exact on the page. It hit 23.976, 29.97 and 59.94. Rates are exact rationals and are carried as such end to end now, through a new `rational.py`. [fcp-mcp-server #17](https://github.com/DareDev256/fcp-mcp-server/issues/17)
+
+**A tool moved nothing and reported success.** `snap_to_beats` built its work list from spine children only. A music video hangs every visual off an audio bed as a connected clip, so on the video I was cutting the spine held one `<gap>`: 0 of 129 clips considered, and the tool reported success. It walks connected clips lane by lane now and names every cut in its report as considered, moved, already on a beat, out of reach, or skipped for a collision. [fcp-mcp-server #16](https://github.com/DareDev256/fcp-mcp-server/issues/16)
+
+**A 200 came from the wrong file.** A page hung on its boot screen in production. Its script tag used a relative `./app.js`. At a path with no trailing slash that resolves to `/app.js`, hits the SPA rewrite, and returns `index.html` with a 200. It passed local testing because the local URL carried the trailing slash the deployed link does not. The tag is absolute now. [portfolio-os CHANGELOG 4.14.1](https://github.com/DareDev256/portfolio-os/blob/main/CHANGELOG.md)
 
 **A banned-colour list is defeated by nudging one channel.** coldopen refuses to ship a cream ground. The first version was a hex denylist, which `#F7F1E7` fails and `#F9F3E9` passes, and those are the same colour. Replaced with a test on hue, saturation, and lightness, which catches the neighbourhood around a sample, plus a `brandExemption` a caller has to justify in the call. The same audit fails a build whose lexicon contains a generic label like "Contact". [coldopen/docs/DECISIONS.md](https://github.com/DareDev256/coldopen/blob/main/docs/DECISIONS.md)
 
