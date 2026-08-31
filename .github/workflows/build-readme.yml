@@ -1,0 +1,83 @@
+name: Build README
+
+# Regenerates the DAILY_STATUS block from live GitHub data, so the profile is
+# provably current rather than a snapshot that starts decaying the day it was
+# typed. The block holds three clickable facts that are only true today: the
+# most recent release across the public repos, the most recent commit, and the
+# live CI conclusion on fcp-mcp-server.
+#
+# If the API cannot be reached, the block is EMPTIED rather than left stale.
+# The page argues that it refuses to print what it cannot source; a status line
+# quietly repeating yesterday would be the one sentence that contradicts it.
+
+on:
+  schedule:
+    - cron: '17 11 * * *'   # 11:17 UTC daily, off the hour to dodge cron pileup
+  workflow_dispatch:
+
+# Least privilege: the job reads public data with the default GITHUB_TOKEN and
+# writes one file back to this repo. No PAT, no packages, no issues, no actions.
+permissions:
+  contents: write
+
+concurrency:
+  group: build-readme
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Regenerate DAILY_STATUS block
+        id: build
+        # Standard library only, so there is no dependency step to rot.
+        # Exit 3 means degraded: at least one column could not be sourced and
+        # was dropped. The commit still happens, the job is flagged afterwards.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set +e
+          python3 .github/scripts/build_readme.py
+          code=$?
+          set -e
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          if [ "$code" -ne 0 ] && [ "$code" -ne 3 ]; then
+            echo "::error::build_readme.py crashed with exit $code"
+            exit "$code"
+          fi
+
+      - name: Verify markers survived
+        # The script must only ever write between the markers. If a marker went
+        # missing, validate-readme.yml would fail on the next human push, so
+        # catch it here and refuse to commit the damage.
+        run: |
+          for marker in DAILY_STATUS_START DAILY_STATUS_END; do
+            grep -q "<!-- ${marker} -->" README.md || { echo "::error::Marker lost: ${marker}"; exit 1; }
+          done
+          total=$(wc -l < README.md)
+          echo "README.md: $total lines"
+          [ "$total" -le 500 ] || { echo "::error::README.md exceeds 500 lines ($total)"; exit 1; }
+
+      - name: Commit if changed
+        run: |
+          git diff --stat
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "chore: refresh daily status from live GitHub data" || exit 0
+          git push
+
+      - name: Flag a fully unsourced run
+        # An empty block is the correct output when nothing can be sourced, and
+        # it is also a thing James should hear about. Honest page, failed job.
+        if: steps.build.outputs.code == '3'
+        run: |
+          if awk '/DAILY_STATUS_START/{f=1;next} /DAILY_STATUS_END/{f=0} f' README.md | grep -q '[^[:space:]]'; then
+            echo "::warning::DAILY_STATUS rendered with fewer than 3 columns."
+          else
+            echo "::error::DAILY_STATUS is empty: no column could be sourced today."
+            exit 1
+          fi

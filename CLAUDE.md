@@ -4,8 +4,7 @@
 
 **README.md must stay under 120 visible lines and ~300 total lines.** This is non-negotiable.
 
-- Only write inside auto-update marker zones (`DAILY_STATUS_START/END`, `SHOWCASE_SECTION_START/END`)
-- Showcase updates: **1-2 lines max** — project name, one sentence, diff stats, live link
+- Only write inside the auto-update marker zone (`DAILY_STATUS_START/END`), and only from `.github/scripts/build_readme.py`
 - New content goes inside existing `<details>` blocks, NOT as new visible sections
 - Never add ASCII art, timeline blocks, tables, or multi-line code blocks outside `<details>`
 - Never expand collapsed sections into visible content
@@ -44,19 +43,25 @@ Any claim with a number in it must be verifiable from a live source or cut. v0.9
 the hardcoded `Stars-71` (real: 99), `44 stars` (real: 68), `⭐7` (real: 8), `Commits_2026-770`,
 `35 public repos` (real: 32), and several unverifiable ecosystem stats.
 
-## Auto-Update Zones
+## Auto-Update Zone
 
-Two marker-delimited zones that Passion Agent can write to:
-- `<!-- DAILY_STATUS_START -->` ... `<!-- DAILY_STATUS_END -->` — daily task stats
-- `<!-- SHOWCASE_SECTION_START -->` ... `<!-- SHOWCASE_SECTION_END -->` — latest notable build
+One marker-delimited zone, written only by `.github/workflows/build-readme.yml`:
+- `<!-- DAILY_STATUS_START -->` ... `<!-- DAILY_STATUS_END -->` — latest release, latest
+  commit, and live CI conclusion, each clickable, plus the date it was generated.
 
-Everything outside these markers requires human review.
+The SHOWCASE_SECTION zone was removed on 2026-08-31. CHANGELOG shows Passion Agent used to
+write it, but it is empty in every README commit in this checkout, and no writer in this
+repo emits it: `build_readme.py` writes DAILY_STATUS and nothing else. An advertised
+auto-update zone that renders blank costs more credibility than no zone at all. Do not
+re-add a marker zone without a committed writer for it.
+
+Everything outside the remaining markers requires human review.
 
 ## Versioning
 
 - CHANGELOG.md follows Keep a Changelog format
 - Semantic versioning: major = full redesign, minor = new sections, patch = updates
-- Current: v0.9.1
+- Current: v1.0.0
 
 ## Assets
 

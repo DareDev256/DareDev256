@@ -29,7 +29,7 @@ jobs:
           fi
 
       - name: Check auto-update markers
-        # Passion Agent writes between these 4 markers on 30-min brain cycles.
+        # build-readme.yml writes between these 2 markers on its daily run.
         # If any marker is missing, agent writes silently fail or corrupt the
         # README by appending content outside the intended zone.
         # Remediation: Restore the missing HTML comment marker exactly as shown
@@ -37,7 +37,7 @@ jobs:
         # full marker format and placement rules.
         run: |
           missing=0
-          for marker in DAILY_STATUS_START DAILY_STATUS_END SHOWCASE_SECTION_START SHOWCASE_SECTION_END; do
+          for marker in DAILY_STATUS_START DAILY_STATUS_END; do
             if ! grep -q "<!-- ${marker} -->" README.md; then
               echo "::error::Missing marker: <!-- ${marker} -->"
               missing=1
@@ -55,19 +55,12 @@ jobs:
         # reorder of README sections.
         # Remediation: Open README.md and ensure each START comment appears
         # above its corresponding END comment. The daily status zone comes
-        # first (inside "Currently Building"), then the showcase zone.
+        # first and is the only machine-written zone on the page.
         run: |
           ds_start=$(grep -n 'DAILY_STATUS_START' README.md | head -1 | cut -d: -f1)
           ds_end=$(grep -n 'DAILY_STATUS_END' README.md | head -1 | cut -d: -f1)
-          sc_start=$(grep -n 'SHOWCASE_SECTION_START' README.md | head -1 | cut -d: -f1)
-          sc_end=$(grep -n 'SHOWCASE_SECTION_END' README.md | head -1 | cut -d: -f1)
-
           if [ "$ds_start" -ge "$ds_end" ]; then
             echo "::error::DAILY_STATUS_START must come before DAILY_STATUS_END"
-            exit 1
-          fi
-          if [ "$sc_start" -ge "$sc_end" ]; then
-            echo "::error::SHOWCASE_SECTION_START must come before SHOWCASE_SECTION_END"
             exit 1
           fi
           echo "Marker zones correctly ordered."

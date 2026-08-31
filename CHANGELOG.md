@@ -7,6 +7,49 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-08-31
+
+Full rebuild, driven by a five-round gauntlet loop: build, then a separate fresh-context
+critic judges a blind A/B against github.com/simonw, github.com/karpathy and
+github.com/sindresorhus. Three critics per round, none of whom saw the builder's reasoning.
+The candidate won all four judged rounds; in round 4 two critics independently answered yes
+to whether the page holds its own beside those profiles.
+
+### Fixed
+- Ten dead links removed. Nine repos linked here were private and 404'd for every visitor,
+  in violation of this repo's own Link Rule. The six AI literacy games now point at
+  `passion-learning-suite`, which is public, plus their live deployments.
+- The coldopen A/B claim said "two blind judges could not pick the generated site".
+  `coldopen/docs/GAUNTLET.md` records one judge, one round, one viewport, 70/30 confidence,
+  and the judge did pick a site. The page now reports what the document says.
+- "The first MCP server for Final Cut Pro" replaced with the checkable PyPI first-release date.
+- "350+ music videos" replaced with 101, the count in the linked catalogue of record.
+- The gold record now cites Music Canada: DOPE BOY, Casper TNG ft. Fresh, Gold Single,
+  21 July 2022. The certification credits artist and label, so the phrasing claims only that.
+- Outside contributors corrected from reporters to what they are: @mikegrant25 and @jardelapp
+  wrote merged pull requests against fcp-mcp-server.
+
+### Added
+- `.github/workflows/build-readme.yml` and `.github/scripts/build_readme.py`. A daily Action
+  regenerates the DAILY_STATUS block from the GitHub API: latest release, latest commit, and
+  the fcp-mcp-server CI conclusion, each with an ISO date and a link. On a failed API call it
+  empties the block rather than printing a stale line, and fails the job so the red X shows.
+- A live PyPI downloads badge and the outside-contributor evidence, both under Featured.
+
+### Changed
+- New hero mark. A JD ligature on a single shared stem, chosen over three other directions in
+  a blind ranking. It is the only candidate whose flat-black silhouette reads as a distinct
+  mark, that works on both GitHub themes, and that survives 320px. The previous emblem took
+  eight seconds to reveal the wordmark and hardcoded "47 REPOS" inside an image, where this
+  repo's no-hardcoded-numbers rule could not see it.
+- The lead is the role. The director decade is the second beat.
+- Featured cut to three: fcp-mcp-server, coldopen, portfolio-os.
+
+### Removed
+- The `SHOWCASE_SECTION` marker pair and every check that policed it. Nothing had written to
+  it in this checkout and nothing emits it any more. An advertised automation producing
+  nothing is the defect three critics named.
+
 ## [0.9.1] - 2026-07-16
 
 ### Fixed

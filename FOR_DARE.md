@@ -31,7 +31,7 @@
 - **DO NOT add new visible sections.** If you need to add content, put it inside an existing `<details>` block.
 - **DO NOT expand collapsed sections into visible content.**
 - **DO NOT add ASCII art, timeline blocks, or multi-line code blocks** outside of `<details>`.
-- **Auto-update zones** (`DAILY_STATUS_START/END`, `SHOWCASE_SECTION_START/END`) are fine — keep showcase to 1-2 lines max.
+- **The auto-update zone** (`DAILY_STATUS_START/END`) is fine. It is written only by `.github/workflows/build-readme.yml`.
 - **If adding a new project**: add it to the collapsed "All 34 Projects" details block, update the count. Do NOT add it to the visible Featured Projects table unless replacing an existing entry.
 - **If updating metrics**: update in-place (badge numbers, table cells). Do NOT add new metric displays.
 
@@ -43,8 +43,7 @@ This constraint exists because a bloated profile README hurts more than it helps
 
 | Need to... | Do this |
 |------------|---------|
-| Update daily status | Passion Agent handles this automatically via `DAILY_STATUS_START/END` markers |
-| Update showcase | Passion Agent writes between `SHOWCASE_SECTION_START/END` markers |
+| Update daily status | `.github/workflows/build-readme.yml` runs daily at 11:17 UTC and rewrites `DAILY_STATUS_START/END` |
 | Check badge health | Visit profile page, look for broken image icons. See [Troubleshooting](#troubleshooting) |
 | Bump repo count | Search `34` in README.md — appears in 3 places (hero badge, Open To table, All Projects header) |
 | Bump commit count | Search `1,257` in README.md — appears in 3 places (hero badge, Featured Projects, Proof of Craft) |
@@ -61,7 +60,7 @@ For Passion Agent's rapid iteration cycles — run this before every push. The f
 1. **Version chain:** CHANGELOG heading = CLAUDE.md version field (e.g., both say `v0.8.23`)
 2. **Metric consistency:** Any number you changed — search README for all occurrences (see [Metrics Sync Map](#metrics-sync-map))
 3. **Content Strategy:** FOR_DARE.md Content Strategy Evolution ends with current version marked `(current)`
-4. **Showcase URL:** If showcase zone was updated, verify the repo URL resolves (no spaces — [recurring bug](#showcase-url-has-broken-link-recurring))
+4. **Links:** Spot-check any URL you touched. GitHub repo slugs are lowercase-hyphenated, never spaced.
 5. **Line count:** `grep -c '' README.md` — must be under 400 total, visible sections under 120 lines
 
 ---
@@ -120,7 +119,7 @@ Every file references or constrains at least one other file. This map prevents e
 README.md ──img src──→ signature.svg (line 7, hero image)
     │
     ├── Uses color #6C63FF from signature.svg palette across 20+ Shields.io badges
-    ├── Contains 2 machine-writable zones (DAILY_STATUS, SHOWCASE) written by Passion Agent
+    ├── Contains 1 machine-writable zone (DAILY_STATUS) written by .github/workflows/build-readme.yml
     └── Numbers (commits, repos, modules) must match Metrics Sync Map in FOR_DARE.md
 
 CLAUDE.md ──defines rules for──→ README.md (size cap, structure, auto-update zones)
@@ -349,17 +348,15 @@ Two sections of README.md are auto-updated by Passion Agent. They use HTML comme
 
 ### Showcase Block
 
-```
-<!-- SHOWCASE_SECTION_START -->
-> *Last updated by [Passion Agent](...) — <date>*
-**Tonight's build: [repo-name](...)**
-...
-<!-- SHOWCASE_SECTION_END -->
-```
+Removed 2026-08-31. The Content Strategy log below shows Passion Agent wrote this zone
+through the v0.6-v0.8 series, but it is empty in every README commit in this checkout and
+nothing in this repo emits it any more: `.github/scripts/build_readme.py` writes
+DAILY_STATUS only. A README that advertises an auto-updating section and renders it blank
+reads worse than a README with no automation at all, so the markers were deleted from
+README.md and from both workflows. Do not re-add a marker zone without a committed writer.
 
-**Updated:** After notable builds, typically when Passion Agent completes a feature-level task on any repo.
-**What it shows:** Latest shipped work with highlights and line count.
-**If it breaks:** Check `passion-profile.mjs` in the Passion Agent codebase — that's the module responsible for showcase updates.
+The showcase-URL bug logged in Troubleshooting below is retired with the zone. It is kept
+as history, not as an active check.
 
 ### Safe Editing Rule
 
@@ -374,7 +371,7 @@ The v0.7.0 restructure trimmed 20 sections dramatically, and subsequent refineme
 
 **Visible sections (in order):**
 1. **Hero** — Custom animated emblem (`signature.svg`), bio, badge bar, CTA buttons
-2. **Currently Building** — Status table (🟢/🟡) + daily status zone + showcase zone (both auto-updated by Passion Agent)
+2. **Currently Building** — Status table (🟢/🟡) + daily status zone (auto-updated by .github/workflows/build-readme.yml)
 3. **Featured Projects** — 2×3 HTML grid with stars, live links, and tech tags
 4. **Open To** — Role targets with claim→evidence table
 5. **Tech Stack** — `flat-square` badge grid
@@ -392,7 +389,7 @@ The v0.7.0 restructure trimmed 20 sections dramatically, and subsequent refineme
 
 This 8+6 structure is not accidental — visible content converts in 5 seconds; collapsed content proves depth when engineers click through.
 
-> **Note:** The showcase zone and daily status zone are embedded within "Currently Building" via HTML comment markers (`DAILY_STATUS_START/END`, `SHOWCASE_SECTION_START/END`), not standalone sections. Earlier versions of this map incorrectly counted the showcase as section 3.
+> **Note:** The daily status zone is embedded via HTML comment markers (`DAILY_STATUS_START/END`), not as a standalone section. The showcase zone that used to sit beside it was removed on 2026-08-31.
 
 ### Badge Style Consistency
 All badges use `style=for-the-badge` for visual weight and consistency. Tech stack badges use `style=flat-square` for a more compact, scannable grid. This two-tier system creates visual hierarchy.
@@ -694,7 +691,7 @@ When updating this README, verify:
 - [ ] "Open To" section matches current job search status
 - [ ] Collapsed "How the Passion Ecosystem Works" reflects current agent architecture
 - [ ] CHANGELOG.md is updated with any changes (version bump for non-trivial changes)
-- [ ] Showcase section URL resolves (no spaces in repo slug — recurring bug, see Troubleshooting)
+- [ ] Every URL touched this pass resolves (no spaces in any GitHub repo slug)
 - [ ] CHANGELOG versions are sequential with no gaps
 - [ ] Hard Problems entry count matches FOR_DARE.md collapsed section description (currently 16)
 - [ ] All 13 Sync Map metrics are consistent across their documented locations
@@ -731,9 +728,9 @@ else
   echo "✅ Content Strategy current"
 fi
 
-# 3. Showcase URL — no spaces in GitHub URLs
+# 3. GitHub URLs — no spaces in any repo slug
 if grep -o 'github\.com/DareDev256/[^)"]*' README.md | grep -q ' '; then
-  echo "❌ Showcase URL contains spaces"
+  echo "❌ GitHub URL contains spaces"
   FAIL=1
 else
   echo "✅ No spaces in GitHub URLs"
