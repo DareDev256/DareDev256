@@ -72,7 +72,7 @@ A desktop OS that boots in a browser tab. Draggable windows, a `Cmd+K` palette, 
 
 | Project | Built | |
 |---|---|---|
-| **[chain-recall](https://github.com/DareDev256/chain-recall)** · an AI memory layer for luxury hotel chains. They already pay for Oracle OPERA, so the pitch is to open the guest history they own at the moment that converts: arrival at the desk. Voice front end. | Anthropic Hackathon, San Francisco · 8 hours · May 2026 · Next.js, Claude, ElevenLabs | [![Stars](https://img.shields.io/github/stars/DareDev256/chain-recall?style=flat-square&color=A78BFA&label=stars)](https://github.com/DareDev256/chain-recall) [Live →](https://chain-recall.vercel.app) |
+| **[chain-recall](https://github.com/DareDev256/chain-recall)** · an AI memory layer for luxury hotel chains. They already pay for Oracle OPERA, so the pitch is to open the guest history they own at the moment that converts: arrival at the desk. Voice front end. | Rosewood Hospitality 2030, Rosewood Sand Hill · 8 hours · May 2026 · with [Joshua Dare](https://github.com/Waleee7) · Next.js, Claude, ElevenLabs | [![Stars](https://img.shields.io/github/stars/DareDev256/chain-recall?style=flat-square&color=A78BFA&label=stars)](https://github.com/DareDev256/chain-recall) [Live →](https://chain-recall.vercel.app) |
 | **second-opinion** · an evidence-grounded appointment brief for adenomyosis patients, who get a short specialist window and lose most of it to recap. Every claim carries its citation. | Anthropic Opus 4.7 Hackathon · repo private, demo open | [Live →](https://second-opinion-eta.vercel.app) |
 
 
