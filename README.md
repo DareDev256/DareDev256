@@ -60,9 +60,9 @@ A desktop OS that boots in a browser tab. Draggable windows, a `Cmd+K` palette, 
 <!-- DAILY_STATUS_START -->
 | Latest release | Latest commit | fcp-mcp-server CI |
 | --- | --- | --- |
-| [Ultimate-Image-Video-Prompt-Generator `v2.2.0`](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator/releases/tag/v2.2.0)<br><sub>2026-08-16</sub> | [portfolio-os `23aa0f3`](https://github.com/DareDev256/portfolio-os/commit/23aa0f3cd3cff5f54836d68fb455c7991efa4b12) fix(4.32.0): the 4.30.0 gate-clone fix did nothing, and said it worked<br><sub>2026-08-31</sub> | [Tests: passing](https://github.com/DareDev256/fcp-mcp-server/actions/runs/33395000200)<br><sub>2026-08-31</sub> |
+| [Ultimate-Image-Video-Prompt-Generator `v2.2.0`](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator/releases/tag/v2.2.0)<br><sub>2026-08-16</sub> | [fcp-mcp-server `8ea28fc`](https://github.com/DareDev256/fcp-mcp-server/commit/8ea28fc50778b2238817834dae33d20a7c4972d2) docs: the README stated two different test counts<br><sub>2026-08-31</sub> | [Tests: passing](https://github.com/DareDev256/fcp-mcp-server/actions/runs/33501916973)<br><sub>2026-09-01</sub> |
 
-<sub>Generated 2026-08-31 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
+<sub>Generated 2026-09-01 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
 <!-- DAILY_STATUS_END -->
 
 
