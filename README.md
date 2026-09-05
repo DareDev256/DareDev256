@@ -60,9 +60,9 @@ A desktop OS that boots in a browser tab. Draggable windows, a `Cmd+K` palette, 
 <!-- DAILY_STATUS_START -->
 | Latest release | Latest commit | fcp-mcp-server CI |
 | --- | --- | --- |
-| [fcp-mcp-server `v0.22.1`](https://github.com/DareDev256/fcp-mcp-server/releases/tag/v0.22.1)<br><sub>2026-09-03</sub> | [portfolio-os `7e43e1d`](https://github.com/DareDev256/portfolio-os/commit/7e43e1d3eaa653c149a6257a326d161a1db24442) chore(fandom-flow): daily regenerate (2026-09-04 13:00 UTC)<br><sub>2026-09-04</sub> | [Tests: passing](https://github.com/DareDev256/fcp-mcp-server/actions/runs/33865290242)<br><sub>2026-09-04</sub> |
+| [fcp-mcp-server `v0.24.0`](https://github.com/DareDev256/fcp-mcp-server/releases/tag/v0.24.0)<br><sub>2026-09-04</sub> | [fcp-mcp-server `af08887`](https://github.com/DareDev256/fcp-mcp-server/commit/af0888788d01cb786722c3eee03407a3b99da054) docs(claude): the release sequence, written down after it broke twice…<br><sub>2026-09-05</sub> | [Tests: passing](https://github.com/DareDev256/fcp-mcp-server/actions/runs/33968753408)<br><sub>2026-09-05</sub> |
 
-<sub>Generated 2026-09-04 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
+<sub>Generated 2026-09-05 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
 <!-- DAILY_STATUS_END -->
 
 
