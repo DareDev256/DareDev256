@@ -87,20 +87,11 @@ TypeScript · Python · Node · React · Next.js · MCP · SQLite · Playwright
 ---
 
 <details>
-<summary><strong>Six AI literacy games, one engine</strong></summary>
+<summary><strong>Passionate Learning: one open-source learning game, 9 worlds</strong></summary>
 
-They ship from one shared Next.js engine: XP and leveling, FSRS-4.5 spaced repetition, Kumon-style mastery gates, adaptive difficulty, and a Web Audio sound engine with no audio files.
+The six AI literacy games plus Circuit Prophet, NetRunner and TypeMaster merged into **one installable app**: one profile, ranks E to S, FSRS spaced repetition across every world, Kumon-style mastery gates, a daily quest, no streak to lose. Drawn in a hand-coded stickman style. A new world is one data file.
 
-Engine and every game spec are public in **[passion-learning-suite](https://github.com/DareDev256/passion-learning-suite)** ([template](https://github.com/DareDev256/passion-learning-suite/tree/main/template) · [specs](https://github.com/DareDev256/passion-learning-suite/tree/main/specs)).
-
-| Game | Concept | |
-|---|---|---|
-| Red Team Arena | Ethical prompt injection and jailbreaks, then defending against them | [Play →](https://red-team-arena.vercel.app) |
-| Hallucination Hunter | Spot factual errors in model output and verify the claim | [Play →](https://hallucination-hunter.vercel.app) |
-| Token Prophet | Next-token prediction, probability, context windows | [Play →](https://token-prophet.vercel.app) |
-| Bias Buster | Detect and measure bias across demographics | [Play →](https://bias-buster-five.vercel.app) |
-| Prompt Craft | Structure, constraints, iterative refinement | [Play →](https://prompt-craft-jet.vercel.app) |
-| Tool Match | Match an intent to the right model or tool | [Play →](https://tool-match-sable.vercel.app) |
+**[Play →](https://passionate-learning.vercel.app)** · **[Build a world →](https://github.com/DareDev256/passionate-learning)** (MIT)
 
 </details>
 
@@ -156,7 +147,7 @@ Engine and every game spec are public in **[passion-learning-suite](https://gith
 
 **"No dependencies" was a claim the manifest did not make.** portfolio-os ships no frontend framework and Vite is its only build step, which is the interesting part. `package.json` still lists two runtime dependencies: `@vercel/analytics` in the browser bundle and `@anthropic-ai/sdk` in the two serverless routes under `api/`.
 
-**passion-learning-suite's README enumerates every test group in the suite inside a single 581-word bullet.**
+**The old passion-learning-suite README enumerated every test group in the suite inside a single 581-word bullet.**
 
 </details>
 

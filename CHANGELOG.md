@@ -7,6 +7,11 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-10-03
+
+### Changed
+- The six AI literacy games are now one app, Passionate Learning (passionate-learning.vercel.app, repo renamed to passionate-learning): the games table is replaced by a short summary with Play and Build a world links.
+
 ## [1.1.0] - 2026-08-31
 
 ### Changed
