@@ -60,9 +60,9 @@ A desktop OS that boots in a browser tab. Draggable windows, a `Cmd+K` palette, 
 <!-- DAILY_STATUS_START -->
 | Latest release | Latest commit | fcp-mcp-server CI |
 | --- | --- | --- |
-| [fcp-mcp-server `v0.25.2`](https://github.com/DareDev256/fcp-mcp-server/releases/tag/v0.25.2)<br><sub>2026-10-07</sub> | [fcp-mcp-server `1a02bd6`](https://github.com/DareDev256/fcp-mcp-server/commit/1a02bd6c8f277272337608f3c8c857334fc5eb57) release: v0.25.2…<br><sub>2026-10-07</sub> | [Tests: passing](https://github.com/DareDev256/fcp-mcp-server/actions/runs/36316503532)<br><sub>2026-09-27</sub> |
+| [fcp-mcp-server `v0.25.2`](https://github.com/DareDev256/fcp-mcp-server/releases/tag/v0.25.2)<br><sub>2026-10-07</sub> | [portfolio-os `db6ee00`](https://github.com/DareDev256/portfolio-os/commit/db6ee00cbea2c2dc2eb367ee70dd5a737e1c20c8) feat: Discord ping on every booking + signed post-call summaries from…<br><sub>2026-10-08</sub> | [Tests: passing](https://github.com/DareDev256/fcp-mcp-server/actions/runs/37781299666)<br><sub>2026-10-08</sub> |
 
-<sub>Generated 2026-10-07 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
+<sub>Generated 2026-10-08 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
 <!-- DAILY_STATUS_END -->
 
 
