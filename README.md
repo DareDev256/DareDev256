@@ -60,9 +60,9 @@ A desktop OS that boots in a browser tab. Draggable windows, a `Cmd+K` palette, 
 <!-- DAILY_STATUS_START -->
 | Latest release | Latest commit | fcp-mcp-server CI |
 | --- | --- | --- |
-| [fcp-mcp-server `v0.26.0`](https://github.com/DareDev256/fcp-mcp-server/releases/tag/v0.26.0)<br><sub>2026-10-09</sub> | [music-time-machine `7a85c87`](https://github.com/DareDev256/music-time-machine/commit/7a85c87b797a2f2850eb169a08a031355cb5c685) feat: round 2 of the gauntlet…<br><sub>2026-10-20</sub> | [Tests: passing](https://github.com/DareDev256/fcp-mcp-server/actions/runs/39412774348)<br><sub>2026-10-20</sub> |
+| [fcp-mcp-server `v0.27.1`](https://github.com/DareDev256/fcp-mcp-server/releases/tag/v0.27.1)<br><sub>2026-10-21</sub> | [fcp-mcp-server `fc7d08a`](https://github.com/DareDev256/fcp-mcp-server/commit/fc7d08a7c8c0d27a09802dd03fab7f23ef3d922f) ci: the registry check retries a failed read instead of exiting on it<br><sub>2026-10-21</sub> | [Tests: passing](https://github.com/DareDev256/fcp-mcp-server/actions/runs/39623110620)<br><sub>2026-10-21</sub> |
 
-<sub>Generated 2026-10-20 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
+<sub>Generated 2026-10-21 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
 <!-- DAILY_STATUS_END -->
 
 
