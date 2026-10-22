@@ -60,9 +60,9 @@ A desktop OS that boots in a browser tab. Draggable windows, a `Cmd+K` palette, 
 <!-- DAILY_STATUS_START -->
 | Latest release | Latest commit | fcp-mcp-server CI |
 | --- | --- | --- |
-| [fcp-mcp-server `v0.27.1`](https://github.com/DareDev256/fcp-mcp-server/releases/tag/v0.27.1)<br><sub>2026-10-21</sub> | [fcp-mcp-server `fc7d08a`](https://github.com/DareDev256/fcp-mcp-server/commit/fc7d08a7c8c0d27a09802dd03fab7f23ef3d922f) ci: the registry check retries a failed read instead of exiting on it<br><sub>2026-10-21</sub> | [Tests: passing](https://github.com/DareDev256/fcp-mcp-server/actions/runs/39623110620)<br><sub>2026-10-21</sub> |
+| [fcp-mcp-server `v0.27.1`](https://github.com/DareDev256/fcp-mcp-server/releases/tag/v0.27.1)<br><sub>2026-10-21</sub> | [portfolio-os `302c4b1`](https://github.com/DareDev256/portfolio-os/commit/302c4b155bea890ba515bbcd21e1a63177d1190e) chore(fandom-flow): daily regenerate (2026-10-22 13:00 UTC)<br><sub>2026-10-22</sub> | [Tests: passing](https://github.com/DareDev256/fcp-mcp-server/actions/runs/39770277153)<br><sub>2026-10-22</sub> |
 
-<sub>Generated 2026-10-21 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
+<sub>Generated 2026-10-22 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
 <!-- DAILY_STATUS_END -->
 
 
