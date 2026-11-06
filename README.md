@@ -60,9 +60,9 @@ A desktop OS that boots in a browser tab. Draggable windows, a `Cmd+K` palette, 
 <!-- DAILY_STATUS_START -->
 | Latest release | Latest commit | fcp-mcp-server CI |
 | --- | --- | --- |
-| [fcp-mcp-server `v0.30.0`](https://github.com/DareDev256/fcp-mcp-server/releases/tag/v0.30.0)<br><sub>2026-11-02</sub> | [portfolio-os `cc035b3`](https://github.com/DareDev256/portfolio-os/commit/cc035b3810d2e5f883ef55e03006c5a19f5103df) chore(fandom-flow): daily regenerate (2026-11-05 18:00 UTC)<br><sub>2026-11-05</sub> | [Tests: passing](https://github.com/DareDev256/fcp-mcp-server/actions/runs/42043574534)<br><sub>2026-11-05</sub> |
+| [fcp-mcp-server `v0.30.0`](https://github.com/DareDev256/fcp-mcp-server/releases/tag/v0.30.0)<br><sub>2026-11-02</sub> | [portfolio-os `7db6328`](https://github.com/DareDev256/portfolio-os/commit/7db63282800a236d3ef25130ad46f615f6938aa6) chore(fandom-flow): daily regenerate (2026-11-06 18:00 UTC)<br><sub>2026-11-06</sub> | [Tests: passing](https://github.com/DareDev256/fcp-mcp-server/actions/runs/42229498115)<br><sub>2026-11-06</sub> |
 
-<sub>Generated 2026-11-05 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
+<sub>Generated 2026-11-06 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
 <!-- DAILY_STATUS_END -->
 
 
