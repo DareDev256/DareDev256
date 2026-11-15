@@ -7,6 +7,35 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-11-15
+
+The page now shows the work instead of describing it.
+
+### Added
+- Hook line under the signature: "I directed 101 music videos. Now I direct agents."
+- Hero shot of jamesdare.com (the 3D soundstage), dated, linked to the live site.
+- fcp-mcp-server hero GIF (Claude cutting a real timeline), pinned to the v0.33.0 tag.
+- cutreview as fcp-mcp-server's sibling (public since 2026-11-13, on PyPI).
+- coldopen: a 3 by 2 grid of real screenshots of the six live artist sites, each linking to
+  its site. The artist table moved into a collapsed block so the credits stay.
+- Hackathons: One Lesson (Finalist, top 6 of 98, MongoDB Agents in Context Toronto,
+  2026-11-14, sourced to the Cerebral Valley gallery Awards label) and Real One (Meta Global
+  AI Dev Hackathon), with one GIF each pinned to a commit SHA.
+- `scripts/shoot_sites.py` and a Screenshot Rule in CLAUDE.md, so the pictures are re-shot,
+  never retouched.
+
+### Changed
+- portfolio-os rewritten for what it is now: the source of the jamesdare.com soundstage;
+  the old desktop OS lives at /os.
+- Hackathons table became a four-line list, newest first.
+- Open to leads with Implementation and Client Solutions.
+- "Seven bugs" summary carries the best one as a teaser.
+- music-time-machine and toronto-parking-viz descriptions match their repos.
+- CLAUDE.md signature.svg spec corrected to the live 760 by 200 JD mark.
+
+### Removed
+- The dangling "581-word bullet" line from What I would build differently.
+
 ## [1.1.1] - 2026-10-03
 
 ### Changed

@@ -12,9 +12,9 @@
 
 ## Structure (do not change)
 
-Visible sections in order: Hero → Featured → Hackathons → Also Worth a Look → Open To → Footer
+Visible sections in order (v2.0.0): Hero (signature, hook line, studio shot) → Featured (fcp-mcp-server + cutreview, coldopen grid, portfolio-os) → Currently → Hackathons (list + two GIFs) → Open To → Footer
 
-Collapsed sections: AI literacy games, Everything else, Hard problems I've actually solved, What I'd build differently
+Collapsed sections: Passionate Learning, The six artists behind coldopen, Other projects, Seven bugs with receipts, What I would build differently
 
 ## Link Rule (v0.9.0 — non-negotiable)
 
@@ -61,19 +61,34 @@ Everything outside the remaining markers requires human review.
 
 - CHANGELOG.md follows Keep a Changelog format
 - Semantic versioning: major = full redesign, minor = new sections, patch = updates
-- Current: v1.1.0
+- Current: v2.0.0
 
 ## Assets
+
+### Screenshot Rule (v2.0.0)
+
+`assets/studio.jpg` and `assets/sites/*.jpg` are photographs of live sites, so every
+caption under them carries its shot date (`Shot YYYY-MM-DD`). A picture with numbers in it
+is a typed number with a date on it. Re-shoot when a site changes, never edit the date by hand:
+
+```bash
+python3 -I scripts/shoot_sites.py /tmp/shots   # 1440x900 headless, then:
+ffmpeg -i /tmp/shots/studio.png -q:v 3 assets/studio.jpg
+ffmpeg -i /tmp/shots/<site>.png -vf scale=960:-1 -q:v 3 assets/sites/<site>.jpg
+```
+
+GIFs from other repos are linked by raw URL pinned to a tag or commit SHA, never `main`,
+so a rename in that repo cannot break this page.
 
 ### `signature.svg` — Animated Hero Emblem
 
 | Property | Value |
 |----------|-------|
 | **Type** | Inline SVG with CSS-only animations (no JavaScript) |
-| **Dimensions** | 800 × 250 (`viewBox="0 0 800 250"`) — displayed at `width="600"` in README |
+| **Dimensions** | 760 × 200 (`viewBox="0 0 760 200"`) — displayed at `width="600"` in README |
 | **Color palette** | `#6C63FF` (primary), `#A78BFA` (secondary), `#818CF8` (tertiary) |
 | **Theme support** | `prefers-color-scheme: light` swaps text fills — emblem colors stay constant |
-| **Animations** | Draw-in (infinity path), orbital rotation, spoke reveal, cycling subtitles (4 titles, 12s loop) |
+| **Animations** | JD mark draws in, name rises, rule wipes, role fades; the resting state is the default, reduced motion disables all |
 | **Referenced in** | `README.md` line 7 (`<img src="./signature.svg">`) — hero image, above the fold |
 
 **Constraints:**
