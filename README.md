@@ -72,10 +72,9 @@ The soundstage at the top of this page. Vanilla Three.js, no framework. The set 
 - **[chain-recall](https://github.com/DareDev256/chain-recall)** · an arrival brief for luxury hotel front desks, reading the guest history a chain already pays Oracle OPERA to keep. Rosewood Hospitality 2030, May 2026 · 8 hours · with [Joshua Dare](https://github.com/Waleee7) · [Live →](https://chain-recall.vercel.app)
 - **second-opinion** · an evidence-grounded appointment brief for adenomyosis patients, every claim with its citation. Built with Opus 4.7, Apr 2026 · repo private, demo open · [Live →](https://second-opinion-eta.vercel.app)
 
-<a href="https://github.com/DareDev256/one-lesson"><img src="https://raw.githubusercontent.com/DareDev256/one-lesson/a525fd2c75983f1c1172b8f06c0825834c820564/docs/two-kitchens.gif" alt="One Lesson: the same words in two homes put the knife in two different places" width="70%" /></a>
-<a href="https://github.com/DareDev256/real-one"><img src="https://raw.githubusercontent.com/DareDev256/real-one/2307d34b466ba37ae6b1567cd2cf87029b663f94/docs/media/hook_freeze.gif" alt="Real One: a real phone performance placed in a generated world" width="21%" /></a>
+<a href="https://github.com/DareDev256/one-lesson"><img src="https://raw.githubusercontent.com/DareDev256/one-lesson/a525fd2c75983f1c1172b8f06c0825834c820564/docs/two-kitchens.gif" alt="One Lesson: the same words in two homes put the knife in two different places" width="100%" /></a>
 
-<sub>Left: One Lesson, same words, two homes, two lessons. Right: Real One, the performance is real and the world is generated.</sub>
+<sub>One Lesson: same words, two homes, two lessons.</sub>
 
 ---
 

@@ -7,6 +7,11 @@ Versioning follows [Semantic Versioning](https://semver.org/): major = full rede
 
 ## [Unreleased]
 
+## [2.0.1] - 2026-11-15
+
+### Removed
+- The Real One GIF from Hackathons, at James's request. The One Lesson GIF now runs full width.
+
 ## [2.0.0] - 2026-11-15
 
 The page now shows the work instead of describing it.

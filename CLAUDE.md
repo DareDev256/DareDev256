@@ -12,7 +12,7 @@
 
 ## Structure (do not change)
 
-Visible sections in order (v2.0.0): Hero (signature, hook line, studio shot) → Featured (fcp-mcp-server + cutreview, coldopen grid, portfolio-os) → Currently → Hackathons (list + two GIFs) → Open To → Footer
+Visible sections in order (v2.0.0): Hero (signature, hook line, studio shot) → Featured (fcp-mcp-server + cutreview, coldopen grid, portfolio-os) → Currently → Hackathons (list + One Lesson GIF; no face footage of James) → Open To → Footer
 
 Collapsed sections: Passionate Learning, The six artists behind coldopen, Other projects, Seven bugs with receipts, What I would build differently
 
@@ -61,7 +61,7 @@ Everything outside the remaining markers requires human review.
 
 - CHANGELOG.md follows Keep a Changelog format
 - Semantic versioning: major = full redesign, minor = new sections, patch = updates
-- Current: v2.0.0
+- Current: v2.0.1
 
 ## Assets
 
