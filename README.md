@@ -57,9 +57,9 @@ The soundstage at the top of this page. Vanilla Three.js, no framework. The set 
 <!-- DAILY_STATUS_START -->
 | Latest release | Latest commit | fcp-mcp-server CI |
 | --- | --- | --- |
-| [fcp-mcp-server `v0.32.0`](https://github.com/DareDev256/fcp-mcp-server/releases/tag/v0.32.0)<br><sub>2026-11-14</sub> | [portfolio-os `1b70e8f`](https://github.com/DareDev256/portfolio-os/commit/1b70e8fe32da1c289010bc655509a14b9fc6035b) chore(studio): VRM bench for the anime Monarch decision (4.72.2)<br><sub>2026-11-14</sub> | [Tests: passing](https://github.com/DareDev256/fcp-mcp-server/actions/runs/43598485431)<br><sub>2026-11-14</sub> |
+| [fcp-mcp-server `v0.33.0`](https://github.com/DareDev256/fcp-mcp-server/releases/tag/v0.33.0)<br><sub>2026-11-14</sub> | [portfolio-os `0fc30ac`](https://github.com/DareDev256/portfolio-os/commit/0fc30ac33c3583eba42f235afc4c6428d61816b3) chore(data): publish live figures (2026-11-15 14:42 UTC)<br><sub>2026-11-15</sub> | [Tests: passing](https://github.com/DareDev256/fcp-mcp-server/actions/runs/43720135120)<br><sub>2026-11-15</sub> |
 
-<sub>Generated 2026-11-14 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
+<sub>Generated 2026-11-15 from the GitHub API by [build_readme.py](https://github.com/DareDev256/DareDev256/blob/main/.github/scripts/build_readme.py).</sub>
 <!-- DAILY_STATUS_END -->
 
 
