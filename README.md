@@ -10,25 +10,55 @@ A decade behind the camera in Toronto, [101 videos](https://tdotssolutionsz.com)
 
 <a href="https://jamesdare.com"><img src="./assets/studio.jpg" alt="jamesdare.com: a white 3D soundstage of robot agents at their stations, each screen showing a live project" width="100%" /></a>
 
-<sub><b>jamesdare.com</b> is a soundstage. Every agent on set is a real project at work, and its screen shows that project's own numbers. Drag to look around. <i>Shot 2026-11-15.</i></sub>
+<sub><b>jamesdare.com</b> is a soundstage. Every agent on set is a real project at work, and its screen shows that project's own numbers. Drag to look around. Source: <a href="https://github.com/DareDev256/portfolio-os">portfolio-os</a>, vanilla Three.js, the set modelled in Blender. <i>Shot 2026-11-15.</i></sub>
 
 </div>
 
 ---
 
-## Featured
+## Tools
 
 ### [fcp-mcp-server](https://github.com/DareDev256/fcp-mcp-server) · Claude cuts a real Final Cut Pro timeline
 
-[![Stars](https://img.shields.io/github/stars/DareDev256/fcp-mcp-server?style=flat-square&color=A78BFA&label=stars)](https://github.com/DareDev256/fcp-mcp-server) [![Downloads](https://img.shields.io/pypi/dm/fcp-mcp-server?style=flat-square&color=6C63FF&label=installs)](https://pypistats.org/packages/fcp-mcp-server) [![CI](https://github.com/DareDev256/fcp-mcp-server/actions/workflows/test.yml/badge.svg)](https://github.com/DareDev256/fcp-mcp-server/actions)
+[![Stars](https://img.shields.io/github/stars/DareDev256/fcp-mcp-server?style=flat-square&color=A78BFA&label=stars)](https://github.com/DareDev256/fcp-mcp-server) [![Downloads](https://img.shields.io/pypi/dm/fcp-mcp-server?style=flat-square&color=6C63FF&label=downloads%2Fmonth)](https://pypistats.org/packages/fcp-mcp-server) [![CI](https://github.com/DareDev256/fcp-mcp-server/actions/workflows/test.yml/badge.svg)](https://github.com/DareDev256/fcp-mcp-server/actions)
 
 <a href="https://github.com/DareDev256/fcp-mcp-server"><img src="https://raw.githubusercontent.com/DareDev256/fcp-mcp-server/v0.33.0/docs/assets/hero-watch-claude-cut.gif" alt="One typed sentence: Claude cuts the rests between sets, marks every lift, quotes the B-roll before spending, and journals every change" width="100%" /></a>
 
 One sentence in. Claude reads the FCPXML, cuts the rests between sets, marks every lift, prices the B-roll and waits before spending anything, and journals every write so it can be undone. On [PyPI](https://pypi.org/project/fcp-mcp-server/) since 2026-07-25 and in the MCP registry. `defusedxml` throughout, sandboxed writes, adversarial input tests, a private disclosure channel.
 
+```bash
+claude mcp add fcpxml -e FCP_PROJECTS_DIR=~/Movies -- uvx fcp-mcp-server
+```
+
 Two developers outside the project sent three fixes. I merged all three: [@mikegrant25](https://github.com/mikegrant25) [#6](https://github.com/DareDev256/fcp-mcp-server/pull/6) closed a sandbox escape in `apply_template` · [@jardelapp](https://github.com/jardelapp) [#7](https://github.com/DareDev256/fcp-mcp-server/pull/7) probed audio duration instead of stamping the timeline span · [@jardelapp](https://github.com/jardelapp) [#8](https://github.com/DareDev256/fcp-mcp-server/pull/8) stopped silence detection decoding a 2.5 GB camera file whole.
 
-**Its sibling, [frameio-to-final-cut-pro](https://github.com/DareDev256/frameio-to-final-cut-pro) (Cut Review):** client notes go into Final Cut as to-do markers on the right clips, then two exports are diffed to show which notes the recut actually touched. Free CLI and MCP server, no upload. [PyPI](https://pypi.org/project/cutreview/) · [Site](https://daredev256.github.io/frameio-to-final-cut-pro/)
+### [frameio-to-final-cut-pro](https://github.com/DareDev256/frameio-to-final-cut-pro) (Cut Review) · client notes land in Final Cut as to-do markers
+
+[![Stars](https://img.shields.io/github/stars/DareDev256/frameio-to-final-cut-pro?style=flat-square&color=A78BFA&label=stars)](https://github.com/DareDev256/frameio-to-final-cut-pro) [![Downloads](https://img.shields.io/pypi/dm/cutreview?style=flat-square&color=6C63FF&label=downloads%2Fmonth)](https://pypistats.org/packages/cutreview) [![PyPI](https://img.shields.io/pypi/v/cutreview?style=flat-square&color=818CF8&label=pypi)](https://pypi.org/project/cutreview/)
+
+<a href="https://daredev256.github.io/frameio-to-final-cut-pro/"><img src="https://raw.githubusercontent.com/DareDev256/frameio-to-final-cut-pro/v0.1.1/docs/screenshots/2026-11-12_status-1440-dark-fold.png" alt="The Cut Review status page: six notes, three done, four touched, and the two lists where the editor's tick and the cut disagree" width="100%" /></a>
+
+The other half of a client recut. Frame.io comment exports or a plain notes file go into Final Cut as to-do markers on the clips they are about. After the recut, two exports are compared and one page shows which notes the cut touched, and where the editor's tick and the cut disagree. It says "touched", never "addressed". Free CLI and MCP server, no account, no upload. [PyPI](https://pypi.org/project/cutreview/) · [Site](https://daredev256.github.io/frameio-to-final-cut-pro/)
+
+```bash
+uvx cutreview notes cut.fcpxmld notes.txt
+```
+
+### More tools
+
+<a href="https://prompts.tdotssolutionsz.com"><img src="./assets/tools/prompt-generator.jpg" alt="prompts.tdotssolutionsz.com: Make the shot, skip the blank box, over a field of example images" width="32%" /></a>
+<a href="https://github.com/DareDev256/clickfix-protection-macos"><img src="./assets/tools/clickfix.jpg" alt="ShellGuard stopping a curl piped into bash and asking for a typed phrase before anything runs" width="32%" /></a>
+<a href="https://github.com/DareDev256/jackpoint"><img src="./assets/tools/jackpoint.jpg" alt="Three pages of the jackpoint quick start guide: the cover, the five assistants, and the cheatsheet" width="32%" /></a>
+
+- **[Ultimate Image & Video Prompt Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator)** · a prompt workbench for nine image and video engines, from Nano Banana Pro and Veo to the open-source models. Every suggestion is credited to the creator it came from. [![Stars](https://img.shields.io/github/stars/DareDev256/Ultimate-Image-Video-Prompt-Generator?style=flat-square&color=A78BFA&label=stars)](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) · [Live →](https://prompts.tdotssolutionsz.com)
+- **[clickfix-protection-macos](https://github.com/DareDev256/clickfix-protection-macos)** · seven defensive tools against paste-this-command attacks on a Mac, written after a real ClickFix attack came at me. ShellGuard stops a `curl | bash` and explains it before anything runs. [![Stars](https://img.shields.io/github/stars/DareDev256/clickfix-protection-macos?style=flat-square&color=A78BFA&label=stars)](https://github.com/DareDev256/clickfix-protection-macos)
+- **[jackpoint](https://github.com/DareDev256/jackpoint)** · one command installs Claude Code, Gemini CLI, Codex CLI, qwen-code and opencode on a Mac, with an optional offline model, for people who have never opened a terminal. [![Stars](https://img.shields.io/github/stars/DareDev256/jackpoint?style=flat-square&color=A78BFA&label=stars)](https://github.com/DareDev256/jackpoint)
+
+<sub>Tool screenshots shot 2026-11-15.</sub>
+
+---
+
+## Client work
 
 ### [musician-website-builder](https://github.com/DareDev256/musician-website-builder) (COLD OPEN) · six artists, six worlds, six live domains
 
@@ -36,21 +66,13 @@ Two developers outside the project sent three fixes. I merged all three: [@mikeg
 <a href="https://100bandplan.com"><img src="./assets/sites/100bandplan.jpg" alt="100bandplan.com, Mission File" width="32%" /></a>
 <a href="https://savv4x.com"><img src="./assets/sites/savv4x.jpg" alt="savv4x.com, Problem Child" width="32%" /></a>
 
-<a href="https://syreneffect.com"><img src="./assets/sites/syreneffect.jpg" alt="syreneffect.com, SyrenEffect TV" width="32%" /></a>
+<a href="https://whyg35.com"><img src="./assets/sites/whyg35.jpg" alt="whyg35.com, The Case" width="32%" /></a>
 <a href="https://officialstreetbud.com"><img src="./assets/sites/streetbud.jpg" alt="officialstreetbud.com, The Streetlight" width="32%" /></a>
 <a href="https://shortiieraw.com"><img src="./assets/sites/shortiie.jpg" alt="shortiieraw.com, Carry-On, generated by the engine" width="32%" /></a>
 
-<sub><b>The Vault</b> K Money · <b>Mission File</b> 100Bandplan · <b>Problem Child</b> SAVV4X · <b>SyrenEffect TV</b> Syren Effect · <b>The Streetlight</b> Street Bud · <b>Carry-On</b> Shortiie Raw, the one the engine generated. <i>Shot 2026-11-15.</i></sub>
+<sub><b>The Vault</b> K Money · <b>Mission File</b> 100Bandplan · <b>Problem Child</b> SAVV4X · <b>The Case</b> WHYG35 · <b>The Streetlight</b> Street Bud · <b>Carry-On</b> Shortiie Raw, the one the engine generated. <i>Shot 2026-11-15.</i></sub>
 
-Five built by hand. The sixth was generated by the engine the first five produced. Every build starts by naming the world the artist lives in, and type, colour, motion and section names all derive from that one decision; the build is refused if it drifts. Every number is a `Fact` that will not construct without a `sourceUrl` and a `verifiedAt`, so an unsourced claim renders as a redaction bar instead of a number.
-
-Blind A/B, 2026-08-21: a fresh judge shown five screenshots picked a hand-built site at 70% confidence and ranked the generated one first for looking hand-made. One judge, one round, one viewport; [docs/GAUNTLET.md](https://github.com/DareDev256/musician-website-builder/blob/main/docs/GAUNTLET.md) lists what that does not cover. The engine, its guards and a [`_template`](https://github.com/DareDev256/musician-website-builder/tree/main/worlds/_template) are public; client site code is not.
-
-### [portfolio-os](https://github.com/DareDev256/portfolio-os) · the source of jamesdare.com
-
-[![Last commit](https://img.shields.io/github/last-commit/DareDev256/portfolio-os?style=flat-square&color=6C63FF&label=last%20commit)](https://github.com/DareDev256/portfolio-os/commits/main)
-
-The soundstage at the top of this page. Vanilla Three.js, no framework. The set is modelled in Blender and baked headless by a script in the repo, and each station's screen is fed from its project's commit history. The desktop OS that used to be the homepage still boots at [/os](https://jamesdare.com/os).
+Five built by hand. The sixth, Shortiie Raw, was generated by the engine. Every build starts by naming the world the artist lives in, and type, colour, motion and section names all derive from that one decision; the build is refused if it drifts. Every number is a `Fact` that will not construct without a `sourceUrl` and a `verifiedAt`, so an unsourced claim renders as a redaction bar instead of a number.
 
 ## Currently
 
@@ -96,16 +118,18 @@ The six AI literacy games plus Circuit Prophet, NetRunner and TypeMaster merged 
 </details>
 
 <details>
-<summary><strong>The six artists behind COLD OPEN</strong></summary>
+<summary><strong>The six artists behind COLD OPEN, and how the engine was judged</strong></summary>
 
 | Site | The world | The artist |
 |---|---|---|
 | **[officialkmoney.com](https://officialkmoney.com)** | The Vault | **K Money** · [Instagram](https://www.instagram.com/kmoneyyymusic/) · [YouTube](https://www.youtube.com/@Menace4Money) · [Spotify](https://open.spotify.com/artist/3WC4zw6QqkpKgs9rqk6ot6) |
 | **[100bandplan.com](https://100bandplan.com)** | Mission File | **100Bandplan** · [Instagram](https://www.instagram.com/100bandplann/) · [YouTube](https://www.youtube.com/@100Bandplan) · [Spotify](https://open.spotify.com/artist/54gXMsMsoa0quu4bwTms8v) |
 | **[savv4x.com](https://savv4x.com)** | Problem Child | **SAVV4X** · [Instagram](https://www.instagram.com/savv4x/) · [YouTube](https://www.youtube.com/@Savv4x) · [Spotify](https://open.spotify.com/artist/6ljuVTdHjv6rz6QLiNXg2r) |
-| **[syreneffect.com](https://syreneffect.com)** | SyrenEffect TV | **Syren Effect** · [Instagram](https://www.instagram.com/syreneffect) · [YouTube](https://www.youtube.com/@syreneffect) · [TikTok](https://www.tiktok.com/@syren.effect) |
+| **[whyg35.com](https://whyg35.com)** | The Case | **WHYG35** · [Instagram](https://www.instagram.com/whyg35/) · [YouTube](https://www.youtube.com/@whyg35) · [Spotify](https://open.spotify.com/artist/3QoFljZxcB1DQuP3WmYVJB) |
 | **[officialstreetbud.com](https://officialstreetbud.com)** | The Streetlight | **Street Bud** · [Instagram](https://www.instagram.com/streetbud_/) · [YouTube](https://www.youtube.com/channel/UCkKhQTvBYCfC8aRMeE0peuQ) · [Spotify](https://open.spotify.com/artist/6tQmUQ1aBbgQwEqXFjVwB6) |
 | **[shortiieraw.com](https://shortiieraw.com)** *(generated)* | Carry-On | **Shortiie Raw** · [Instagram](https://www.instagram.com/shortiieraw/) · [YouTube](https://www.youtube.com/@ShortiieRaw) · [Spotify](https://open.spotify.com/artist/0WnHD0zH7mlYxetaIYvMBO) |
+
+Blind A/B, 2026-08-21: a fresh judge shown five screenshots picked a hand-built site at 70% confidence and ranked the generated one first for looking hand-made. One judge, one round, one viewport; [docs/GAUNTLET.md](https://github.com/DareDev256/musician-website-builder/blob/main/docs/GAUNTLET.md) lists what that does not cover. The engine, its guards and a [`_template`](https://github.com/DareDev256/musician-website-builder/tree/main/worlds/_template) are public; client site code is not.
 
 </details>
 
@@ -114,16 +138,14 @@ The six AI literacy games plus Circuit Prophet, NetRunner and TypeMaster merged 
 
 | Project | What it is | |
 |---|---|---|
-| [Ultimate Image & Video Prompt Generator](https://github.com/DareDev256/Ultimate-Image-Video-Prompt-Generator) | A prompt workbench for nine generation engines, stills and motion. Nine incompatible parameter grammars normalized into one wizard. Every suggestion is credited to the creator it came from. | [Live →](https://prompts.tdotssolutionsz.com) |
+| [portfolio-os](https://github.com/DareDev256/portfolio-os) | The source of jamesdare.com. Vanilla Three.js, no framework. The set is modelled in Blender and baked headless by a script in the repo, and each station's screen is fed from its project's commit history. The old desktop OS still boots at /os. | [Live →](https://jamesdare.com) |
 | [music-time-machine](https://github.com/DareDev256/music-time-machine) | Was Playing. Name a song you lived with and fly back through every Hot 100 #1 to the week it was playing, then land in its era. | [Live →](https://music-time-machine.vercel.app) |
 | [disease-outbreak-map](https://github.com/DareDev256/disease-outbreak-map) | Global disease surveillance dashboard on WHO data. Mapbox GL, Supabase, Next.js. | [Live →](https://pulsemap-three.vercel.app) |
 | [rag-system-with-citations](https://github.com/DareDev256/rag-system-with-citations) | RAG pipeline that returns the chunk behind every answer, so retrieval can be checked. | |
 | [llm-evaluation-harness](https://github.com/DareDev256/llm-evaluation-harness) | Regression testing for LLM systems: rule-based, semantic, and LLM-as-judge scoring, wired for CI. | |
-| [clickfix-protection-macos](https://github.com/DareDev256/clickfix-protection-macos) | macOS anti-infostealer toolkit, written after a real ClickFix attack came at me. Blocks `curl \| sh` paste attacks and audits what already ran. | |
 | [toronto-open-data-map](https://github.com/DareDev256/toronto-open-data-map) | Toronto City Pulse: parking enforcement, TTC vehicles, bike share, closures and collisions on one 3D map. deck.gl and MapLibre. | [Live →](https://toronto-parking-viz.vercel.app) |
 | [hand-tracking-playground](https://github.com/DareDev256/hand-tracking-playground) | Seven exercises in spatial gesture UI. MediaPipe, React, Canvas 2D. | |
 | [vector-vs-keyword-search](https://github.com/DareDev256/vector-vs-keyword-search) | Semantic vector search against BM25, side by side, on the same corpus. | |
-| [jackpoint](https://github.com/DareDev256/jackpoint) | One command installs every AI coding CLI on a Mac, plus an optional offline model. | |
 | [linktree-alternative](https://github.com/DareDev256/linktree-alternative) | One-tap connection card that routes straight to an action: Follow All, vCard, DM, Book, Pay. | [Live →](https://tapin-bay.vercel.app) |
 | [match-3-bubble-game](https://github.com/DareDev256/match-3-bubble-game) | Match-3 bubble game: swap adjacent bubbles, pop three or more, chain the cascades. Match 4 clears a line, match 5 drops a bomb, an L or T shape fires a colour nuke. | [Play →](https://passion-pop.vercel.app) |
 | [tdotssolutionsz-portfolio](https://github.com/DareDev256/tdotssolutionsz-portfolio) | Index of the music videos I directed. | [Live →](https://tdotssolutionsz.com) |

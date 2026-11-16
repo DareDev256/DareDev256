@@ -12,9 +12,11 @@
 
 ## Structure (do not change)
 
-Visible sections in order (v2.0.0): Hero (signature, hook line, studio shot) → Featured (fcp-mcp-server + cutreview, coldopen grid, portfolio-os) → Currently → Hackathons (list + One Lesson GIF; no face footage of James) → Open To → Footer
+Visible sections in order (v2.1.0): Hero (signature, hook line, studio shot; its caption names portfolio-os as the source) → Tools (fcp-mcp-server, frameio-to-final-cut-pro / Cut Review, More tools: a 3-up shot row + one bullet each for the prompt generator, clickfix-protection-macos, jackpoint) → Client work (COLD OPEN six-site grid) → Currently → Hackathons (list + One Lesson GIF; no face footage of James) → Open To → Footer
 
-Collapsed sections: Passionate Learning, The six artists behind coldopen, Other projects, Seven bugs with receipts, What I would build differently
+Collapsed sections: Passionate Learning, The six artists behind COLD OPEN (and the blind A/B note), Other projects, Seven bugs with receipts, What I would build differently
+
+Why Tools leads (v2.1.0, 2026-11-15): the GitHub traffic API showed visitors land on the tools (fcp-mcp-server 929 uniques in 14 days, Cut Review 23 and 205 PyPI downloads in week one, clickfix and the prompt generator next). Tools people install go above client work. Re-read traffic before reordering: `gh api repos/DareDev256/<repo>/traffic/views`.
 
 ## Link Rule (v0.9.0 — non-negotiable)
 
@@ -61,13 +63,13 @@ Everything outside the remaining markers requires human review.
 
 - CHANGELOG.md follows Keep a Changelog format
 - Semantic versioning: major = full redesign, minor = new sections, patch = updates
-- Current: v2.0.1
+- Current: v2.1.0
 
 ## Assets
 
 ### Screenshot Rule (v2.0.0)
 
-`assets/studio.jpg` and `assets/sites/*.jpg` are photographs of live sites, so every
+`assets/studio.jpg`, `assets/sites/*.jpg` and `assets/tools/*.jpg` are photographs of live sites or of the tool repos' own dated screenshots (cropped 2:1), so every
 caption under them carries its shot date (`Shot YYYY-MM-DD`). A picture with numbers in it
 is a typed number with a date on it. Re-shoot when a site changes, never edit the date by hand:
 
