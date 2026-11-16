@@ -14,7 +14,7 @@ The tools people actually visit now lead the page (GitHub traffic API, 14 days t
 ### Added
 - **Tools** section first: fcp-mcp-server with its one-line `claude mcp add` install, and
   frameio-to-final-cut-pro (Cut Review) promoted from a sibling paragraph to its own block with
-  stars, PyPI downloads and version badges, its status-page screenshot pinned to v0.1.1, and the
+  PyPI downloads and version badges (no stars badge while it reads 0), its status-page screenshot pinned to v0.1.1, and the
   `uvx cutreview` quick start.
 - **More tools**: a 3-up row of dated shots plus one line each for the Ultimate Image & Video
   Prompt Generator, clickfix-protection-macos and jackpoint, moved up from the collapsed

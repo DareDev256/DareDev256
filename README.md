@@ -34,7 +34,7 @@ Two developers outside the project sent three fixes. I merged all three: [@mikeg
 
 ### [frameio-to-final-cut-pro](https://github.com/DareDev256/frameio-to-final-cut-pro) (Cut Review) · client notes land in Final Cut as to-do markers
 
-[![Stars](https://img.shields.io/github/stars/DareDev256/frameio-to-final-cut-pro?style=flat-square&color=A78BFA&label=stars)](https://github.com/DareDev256/frameio-to-final-cut-pro) [![Downloads](https://img.shields.io/pypi/dm/cutreview?style=flat-square&color=6C63FF&label=downloads%2Fmonth)](https://pypistats.org/packages/cutreview) [![PyPI](https://img.shields.io/pypi/v/cutreview?style=flat-square&color=818CF8&label=pypi)](https://pypi.org/project/cutreview/)
+[![Downloads](https://img.shields.io/pypi/dm/cutreview?style=flat-square&color=6C63FF&label=downloads%2Fmonth)](https://pypistats.org/packages/cutreview) [![PyPI](https://img.shields.io/pypi/v/cutreview?style=flat-square&color=818CF8&label=pypi)](https://pypi.org/project/cutreview/)
 
 <a href="https://daredev256.github.io/frameio-to-final-cut-pro/"><img src="https://raw.githubusercontent.com/DareDev256/frameio-to-final-cut-pro/v0.1.1/docs/screenshots/2026-11-12_status-1440-dark-fold.png" alt="The Cut Review status page: six notes, three done, four touched, and the two lists where the editor's tick and the cut disagree" width="100%" /></a>
 
