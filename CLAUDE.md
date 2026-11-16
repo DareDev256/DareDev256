@@ -16,7 +16,9 @@ Visible sections in order (v2.1.0): Hero (signature, hook line, studio shot; its
 
 Collapsed sections: Passionate Learning, The six artists behind COLD OPEN (and the blind A/B note), Other projects, Seven bugs with receipts, What I would build differently
 
-Why Tools leads (v2.1.0, 2026-11-15): the GitHub traffic API showed visitors land on the tools (fcp-mcp-server 929 uniques in 14 days, Cut Review 23 and 205 PyPI downloads in week one, clickfix and the prompt generator next). Tools people install go above client work. Re-read traffic before reordering: `gh api repos/DareDev256/<repo>/traffic/views`.
+Why Tools leads (v2.1.0, 2026-11-15): the GitHub traffic API showed visitors land on the tools (fcp-mcp-server 929 uniques in 14 days, Cut Review 23 and 205 PyPI downloads in week one, prompt generator 13).
+
+Referrer `aocr.org` is NOT an audience (checked 2026-11-15): it is the American Osteopathic College of Radiology, its site links to no GitHub page, and every hit it "sent" is exactly 1 view per visitor on commit pages, workflow folders, CLAUDE.md and pre-rename repo names. Treat it as a bot with a forged referrer; subtract it before calling any repo popular (it was all 17 of clickfix's visitors). Tools people install go above client work. Re-read traffic before reordering: `gh api repos/DareDev256/<repo>/traffic/views`.
 
 ## Link Rule (v0.9.0 — non-negotiable)
 
